@@ -1,0 +1,62 @@
+o que é spring
+- tecnologia de backend, conjunto de projetos que resolvem vários problemas do dia a dia
+- muitos projetos também conhecido como ecossistema spring
+- ajudar ao desenvolvedor a focar nas regras de negócio sem perder tempo com infra e configuração
+
+porque Spring (empresa pivotal)
+- canivete suíço para desenvolvedores Java (resolve vários problemas)
+- simplicidade
+- maturidade
+- modularidade
+- evolução constante
+- open source
+- comunidade grande e forte
+- popularidade
+- empregabilidade
+
+quem usa spring (Netflix, Ifood ..)
+
+ecossistema spring
+- spring framework
+- spring data
+- spring boot 
+	- simplificar a configuração
+	- flexidade x complexidade da configuração
+	- visão opinativa (geralmente todos usam)
+	- configuravel em classes e arquivos de propriedade
+	- fatjar já vem com servlet container na app (tomcat)
+	- não é ferramenta de geração de código mas configura o projeto com a visão opinativa
+
+Jakarta EE (java EE)
+- oracle não dava tanta importancia para java EE 
+- transferiram para a eclipse foundation e mudou o nome para JakartaEE
+- Java EE é uma especificação que possui diversas especificações
+- vendor locking -> preso a um unico forneceder / implementação
+- compatibilidade para novas versões
+- demora para ter novas versões
+- portabilidade, padronização e estabilidades são pontos fortes
+
+spring
+- inovadora evolui rápido
+- pode ser que quebre com novas versões
+
+qual escolher
+- os dois são bons
+- pode ser que use os dois
+- por exemplo concorrem em injeção de dependencias (CDI x Spring framework) e rest (JaxRs x Spring MVC)
+
+conhecendo o Spring Boot
+- muita configuração de xml
+- a partir da v3 a configuração pode ser feita em classes java
+- spring boot veio para facilitar simplificar
+- foco na regra de negócio da aplicação com o mínimo de configuraçao
+- convention over configuration - configuratudo com base na visão opinativa
+- convenções mais usadas no mercado
+- não gera código, ele autoconfigura o projeto
+- reduz o numero de dependencias no maven, possibilita agrupar dependencias atraves dos starters
+
+spring boot x spring MVC
+- spring boot não é framework para desenvolvimento web (mas pode ser utilizado)
+- spring boot pode ser usado para aplicações rodam fora do web
+- spring boot é uma camada de abstração em cima do spring
+- spring boot simplifica o desenvolvimento de aplicações utilizando spring inclusive o spring mvc
