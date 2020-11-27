@@ -3,14 +3,17 @@
 
 github commands
 
-git checkout -b 02-07-criando-controller-spring-mvc
+git checkout -b 02-08-restart-rapido-com-devtools
 git add .
-git commit -m "Criando um controller com Spring MVC"
-git push --set-upstream origin 02-07-criando-controller-spring-mvc
+git commit -m "Restart mais rápido da aplicação com DevTools"
+git push origin 02-08-restart-rapido-com-devtools
 
 git checkout master
-git merge --no-ff 02-07-criando-controller-spring-mvc
+git merge --no-ff 02-08-restart-rapido-com-devtools
 git push
+
+sair da tela de merge
+aperte "ESC" depois digite ":wq"
 
 // delete branch locally
 git branch -d localBranchName

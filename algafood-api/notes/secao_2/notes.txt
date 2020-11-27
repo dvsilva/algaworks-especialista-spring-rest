@@ -72,3 +72,6 @@ java -jar target/algafood-api-0.0.1-SNAPSHOT.jar -> executa projeto
 ./mvnw dependency:tree -> gerar arvore de dependencias em tela
 ./mvnw dependency:resolve -> gerar dependencias resolvidas em tela
 ./mvnw help:effective-pom -> gerar pom efetivo (com todas as dependencias do parent)
+
+devtools
+- dois classloaders -> base (dependencias do projeto) e restart (arquivos do projeto)
