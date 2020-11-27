@@ -60,3 +60,15 @@ spring boot x spring MVC
 - spring boot pode ser usado para aplicações rodam fora do web
 - spring boot é uma camada de abstração em cima do spring
 - spring boot simplifica o desenvolvimento de aplicações utilizando spring inclusive o spring mvc
+
+maven é uma ferramenta de gerenciamento de dependencias e automação de build em projetos java
+pom (project objetc model) onde ficam as configurações do mavem no projeto
+mvnw (maven wrapper) permite que execute o maven no terminal mesmo sem ter o mavem instalado no sistema operacional
+
+comandos via cmd
+./mvnw package -> empacota o projeto
+java -jar target/algafood-api-0.0.1-SNAPSHOT.jar -> executa projeto
+./mvnw clean -> limpa pasta target
+./mvnw dependency:tree -> gerar arvore de dependencias em tela
+./mvnw dependency:resolve -> gerar dependencias resolvidas em tela
+./mvnw help:effective-pom -> gerar pom efetivo (com todas as dependencias do parent)
