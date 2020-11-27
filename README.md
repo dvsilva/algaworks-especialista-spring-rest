@@ -6,7 +6,7 @@ github commands
 git checkout -b 02-08-restart-rapido-com-devtools
 git add .
 git commit -m "Restart mais rápido da aplicação com DevTools"
-git push
+git push origin 02-08-restart-rapido-com-devtools
 
 git checkout master
 git merge --no-ff 02-08-restart-rapido-com-devtools
