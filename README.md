@@ -1,8 +1,8 @@
 # algaworks-especialista-spring-rest
 
-
 github commands
 
+```bash
 git checkout -b 02-08-restart-rapido-com-devtools
 git add .
 git commit -m "Restart mais rápido da aplicação com DevTools"
@@ -20,3 +20,4 @@ git branch -d localBranchName
 
 // delete branch remotely
 git push origin --delete remoteBranchName
+```
