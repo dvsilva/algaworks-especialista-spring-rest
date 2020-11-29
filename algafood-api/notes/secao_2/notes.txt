@@ -106,4 +106,5 @@ injetando dependencias no spring
 - para metodos set precisa colocar @Autowired
 - colocar em cima do atributo
 	- dificulta testes e configuração programatica (instanciar objeto no código)
+- dependencia opcional: @Autowired(required = false)
 
