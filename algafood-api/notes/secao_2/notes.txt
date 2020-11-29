@@ -75,3 +75,11 @@ java -jar target/algafood-api-0.0.1-SNAPSHOT.jar -> executa projeto
 
 devtools
 - dois classloaders -> base (dependencias do projeto) e restart (arquivos do projeto)
+
+injeção de dependencias
+- inversão de controle -> "repassa a responsabilidade de instanciar o objeto para a classe que vai utilizar o serviço"
+- baixo acoplamento
+- substituir implementações
+- classes que usam só precisam de seguir o controle
+- facilita os testes criando classes mocks
+

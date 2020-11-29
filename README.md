@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-08-restart-rapido-com-devtools
+git checkout -b 02-09-o-que-e-injecao-dependencias
 git add .
-git commit -m "Restart mais rápido da aplicação com DevTools"
-git push origin 02-08-restart-rapido-com-devtools
+git commit -m "O que é injeção de dependências?"
+git push origin 02-09-o-que-e-injecao-dependencias
 
 git checkout master
-git merge --no-ff 02-08-restart-rapido-com-devtools
+git merge --no-ff 02-09-o-que-e-injecao-dependencias
 git push
 
 sair da tela de merge
