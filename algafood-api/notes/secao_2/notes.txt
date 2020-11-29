@@ -100,3 +100,10 @@ injetando dependencias no spring
 
 @Configuration - utilizada para configuração de beans
 
+@Autowired 
+- pode indicar qual dos construtores o spring deve executar
+- se tiver apenas um executa ele, @Autowired é opcional
+- para metodos set precisa colocar @Autowired
+- colocar em cima do atributo
+	- dificulta testes e configuração programatica (instanciar objeto no código)
+

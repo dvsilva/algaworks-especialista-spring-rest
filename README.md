@@ -14,6 +14,8 @@ git push
 
 sair da tela de merge
 aperte "ESC" depois digite ":wq"
+configure other merge tool
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 
 // delete branch locally
 git branch -d localBranchName

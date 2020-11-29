@@ -9,6 +9,7 @@ import com.algaworks.algafood.di.service.AtivacaoClienteService;
 // @Configuration
 public class AlgaConfig {
 
+	/**
 	@Bean
 	public NotificadorEmail notificadorEmail() {
 		NotificadorEmail notificador = new NotificadorEmail("smtp.algamail.com.br");
@@ -20,5 +21,6 @@ public class AlgaConfig {
 	public AtivacaoClienteService ativacaoClienteService() {
 		return new AtivacaoClienteService(notificadorEmail());
 	}
+	*/
 	
 }
