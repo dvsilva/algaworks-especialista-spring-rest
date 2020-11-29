@@ -92,4 +92,8 @@ Spring IoC Container
 Component
 - anotação @Component informa ao spring que deve injetar
 - são instanciados ao iniciar a aplicação
-- 
+
+injetando dependencias no spring
+- criando construtor com a dependencia com parametro
+- spring instancia objetos conforme dependencias
+- sabe a ordem correta para que consiga fazer a injeção
