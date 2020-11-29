@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-10-conhecendo-ioc-container-spring
+git checkout -b 02-11-definindo-beans-com-component
 git add .
-git commit -m "Conhecendo o IoC Container do Spring"
-git push origin 02-10-conhecendo-ioc-container-spring
+git commit -m "Definindo beans com @Component"
+git push origin 02-11-definindo-beans-com-component
 
 git checkout master
-git merge --no-ff 02-10-conhecendo-ioc-container-spring
+git merge --no-ff 02-11-definindo-beans-com-component
 git push
 
 sair da tela de merge
