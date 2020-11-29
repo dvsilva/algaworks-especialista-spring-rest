@@ -97,3 +97,6 @@ injetando dependencias no spring
 - criando construtor com a dependencia com parametro
 - spring instancia objetos conforme dependencias
 - sabe a ordem correta para que consiga fazer a injeção
+
+@Configuration - utilizada para configuração de beans
+
