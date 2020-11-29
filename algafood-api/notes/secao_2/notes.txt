@@ -83,3 +83,9 @@ injeção de dependencias
 - classes que usam só precisam de seguir o controle
 - facilita os testes criando classes mocks
 
+Spring IoC Container
+- Spring Context -> faz a parte de injeção de dependencias
+- quando roda aplicação o container é inicializado e instancia e configura os beans que deve gerenciar
+	- dependency / bean -> objetos que são gerenciados pelo container do spring
+- container de inversão de controle do spring é representado pela interface ApplicationContext 
+
