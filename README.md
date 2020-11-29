@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-11-definindo-beans-com-component
+git checkout -b 02-12-injetando-dependencias-beans-spring
 git add .
-git commit -m "Definindo beans com @Component"
-git push origin 02-11-definindo-beans-com-component
+git commit -m "Injetando dependências (beans Spring)"
+git push origin 02-12-injetando-dependencias-beans-spring
 
 git checkout master
-git merge --no-ff 02-11-definindo-beans-com-component
+git merge --no-ff 02-12-injetando-dependencias-beans-spring
 git push
 
 sair da tela de merge
