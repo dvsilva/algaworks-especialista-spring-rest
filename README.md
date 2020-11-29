@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-13-usando-configuration-e-bean-para-definir-beans
+git checkout -b 02-14-conecendo-pontos-injecao-autowired
 git add .
-git commit -m "Usando @Configuration e @Bean para definir beans"
-git push origin 02-13-usando-configuration-e-bean-para-definir-beans
+git commit -m "Conhecendo os pontos de injeção e a anotação @Autowired"
+git push origin 02-14-conecendo-pontos-injecao-autowired
 
 git checkout master
-git merge --no-ff 02-13-usando-configuration-e-bean-para-definir-beans
+git merge --no-ff 02-14-conecendo-pontos-injecao-autowired
 git push
 
 sair da tela de merge
