@@ -89,3 +89,7 @@ Spring IoC Container
 	- dependency / bean -> objetos que são gerenciados pelo container do spring
 - container de inversão de controle do spring é representado pela interface ApplicationContext 
 
+Component
+- anotação @Component informa ao spring que deve injetar
+- são instanciados ao iniciar a aplicação
+- 
