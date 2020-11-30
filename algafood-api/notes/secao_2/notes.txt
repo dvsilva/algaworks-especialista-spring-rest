@@ -121,5 +121,8 @@ configurar ambiente
 - ou ir em boot dashboard / open config / profile configurar prod ou dev
 - ou linha de comando: java -jar projeto.jar -Dspring.profiles.active=prod
 
+@PostConstruct -> executado quando o objeto é inicializado
+@PreDestroy -> quando o bean deixa de existir
+
 
 

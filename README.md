@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-20-mudando-comportamento-com-profiles
+git checkout -b 02-21-criando-metodos-callback-ciclo-de-vida-dos-beans
 git add .
-git commit -m "Mudando o comportamento da aplicação com Spring Profiles"
-git push origin 02-20-mudando-comportamento-com-profiles
+git commit -m "Criando métodos de callback do ciclo de vida dos beans"
+git push origin 02-21-criando-metodos-callback-ciclo-de-vida-dos-beans
 
 git checkout master
-git merge --no-ff 02-20-mudando-comportamento-com-profiles
+git merge --no-ff 02-21-criando-metodos-callback-ciclo-de-vida-dos-beans
 git push
 
 sair da tela de merge
