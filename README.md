@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-16-ambiguidade-beans-injecao-lista-beans
+git checkout -b 02-17-desambiguacao-beans-com-primary
 git add .
-git commit -m "Ambiguidade de beans e injeção de lista de beans"
-git push origin 02-16-ambiguidade-beans-injecao-lista-beans
+git commit -m "Desambiguação de beans com @Primary"
+git push origin 02-17-desambiguacao-beans-com-primary
 
 git checkout master
-git merge --no-ff 02-16-ambiguidade-beans-injecao-lista-beans
+git merge --no-ff 02-17-desambiguacao-beans-com-primary
 git push
 
 sair da tela de merge
