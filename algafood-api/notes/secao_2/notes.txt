@@ -168,6 +168,9 @@ configuração de profile dependendo do ambiente
 	- criar arquivos application-dev ou -prod
 	- configurar profile em run configurations [tem preferencia sobre a seguinte] ou
 	- setar propriedade spring.profiles.active=development
-
-
-	
+	- configurando profile via cmd
+		- java -jar target/algafood-api-0.0.1-SNAPSHOT.jar --spring.profiles.active=production
+	- configurando profile com variavel de ambiente
+		- export SPRING_PROFILES_ACTIVE=production echo $SPRING_PROFILES_ACTIVE
+		- set SPRING_PROFILES_ACTIVE=production echo %SPRING_PROFILES_ACTIVE%
+		- java -jar target/algafood-api-0.0.1-SNAPSHOT.jar
