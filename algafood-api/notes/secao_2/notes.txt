@@ -148,3 +148,15 @@ rodando aplicação
 		- set SERVER_PORT=8083 echo %SERVER_PORT%
 		- java -jar target/algafood-api-0.0.1-SNAPSHOT.jar
 
+acessando propriedades do arquivo properties
+incluir no arquivo properties
+	- notificador.email.host-servidor=smtp.algafood.com.br
+	- notificador.email.porta-servidor=25
+criar atributos na classe
+	@Value("${notificador.email.host-servidor}")
+	private String host;
+	
+	@Value("${notificador.email.porta-servidor}")
+	private String port;
+
+
