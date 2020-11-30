@@ -1,15 +1,14 @@
 package com.algaworks.algafood.di.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import com.algaworks.algafood.di.modelo.Cliente;
 import com.algaworks.algafood.di.notificacao.NivelUrgencia;
 import com.algaworks.algafood.di.notificacao.Notificador;
 import com.algaworks.algafood.di.notificacao.TipoNotificador;
 
-@Component
-public class AtivacaoClienteService {
+// @Component
+public class AtivacaoClienteService { // implements InitializingBean, DisposableBean {
 	
 	@TipoNotificador(NivelUrgencia.SEM_URGENCIA)
 	// @Qualifier("sms")
@@ -27,6 +26,20 @@ public class AtivacaoClienteService {
 //		
 //	}
 
+//	@Override
+//	public void afterPropertiesSet() throws Exception {
+//	}
+	
+//	@PostConstruct
+	public void init() {
+		System.out.println("INIT " + notificador);
+	}
+	
+//	@PreDestroy
+	public void destroy() {
+		System.out.println("DESTROY");
+	}
+	
 	public void ativar(Cliente cliente) {
 		cliente.ativar();
 		
@@ -39,6 +52,7 @@ public class AtivacaoClienteService {
 		else
 			System.out.println("Não existe notificador, mas cliente foi ativado");
 	}
+
 
 //	@Autowired
 //	public void setNotificador(Notificador notificador) {
