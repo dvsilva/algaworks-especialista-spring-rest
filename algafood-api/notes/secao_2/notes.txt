@@ -108,3 +108,18 @@ injetando dependencias no spring
 	- dificulta testes e configuração programatica (instanciar objeto no código)
 - dependencia opcional: @Autowired(required = false)
 
+desambiguação de beans
+	- ao inves de um unico objeto alterar para lista
+	- @Primary diz qual bean terá prioridade dos demais
+	- @Qualifier diz qual bean deve ser referenciado atraves de uma string
+	- anotação customizada
+
+spring profiles - muda a funcionalidade dependendo do ambiente
+ex: @Profile("dev") ou @Profile("prod")
+configurar ambiente
+- application.properties: spring.profiles.active=dev
+- ou ir em boot dashboard / open config / profile configurar prod ou dev
+- ou linha de comando: java -jar projeto.jar -Dspring.profiles.active=prod
+
+
+

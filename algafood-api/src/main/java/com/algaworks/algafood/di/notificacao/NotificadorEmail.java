@@ -1,12 +1,14 @@
 package com.algaworks.algafood.di.notificacao;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import com.algaworks.algafood.di.modelo.Cliente;
 
 // @Primary
 // @Qualifier("email")
-@TipoNotificador(NivelUrgencia.NORMAL)
+@Profile("prod")
+@TipoNotificador(NivelUrgencia.SEM_URGENCIA)
 @Component
 public class NotificadorEmail implements Notificador {
 
@@ -19,6 +21,10 @@ public class NotificadorEmail implements Notificador {
 		System.out.println("NotificadorEmail: " + this.hostServidorSmtp);
 	}
 	*/
+	
+	public NotificadorEmail() {
+		System.out.println("NotificadorEmail REAL");
+	}
 
 	@Override
 	public void notificar(Cliente cliente, String mensagem) {
