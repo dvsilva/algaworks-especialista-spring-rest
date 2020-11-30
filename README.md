@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-21-criando-metodos-callback-ciclo-de-vida-dos-beans
+git checkout -b 02-22-publicando-e-consumindo-eventos-customizados
 git add .
-git commit -m "Criando métodos de callback do ciclo de vida dos beans"
-git push origin 02-21-criando-metodos-callback-ciclo-de-vida-dos-beans
+git commit -m "Publicando e consumindo eventos customizados"
+git push origin 02-22-publicando-e-consumindo-eventos-customizados
 
 git checkout master
-git merge --no-ff 02-21-criando-metodos-callback-ciclo-de-vida-dos-beans
+git merge --no-ff 02-22-publicando-e-consumindo-eventos-customizados
 git push
 
 sair da tela de merge
