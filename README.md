@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-17-desambiguacao-beans-com-primary
+git checkout -b 02-18-desambiguacao-beans-com-qualifier
 git add .
-git commit -m "Desambiguação de beans com @Primary"
-git push origin 02-17-desambiguacao-beans-com-primary
+git commit -m "Desambiguação de beans com @Qualifier"
+git push origin 02-18-desambiguacao-beans-com-qualifier
 
 git checkout master
-git merge --no-ff 02-17-desambiguacao-beans-com-primary
+git merge --no-ff 02-18-desambiguacao-beans-com-qualifier
 git push
 
 sair da tela de merge
