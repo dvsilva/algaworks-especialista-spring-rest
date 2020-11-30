@@ -164,4 +164,10 @@ criar atributos na classe
 	- anotar com @ConfigurationProperties("prefix") e colocar a propriedade no application.properties
 	- criar atributos que representem as configurações do application.properties
 	
+configuração de profile dependendo do ambiente
+	- criar arquivos application-dev ou -prod
+	- configurar profile em run configurations [tem preferencia sobre a seguinte] ou
+	- setar propriedade spring.profiles.active=development
 
+
+	

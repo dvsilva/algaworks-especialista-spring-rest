@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-26-acessando-propriedades-com-configuration-properties
+git checkout -b 02-27-alterando-configuracao-dependendo-do-ambiente
 git add .
-git commit -m "Acessando propriedades com @ConfigurationProperties"
-git push origin 02-26-acessando-propriedades-com-configuration-properties
+git commit -m "Alterando a configuração do projeto dependendo do ambiente (com Spring Profiles)"
+git push origin 02-27-alterando-configuracao-dependendo-do-ambiente
 
 git checkout master
-git merge --no-ff 02-26-acessando-propriedades-com-configuration-properties
+git merge --no-ff 02-27-alterando-configuracao-dependendo-do-ambiente
 git push
 
 sair da tela de merge
