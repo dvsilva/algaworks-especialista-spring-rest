@@ -127,4 +127,17 @@ ciclo de vida
 	- InitializingBean, DisposableBean -> interfaces equivalentes ao PostConstruct e PreDestroy
 	- @Bean(initMethod = "init", destroyMethod = "destroy") - pode configurar os metodos em uma classe configuração ao inves de usar as anotações
 
+disparando eventos
+	- criar evento ClienteAtivadoEvent
+	- publicar evento - @Autowired private ApplicationEventPublisher eventPublisher; eventPublisher.publishEvent(new ClienteAtivadoEvent(cliente));
+	- ouvir evento - @EventListener public void clienteAtivadoListener(ClienteAtivadoEvent event) {}
+	 
+arquivos de configuração
+	- configuração nao deve ser hardcoded no código java (ip de servidor, senha ..)
+	- arquivo de propriedades ou yaml
+	- variaveis do SO ou parametros por linha de comando
+	- arquivo application.properties
+	- propriedades - https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html
+
+
 

@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-22-publicando-e-consumindo-eventos-customizados
+git checkout -b 02-23-configurando-projetos-com-application-properties
 git add .
-git commit -m "Publicando e consumindo eventos customizados"
-git push origin 02-22-publicando-e-consumindo-eventos-customizados
+git commit -m "Configurando projetos Spring Boot com o application.properties"
+git push origin 02-23-configurando-projetos-com-application-properties
 
 git checkout master
-git merge --no-ff 02-22-publicando-e-consumindo-eventos-customizados
+git merge --no-ff 02-23-configurando-projetos-com-application-properties
 git push
 
 sair da tela de merge
