@@ -139,5 +139,12 @@ arquivos de configuração
 	- arquivo application.properties
 	- propriedades - https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html
 
-
+rodando aplicação
+	- java -jar target/algafood-api-0.0.1-SNAPSHOT.jar
+	- rodar configurando portas via cmd
+		- java -jar target/algafood-api-0.0.1-SNAPSHOT.jar --server.port=8082
+	- rodar com variavel de ambiente
+		- export SERVER_PORT=8083 echo $SERVER_PORT
+		- set SERVER_PORT=8083 echo %SERVER_PORT%
+		- java -jar target/algafood-api-0.0.1-SNAPSHOT.jar
 

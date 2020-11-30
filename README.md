@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-23-configurando-projetos-com-application-properties
+git checkout -b 02-24-substituindo-propriedades-via-linha-de-comando-e-variaveis-de-ambiente
 git add .
-git commit -m "Configurando projetos Spring Boot com o application.properties"
-git push origin 02-23-configurando-projetos-com-application-properties
+git commit -m "Substituindo propriedades via linha de comando e variáveis de ambiente"
+git push origin 02-24-substituindo-propriedades-via-linha-de-comando-e-variaveis-de-ambiente
 
 git checkout master
-git merge --no-ff 02-23-configurando-projetos-com-application-properties
+git merge --no-ff 02-24-substituindo-propriedades-via-linha-de-comando-e-variaveis-de-ambiente
 git push
 
 sair da tela de merge
