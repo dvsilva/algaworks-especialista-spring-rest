@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-15-dependencia-opcional-autowired
+git checkout -b 02-16-ambiguidade-beans-injecao-lista-beans
 git add .
-git commit -m "Dependência opcional com @Autowired"
-git push origin 02-15-dependencia-opcional-autowired
+git commit -m "Ambiguidade de beans e injeção de lista de beans"
+git push origin 02-16-ambiguidade-beans-injecao-lista-beans
 
 git checkout master
-git merge --no-ff 02-15-dependencia-opcional-autowired
+git merge --no-ff 02-16-ambiguidade-beans-injecao-lista-beans
 git push
 
 sair da tela de merge
