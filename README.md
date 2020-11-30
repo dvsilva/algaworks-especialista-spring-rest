@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-24-substituindo-propriedades-via-linha-de-comando-e-variaveis-de-ambiente
+git checkout -b 02-25-criando-acessando-propriedades-customizadas-com-value
 git add .
-git commit -m "Substituindo propriedades via linha de comando e variáveis de ambiente"
-git push origin 02-24-substituindo-propriedades-via-linha-de-comando-e-variaveis-de-ambiente
+git commit -m "Criando e acessando propriedades customizadas com @Value"
+git push origin 02-25-criando-acessando-propriedades-customizadas-com-value
 
 git checkout master
-git merge --no-ff 02-24-substituindo-propriedades-via-linha-de-comando-e-variaveis-de-ambiente
+git merge --no-ff 02-25-criando-acessando-propriedades-customizadas-com-value
 git push
 
 sair da tela de merge
