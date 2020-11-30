@@ -12,7 +12,8 @@ import com.algaworks.algafood.di.notificacao.Notificador;
 public class AtivacaoClienteService {
 	
 	@Autowired // (required = false)
-	private List<Notificador> notificadores;
+	private Notificador notificador;
+	// private List<Notificador> notificadores;
 	
 //	@Autowired
 //	public AtivacaoClienteService(Notificador notificador) {
@@ -27,14 +28,14 @@ public class AtivacaoClienteService {
 	public void ativar(Cliente cliente) {
 		cliente.ativar();
 		
-		for (Notificador notificador : notificadores) {
-			notificador.notificar(cliente, "Seu cadastro no sistema está ativo!");
-		}
+//		for (Notificador notificador : notificadores) {
+//			notificador.notificar(cliente, "Seu cadastro no sistema está ativo!");
+//		}
 		
-//		if(notificador != null) 
-//			this.notificador.notificar(cliente, "Seu cadastro no sistema está ativo!");
-//		else
-//			System.out.println("Não existe notificador, mas cliente foi ativado");
+		if(notificador != null) 
+			this.notificador.notificar(cliente, "Seu cadastro no sistema está ativo!");
+		else
+			System.out.println("Não existe notificador, mas cliente foi ativado");
 	}
 
 //	@Autowired
