@@ -5,12 +5,12 @@ import org.springframework.context.annotation.Configuration;
 
 import com.algaworks.algafood.di.service.AtivacaoClienteService;
 
-@Configuration
+// @Configuration
 public class ServiceConfig {
 
-	@Bean(initMethod = "init", destroyMethod = "destroy")
-	public AtivacaoClienteService ativacaoClienteService() {
-		return new AtivacaoClienteService();
-	}
+//	@Bean(initMethod = "init", destroyMethod = "destroy")
+//	public AtivacaoClienteService ativacaoClienteService() {
+//		return new AtivacaoClienteService();
+//	}
 
 }

@@ -121,8 +121,10 @@ configurar ambiente
 - ou ir em boot dashboard / open config / profile configurar prod ou dev
 - ou linha de comando: java -jar projeto.jar -Dspring.profiles.active=prod
 
-@PostConstruct -> executado quando o objeto é inicializado
-@PreDestroy -> quando o bean deixa de existir
-
+ciclo de vida
+	- @PostConstruct -> executado quando o objeto é inicializado
+	- @PreDestroy -> quando o bean deixa de existir
+	- InitializingBean, DisposableBean -> interfaces equivalentes ao PostConstruct e PreDestroy
+	- @Bean(initMethod = "init", destroyMethod = "destroy") - pode configurar os metodos em uma classe configuração ao inves de usar as anotações
 
 

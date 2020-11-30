@@ -1,20 +1,22 @@
 package com.algaworks.algafood.di.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.stereotype.Component;
 
 import com.algaworks.algafood.di.modelo.Cliente;
-import com.algaworks.algafood.di.notificacao.NivelUrgencia;
-import com.algaworks.algafood.di.notificacao.Notificador;
-import com.algaworks.algafood.di.notificacao.TipoNotificador;
 
-// @Component
+@Component
 public class AtivacaoClienteService { // implements InitializingBean, DisposableBean {
 	
-	@TipoNotificador(NivelUrgencia.SEM_URGENCIA)
-	// @Qualifier("sms")
-	@Autowired // (required = false)
-	private Notificador notificador;
-	// private List<Notificador> notificadores;
+	@Autowired
+	private ApplicationEventPublisher eventPublisher;
+	
+//	@TipoNotificador(NivelUrgencia.SEM_URGENCIA)
+//	@Qualifier("sms")
+//	@Autowired // (required = false)
+//	private Notificador notificador;
+//	private List<Notificador> notificadores;
 	
 //	@Autowired
 //	public AtivacaoClienteService(Notificador notificador) {
@@ -31,14 +33,14 @@ public class AtivacaoClienteService { // implements InitializingBean, Disposable
 //	}
 	
 //	@PostConstruct
-	public void init() {
-		System.out.println("INIT " + notificador);
-	}
+//	public void init() {
+//		System.out.println("INIT " + notificador);
+//	}
 	
 //	@PreDestroy
-	public void destroy() {
-		System.out.println("DESTROY");
-	}
+//	public void destroy() {
+//		System.out.println("DESTROY");
+//	}
 	
 	public void ativar(Cliente cliente) {
 		cliente.ativar();
@@ -47,10 +49,13 @@ public class AtivacaoClienteService { // implements InitializingBean, Disposable
 //			notificador.notificar(cliente, "Seu cadastro no sistema está ativo!");
 //		}
 		
-		if(notificador != null) 
-			this.notificador.notificar(cliente, "Seu cadastro no sistema está ativo!");
-		else
-			System.out.println("Não existe notificador, mas cliente foi ativado");
+		// dizer para o container que o cliente está ativo neste momento
+		eventPublisher.publishEvent(new ClienteAtivadoEvent(cliente));
+		
+//		if(notificador != null) 
+//			this.notificador.notificar(cliente, "Seu cadastro no sistema está ativo!");
+//		else
+//			System.out.println("Não existe notificador, mas cliente foi ativado");
 	}
 
 
