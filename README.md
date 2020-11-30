@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-27-alterando-configuracao-dependendo-do-ambiente
+git checkout -b 02-28-ativando-spring-profile-por-linha-de-comando-e-variavel-ambiente
 git add .
-git commit -m "Alterando a configuração do projeto dependendo do ambiente (com Spring Profiles)"
-git push origin 02-27-alterando-configuracao-dependendo-do-ambiente
+git commit -m "Ativando o Spring Profile por linha de comando e variável de ambiente"
+git push origin 02-28-ativando-spring-profile-por-linha-de-comando-e-variavel-ambiente
 
 git checkout master
-git merge --no-ff 02-27-alterando-configuracao-dependendo-do-ambiente
+git merge --no-ff 02-28-ativando-spring-profile-por-linha-de-comando-e-variavel-ambiente
 git push
 
 sair da tela de merge
