@@ -11,7 +11,7 @@ import com.algaworks.algafood.di.notificacao.TipoNotificador;
 @Component
 public class AtivacaoClienteService {
 	
-	@TipoNotificador(NivelUrgencia.URGENTE)
+	@TipoNotificador(NivelUrgencia.SEM_URGENCIA)
 	// @Qualifier("sms")
 	@Autowired // (required = false)
 	private Notificador notificador;

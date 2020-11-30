@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-19-desambiguacao-beans-com-anotacao-customizada
+git checkout -b 02-20-mudando-comportamento-com-profiles
 git add .
-git commit -m "Desambiguação de beans com anotação customizada"
-git push origin 02-19-desambiguacao-beans-com-anotacao-customizada
+git commit -m "Mudando o comportamento da aplicação com Spring Profiles"
+git push origin 02-20-mudando-comportamento-com-profiles
 
 git checkout master
-git merge --no-ff 02-19-desambiguacao-beans-com-anotacao-customizada
+git merge --no-ff 02-20-mudando-comportamento-com-profiles
 git push
 
 sair da tela de merge
