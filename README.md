@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-25-criando-acessando-propriedades-customizadas-com-value
+git checkout -b 02-26-acessando-propriedades-com-configuration-properties
 git add .
-git commit -m "Criando e acessando propriedades customizadas com @Value"
-git push origin 02-25-criando-acessando-propriedades-customizadas-com-value
+git commit -m "Acessando propriedades com @ConfigurationProperties"
+git push origin 02-26-acessando-propriedades-com-configuration-properties
 
 git checkout master
-git merge --no-ff 02-25-criando-acessando-propriedades-customizadas-com-value
+git merge --no-ff 02-26-acessando-propriedades-com-configuration-properties
 git push
 
 sair da tela de merge

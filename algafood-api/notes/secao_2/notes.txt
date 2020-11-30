@@ -159,4 +159,9 @@ criar atributos na classe
 	@Value("${notificador.email.porta-servidor}")
 	private String port;
 
+@ConfigurationProperties
+	- criar classe para representar arquivos properties de configuração
+	- anotar com @ConfigurationProperties("prefix") e colocar a propriedade no application.properties
+	- criar atributos que representem as configurações do application.properties
+	
 
