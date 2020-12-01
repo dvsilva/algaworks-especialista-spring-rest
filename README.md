@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 03-02-o-que-e-jpa-e-hibernate
+git checkout -b 03-03-adicionando-jpa-e-configurando-datasource
 git add .
-git commit -m "O que é JPA e Hibernate?"
-git push origin 03-02-o-que-e-jpa-e-hibernate
+git commit -m "Adicionando JPA e configurando o Data Source"
+git push origin 03-03-adicionando-jpa-e-configurando-datasource
 
 git checkout master
-git merge --no-ff 03-02-o-que-e-jpa-e-hibernate
+git merge --no-ff 03-03-adicionando-jpa-e-configurando-datasource
 git push
 
 sair da tela de merge
