@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 03-03-adicionando-jpa-e-configurando-datasource
+git checkout -b 03-04-mapeando-entidades-com-jpa
 git add .
-git commit -m "Adicionando JPA e configurando o Data Source"
-git push origin 03-03-adicionando-jpa-e-configurando-datasource
+git commit -m "Mapeando entidades com JPA"
+git push origin 03-04-mapeando-entidades-com-jpa
 
 git checkout master
-git merge --no-ff 03-03-adicionando-jpa-e-configurando-datasource
+git merge --no-ff 03-04-mapeando-entidades-com-jpa
 git push
 
 sair da tela de merge
