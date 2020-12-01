@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 03-05-criando-tabelas-do-banco-a-partir-das-entidades
+git checkout -b 03-07-importando-dados-teste-com-import-sql
 git add .
-git commit -m "Criando as tabelas do banco a partir das entidades"
-git push origin 03-05-criando-tabelas-do-banco-a-partir-das-entidades
+git commit -m "Importando dados de teste com import.sql"
+git push origin 03-07-importando-dados-teste-com-import-sql
 
 git checkout master
-git merge --no-ff 03-05-criando-tabelas-do-banco-a-partir-das-entidades
+git merge --no-ff 03-07-importando-dados-teste-com-import-sql
 git push
 
 sair da tela de merge
