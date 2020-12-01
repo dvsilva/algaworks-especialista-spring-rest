@@ -35,4 +35,9 @@ hibernate
 como funciona persistencia com JPA e Java
 - código Java -> JPA (hibernate) -> diver JDBC -> MySQL
 
+configuração da conexão no arquivo application.properties
+spring.datasource.url=jdbc:mysql://localhost/algafood?createDatabaseIfNotExist=true&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=123456
+
 
