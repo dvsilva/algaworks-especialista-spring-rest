@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 03-04-mapeando-entidades-com-jpa
+git checkout -b 03-05-criando-tabelas-do-banco-a-partir-das-entidades
 git add .
-git commit -m "Mapeando entidades com JPA"
-git push origin 03-04-mapeando-entidades-com-jpa
+git commit -m "Criando as tabelas do banco a partir das entidades"
+git push origin 03-05-criando-tabelas-do-banco-a-partir-das-entidades
 
 git checkout master
-git merge --no-ff 03-04-mapeando-entidades-com-jpa
+git merge --no-ff 03-05-criando-tabelas-do-banco-a-partir-das-entidades
 git push
 
 sair da tela de merge
