@@ -1,0 +1,38 @@
+o que é persistencia de dados  
+- termo utilizado para dizer que queremos preservar os dados por um tempo além da utilização de um software
+
+como funciona persistencia no banco de dados utilizando java
+- código Java -> diver JDBC -> MySQL
+
+o que é ORM (Object Relational Mapping - Mapeamento de Objeto-Relacional) 
+- tecnica para mapeamento de classes para tabelas de bancos de dados relacional
+- simplificar a persistencia de dados para que o programador trabalhe mais com orientação à objetos e menos com o modelo relacional
+
+mapeamento objeto-relacional
+modelo relacional -> modelo OO
+tabela -> classe
+linha -> objeto
+coluna -> atributo
+---- -> metodo
+chave estrangeira -> associação
+
+como funciona persistencia com ORM e Java
+- código Java -> ORM -> diver JDBC -> MySQL
+
+o que é Java Persistence API (JPA)?
+- é uma especificação (descreve como algo deve funcionar JEE)
+- é uma solução ORM para persistencia de dados que é padronizada para desenvolvimento de apliações java
+- JPA define a forma de mapeamento objeto-relacional
+- possui API de consultas e modificação de dados 
+- possui linguagem de consulta
+- utiliza anotações
+
+hibernate
+- é uma implementação da especificação JPA
+- mais usada mas nao é a unica (eclipse link)
+- não existe vendor locking
+
+como funciona persistencia com JPA e Java
+- código Java -> JPA (hibernate) -> diver JDBC -> MySQL
+
+

@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 02-28-ativando-spring-profile-por-linha-de-comando-e-variavel-ambiente
+git checkout -b 03-02-o-que-e-jpa-e-hibernate
 git add .
-git commit -m "Ativando o Spring Profile por linha de comando e variável de ambiente"
-git push origin 02-28-ativando-spring-profile-por-linha-de-comando-e-variavel-ambiente
+git commit -m "O que é JPA e Hibernate?"
+git push origin 03-02-o-que-e-jpa-e-hibernate
 
 git checkout master
-git merge --no-ff 02-28-ativando-spring-profile-por-linha-de-comando-e-variavel-ambiente
+git merge --no-ff 03-02-o-que-e-jpa-e-hibernate
 git push
 
 sair da tela de merge
