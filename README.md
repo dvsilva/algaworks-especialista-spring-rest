@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 03-18-anotacao-joincolumn
+git checkout -b 03-20-desafio-mapeando-entidades
 git add .
-git commit -m "A anotação @JoinColumne"
-git push origin 03-18-anotacao-joincolumn
+git commit -m "Desafio: mapeando entidades"
+git push origin 03-20-desafio-mapeando-entidades
 
 git checkout master
-git merge --no-ff 03-18-anotacao-joincolumn
+git merge --no-ff 03-20-desafio-mapeando-entidades
 git push
 
 sair da tela de merge

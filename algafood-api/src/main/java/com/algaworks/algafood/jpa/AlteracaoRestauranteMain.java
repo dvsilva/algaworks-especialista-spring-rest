@@ -1,4 +1,4 @@
-package com.algaworks.algafood.jpa.restaurante;
+package com.algaworks.algafood.jpa;
 
 import java.math.BigDecimal;
 
@@ -10,7 +10,7 @@ import com.algaworks.algafood.AlgafoodApiApplication;
 import com.algaworks.algafood.domain.model.Restaurante;
 import com.algaworks.algafood.domain.repository.RestauranteRepository;
 
-public class InclusaoRestauranteMain {
+public class AlteracaoRestauranteMain {
 
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new SpringApplicationBuilder(AlgafoodApiApplication.class)  
@@ -19,19 +19,12 @@ public class InclusaoRestauranteMain {
 		
 		RestauranteRepository restauranteRepository = applicationContext.getBean(RestauranteRepository.class);
 		
-		Restaurante restaurante1 = new Restaurante();
-		restaurante1.setNome("Outback Steakhouse");
-		restaurante1.setTaxaFrete(BigDecimal.TEN);
+		Restaurante restaurante = new Restaurante();
+		restaurante.setId(1L);
+		restaurante.setNome("Xing Ling");
+		restaurante.setTaxaFrete(BigDecimal.ONE);
 		
-		Restaurante restaurante2 = new Restaurante();
-		restaurante2.setNome("Parmê");
-		restaurante1.setTaxaFrete(BigDecimal.ONE);
-		
-		restaurante1 = restauranteRepository.salvar(restaurante1);
-		restaurante2 = restauranteRepository.salvar(restaurante2);
-		
-		System.out.printf("%d - %s \n", restaurante1.getId(), restaurante1.getNome());
-		System.out.printf("%d - %s \n", restaurante2.getId(), restaurante2.getNome());
+		restauranteRepository.salvar(restaurante);
 	}
 
 }
