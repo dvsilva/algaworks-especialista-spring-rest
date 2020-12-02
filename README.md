@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 03-16-desafio-lombok-repositorio-restaurantes
+git checkout -b 03-17-mapeando-relacionamento-com-manytoone
 git add .
-git commit -m "Desafio: Lombok e repositório de restaurantes"
-git push origin 03-16-desafio-lombok-repositorio-restaurantes
+git commit -m "Mapeando relacionamento com @ManyToOne"
+git push origin 03-17-mapeando-relacionamento-com-manytoone
 
 git checkout master
-git merge --no-ff 03-16-desafio-lombok-repositorio-restaurantes
+git merge --no-ff 03-17-mapeando-relacionamento-com-manytoone
 git push
 
 sair da tela de merge
