@@ -69,6 +69,3 @@ DDD
  engine myisam do mysql não cria foreign keys - acrescentar no application.properties
 # configuração do dialeto - engine (problema da chave estrangeira)
 spring.jpa.properties.hibernate-dialect=org.hibernate.dialect.MySQL57Dialect
-
- 
- 
