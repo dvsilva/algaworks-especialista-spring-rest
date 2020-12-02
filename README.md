@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 03-13-conhecendo-padrao-aggregate-do-ddd
+git checkout -b 03-14-conhecendo-e-implementando-padrao-repository
 git add .
-git commit -m "Conhecendo o padrão Aggregate do DDD"
-git push origin 03-13-conhecendo-padrao-aggregate-do-ddd
+git commit -m "Conhecendo e implementando o padrão Repository"
+git push origin 03-14-conhecendo-e-implementando-padrao-repository
 
 git checkout master
-git merge --no-ff 03-13-conhecendo-padrao-aggregate-do-ddd
+git merge --no-ff 03-14-conhecendo-e-implementando-padrao-repository
 git push
 
 sair da tela de merge
