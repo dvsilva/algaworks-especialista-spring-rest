@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 03-15-conhecendo-e-usando-lombok
+git checkout -b 03-16-desafio-lombok-repositorio-restaurantes
 git add .
-git commit -m "Conhecendo e usando o Lombok"
-git push origin 03-15-conhecendo-e-usando-lombok
+git commit -m "Desafio: Lombok e repositório de restaurantes"
+git push origin 03-16-desafio-lombok-repositorio-restaurantes
 
 git checkout master
-git merge --no-ff 03-15-conhecendo-e-usando-lombok
+git merge --no-ff 03-16-desafio-lombok-repositorio-restaurantes
 git push
 
 sair da tela de merge
