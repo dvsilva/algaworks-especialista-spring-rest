@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 03-14-conhecendo-e-implementando-padrao-repository
+git checkout -b 03-15-conhecendo-e-usando-lombok
 git add .
-git commit -m "Conhecendo e implementando o padrão Repository"
-git push origin 03-14-conhecendo-e-implementando-padrao-repository
+git commit -m "Conhecendo e usando o Lombok"
+git push origin 03-15-conhecendo-e-usando-lombok
 
 git checkout master
-git merge --no-ff 03-14-conhecendo-e-implementando-padrao-repository
+git merge --no-ff 03-15-conhecendo-e-usando-lombok
 git push
 
 sair da tela de merge

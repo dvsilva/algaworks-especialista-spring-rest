@@ -61,5 +61,11 @@ DDD
  - adiciona uma camada de abstração para acesso aos dados
  - imita uma coleção de forma que quem usa o repository não precisa saber qual o mecanismo de persistencia que esta sendo usado pelo repository
  
+ lombok
+ - biblioteca java
+ - foco em produtividade e redução de código boilerplate usando anotações próprias
+ - boilerplate - códigos repetitivos, nao acrescentam tanto mas precisam estar ali (constutores, hascode, equals, gets e sets)
+ 
+ 
  
  
