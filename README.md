@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 03-12-excluindo-objeto-banco-de-dados
+git checkout -b 03-13-conhecendo-padrao-aggregate-do-ddd
 git add .
-git commit -m "Excluindo um objeto do banco de dados"
-git push origin 03-12-excluindo-objeto-banco-de-dados
+git commit -m "Conhecendo o padrão Aggregate do DDD"
+git push origin 03-13-conhecendo-padrao-aggregate-do-ddd
 
 git checkout master
-git merge --no-ff 03-12-excluindo-objeto-banco-de-dados
+git merge --no-ff 03-13-conhecendo-padrao-aggregate-do-ddd
 git push
 
 sair da tela de merge

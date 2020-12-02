@@ -47,5 +47,14 @@ spring.jpa.generate-ddl=true
 spring.jpa.hibernate.ddl-auto=create
 # mostrar o sql quando executar consulta no banco de dados
 spring.jpa.show-sql=true
-
-
+ 
+DDD
+- abordagem de desenvolvimento de software que ajuda a construir um software com qualidade com foco no domínio
+- livro do Eric Evans e artigo Martin Fowler
+- padrão aggregate - grupo de objetos de dominio que podem ser tratados como uma unica unidade
+- diagrama de classes segmentados em partes maiores
+ - aggregate root - raiz do agregado ("classe principal")
+ - exemplo: Pedido e ItemPedido
+ 
+ 
+ 
