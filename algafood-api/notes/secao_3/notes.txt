@@ -56,5 +56,10 @@ DDD
  - aggregate root - raiz do agregado ("classe principal")
  - exemplo: Pedido e ItemPedido
  
+ padrão repository
+ - padrão do ddd
+ - adiciona uma camada de abstração para acesso aos dados
+ - imita uma coleção de forma que quem usa o repository não precisa saber qual o mecanismo de persistencia que esta sendo usado pelo repository
+ 
  
  
