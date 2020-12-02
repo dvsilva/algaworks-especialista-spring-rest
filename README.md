@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 03-17-mapeando-relacionamento-com-manytoone
+git checkout -b 03-18-anotacao-joincolumn
 git add .
-git commit -m "Mapeando relacionamento com @ManyToOne"
-git push origin 03-17-mapeando-relacionamento-com-manytoone
+git commit -m "A anotação @JoinColumne"
+git push origin 03-18-anotacao-joincolumn
 
 git checkout master
-git merge --no-ff 03-17-mapeando-relacionamento-com-manytoone
+git merge --no-ff 03-18-anotacao-joincolumn
 git push
 
 sair da tela de merge
