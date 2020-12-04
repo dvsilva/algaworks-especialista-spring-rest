@@ -84,5 +84,6 @@ protocolo HTTP
 			- chave-valor para ser usado pelo servidor para interpretar a requisiçao e executar a operação
 			- content-type e accept
 		- corpo - não é obrigatório, depende do método, é onde enviamos os dados do cliente para o servidor
-		
+	- resposta (versão do protocolo, status, cabeçalhos e corpo)
+		- status - descreve o resultado do processamento da requisição
 	
