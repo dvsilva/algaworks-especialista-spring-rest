@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-03-diferenca-entre-rest-e-restful
+git checkout -b 04-04-desenvolvedores-puristas-e-pragmaticos
 git add .
-git commit -m "Diferença entre REST e RESTful"
-git push origin 04-03-diferenca-entre-rest-e-restful
+git commit -m "Desenvolvedores de REST APIs puristas e pragmáticos"
+git push origin 04-04-desenvolvedores-puristas-e-pragmaticos
 
 git checkout master
-git merge --no-ff 04-03-diferenca-entre-rest-e-restful
+git merge --no-ff 04-04-desenvolvedores-puristas-e-pragmaticos
 git push
 
 sair da tela de merge
