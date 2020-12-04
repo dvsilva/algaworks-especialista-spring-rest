@@ -19,3 +19,40 @@ porque rest?
 - simplicidade na criação e consumo de APIs (simples e intuitivo de utilizar)
 - mercado (empresas demandam)
 
+constraints (melhores praticas) - devemos nos esforçar mas acabamos violando essas regras em favor da praticidade
+- cliente-servidor 
+	- precisa de um cliente enviando requisições para um servidor
+	- devem poder evoluir independente uma da outra
+	- podem ser substutuido desde que a interface entre elas permaneça inalterada
+- stateless
+	- sem estado
+	- aplicação não deve possuir estado (inspirada no HTTP)
+	- a requisição deve conter tudo que precisa para seja devidamente processada
+	- o servidor não pode manter uma sessão (informações contextuais sobre o cliente)
+	- cada requisição é vista como um cliente diferente
+- cache
+	- pode fazer caching das respostas das requisições
+	- serviços que não tem muita alteração dos dados (consulta das cidades)
+	- faz requisição uma unica vez e api diz que a resposta deve ser cacheada onde o cliente guarda os dados em um cache interno
+	- quando o cliente faz novamente, antes de receber a requisição o cache entra em ação e nao chega a consumir rede
+	- servidores intermediarios com caching (proxy) - melhora escalabilidade e performance, diminui hits/acessos no servidor
+	- nao deve adicionar cache em toda a aplicação, usar quando necessário 
+- interface uniforme
+	- conjunto de operações bem definidas do sistema
+	- uma vez definida a interface deve seguir religiosamente 
+	- simplifica e desacopla a arquitetura, permite que cada parte evolua independente
+	- identificar coisas por URIs e usando padrão do protocolo de comunicação para interagir com a API (verbos)
+	- adicionar links na resposta (HATEOAS)
+	- resposta deve ser padronizada
+	- API deve ser desenvolvida utilizando os verbos HTTP corretamente, de forma que a interface seja utilizada como um contrato
+	- de forma que o cliente e servidor podem se comunicar de forma mais previsível
+	- adicionando links nos recursos e devolvendo uma resposta com informações padronizadas
+- sistema em camadas
+	- possibilidade entre cliente-servidor ter outros servidores
+	- podem fornecer segurança, caching, balanceamento de carga, etc
+	- não deve afetar a requisição do cliente e a resposta do servidor
+	- cliente não deve conhecer quantas camadas possui no meio (ele é agnostico a isso)
+- código sob demanda (opcional e pouco usada)
+	- o servidor pode enviar como resposta de uma requisição um código que pode ser executado no cliente
+
+

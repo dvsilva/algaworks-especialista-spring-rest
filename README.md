@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-01-o-que-e-rest
+git checkout -b 04-02-conhecendo-constraints-do-rest
 git add .
-git commit -m "O que é REST?"
-git push origin 04-01-o-que-e-rest
+git commit -m "Conhecendo as constraints do REST"
+git push origin 04-02-conhecendo-constraints-do-rest
 
 git checkout master
-git merge --no-ff 04-01-o-que-e-rest
+git merge --no-ff 04-02-conhecendo-constraints-do-rest
 git push
 
 sair da tela de merge
