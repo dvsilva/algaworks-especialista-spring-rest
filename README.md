@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-02-conhecendo-constraints-do-rest
+git checkout -b 04-03-diferenca-entre-rest-e-restful
 git add .
-git commit -m "Conhecendo as constraints do REST"
-git push origin 04-02-conhecendo-constraints-do-rest
+git commit -m "Diferença entre REST e RESTful"
+git push origin 04-03-diferenca-entre-rest-e-restful
 
 git checkout master
-git merge --no-ff 04-02-conhecendo-constraints-do-rest
+git merge --no-ff 04-03-diferenca-entre-rest-e-restful
 git push
 
 sair da tela de merge

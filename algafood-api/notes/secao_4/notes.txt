@@ -55,4 +55,11 @@ constraints (melhores praticas) - devemos nos esforçar mas acabamos violando es
 - código sob demanda (opcional e pouco usada)
 	- o servidor pode enviar como resposta de uma requisição um código que pode ser executado no cliente
 
+diferença entre REST e RESTful
+- REST é o estilo arquitetural, é a especificação
+- RESTful API é uma API desenvolvida em conformidade com as contraints
+	- segue todas as constraints obrigatórias religiosamente
+	- dificilmente, nem todas APIs que dizem ser RESTful são porque violam alguma contraint
+	- tem diferentes aplicações ("verdadeiramente RESTful" quando está 100% em conformidade)
+	- muito usado para APIs que não são RESTful
 
