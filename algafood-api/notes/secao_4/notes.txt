@@ -71,5 +71,18 @@ puristas x pragmáticos (desenvolvedores de REST APIs)
 		- abordagens mais praticas, seguem as contraints mas estao abertos a exceções
 		- se ve que a constraint religiosamente vai complicar muito, preferem abrir mão  de ser 100% RESTful para tornar o desenvolvimento ou uso da API mais simples
 		
-
+protocolo HTTP
+- modelo arquitetural REST independe de linguagem e tecnologia e não restringe ao uso de um protocolo particular
+- para colocar em pratica precisa de um, o mais comum é o HTTP
+- HTTP (protocolo requisição - resposta [constraint cliente-servidor]
+	- requisição (método, URI, versão do protocolo, cabeçalhos e corpo)
+		- método - verbo indica a ação que deseja ser executada (GET, POST, PUT E DELETE)
+		- URI - caminho que identifica o que nós queremos dentro do servidor HTTP
+		- versão - mais comum a versão 1.1
+		- cabeçalhos 
+			- informações sobre a requisição 
+			- chave-valor para ser usado pelo servidor para interpretar a requisiçao e executar a operação
+			- content-type e accept
+		- corpo - não é obrigatório, depende do método, é onde enviamos os dados do cliente para o servidor
+		
 	

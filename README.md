@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-04-desenvolvedores-puristas-e-pragmaticos
+git checkout -b 04-05-conhecendo-o-protocolo-http
 git add .
-git commit -m "Desenvolvedores de REST APIs puristas e pragmáticos"
-git push origin 04-04-desenvolvedores-puristas-e-pragmaticos
+git commit -m "Conhecendo o protocolo HTTP"
+git push origin 04-05-conhecendo-o-protocolo-http
 
 git checkout master
-git merge --no-ff 04-04-desenvolvedores-puristas-e-pragmaticos
+git merge --no-ff 04-05-conhecendo-o-protocolo-http
 git push
 
 sair da tela de merge
