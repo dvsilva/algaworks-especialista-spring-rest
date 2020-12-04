@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 03-20-desafio-mapeando-entidades
+git checkout -b 04-01-o-que-e-rest
 git add .
-git commit -m "Desafio: mapeando entidades"
-git push origin 03-20-desafio-mapeando-entidades
+git commit -m "O que é REST?"
+git push origin 04-01-o-que-e-rest
 
 git checkout master
-git merge --no-ff 03-20-desafio-mapeando-entidades
+git merge --no-ff 04-01-o-que-e-rest
 git push
 
 sair da tela de merge

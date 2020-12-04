@@ -1,0 +1,21 @@
+o que é REST
+- REpresentational State Transfer
+- é um modelo arquitetural, não é uma tecnologia (não é possível baixar em um site)
+- REST é uma especificaçao que define a forma de comunicação de componentes de software na web
+- independente da linguagem de programação utilizada
+- é um estilo arquitetural para desenvolvimento de webservices
+- surgiu no inicio dos anos 2000, tese de phd, roy fielding
+- formalização de melhores praticas (constraints) e regras para desenvolvimento de web APIs (webservices)
+
+porque rest? 
+
+- separação entre cliente e servidor
+- maior flexibilidade e portabilidade
+- cliente pode evoluir independente do servidor
+- os sistemas podem ser gerenciados por equipes de empresas diferentes
+- escalabilidade
+- independente de linguagem de programação
+- APIs podem interagir entre si e ser consumidas por sistemas internos e externos
+- simplicidade na criação e consumo de APIs (simples e intuitivo de utilizar)
+- mercado (empresas demandam)
+
