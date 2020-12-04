@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-05-conhecendo-o-protocolo-http
+git checkout -b 04-06-usando-o-protocolo-http
 git add .
-git commit -m "Conhecendo o protocolo HTTP"
-git push origin 04-05-conhecendo-o-protocolo-http
+git commit -m "Usando o protocolo HTTP"
+git push origin 04-06-usando-o-protocolo-http
 
 git checkout master
-git merge --no-ff 04-05-conhecendo-o-protocolo-http
+git merge --no-ff 04-06-usando-o-protocolo-http
 git push
 
 sair da tela de merge
