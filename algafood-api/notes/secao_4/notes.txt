@@ -86,4 +86,25 @@ protocolo HTTP
 		- corpo - não é obrigatório, depende do método, é onde enviamos os dados do cliente para o servidor
 	- resposta (versão do protocolo, status, cabeçalhos e corpo)
 		- status - descreve o resultado do processamento da requisição
+		
+usando o protocolo HTTP
+	- telnet www.uol.com.br 80
+	- telnet www.uol.com.br 443 [erro]
+	
+para rodar utilizar https://gnutls.org
+/d/Downloads/Programas/gnutls/bin/gnutls-cli.exe www.uol.com.br
+
+GET / HTTP/1.1
+Host: www.uol.com.br
+Accept: text/html
+
+/d/Downloads/Programas/gnutls/bin/gnutls-cli.exe api.github.com
+
+GET /users/algaworks/repos HTTP/1.1
+Host: api.github.com
+Accept: application/json
+User-Agent: ESR
+
+
+	
 	
