@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-10-modelando-e-requisitando-um-collection-resource-com-get
+git checkout -b 04-11-desafio-collection-resource-de-estados
 git add .
-git commit -m "Modelando e requisitando um Collection Resource com GET"
-git push origin 04-10-modelando-e-requisitando-um-collection-resource-com-get
+git commit -m "Desafio: collection resource de estados"
+git push origin 04-11-desafio-collection-resource-de-estados
 
 git checkout master
-git merge --no-ff 04-10-modelando-e-requisitando-um-collection-resource-com-get
+git merge --no-ff 04-11-desafio-collection-resource-de-estados
 git push
 
 sair da tela de merge
