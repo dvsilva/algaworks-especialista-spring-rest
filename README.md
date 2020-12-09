@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-14-consultando-singleton-resource-com-get-e-path-variable
+git checkout -b 04-15-customizando-representacoes-xml-e-json
 git add .
-git commit -m "Consultando Singleton Resource com GET e @PathVariable"
-git push origin 04-14-consultando-singleton-resource-com-get-e-path-variable
+git commit -m "Customizando as representações XML e JSON com @JsonIgnore, @JsonProperty e @JsonRootName"
+git push origin 04-15-customizando-representacoes-xml-e-json
 
 git checkout master
-git merge --no-ff 04-14-consultando-singleton-resource-com-get-e-path-variable
+git merge --no-ff 04-15-customizando-representacoes-xml-e-json
 git push
 
 sair da tela de merge
