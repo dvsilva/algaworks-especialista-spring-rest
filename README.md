@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-13-implementando-content-negociation
+git checkout -b 04-14-consultando-singleton-resource-com-get-e-path-variable
 git add .
-git commit -m "Implementando content negotiation para retornar JSON ou XML"
-git push origin 04-13-implementando-content-negociation
+git commit -m "Consultando Singleton Resource com GET e @PathVariable"
+git push origin 04-14-consultando-singleton-resource-com-get-e-path-variable
 
 git checkout master
-git merge --no-ff 04-13-implementando-content-negociation
+git merge --no-ff 04-14-consultando-singleton-resource-com-get-e-path-variable
 git push
 
 sair da tela de merge
