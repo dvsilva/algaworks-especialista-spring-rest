@@ -109,5 +109,16 @@ clients de REST APIs
 https://www.postman.com/
 https://insomnia.rest/
 
+recursos REST
+- resources -> é qualquer coisa exposta na web (documento, pagina, vídeo, imagem ou processo de negócio)
+- é algo que tem importancia suficiente para ser referenciado como uma coisa no software
+- ex: catálogo de produtos, nota fiscal, pagamento
+- a forma de um cliente interagir com a API é através de seus resources
+- paralelo com orientação a objetos - um recurso é uma instancia de um objeto de determinado tipo
+- um único produto é um recurso - singleton resource
+- coleção de produtos é um recurso - collection resource
+
+
+
 
 	

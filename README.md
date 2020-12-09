@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-07-instalando-e-testando-postman
+git checkout -b 04-08-entendendo-o-que-sao-recursos-rest
 git add .
-git commit -m "Instalando e testando o Postman"
-git push origin 04-07-instalando-e-testando-postman
+git commit -m "Entendendo o que são Recursos REST"
+git push origin 04-08-entendendo-o-que-sao-recursos-rest
 
 git checkout master
-git merge --no-ff 04-07-instalando-e-testando-postman
+git merge --no-ff 04-08-entendendo-o-que-sao-recursos-rest
 git push
 
 sair da tela de merge
