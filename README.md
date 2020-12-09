@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-12-representacoes-de-recursos-e-content-negociation
+git checkout -b 04-13-implementando-content-negociation
 git add .
-git commit -m "Representações de recursos e content negotiation"
-git push origin 04-12-representacoes-de-recursos-e-content-negociation
+git commit -m "Implementando content negotiation para retornar JSON ou XML"
+git push origin 04-13-implementando-content-negociation
 
 git checkout master
-git merge --no-ff 04-12-representacoes-de-recursos-e-content-negociation
+git merge --no-ff 04-13-implementando-content-negociation
 git push
 
 sair da tela de merge
