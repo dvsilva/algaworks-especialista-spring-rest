@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-15-customizando-representacoes-xml-e-json
+git checkout -b 04-16-customizando-representacoes-xml-com-wrapper-e-anotacoes-do-jackson
 git add .
-git commit -m "Customizando as representações XML e JSON com @JsonIgnore, @JsonProperty e @JsonRootName"
-git push origin 04-15-customizando-representacoes-xml-e-json
+git commit -m "Customizando a representação em XML com Wrapper e anotações do Jackson"
+git push origin 04-16-customizando-representacoes-xml-com-wrapper-e-anotacoes-do-jackson
 
 git checkout master
-git merge --no-ff 04-15-customizando-representacoes-xml-e-json
+git merge --no-ff 04-16-customizando-representacoes-xml-com-wrapper-e-anotacoes-do-jackson
 git push
 
 sair da tela de merge
