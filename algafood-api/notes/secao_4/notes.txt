@@ -118,7 +118,11 @@ recursos REST
 - um único produto é um recurso - singleton resource
 - coleção de produtos é um recurso - collection resource
 
+identificando recursos
+- URI (Uniform Resorce Identifier) - é um conjunto de caracteres que dão uma espécie de endereço para os recursos de forma não ambigua
+- URL (Uniform Resorce Locator) - é um tipo de URI / tipo de identificação de recurso não apenas o identificador mas a localização do recurso (onde esta e qual o mecanismo ate chegar a ele [procolo https])
+- não usar verbos e sim substantivos na URI variando os métodos HTTP
 
 
 
-	
+
