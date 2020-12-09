@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-08-entendendo-o-que-sao-recursos-rest
+git checkout -b 04-09-identificando-recursos-rest
 git add .
-git commit -m "Entendendo o que são Recursos REST"
-git push origin 04-08-entendendo-o-que-sao-recursos-rest
+git commit -m "Identificando recursos REST"
+git push origin 04-09-identificando-recursos-rest
 
 git checkout master
-git merge --no-ff 04-08-entendendo-o-que-sao-recursos-rest
+git merge --no-ff 04-09-identificando-recursos-rest
 git push
 
 sair da tela de merge
