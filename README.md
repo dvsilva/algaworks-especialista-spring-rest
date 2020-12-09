@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-06-usando-o-protocolo-http
+git checkout -b 04-07-instalando-e-testando-postman
 git add .
-git commit -m "Usando o protocolo HTTP"
-git push origin 04-06-usando-o-protocolo-http
+git commit -m "Instalando e testando o Postman"
+git push origin 04-07-instalando-e-testando-postman
 
 git checkout master
-git merge --no-ff 04-06-usando-o-protocolo-http
+git merge --no-ff 04-07-instalando-e-testando-postman
 git push
 
 sair da tela de merge

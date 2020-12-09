@@ -105,6 +105,9 @@ Host: api.github.com
 Accept: application/json
 User-Agent: ESR
 
+clients de REST APIs
+https://www.postman.com/
+https://insomnia.rest/
 
-	
+
 	
