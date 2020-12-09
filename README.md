@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-09-identificando-recursos-rest
+git checkout -b 04-10-modelando-e-requisitando-um-collection-resource-com-get
 git add .
-git commit -m "Identificando recursos REST"
-git push origin 04-09-identificando-recursos-rest
+git commit -m "Modelando e requisitando um Collection Resource com GET"
+git push origin 04-10-modelando-e-requisitando-um-collection-resource-com-get
 
 git checkout master
-git merge --no-ff 04-09-identificando-recursos-rest
+git merge --no-ff 04-10-modelando-e-requisitando-um-collection-resource-com-get
 git push
 
 sair da tela de merge
