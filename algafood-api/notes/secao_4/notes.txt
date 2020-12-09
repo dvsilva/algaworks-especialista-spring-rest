@@ -123,6 +123,11 @@ identificando recursos
 - URL (Uniform Resorce Locator) - é um tipo de URI / tipo de identificação de recurso não apenas o identificador mas a localização do recurso (onde esta e qual o mecanismo ate chegar a ele [procolo https])
 - não usar verbos e sim substantivos na URI variando os métodos HTTP
 
+representações de recursos 
+- código que descreve o estado atual dos recursos
+content negociation (negociação de conteúdo)
+- requisição cabeçalho adicionar accept: application/json (JSON, XML, JPG ..)
+
 
 
 

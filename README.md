@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-11-desafio-collection-resource-de-estados
+git checkout -b 04-12-representacoes-de-recursos-e-content-negociation
 git add .
-git commit -m "Desafio: collection resource de estados"
-git push origin 04-11-desafio-collection-resource-de-estados
+git commit -m "Representações de recursos e content negotiation"
+git push origin 04-12-representacoes-de-recursos-e-content-negociation
 
 git checkout master
-git merge --no-ff 04-11-desafio-collection-resource-de-estados
+git merge --no-ff 04-12-representacoes-de-recursos-e-content-negociation
 git push
 
 sair da tela de merge
