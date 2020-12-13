@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-26-modelando-e-implementando-a-exclusao-de-recursos-com-delete
+git checkout -b 04-27-implementando-camada-de-domain-services
 git add .
-git commit -m "Modelando e implementando a exclusão de recursos com DELETE"
-git push origin 04-26-modelando-e-implementando-a-exclusao-de-recursos-com-delete
+git commit -m "Implementando a camada de domain services (e a importância da linguagem ubíqua)"
+git push origin 04-27-implementando-camada-de-domain-services
 
 git checkout master
-git merge --no-ff 04-26-modelando-e-implementando-a-exclusao-de-recursos-com-delete
+git merge --no-ff 04-27-implementando-camada-de-domain-services
 git push
 
 sair da tela de merge
