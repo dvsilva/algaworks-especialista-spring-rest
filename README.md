@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-22-status-http-para-collection-resource-vazia
+git checkout -b 04-23-modelando-e-implementando-a-inclusao-de-recursos-com-post
 git add .
-git commit -m "Status HTTP para collection resource vazia: qual usar?"
-git push origin 04-22-status-http-para-collection-resource-vazia
+git commit -m "Modelando e implementando a inclusão de recursos com POST"
+git push origin 04-23-modelando-e-implementando-a-inclusao-de-recursos-com-post
 
 git checkout master
-git merge --no-ff 04-22-status-http-para-collection-resource-vazia
+git merge --no-ff 04-23-modelando-e-implementando-a-inclusao-de-recursos-com-post
 git push
 
 sair da tela de merge
