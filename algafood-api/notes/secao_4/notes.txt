@@ -197,4 +197,7 @@ Erros do servidor (500-599)
 	- 500 -> erro interno no servidor (erro no tratamento de exceptions) 
 	- 503 -> serviço indisponivel (manutenção ou sobrecarregado)
 
-	
+postman segue automaticamente os redirects, para desabilitar
+settings - headers - automatically follow redirects
+
+

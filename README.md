@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-19-definindo-status-da-resposta-http-com-response-status
+git checkout -b 04-20-manipulando-resposta-http-com-repsonse-entity
 git add .
-git commit -m "Definindo o status da resposta HTTP com @ResponseStatus"
-git push origin 04-19-definindo-status-da-resposta-http-com-response-status
+git commit -m "Manipulando a resposta HTTP com ResponseEntity"
+git push origin 04-20-manipulando-resposta-http-com-repsonse-entity
 
 git checkout master
-git merge --no-ff 04-19-definindo-status-da-resposta-http-com-response-status
+git merge --no-ff 04-20-manipulando-resposta-http-com-repsonse-entity
 git push
 
 sair da tela de merge
