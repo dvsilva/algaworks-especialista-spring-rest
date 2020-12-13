@@ -225,3 +225,9 @@ Content-Type: application/json
 
 DELETE /cozinhas/{id} HTTP/1.1
 
+domain service
+- é uma operação sem estado que executa uma tarefa especifica do dominio (de negocio)
+- processo do dominio nao é uma responsabilidade natural de uma entidade criamos um serviço de dominio
+- linguagem ubíqua é utilizar a mesma linguagem (termos) que as pessoas de negócio utilizam no código
+
+ctrl + o -> ir para o método diretamente
