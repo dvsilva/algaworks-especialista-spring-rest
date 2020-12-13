@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-24-negociando-media-type-do-payload-post-com-content-type
+git checkout -b 04-25-modelando-e-implementando-a-atualizacao-de-recursos-com-put
 git add .
-git commit -m "Negociando o media type do payload do POST com Content-Type"
-git push origin 04-24-negociando-media-type-do-payload-post-com-content-type
+git commit -m "Modelando e implementando a atualização de recursos com PUT"
+git push origin 04-25-modelando-e-implementando-a-atualizacao-de-recursos-com-put
 
 git checkout master
-git merge --no-ff 04-24-negociando-media-type-do-payload-post-com-content-type
+git merge --no-ff 04-25-modelando-e-implementando-a-atualizacao-de-recursos-com-put
 git push
 
 sair da tela de merge
