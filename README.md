@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-18-conhecendo-os-codigos-de-status-http
+git checkout -b 04-19-definindo-status-da-resposta-http-com-response-status
 git add .
-git commit -m "Conhecendo os códigos de status HTTP"
-git push origin 04-18-conhecendo-os-codigos-de-status-http
+git commit -m "Definindo o status da resposta HTTP com @ResponseStatus"
+git push origin 04-19-definindo-status-da-resposta-http-com-response-status
 
 git checkout master
-git merge --no-ff 04-18-conhecendo-os-codigos-de-status-http
+git merge --no-ff 04-19-definindo-status-da-resposta-http-com-response-status
 git push
 
 sair da tela de merge
