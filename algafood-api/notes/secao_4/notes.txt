@@ -222,3 +222,6 @@ Content-Type: application/json
 {
 	"nome": "Brasileira
 }
+
+DELETE /cozinhas/{id} HTTP/1.1
+
