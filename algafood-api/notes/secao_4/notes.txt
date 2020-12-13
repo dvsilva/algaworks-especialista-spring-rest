@@ -176,5 +176,25 @@ principais métodos http
 	- solicitar uma lista de métodos suportada por um recurso
 	- cliente consultar quais métodos são disponíveis
 	
+status http
 
+Respostas de informação (100-199)
+Respostas de sucesso (200-299)
+	- 200 -> ok
+	- 201 -> criado
+	- 204 -> sem conteúdo (ex: exclusão)	
+Redirecionamentos (300-399)
+	- 301 -> movido permanentemente (redirect permatente, deve ter um cabeçalho location com a URI para onde o recurso foi movido) 
+	- 302 -> encontrado (endereço existe mas foi alterado temporariamente, também precisa do cabeçalho location, pode continuar usando a URI original)
+Erros do cliente (400-499)
+	- 400 -> requisição mal feita (servidor não conseguiu entender a mensagem ou erro por parte do client. sintaxe ou validação)
+	- 401 -> não autorizado (requer autenticação do cliente)
+	- 403 -> proibido (recusou executar a requisição pois o cliente não esta autorizado)
+	- 404 -> não encontrado (recurso solicitado não existe)
+	- 405 -> método não permitido (verbo http usado na requisição não é suportado pelo recurso)
+	- 406 -> não aceito (não pode retornar a representação do recurso com o mediatype informado na requisição)
+Erros do servidor (500-599)
+	- 500 -> erro interno no servidor (erro no tratamento de exceptions) 
+	- 503 -> serviço indisponivel (manutenção ou sobrecarregado)
 
+	

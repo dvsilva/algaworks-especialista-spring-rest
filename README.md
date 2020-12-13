@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-17-conhecendo-os-metodos-http
+git checkout -b 04-18-conhecendo-os-codigos-de-status-http
 git add .
-git commit -m "Conhecendo os métodos HTTP"
-git push origin 04-17-conhecendo-os-metodos-http
+git commit -m "Conhecendo os códigos de status HTTP"
+git push origin 04-18-conhecendo-os-codigos-de-status-http
 
 git checkout master
-git merge --no-ff 04-17-conhecendo-os-metodos-http
+git merge --no-ff 04-18-conhecendo-os-codigos-de-status-http
 git push
 
 sair da tela de merge
