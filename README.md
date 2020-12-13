@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-27-implementando-camada-de-domain-services
+git checkout -b 04-28-refatorando-a-exclusao-de-cozinhas-para-usar-domain-services
 git add .
-git commit -m "Implementando a camada de domain services (e a importância da linguagem ubíqua)"
-git push origin 04-27-implementando-camada-de-domain-services
+git commit -m "Refatorando a exclusão de cozinhas para usar domain services"
+git push origin 04-28-refatorando-a-exclusao-de-cozinhas-para-usar-domain-services
 
 git checkout master
-git merge --no-ff 04-27-implementando-camada-de-domain-services
+git merge --no-ff 04-28-refatorando-a-exclusao-de-cozinhas-para-usar-domain-services
 git push
 
 sair da tela de merge
