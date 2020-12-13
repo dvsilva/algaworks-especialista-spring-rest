@@ -200,4 +200,9 @@ Erros do servidor (500-599)
 postman segue automaticamente os redirects, para desabilitar
 settings - headers - automatically follow redirects
 
+Status HTTP para collection resource vazia
+- 404 (not found) -> não faz sentido porque encontrou o recurso
+- 204 (no content) -> também não faz porque retorna uma lista vazia
+- 200 (ok) -> seria o correto
+
 

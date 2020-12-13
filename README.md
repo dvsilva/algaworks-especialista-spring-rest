@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-21-corrigindo-o-status-http-para-resource-inexistente
+git checkout -b 04-22-status-http-para-collection-resource-vazia
 git add .
-git commit -m "Corrigindo o Status HTTP para resource inexistente"
-git push origin 04-21-corrigindo-o-status-http-para-resource-inexistente
+git commit -m "Status HTTP para collection resource vazia: qual usar?"
+git push origin 04-22-status-http-para-collection-resource-vazia
 
 git checkout master
-git merge --no-ff 04-21-corrigindo-o-status-http-para-resource-inexistente
+git merge --no-ff 04-22-status-http-para-collection-resource-vazia
 git push
 
 sair da tela de merge
