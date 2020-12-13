@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-20-manipulando-resposta-http-com-repsonse-entity
+git checkout -b 04-21-corrigindo-o-status-http-para-resource-inexistente
 git add .
-git commit -m "Manipulando a resposta HTTP com ResponseEntity"
-git push origin 04-20-manipulando-resposta-http-com-repsonse-entity
+git commit -m "Corrigindo o Status HTTP para resource inexistente"
+git push origin 04-21-corrigindo-o-status-http-para-resource-inexistente
 
 git checkout master
-git merge --no-ff 04-20-manipulando-resposta-http-com-repsonse-entity
+git merge --no-ff 04-21-corrigindo-o-status-http-para-resource-inexistente
 git push
 
 sair da tela de merge
