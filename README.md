@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-16-customizando-representacoes-xml-com-wrapper-e-anotacoes-do-jackson
+git checkout -b 04-17-conhecendo-os-metodos-http
 git add .
-git commit -m "Customizando a representação em XML com Wrapper e anotações do Jackson"
-git push origin 04-16-customizando-representacoes-xml-com-wrapper-e-anotacoes-do-jackson
+git commit -m "Conhecendo os métodos HTTP"
+git push origin 04-17-conhecendo-os-metodos-http
 
 git checkout master
-git merge --no-ff 04-16-customizando-representacoes-xml-com-wrapper-e-anotacoes-do-jackson
+git merge --no-ff 04-17-conhecendo-os-metodos-http
 git push
 
 sair da tela de merge

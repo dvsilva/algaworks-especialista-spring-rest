@@ -128,6 +128,53 @@ representações de recursos
 content negociation (negociação de conteúdo)
 - requisição cabeçalho adicionar accept: application/json (JSON, XML, JPG ..)
 
+métodos/verbos http
+- possui a semantica da operação a ser efetuada sobre um determinado recurso
+- atraves do método diz qual ação queremos executar em um determinado recurso identificado pela URI
 
+indepotencia
+- capacidade de ser aplicado mais de uma vez sem que o resultado da primeira aplicação mude
+- ex: preço da maça e mordida na maça
+
+principais métodos http
+- get
+	- usado para obter a representação de um recurso (singleton ou collection resource
+	- get no mesmo recurso resultado é sempre o mesmo pois não gera efeito colateral
+	- não pode ser utilizado para modificar um recurso
+	- método seguro (safe method) - não modifica recursos
+	- é um método indenpotente
+- post
+	- usado para criar um novo recurso dentro de uma coleção de recursos
+	- envia o corpo na requisição (payload)
+	- fazendo a requisição no mesmo recurso gera efeito colateral
+	- não é idenpotente e não é seguro (modifica recursos)
+- put
+	- utilizado geralmente para atualizar recursos
+	- envia o corpo na requisição os dados a serem atualizados
+	- não deve atualizar somente os dados informados no corpo da requisição, mas o recurso completo
+	- não pode ser utilizado para uma atualização parcial
+	- conceitualmente pode ser utilizado para criar novos recursos (post)
+	- idenpotente (resultado é o mesmo da requisição inicial) e não é seguro (modifica recursos)
+- patch
+	- utilizado para atualização parcial
+	- mais complexa que o put (validar as informações que foram informadas, ignorar os demais ...)
+	- idenpotente (resultado é o mesmo da requisição inicial) e não é seguro (modifica recursos)
+- delete
+	- remoção de determinado recurso
+	- não passamos e nem recebemos um corpo na requisição
+	- idenpotente (resultado é o mesmo da requisição inicial) e não é seguro (modifica recursos)
+	- idenpotente? 
+		- depois que exlcui a proxima requisição não seria bem sucedida porque o recurso ja foi removido
+		- temos que pensar no efeito colateral no estado da aplicação
+		- a segunda não altera em nada o estado da aplicação
+		- estado da aplicação continua o mesmo a partir da segunda requisição
+- head
+	- igual ao get mas nao retorna um corpo na resposta
+	- usado apenas para buscar um cabelho
+	- testar URI ou se aceita um media type
+- option 
+	- solicitar uma lista de métodos suportada por um recurso
+	- cliente consultar quais métodos são disponíveis
+	
 
 
