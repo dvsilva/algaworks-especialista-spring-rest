@@ -205,4 +205,20 @@ Status HTTP para collection resource vazia
 - 204 (no content) -> também não faz porque retorna uma lista vazia
 - 200 (ok) -> seria o correto
 
+modelando recursos
 
+GET /cozinhas HTTP/1.1
+
+GET /cozinhas/{id} HTTP/1.1
+
+POST /cozinhas HTTP/1.1
+Content-Type: application/json
+{
+	"nome": "Brasileira
+}
+
+PUT /cozinhas/{id} HTTP/1.1
+Content-Type: application/json
+{
+	"nome": "Brasileira
+}
