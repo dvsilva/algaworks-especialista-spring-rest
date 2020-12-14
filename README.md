@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-30-modelando-e-implementando-a-inclusao-de-recursos-de-restaurantes
+git checkout -b 04-31-desafio-modelando-e-implementando-a-atualizacao-de-recursos-de-restaurantes
 git add .
-git commit -m "Modelando e implementando a inclusão de recursos de restaurantes"
-git push origin 04-30-modelando-e-implementando-a-inclusao-de-recursos-de-restaurantes
+git commit -m "Desafio: Modelando e implementando a atualização de recursos de restaurantes"
+git push origin 04-31-desafio-modelando-e-implementando-a-atualizacao-de-recursos-de-restaurantes
 
 git checkout master
-git merge --no-ff 04-30-modelando-e-implementando-a-inclusao-de-recursos-de-restaurantes
+git merge --no-ff 04-31-desafio-modelando-e-implementando-a-atualizacao-de-recursos-de-restaurantes
 git push
 
 sair da tela de merge
