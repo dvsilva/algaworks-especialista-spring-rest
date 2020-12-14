@@ -250,5 +250,9 @@ nível 1 - Recursos
 	- não utiliza os verbos nem os status HTTP corretamente
 	- corpo da requisição e resposta parecido com o nivel 0
 nível 2 - Verbos HTTP
+	- introduz o uso dos verbos e os códigos de status HTTP
+	- utiliza os conceitos de recursos
+	- formato do payload não interfere no nivel da API
+	- retornar códigos e corpo especificos na reposta
 nível 3 - HATOAS (Glória do REST)
 
