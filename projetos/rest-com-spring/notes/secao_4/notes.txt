@@ -265,3 +265,4 @@ nível 3 - HATEOAS (Glória do REST)
 	- a regra vai no proprio backend que retorna ou não o link da funcionalidade
 	- o backend atualizando a regra os clients ja ficam atualizados 
 	- ex: ativar ou inativar produto
+

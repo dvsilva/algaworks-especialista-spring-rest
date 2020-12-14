@@ -10,9 +10,9 @@
 	</parent>
 	
 	<groupId>com.algaworks</groupId>
-	<artifactId>algafood-api</artifactId>
+	<artifactId>spring-jpa-hibernate</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>algafood-api</name>
+	<name>spring-jpa-hibernate</name>
 	<description>API de delivery de comida</description>
 
 	<properties>
@@ -57,7 +57,6 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-
 	</dependencies>
 
 	<build>

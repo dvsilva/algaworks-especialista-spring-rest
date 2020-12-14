@@ -10,9 +10,9 @@
 	</parent>
 	
 	<groupId>com.algaworks</groupId>
-	<artifactId>algafood-api</artifactId>
+	<artifactId>rest-com-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>algafood-api</name>
+	<name>rest-com-spring</name>
 	<description>API de delivery de comida</description>
 
 	<properties>
@@ -57,7 +57,12 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
