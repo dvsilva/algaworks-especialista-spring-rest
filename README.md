@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-34-finalizando-a-atualizacao-parcial-com-a-api-de-reflections-do-spring
+git checkout -b 04-35-introducao-ao-modelo-de-maturidade-de-richardson-rmm
 git add .
-git commit -m "Finalizando a atualização parcial com a API de Reflections do Spring"
-git push origin 04-34-finalizando-a-atualizacao-parcial-com-a-api-de-reflections-do-spring
+git commit -m "Introdução ao Modelo de Maturidade de Richardson (RMM)"
+git push origin 04-35-introducao-ao-modelo-de-maturidade-de-richardson-rmm
 
 git checkout master
-git merge --no-ff 04-34-finalizando-a-atualizacao-parcial-com-a-api-de-reflections-do-spring
+git merge --no-ff 04-35-introducao-ao-modelo-de-maturidade-de-richardson-rmm
 git push
 
 sair da tela de merge

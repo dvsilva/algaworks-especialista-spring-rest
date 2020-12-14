@@ -231,3 +231,11 @@ domain service
 - linguagem ubíqua é utilizar a mesma linguagem (termos) que as pessoas de negócio utilizam no código
 
 ctrl + o -> ir para o método diretamente
+
+modelo de maturidade de Richardson
+padrões de maturidade da API REST
+nível 0 - POX 
+nível 1 - Recursos
+nível 2 - Verbos HTTP
+nível 3 - HATOAS (Glória do REST)
+
