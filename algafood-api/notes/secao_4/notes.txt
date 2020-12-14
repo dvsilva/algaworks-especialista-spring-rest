@@ -234,7 +234,15 @@ ctrl + o -> ir para o método diretamente
 
 modelo de maturidade de Richardson
 padrões de maturidade da API REST
-nível 0 - POX 
+nível 0 - POX
+	- Pain Old XML
+	- Utiliza o HTTP apenas como mecanismo de transporte de dados
+	- Não utiliza os verbos nem os status HTTP corretamente
+	- Não tem regras dos verbos
+	- RPC - remote prodecure invocation (chamada de procedimentos remotos)
+		- transporte de xml e json
+		- geralmente tem uma unica url
+		- informações sobre ações/funções e erros estão dentro do conteúdo
 nível 1 - Recursos
 nível 2 - Verbos HTTP
 nível 3 - HATOAS (Glória do REST)
