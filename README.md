@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-28-refatorando-a-exclusao-de-cozinhas-para-usar-domain-services
+git checkout -b 04-29-desafio-modelando-e-implementando-a-consulta-de-recursos-de-restaurantes
 git add .
-git commit -m "Refatorando a exclusão de cozinhas para usar domain services"
-git push origin 04-28-refatorando-a-exclusao-de-cozinhas-para-usar-domain-services
+git commit -m "Desafio: modelando e implementando a consulta de recursos de restaurantes"
+git push origin 04-29-desafio-modelando-e-implementando-a-consulta-de-recursos-de-restaurantes
 
 git checkout master
-git merge --no-ff 04-28-refatorando-a-exclusao-de-cozinhas-para-usar-domain-services
+git merge --no-ff 04-29-desafio-modelando-e-implementando-a-consulta-de-recursos-de-restaurantes
 git push
 
 sair da tela de merge
