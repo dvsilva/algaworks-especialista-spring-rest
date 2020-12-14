@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-35-introducao-ao-modelo-de-maturidade-de-richardson-rmm
+git checkout -b 04-36-conhecendo-o-nivel-0
 git add .
-git commit -m "Introdução ao Modelo de Maturidade de Richardson (RMM)"
-git push origin 04-35-introducao-ao-modelo-de-maturidade-de-richardson-rmm
+git commit -m "Conhecendo o nível 0 do RMM"
+git push origin 04-36-conhecendo-o-nivel-0
 
 git checkout master
-git merge --no-ff 04-35-introducao-ao-modelo-de-maturidade-de-richardson-rmm
+git merge --no-ff 04-36-conhecendo-o-nivel-0
 git push
 
 sair da tela de merge
