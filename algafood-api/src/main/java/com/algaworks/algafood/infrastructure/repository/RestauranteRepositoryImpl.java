@@ -37,8 +37,8 @@ public class RestauranteRepositoryImpl implements RestauranteRepository {
 	
 	@Transactional
 	@Override
-	public void remover(Long restauranteId) {
-		Restaurante restaurante = buscar(restauranteId);
+	public void remover(Long id) {
+		Restaurante restaurante = buscar(id);
 		
 		if(restaurante == null) {
 			throw new EmptyResultDataAccessException(1);
