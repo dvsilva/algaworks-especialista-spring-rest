@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-33-analisando-solucao-para-atualizacao-parcial-de-recursos-com-patch
+git checkout -b 04-34-finalizando-a-atualizacao-parcial-com-a-api-de-reflections-do-spring
 git add .
-git commit -m "Analisando solução para atualização parcial de recursos com PATCH"
-git push origin 04-33-analisando-solucao-para-atualizacao-parcial-de-recursos-com-patch
+git commit -m "Finalizando a atualização parcial com a API de Reflections do Spring"
+git push origin 04-34-finalizando-a-atualizacao-parcial-com-a-api-de-reflections-do-spring
 
 git checkout master
-git merge --no-ff 04-33-analisando-solucao-para-atualizacao-parcial-de-recursos-com-patch
+git merge --no-ff 04-34-finalizando-a-atualizacao-parcial-com-a-api-de-reflections-do-spring
 git push
 
 sair da tela de merge
