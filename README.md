@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-36-conhecendo-o-nivel-0
+git checkout -b 04-37-conhecendo-o-nivel-1
 git add .
-git commit -m "Conhecendo o nível 0 do RMM"
-git push origin 04-36-conhecendo-o-nivel-0
+git commit -m "Conhecendo o nível 1 do RMM"
+git push origin 04-37-conhecendo-o-nivel-1
 
 git checkout master
-git merge --no-ff 04-36-conhecendo-o-nivel-0
+git merge --no-ff 04-37-conhecendo-o-nivel-1
 git push
 
 sair da tela de merge
