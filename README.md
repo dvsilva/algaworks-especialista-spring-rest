@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-32-desafio-implementando-servicos-rest-de-cidades-e-estados
+git checkout -b 04-33-analisando-solucao-para-atualizacao-parcial-de-recursos-com-patch
 git add .
-git commit -m "Desafio: implementando serviços REST de cidades e estados"
-git push origin 04-32-desafio-implementando-servicos-rest-de-cidades-e-estados
+git commit -m "Analisando solução para atualização parcial de recursos com PATCH"
+git push origin 04-33-analisando-solucao-para-atualizacao-parcial-de-recursos-com-patch
 
 git checkout master
-git merge --no-ff 04-32-desafio-implementando-servicos-rest-de-cidades-e-estados
+git merge --no-ff 04-33-analisando-solucao-para-atualizacao-parcial-de-recursos-com-patch
 git push
 
 sair da tela de merge
