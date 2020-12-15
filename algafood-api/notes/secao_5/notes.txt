@@ -7,3 +7,5 @@
 spring data jpa
 - focado em ajudar a implementar repositórios JPA com muito mais produtividade 
 - eliminando boa parte do código boilerplate 
+- SimpleJpaRepository é a implementação de JpaRepository e já adiciona a anotação @Transactional em seus métodos
+
