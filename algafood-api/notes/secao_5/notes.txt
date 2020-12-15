@@ -1,0 +1,7 @@
+@Repository 
+- é um componente (@Component) 
+- adiciona um tradutor de exceptions
+- existe uma classe  do spring que gerencia e intercepta os métodos 
+- se encontrar exceptions de determinado tipo faz a tradução para exceptions mais especificas do spring de outro tipo
+
+
