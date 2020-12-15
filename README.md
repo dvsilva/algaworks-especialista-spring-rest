@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-04-refatorando-codigo-para-usar-o-repositorio-do-sdj
+git checkout -b 05-05-desafio-refatorando-todos-os-repositorios-para-usar-sdj
 git add .
-git commit -m "Refatorando o código do projeto para usar o repositório do SDJ"
-git push origin 05-04-refatorando-codigo-para-usar-o-repositorio-do-sdj
+git commit -m "Desafio: refatorando todos os repositórios para usar SDJ"
+git push origin 05-05-desafio-refatorando-todos-os-repositorios-para-usar-sdj
 
 git checkout master
-git merge --no-ff 05-04-refatorando-codigo-para-usar-o-repositorio-do-sdj
+git merge --no-ff 05-05-desafio-refatorando-todos-os-repositorios-para-usar-sdj
 git push
 
 sair da tela de merge
