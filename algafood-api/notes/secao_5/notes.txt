@@ -14,3 +14,8 @@ find, read, get, query e stream tem funcionamento igual
 tags first e top[n]
 prefixos exists e count 
 
+consulta jpql com @Query e @Param
+@Query("from Restaurante where nome like %:nome% and cozinha.id = :id")
+List<Restaurante> consultarPorNome(String nome, @Param("id") Long cozinha);
+
+arquivo com as query jpql deve estar em resources/META-INF/orm.xml
