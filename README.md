@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-05-desafio-refatorando-todos-os-repositorios-para-usar-sdj
+git checkout -b 05-06-criando-consultas-com-query-methods
 git add .
-git commit -m "Desafio: refatorando todos os repositórios para usar SDJ"
-git push origin 05-05-desafio-refatorando-todos-os-repositorios-para-usar-sdj
+git commit -m "Criando consultas com query methods"
+git push origin 05-06-criando-consultas-com-query-methods
 
 git checkout master
-git merge --no-ff 05-05-desafio-refatorando-todos-os-repositorios-para-usar-sdj
+git merge --no-ff 05-06-criando-consultas-com-query-methods
 git push
 
 sair da tela de merge
