@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-03-criando-repositorio-com-spring-data-jpa-sdj
+git checkout -b 05-04-refatorando-codigo-para-usar-o-repositorio-do-sdj
 git add .
-git commit -m "Criando um repositório com Spring Data JPA (SDJ)"
-git push origin 05-03-criando-repositorio-com-spring-data-jpa-sdj
+git commit -m "Refatorando o código do projeto para usar o repositório do SDJ"
+git push origin 05-04-refatorando-codigo-para-usar-o-repositorio-do-sdj
 
 git checkout master
-git merge --no-ff 05-03-criando-repositorio-com-spring-data-jpa-sdj
+git merge --no-ff 05-04-refatorando-codigo-para-usar-o-repositorio-do-sdj
 git push
 
 sair da tela de merge
