@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 04-39-conhecendo-o-nivel-3
+git checkout -b 05-01-implementando-consultas-jpql-em-repositorios
 git add .
-git commit -m "Conhecendo o nível 3 do RMM"
-git push origin 04-39-conhecendo-o-nivel-3
+git commit -m "Implementando consultas JPQL em repositórios"
+git push origin 05-01-implementando-consultas-jpql-em-repositorios
 
 git checkout master
-git merge --no-ff 04-39-conhecendo-o-nivel-3
+git merge --no-ff 05-01-implementando-consultas-jpql-em-repositorios
 git push
 
 sair da tela de merge
