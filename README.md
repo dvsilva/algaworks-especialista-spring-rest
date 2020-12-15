@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-07-usando-as-keywords-para-definir-criterios-de-query-methods
+git checkout -b 05-08-conhecendo-os-prefixos-de-query-methods
 git add .
-git commit -m "Usando as keywords para definir critérios de query methods"
-git push origin 05-07-usando-as-keywords-para-definir-criterios-de-query-methods
+git commit -m "Conhecendo os prefixos de query methods"
+git push origin 05-08-conhecendo-os-prefixos-de-query-methods
 
 git checkout master
-git merge --no-ff 05-07-usando-as-keywords-para-definir-criterios-de-query-methods
+git merge --no-ff 05-08-conhecendo-os-prefixos-de-query-methods
 git push
 
 sair da tela de merge
