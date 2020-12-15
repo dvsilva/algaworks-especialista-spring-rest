@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-09-usando-queries-jpql-customizadas-com-query
+git checkout -b 05-10-externalizando-consultas-jpql-para-arquivo-xml
 git add .
-git commit -m "Usando queries JPQL customizadas com @Query"
-git push origin 05-09-usando-queries-jpql-customizadas-com-query
+git commit -m "Externalizando consultas JPQL para um arquivo XML"
+git push origin 05-10-externalizando-consultas-jpql-para-arquivo-xml
 
 git checkout master
-git merge --no-ff 05-09-usando-queries-jpql-customizadas-com-query
+git merge --no-ff 05-10-externalizando-consultas-jpql-para-arquivo-xml
 git push
 
 sair da tela de merge
