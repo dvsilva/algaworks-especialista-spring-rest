@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-10-externalizando-consultas-jpql-para-arquivo-xml
+git checkout -b 05-11-implementando-um-repositorio-sdj-customizado
 git add .
-git commit -m "Externalizando consultas JPQL para um arquivo XML"
-git push origin 05-10-externalizando-consultas-jpql-para-arquivo-xml
+git commit -m "Implementando um repositório SDJ customizado"
+git push origin 05-11-implementando-um-repositorio-sdj-customizado
 
 git checkout master
-git merge --no-ff 05-10-externalizando-consultas-jpql-para-arquivo-xml
+git merge --no-ff 05-11-implementando-um-repositorio-sdj-customizado
 git push
 
 sair da tela de merge
