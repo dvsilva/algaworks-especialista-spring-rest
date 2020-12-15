@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-08-conhecendo-os-prefixos-de-query-methods
+git checkout -b 05-09-usando-queries-jpql-customizadas-com-query
 git add .
-git commit -m "Conhecendo os prefixos de query methods"
-git push origin 05-08-conhecendo-os-prefixos-de-query-methods
+git commit -m "Usando queries JPQL customizadas com @Query"
+git push origin 05-09-usando-queries-jpql-customizadas-com-query
 
 git checkout master
-git merge --no-ff 05-08-conhecendo-os-prefixos-de-query-methods
+git merge --no-ff 05-09-usando-queries-jpql-customizadas-com-query
 git push
 
 sair da tela de merge
