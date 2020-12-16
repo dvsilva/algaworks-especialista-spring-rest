@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-16-conhecendo-o-uso-do-padrao-specifications-ddd-com-sdj
+git checkout -b 05-17-implementando-specifications-com-sdj
 git add .
-git commit -m "Conhecendo o uso do padrão Specifications (DDD) com SDJ"
-git push origin 05-16-conhecendo-o-uso-do-padrao-specifications-ddd-com-sdj
+git commit -m "Implementando Specifications com SDJ"
+git push origin 05-17-implementando-specifications-com-sdj
 
 git checkout master
-git merge --no-ff 05-16-conhecendo-o-uso-do-padrao-specifications-ddd-com-sdj
+git merge --no-ff 05-17-implementando-specifications-com-sdj
 git push
 
 sair da tela de merge
