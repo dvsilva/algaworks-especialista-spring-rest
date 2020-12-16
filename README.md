@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-14-adicionando-restricoes-na-clausula-where-com-criteria-api
+git checkout -b 05-15-tornando-a-consulta-com-criteria-api-com-filtros-dinamicos
 git add .
-git commit -m "Adicionando restrições na cláusula where com Criteria API"
-git push origin 05-14-adicionando-restricoes-na-clausula-where-com-criteria-api
+git commit -m "Tornando a consulta com Criteria API com filtros dinâmicos"
+git push origin 05-15-tornando-a-consulta-com-criteria-api-com-filtros-dinamicos
 
 git checkout master
-git merge --no-ff 05-14-adicionando-restricoes-na-clausula-where-com-criteria-api
+git merge --no-ff 05-15-tornando-a-consulta-com-criteria-api-com-filtros-dinamicos
 git push
 
 sair da tela de merge
