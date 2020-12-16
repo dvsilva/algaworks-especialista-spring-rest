@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-15-tornando-a-consulta-com-criteria-api-com-filtros-dinamicos
+git checkout -b 05-16-conhecendo-o-uso-do-padrao-specifications-ddd-com-sdj
 git add .
-git commit -m "Tornando a consulta com Criteria API com filtros dinâmicos"
-git push origin 05-15-tornando-a-consulta-com-criteria-api-com-filtros-dinamicos
+git commit -m "Conhecendo o uso do padrão Specifications (DDD) com SDJ"
+git push origin 05-16-conhecendo-o-uso-do-padrao-specifications-ddd-com-sdj
 
 git checkout master
-git merge --no-ff 05-15-tornando-a-consulta-com-criteria-api-com-filtros-dinamicos
+git merge --no-ff 05-16-conhecendo-o-uso-do-padrao-specifications-ddd-com-sdj
 git push
 
 sair da tela de merge
