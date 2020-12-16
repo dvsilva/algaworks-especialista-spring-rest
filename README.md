@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-18-criando-uma-fabrica-de-specifications
+git checkout -b 05-19-injetando-proprio-repositorio-na-implementacao-customizada-e-anotacao-lazy
 git add .
-git commit -m "Criando uma fábrica de Specifications"
-git push origin 05-18-criando-uma-fabrica-de-specifications
+git commit -m "Injetando o próprio repositório na implementação customizada e a anotação @Lazy"
+git push origin 05-19-injetando-proprio-repositorio-na-implementacao-customizada-e-anotacao-lazy
 
 git checkout master
-git merge --no-ff 05-18-criando-uma-fabrica-de-specifications
+git merge --no-ff 05-19-injetando-proprio-repositorio-na-implementacao-customizada-e-anotacao-lazy
 git push
 
 sair da tela de merge

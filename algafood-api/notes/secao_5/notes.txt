@@ -32,5 +32,5 @@ adicionar import statico automaticamente
 window - preferences - java - editor - content assist - favorites - new type
 colocar path e nome da classe
 
-
+@Lazy -> só instancia a dependencia quando for preciso (referencia circular)
 
