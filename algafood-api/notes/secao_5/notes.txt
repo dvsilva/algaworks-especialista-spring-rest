@@ -28,5 +28,9 @@ repositorio customizado usando jpql e criteria
 padrão specifications (DDD)
 - encalpsula restrições (filtro) e pode ser combinado com outros specifications
 
+adicionar import statico automaticamente
+window - preferences - java - editor - content assist - favorites - new type
+colocar path e nome da classe
+
 
 

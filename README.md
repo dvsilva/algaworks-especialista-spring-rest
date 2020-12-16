@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-17-implementando-specifications-com-sdj
+git checkout -b 05-18-criando-uma-fabrica-de-specifications
 git add .
-git commit -m "Implementando Specifications com SDJ"
-git push origin 05-17-implementando-specifications-com-sdj
+git commit -m "Criando uma fábrica de Specifications"
+git push origin 05-18-criando-uma-fabrica-de-specifications
 
 git checkout master
-git merge --no-ff 05-17-implementando-specifications-com-sdj
+git merge --no-ff 05-18-criando-uma-fabrica-de-specifications
 git push
 
 sair da tela de merge
