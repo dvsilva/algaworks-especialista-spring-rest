@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "81505e0c-009f-4f7d-a871-6ae5e665cdb2",
+		"_postman_id": "841ff08e-bcb1-4c66-be01-b69bb68fa1d9",
 		"name": "AlgaFood",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -535,7 +535,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "02cd56b4-27c9-4590-80f6-29567a541317",
+						"id": "82c6c3d1-48c7-4305-840f-790473beed6b",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -545,7 +545,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "88e5ccff-9f98-4145-a41f-0731dfa0c243",
+						"id": "370f1e08-4c5c-4765-95ab-1db6cf1c0b90",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -933,6 +933,114 @@
 									"key": "cozinhaId",
 									"value": "1"
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurante Por Nome E Taxa Frete",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.algafood.local:8080/teste/restaurantes/por-nome-e-frete?nome=a&taxaFreteInicial=10&taxaFreteFinal=20",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"restaurantes",
+								"por-nome-e-frete"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "a"
+								},
+								{
+									"key": "taxaFreteInicial",
+									"value": "10"
+								},
+								{
+									"key": "taxaFreteFinal",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurante Com Frete Gratis",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.algafood.local:8080/teste/restaurantes/com-frete-gratis?nome=a",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"restaurantes",
+								"com-frete-gratis"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurante Buscar Primeiro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.algafood.local:8080/teste/restaurantes/primeiro",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"restaurantes",
+								"primeiro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cozinha Buscar Primeira",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.algafood.local:8080/teste/cozinhas/primeira",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"cozinhas",
+								"primeira"
 							]
 						}
 					},

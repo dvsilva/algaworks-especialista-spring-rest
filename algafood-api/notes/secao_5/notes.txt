@@ -34,3 +34,5 @@ colocar path e nome da classe
 
 @Lazy -> só instancia a dependencia quando for preciso (referencia circular)
 
+repositorio base customizado para todos os repositorios
+@EnableJpaRepositories(repositoryBaseClass = CustomJpaRepositoryImpl.class)
