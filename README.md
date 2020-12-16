@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-12-implementando-uma-consulta-dinamica-com-jpql
+git checkout -b 05-13-implementando-uma-consulta-simples-com-criteria-api
 git add .
-git commit -m "Implementando uma consulta dinâmica com JPQL"
-git push origin 05-12-implementando-uma-consulta-dinamica-com-jpql
+git commit -m "Implementando uma consulta simples com Criteria API"
+git push origin 05-13-implementando-uma-consulta-simples-com-criteria-api
 
 git checkout master
-git merge --no-ff 05-12-implementando-uma-consulta-dinamica-com-jpql
+git merge --no-ff 05-13-implementando-uma-consulta-simples-com-criteria-api
 git push
 
 sair da tela de merge
