@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-11-implementando-um-repositorio-sdj-customizado
+git checkout -b 05-12-implementando-uma-consulta-dinamica-com-jpql
 git add .
-git commit -m "Implementando um repositório SDJ customizado"
-git push origin 05-11-implementando-um-repositorio-sdj-customizado
+git commit -m "Implementando uma consulta dinâmica com JPQL"
+git push origin 05-12-implementando-uma-consulta-dinamica-com-jpql
 
 git checkout master
-git merge --no-ff 05-11-implementando-um-repositorio-sdj-customizado
+git merge --no-ff 05-12-implementando-uma-consulta-dinamica-com-jpql
 git push
 
 sair da tela de merge
