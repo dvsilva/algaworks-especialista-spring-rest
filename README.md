@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 06-02-mapeando-relacionamento-muitos-para-muitos-com-manytomany
+git checkout -b 06-03-analisando-impacto-do-relacionamento-muitos-para-muitos-na-rest-api
 git add .
-git commit -m "Mapeando relacionamento muitos-para-muitos com @ManyToMany"
-git push origin 06-02-mapeando-relacionamento-muitos-para-muitos-com-manytomany
+git commit -m "Analisando o impacto do relacionamento muitos-para-muitos na REST API"
+git push origin 06-03-analisando-impacto-do-relacionamento-muitos-para-muitos-na-rest-api
 
 git checkout master
-git merge --no-ff 06-02-mapeando-relacionamento-muitos-para-muitos-com-manytomany
+git merge --no-ff 06-03-analisando-impacto-do-relacionamento-muitos-para-muitos-na-rest-api
 git push
 
 sair da tela de merge
