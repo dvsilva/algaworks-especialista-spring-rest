@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 06-11-entendendo-lazy-loading
+git checkout -b 06-12-alterando-estrategia-de-fetching-para-lazy-loading
 git add .
-git commit -m "Entendendo o Lazy Loading"
-git push origin 06-11-entendendo-lazy-loading
+git commit -m "Alterando a estratégia de fetching para Lazy Loading"
+git push origin 06-12-alterando-estrategia-de-fetching-para-lazy-loading
 
 git checkout master
-git merge --no-ff 06-11-entendendo-lazy-loading
+git merge --no-ff 06-12-alterando-estrategia-de-fetching-para-lazy-loading
 git push
 
 sair da tela de merge
