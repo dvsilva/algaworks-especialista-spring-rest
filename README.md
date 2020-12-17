@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 06-09-desafio-mapeando-relacionamento-muitos-para-muitos
+git checkout -b 06-10-entendendo-eager-loading
 git add .
-git commit -m "Desafio: mapeando relacionamentos muitos-para-muitos"
-git push origin 06-09-desafio-mapeando-relacionamento-muitos-para-muitos
+git commit -m "Entendendo o Eager Loading"
+git push origin 06-10-entendendo-eager-loading
 
 git checkout master
-git merge --no-ff 06-09-desafio-mapeando-relacionamento-muitos-para-muitos
+git merge --no-ff 06-10-entendendo-eager-loading
 git push
 
 sair da tela de merge
