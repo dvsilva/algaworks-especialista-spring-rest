@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 06-04-mapeando-classes-incorporaveis-com-embedded-e-embeddable
+git checkout -b 06-05-testando-e-analisando-impacto-da-incorporacao-de-classe-na-rest-api
 git add .
-git commit -m "Mapeando classes incorporáveis com @embedded  e @Embeddable"
-git push origin 06-04-mapeando-classes-incorporaveis-com-embedded-e-embeddable
+git commit -m "Testando e analisando o impacto da incorporação de classe na REST API"
+git push origin 06-05-testando-e-analisando-impacto-da-incorporacao-de-classe-na-rest-api
 
 git checkout master
-git merge --no-ff 06-04-mapeando-classes-incorporaveis-com-embedded-e-embeddable
+git merge --no-ff 06-05-testando-e-analisando-impacto-da-incorporacao-de-classe-na-rest-api
 git push
 
 sair da tela de merge
