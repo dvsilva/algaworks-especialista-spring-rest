@@ -8,3 +8,10 @@ eager loading
 - cache para entidades iguais (na associação) buscadas na mesma consulta
 - se tiver varias associações eager ele faz um join ate certo ponto e depois utiliza uma estrategia para trazer as demais
 
+lazy loading
+- many to many utiliza por padrão a estratégia lazy
+- carregamento preguiçoso
+- só carrega quando utilizar
+- sem o jsonignore carrega todos fazendo consulta para cada um
+- problema n + 1: retorna um select para cada um
+

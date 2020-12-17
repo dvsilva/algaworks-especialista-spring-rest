@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 06-10-entendendo-eager-loading
+git checkout -b 06-11-entendendo-lazy-loading
 git add .
-git commit -m "Entendendo o Eager Loading"
-git push origin 06-10-entendendo-eager-loading
+git commit -m "Entendendo o Lazy Loading"
+git push origin 06-11-entendendo-lazy-loading
 
 git checkout master
-git merge --no-ff 06-10-entendendo-eager-loading
+git merge --no-ff 06-11-entendendo-lazy-loading
 git push
 
 sair da tela de merge
