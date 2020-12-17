@@ -1,3 +1,10 @@
 sistema online para gerar diagramas online
 https://app.genmymodel.com/
 
+eager loading
+- ToOne utiliza essa estratégia
+- carregamento ansioso/antecipado
+- quando busca no banco carrega as associações com eager loading / carrega junto com a entidade
+- cache para entidades iguais (na associação) buscadas na mesma consulta
+- se tiver varias associações eager ele faz um join ate certo ponto e depois utiliza uma estrategia para trazer as demais
+
