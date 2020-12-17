@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 06-01-mapeando-relacionamento-bidirecional-com-onetomany
+git checkout -b 06-02-mapeando-relacionamento-muitos-para-muitos-com-manytomany
 git add .
-git commit -m "Mapeando relacionamento bidirecional com @OneToMany"
-git push origin 06-01-mapeando-relacionamento-bidirecional-com-onetomany
+git commit -m "Mapeando relacionamento muitos-para-muitos com @ManyToMany"
+git push origin 06-02-mapeando-relacionamento-muitos-para-muitos-com-manytomany
 
 git checkout master
-git merge --no-ff 06-01-mapeando-relacionamento-bidirecional-com-onetomany
+git merge --no-ff 06-02-mapeando-relacionamento-muitos-para-muitos-com-manytomany
 git push
 
 sair da tela de merge
