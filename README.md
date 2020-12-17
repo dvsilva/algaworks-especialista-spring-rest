@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 06-05-testando-e-analisando-impacto-da-incorporacao-de-classe-na-rest-api
+git checkout -b 06-06-mapeando-propriedades-com-creationtimestamp-e-updatetimestamp
 git add .
-git commit -m "Testando e analisando o impacto da incorporação de classe na REST API"
-git push origin 06-05-testando-e-analisando-impacto-da-incorporacao-de-classe-na-rest-api
+git commit -m "Mapeando propriedades com @CreationTimestamp e @UpdateTimestamp"
+git push origin 06-06-mapeando-propriedades-com-creationtimestamp-e-updatetimestamp
 
 git checkout master
-git merge --no-ff 06-05-testando-e-analisando-impacto-da-incorporacao-de-classe-na-rest-api
+git merge --no-ff 06-06-mapeando-propriedades-com-creationtimestamp-e-updatetimestamp
 git push
 
 sair da tela de merge
