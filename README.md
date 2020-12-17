@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 06-03-analisando-impacto-do-relacionamento-muitos-para-muitos-na-rest-api
+git checkout -b 06-04-mapeando-classes-incorporaveis-com-embedded-e-embeddable
 git add .
-git commit -m "Analisando o impacto do relacionamento muitos-para-muitos na REST API"
-git push origin 06-03-analisando-impacto-do-relacionamento-muitos-para-muitos-na-rest-api
+git commit -m "Mapeando classes incorporáveis com @embedded  e @Embeddable"
+git push origin 06-04-mapeando-classes-incorporaveis-com-embedded-e-embeddable
 
 git checkout master
-git merge --no-ff 06-03-analisando-impacto-do-relacionamento-muitos-para-muitos-na-rest-api
+git merge --no-ff 06-04-mapeando-classes-incorporaveis-com-embedded-e-embeddable
 git push
 
 sair da tela de merge
