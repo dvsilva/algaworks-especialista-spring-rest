@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 05-20-estentendo-jparepository-para-customizar-o-repositorio-base
+git checkout -b 06-01-mapeando-relacionamento-bidirecional-com-onetomany
 git add .
-git commit -m "Estendendo o JpaRepository para customizar o repositório base"
-git push origin 05-20-estentendo-jparepository-para-customizar-o-repositorio-base
+git commit -m "Mapeando relacionamento bidirecional com @OneToMany"
+git push origin 06-01-mapeando-relacionamento-bidirecional-com-onetomany
 
 git checkout master
-git merge --no-ff 05-20-estentendo-jparepository-para-customizar-o-repositorio-base
+git merge --no-ff 06-01-mapeando-relacionamento-bidirecional-com-onetomany
 git push
 
 sair da tela de merge
