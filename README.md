@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 06-06-mapeando-propriedades-com-creationtimestamp-e-updatetimestamp
+git checkout -b 06-07-desafio-mapeando-relacionamento-muitos-para-um
 git add .
-git commit -m "Mapeando propriedades com @CreationTimestamp e @UpdateTimestamp"
-git push origin 06-06-mapeando-propriedades-com-creationtimestamp-e-updatetimestamp
+git commit -m "Desafio: mapeando relacionamento muitos-para-um"
+git push origin 06-07-desafio-mapeando-relacionamento-muitos-para-um
 
 git checkout master
-git merge --no-ff 06-06-mapeando-propriedades-com-creationtimestamp-e-updatetimestamp
+git merge --no-ff 06-07-desafio-mapeando-relacionamento-muitos-para-um
 git push
 
 sair da tela de merge
