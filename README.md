@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 06-08-desafio-mapeando-relacionamento-um-para-muitos
+git checkout -b 06-09-desafio-mapeando-relacionamento-muitos-para-muitos
 git add .
-git commit -m "Desafio: mapeando relacionamento um-para-muitos"
-git push origin 06-08-desafio-mapeando-relacionamento-um-para-muitos
+git commit -m "Desafio: mapeando relacionamentos muitos-para-muitos"
+git push origin 06-09-desafio-mapeando-relacionamento-muitos-para-muitos
 
 git checkout master
-git merge --no-ff 06-08-desafio-mapeando-relacionamento-um-para-muitos
+git merge --no-ff 06-09-desafio-mapeando-relacionamento-muitos-para-muitos
 git push
 
 sair da tela de merge
