@@ -40,6 +40,8 @@ public class RestauranteController {
 
 	@GetMapping
 	public List<Restaurante> listar() {
+//		List<Restaurante> lista = restauranteRepository.findAll();
+//		return lista.stream().distinct().collect(Collectors.toList());
 		return restauranteRepository.findAll();
 	}
 	

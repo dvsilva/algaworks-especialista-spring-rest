@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 06-13-alterando-estrategia-de-fetching-para-eager-loading
+git checkout -b 06-14-resolvendo-problema-do-n-mais-1-com-fetch-join-na-jpql
 git add .
-git commit -m "Alterando a estratégia de fetching para Eager Loading"
-git push origin 06-13-alterando-estrategia-de-fetching-para-eager-loading
+git commit -m "Resolvendo o Problema do N+1 com fetch join na JPQL"
+git push origin 06-14-resolvendo-problema-do-n-mais-1-com-fetch-join-na-jpql
 
 git checkout master
-git merge --no-ff 06-13-alterando-estrategia-de-fetching-para-eager-loading
+git merge --no-ff 06-14-resolvendo-problema-do-n-mais-1-com-fetch-join-na-jpql
 git push
 
 sair da tela de merge
