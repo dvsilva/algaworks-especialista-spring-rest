@@ -1,0 +1,18 @@
+pool de conexões 
+- é um componente de software que mantem um conjunto de conexões com o banco de dados para reutilização na aplicação
+- uma mesma conexão é utilizada diversas vezes em momentos diferentes 
+- reduz o tempo gasto na abertura e fechamento das conexões
+- criação de conexão com banco de dados é um processo custoso
+
+- aplicação sem pool (requisição -> aplicação web -> banco de dados) - cria uma nova conexão a cada requisição e fecha ao finalizar
+- aplicação com pool (requisição -> aplicação web -> poll (tanque / depósito) -> banco de dados) 
+
+- idle (ociosa) - ao criar e quando ficar sem utilizar. ao finalizar a requisição volta para o estado de idle
+- se tiver requisição a mais do máximo de conexões do pool a aplicação coloca em uma fila
+- ao ficar menos do minimo, geralmente mantem as conexões por um periodo de tempo ao passar fecha as conexões
+
+- reduz o tempo que o consumidor da api deve esperar para ser respondido por uma requisição
+- otimiza o uso das conexões com o banco de dados sem ter que gastar um tempo com abertura e fechamento de conexões
+
+
+ 
