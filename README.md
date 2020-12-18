@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 06-14-resolvendo-problema-do-n-mais-1-com-fetch-join-na-jpql
+git checkout -b 07-01-entendendo-o-funcionamento-de-um-pool-de-conexoes
 git add .
-git commit -m "Resolvendo o Problema do N+1 com fetch join na JPQL"
-git push origin 06-14-resolvendo-problema-do-n-mais-1-com-fetch-join-na-jpql
+git commit -m "Entendendo o funcionamento de um pool de conexões"
+git push origin 07-01-entendendo-o-funcionamento-de-um-pool-de-conexoes
 
 git checkout master
-git merge --no-ff 06-14-resolvendo-problema-do-n-mais-1-com-fetch-join-na-jpql
+git merge --no-ff 07-01-entendendo-o-funcionamento-de-um-pool-de-conexoes
 git push
 
 sair da tela de merge
