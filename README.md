@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 07-11-reparando-migracoes-com-erros
+git checkout -b 07-12-desafio-criando-migracoes-e-mapeando-entidades-pedido-e-itempedido
 git add .
-git commit -m "Reparando migrações com erros"
-git push origin 07-11-reparando-migracoes-com-erros
+git commit -m "Desafio: Criando migrações e mapeando as entidades Pedido e ItemPedido"
+git push origin 07-12-desafio-criando-migracoes-e-mapeando-entidades-pedido-e-itempedido
 
 git checkout master
-git merge --no-ff 07-11-reparando-migracoes-com-erros
+git merge --no-ff 07-12-desafio-criando-migracoes-e-mapeando-entidades-pedido-e-itempedido
 git push
 
 sair da tela de merge
