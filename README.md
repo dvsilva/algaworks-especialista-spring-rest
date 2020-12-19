@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 07-03-configurando-o-pool-de-conexoes-do-hikari
+git checkout -b 07-04-schema-generation-em-producao-nao-e-boa-pratica
 git add .
-git commit -m "Configurando o pool de conexões do Hikari"
-git push origin 07-03-configurando-o-pool-de-conexoes-do-hikari
+git commit -m "Schema generation em produção não é uma boa prática"
+git push origin 07-04-schema-generation-em-producao-nao-e-boa-pratica
 
 git checkout master
-git merge --no-ff 07-03-configurando-o-pool-de-conexoes-do-hikari
+git merge --no-ff 07-04-schema-generation-em-producao-nao-e-boa-pratica
 git push
 
 sair da tela de merge

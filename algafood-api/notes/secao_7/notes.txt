@@ -19,4 +19,11 @@ Apache Bench -> ferramenta para testes de desempenho
 ab [-n numero de requisicoes] [-c quantas requisicoes concorrentes] [url] 
 ab -n 6 -c 2 api.algafood.local:8080/restaurantes -> 2 requisições concorresntes que da 3 vezes
  
+ schema generator
+ - create deleta as tabelas e os dados não seria uma boa
+ - update atualiza as tabelas porem mudança no nome das colunas ou tipos não são refletidas pois o hibernate nao tem autonomia para isso
+ - mudanças como exclusão de colunas antigas e a criação de novas com o mesmo nome não são feitas
+ - é util para testes e prototipação
+ - em produção melhor gerenciar os esquemas com scripts de migração incrementais
+ 
  
