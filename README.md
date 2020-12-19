@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 07-05-flyway-ferramenta-de-versionamento-de-schemas-de-banco-de-dados
+git checkout -b 07-06-adicionando-flyway-no-projeto-e-criando-primeira-migracao
 git add .
-git commit -m "Flyway: ferramenta de versionamento de schemas de banco de dados"
-git push origin 07-05-flyway-ferramenta-de-versionamento-de-schemas-de-banco-de-dados
+git commit -m "Adicionando o Flyway no projeto e criando a primeira migração"
+git push origin 07-06-adicionando-flyway-no-projeto-e-criando-primeira-migracao
 
 git checkout master
-git merge --no-ff 07-05-flyway-ferramenta-de-versionamento-de-schemas-de-banco-de-dados
+git merge --no-ff 07-06-adicionando-flyway-no-projeto-e-criando-primeira-migracao
 git push
 
 sair da tela de merge
