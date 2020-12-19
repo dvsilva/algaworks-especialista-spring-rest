@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 07-02-conhecendo-o-hikari
+git checkout -b 07-03-configurando-o-pool-de-conexoes-do-hikari
 git add .
-git commit -m "Conhecendo o Hikari: a solução padrão de pool de conexões no Spring Boot"
-git push origin 07-02-conhecendo-o-hikari
+git commit -m "Configurando o pool de conexões do Hikari"
+git push origin 07-03-configurando-o-pool-de-conexoes-do-hikari
 
 git checkout master
-git merge --no-ff 07-02-conhecendo-o-hikari
+git merge --no-ff 07-03-configurando-o-pool-de-conexoes-do-hikari
 git push
 
 sair da tela de merge
