@@ -14,5 +14,9 @@ pool de conexões
 - reduz o tempo que o consumidor da api deve esperar para ser respondido por uma requisição
 - otimiza o uso das conexões com o banco de dados sem ter que gastar um tempo com abertura e fechamento de conexões
 
-
+Spring e Hikari -> cria 10 conexões no pool
+Apache Bench -> ferramenta para testes de desempenho
+ab [-n numero de requisicoes] [-c quantas requisicoes concorrentes] [url] 
+ab -n 6 -c 2 api.algafood.local:8080/restaurantes -> 2 requisições concorresntes que da 3 vezes
+ 
  
