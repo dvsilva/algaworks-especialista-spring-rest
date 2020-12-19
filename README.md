@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 07-07-evoluindo-banco-de-dados-com-novas-migracoes
+git checkout -b 07-08-criando-migracoes-complexas-com-remanejamento-de-dados
 git add .
-git commit -m "Evoluindo o banco de dados com novas migrações"
-git push origin 07-07-evoluindo-banco-de-dados-com-novas-migracoes
+git commit -m "Criando migrações complexas com remanejamento de dados"
+git push origin 07-08-criando-migracoes-complexas-com-remanejamento-de-dados
 
 git checkout master
-git merge --no-ff 07-07-evoluindo-banco-de-dados-com-novas-migracoes
+git merge --no-ff 07-08-criando-migracoes-complexas-com-remanejamento-de-dados
 git push
 
 sair da tela de merge
