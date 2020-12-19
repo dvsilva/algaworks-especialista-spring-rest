@@ -26,4 +26,18 @@ ab -n 6 -c 2 api.algafood.local:8080/restaurantes -> 2 requisições concorresnt
  - é util para testes e prototipação
  - em produção melhor gerenciar os esquemas com scripts de migração incrementais
  
+ versionamento de schemas de banco de dados
+ - amadores
+ 	- feito de forma manual
+ 	- tem que saber a ordem exata dos scripts e não esquecer de nenhum
+ 	- muitos desenvolvedores criando scripts
+ - profissionais
+ 	- atribui versionamento aos scripts
+ 	- toda alteração gera uma versão
+ 	- evolução do banco de dados é incremental
+ 	- nunca mexe na estrutura do banco de dados sem criar um script de migração
+ 	- flyway cria uma tabela de histórico de migrações
+
+
+ 
  

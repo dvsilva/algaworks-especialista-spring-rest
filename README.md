@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 07-04-schema-generation-em-producao-nao-e-boa-pratica
+git checkout -b 07-05-flyway-ferramenta-de-versionamento-de-schemas-de-banco-de-dados
 git add .
-git commit -m "Schema generation em produção não é uma boa prática"
-git push origin 07-04-schema-generation-em-producao-nao-e-boa-pratica
+git commit -m "Flyway: ferramenta de versionamento de schemas de banco de dados"
+git push origin 07-05-flyway-ferramenta-de-versionamento-de-schemas-de-banco-de-dados
 
 git checkout master
-git merge --no-ff 07-04-schema-generation-em-producao-nao-e-boa-pratica
+git merge --no-ff 07-05-flyway-ferramenta-de-versionamento-de-schemas-de-banco-de-dados
 git push
 
 sair da tela de merge
