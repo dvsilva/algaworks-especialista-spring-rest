@@ -1,1 +1,1 @@
-drop teste;
+drop table teste;
