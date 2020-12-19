@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 07-08-criando-migracoes-complexas-com-remanejamento-de-dados
+git checkout -b 07-10-adicionando-dados-de-testes-com-callback-do-flyway
 git add .
-git commit -m "Criando migrações complexas com remanejamento de dados"
-git push origin 07-08-criando-migracoes-complexas-com-remanejamento-de-dados
+git commit -m "Adicionando dados de testes com callback do Flyway"
+git push origin 07-10-adicionando-dados-de-testes-com-callback-do-flyway
 
 git checkout master
-git merge --no-ff 07-08-criando-migracoes-complexas-com-remanejamento-de-dados
+git merge --no-ff 07-10-adicionando-dados-de-testes-com-callback-do-flyway
 git push
 
 sair da tela de merge
