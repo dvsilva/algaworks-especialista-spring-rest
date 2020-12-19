@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 07-06-adicionando-flyway-no-projeto-e-criando-primeira-migracao
+git checkout -b 07-07-evoluindo-banco-de-dados-com-novas-migracoes
 git add .
-git commit -m "Adicionando o Flyway no projeto e criando a primeira migração"
-git push origin 07-06-adicionando-flyway-no-projeto-e-criando-primeira-migracao
+git commit -m "Evoluindo o banco de dados com novas migrações"
+git push origin 07-07-evoluindo-banco-de-dados-com-novas-migracoes
 
 git checkout master
-git merge --no-ff 07-06-adicionando-flyway-no-projeto-e-criando-primeira-migracao
+git merge --no-ff 07-07-evoluindo-banco-de-dados-com-novas-migracoes
 git push
 
 sair da tela de merge
