@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-03-lancando-excecoes-do-tipo-responsestatusexception
+git checkout -b 08-05-simplificando-o-codigo-com-uso-de-responsestatus-em-exceptions
 git add .
-git commit -m "Lançando exceções do tipo ResponseStatusException"
-git push origin 08-03-lancando-excecoes-do-tipo-responsestatusexception
+git commit -m "Simplificando o código com o uso de @ResponseStatus em exceptions"
+git push origin 08-05-simplificando-o-codigo-com-uso-de-responsestatus-em-exceptions
 
 git checkout master
-git merge --no-ff 08-03-lancando-excecoes-do-tipo-responsestatusexception
+git merge --no-ff 08-05-simplificando-o-codigo-com-uso-de-responsestatus-em-exceptions
 git push
 
 sair da tela de merge
