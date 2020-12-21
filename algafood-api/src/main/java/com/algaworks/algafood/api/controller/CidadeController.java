@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.algaworks.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.algaworks.algafood.domain.exception.NegocioException;
 import com.algaworks.algafood.domain.model.Cidade;
 import com.algaworks.algafood.domain.repository.CidadeRepository;
@@ -46,7 +47,7 @@ public class CidadeController {
 		try {
 			return this.cadastroCidade.salvar(cidade);
 		}
-		catch(NegocioException e) {
+		catch(EntidadeNaoEncontradaException e) {
 			throw new NegocioException(e.getMessage());
 		}
 	}
@@ -59,7 +60,7 @@ public class CidadeController {
 		try {
 			return cadastroCidade.salvar(cidadeAtual);
 		}
-		catch(NegocioException e) {
+		catch(EntidadeNaoEncontradaException e) {
 			throw new NegocioException(e.getMessage());
 		}
 	}
