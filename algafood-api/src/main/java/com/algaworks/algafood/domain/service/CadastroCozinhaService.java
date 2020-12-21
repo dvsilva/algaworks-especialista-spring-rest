@@ -13,6 +13,8 @@ import com.algaworks.algafood.domain.repository.CozinhaRepository;
 @Service
 public class CadastroCozinhaService {
 
+	private static final String MSG_COZINHA_EM_USO = "Cozinha de código %d não pode ser removida pois está em uso";
+	private static final String MSG_COZINHA_NAO_ENCONTRADA = "Nao existe cadastro de cozinha com código %d";
 	@Autowired
 	private CozinhaRepository cozinhaRepository;
 
@@ -25,17 +27,19 @@ public class CadastroCozinhaService {
 			cozinhaRepository.deleteById(cozinhaId);
 		} 
 		catch (EmptyResultDataAccessException e) {
-			throw new EntidadeNaoEncontradaException(
-					String.format("Nao existe cadastro de cozinha com código %d", cozinhaId)); 
+			throw new EntidadeNaoEncontradaException(String.format(MSG_COZINHA_NAO_ENCONTRADA, cozinhaId)); 
 			
 //			nao deve lancar essa excecao nessa classe  pois e classe de dominio
 //			essa exception manipula o http deve ser lancada no controller
-//			throw new ResponseStatusException(HttpStatus.NOT_FOUND, 
-//				String.format("Nao existe cadastro de cozinha com código %d", cozinhaId));
+//			throw new ResponseStatusException(HttpStatus.NOT_FOUND, String.format(MSG_COZINHA_NAO_ENCONTRADA, cozinhaId));
 		}
 		catch (DataIntegrityViolationException e) {
-			throw new EntidadeEmUsoException(
-					String.format("Cozinha de código %d não pode ser removida pois está em uso", cozinhaId));
+			throw new EntidadeEmUsoException(String.format(MSG_COZINHA_EM_USO, cozinhaId));
 		}
+	}
+	
+	public Cozinha buscarOuFalhar(Long cozinhaId) {
+		return cozinhaRepository.findById(cozinhaId)
+				.orElseThrow(() -> new EntidadeNaoEncontradaException(String.format(MSG_COZINHA_NAO_ENCONTRADA, cozinhaId)));
 	}
 }
