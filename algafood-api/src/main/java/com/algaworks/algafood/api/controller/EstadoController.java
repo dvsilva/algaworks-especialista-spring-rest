@@ -39,7 +39,6 @@ public class EstadoController {
 		return cadastroEstado.buscarOuFalhar(estadoId);
 	}
 
-	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public Estado adicionar(@RequestBody Estado estado) {
