@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-11-desafio-lancando-exceptions-de-granularidade-fina
+git checkout -b 08-12-tratando-excecoes-em-nivel-de-controlador-com-exceptionhandler
 git add .
-git commit -m "Desafio: lançando exceptions de granularidade fina"
-git push origin 08-11-desafio-lancando-exceptions-de-granularidade-fina
+git commit -m "Tratando exceções em nível de controlador com @ExceptionHandler"
+git push origin 08-12-tratando-excecoes-em-nivel-de-controlador-com-exceptionhandler
 
 git checkout master
-git merge --no-ff 08-11-desafio-lancando-exceptions-de-granularidade-fina
+git merge --no-ff 08-12-tratando-excecoes-em-nivel-de-controlador-com-exceptionhandler
 git push
 
 sair da tela de merge
