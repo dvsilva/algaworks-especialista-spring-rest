@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-09-desafio-usando-a-exception-negocioexception
+git checkout -b 08-10-afinando-granularidade-e-definindo-hierarquia-das-exceptions-de-negocios
 git add .
-git commit -m "Desafio: usando a exception NegocioException"
-git push origin 08-09-desafio-usando-a-exception-negocioexception
+git commit -m "Afinando a granularidade e definindo a hierarquia das exceptions de negócios"
+git push origin 08-10-afinando-granularidade-e-definindo-hierarquia-das-exceptions-de-negocios
 
 git checkout master
-git merge --no-ff 08-09-desafio-usando-a-exception-negocioexception
+git merge --no-ff 08-10-afinando-granularidade-e-definindo-hierarquia-das-exceptions-de-negocios
 git push
 
 sair da tela de merge
