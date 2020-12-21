@@ -1,0 +1,4 @@
+introdução ao tratamento e modelagem de erros
+- pensar sempre no consumidor da API
+- retornar código de status e mensagem adequada
+
