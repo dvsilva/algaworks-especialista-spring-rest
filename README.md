@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-07-analisando-impactos-da-refatoracao
+git checkout -b 08-08-criando-a-exception-negocioexception
 git add .
-git commit -m "Analisando os impactos da refatoração"
-git push origin 08-07-analisando-impactos-da-refatoracao
+git commit -m "Criando a exception NegocioException"
+git push origin 08-08-criando-a-exception-negocioexception
 
 git checkout master
-git merge --no-ff 08-07-analisando-impactos-da-refatoracao
+git merge --no-ff 08-08-criando-a-exception-negocioexception
 git push
 
 sair da tela de merge
