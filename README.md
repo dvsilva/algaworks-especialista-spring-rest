@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-06-desafio-refatorando-servicos-rest
+git checkout -b 08-07-analisando-impactos-da-refatoracao
 git add .
-git commit -m "Desafio: refatorando os serviços REST"
-git push origin 08-06-desafio-refatorando-servicos-rest
+git commit -m "Analisando os impactos da refatoração"
+git push origin 08-07-analisando-impactos-da-refatoracao
 
 git checkout master
-git merge --no-ff 08-06-desafio-refatorando-servicos-rest
+git merge --no-ff 08-07-analisando-impactos-da-refatoracao
 git push
 
 sair da tela de merge
