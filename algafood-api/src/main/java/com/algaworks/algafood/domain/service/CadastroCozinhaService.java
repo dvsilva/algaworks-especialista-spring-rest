@@ -26,7 +26,12 @@ public class CadastroCozinhaService {
 		} 
 		catch (EmptyResultDataAccessException e) {
 			throw new EntidadeNaoEncontradaException(
-					String.format("Nao existe cadastro de cozinha com código %d", cozinhaId));
+					String.format("Nao existe cadastro de cozinha com código %d", cozinhaId)); 
+			
+//			nao deve lancar essa excecao nessa classe  pois e classe de dominio
+//			essa exception manipula o http deve ser lancada no controller
+//			throw new ResponseStatusException(HttpStatus.NOT_FOUND, 
+//				String.format("Nao existe cadastro de cozinha com código %d", cozinhaId));
 		}
 		catch (DataIntegrityViolationException e) {
 			throw new EntidadeEmUsoException(

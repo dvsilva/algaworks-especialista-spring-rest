@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-02-lancando-excecoes-customizadas-anotadas-com-responsestatus
+git checkout -b 08-03-lancando-excecoes-do-tipo-responsestatusexception
 git add .
-git commit -m "Lançando exceções customizadas anotadas com @ResponseStatus"
-git push origin 08-02-lancando-excecoes-customizadas-anotadas-com-responsestatus
+git commit -m "Lançando exceções do tipo ResponseStatusException"
+git push origin 08-03-lancando-excecoes-do-tipo-responsestatusexception
 
 git checkout master
-git merge --no-ff 08-02-lancando-excecoes-customizadas-anotadas-com-responsestatus
+git merge --no-ff 08-03-lancando-excecoes-do-tipo-responsestatusexception
 git push
 
 sair da tela de merge
