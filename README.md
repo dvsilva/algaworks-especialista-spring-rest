@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-05-simplificando-o-codigo-com-uso-de-responsestatus-em-exceptions
+git checkout -b 08-06-desafio-refatorando-servicos-rest
 git add .
-git commit -m "Simplificando o código com o uso de @ResponseStatus em exceptions"
-git push origin 08-05-simplificando-o-codigo-com-uso-de-responsestatus-em-exceptions
+git commit -m "Desafio: refatorando os serviços REST"
+git push origin 08-06-desafio-refatorando-servicos-rest
 
 git checkout master
-git merge --no-ff 08-05-simplificando-o-codigo-com-uso-de-responsestatus-em-exceptions
+git merge --no-ff 08-06-desafio-refatorando-servicos-rest
 git push
 
 sair da tela de merge
