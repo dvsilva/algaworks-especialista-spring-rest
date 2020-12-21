@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-01-introducao-ao-tratamento-e-modelagem-de-erros
+git checkout -b 08-02-lancando-excecoes-customizadas-anotadas-com-responsestatus
 git add .
-git commit -m "Introdução ao tratamento e modelagem de erros"
-git push origin 08-01-introducao-ao-tratamento-e-modelagem-de-erros
+git commit -m "Lançando exceções customizadas anotadas com @ResponseStatus"
+git push origin 08-02-lancando-excecoes-customizadas-anotadas-com-responsestatus
 
 git checkout master
-git merge --no-ff 08-01-introducao-ao-tratamento-e-modelagem-de-erros
+git merge --no-ff 08-02-lancando-excecoes-customizadas-anotadas-com-responsestatus
 git push
 
 sair da tela de merge
