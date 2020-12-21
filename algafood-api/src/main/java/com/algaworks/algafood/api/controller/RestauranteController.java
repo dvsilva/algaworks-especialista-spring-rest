@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.algaworks.algafood.domain.exception.EntidadeNaoEncontradaException;
+import com.algaworks.algafood.domain.exception.CozinhaNaoEncontradaException;
 import com.algaworks.algafood.domain.exception.NegocioException;
 import com.algaworks.algafood.domain.model.Restaurante;
 import com.algaworks.algafood.domain.repository.RestauranteRepository;
@@ -52,22 +52,21 @@ public class RestauranteController {
 		try {
 			return this.cadastroRestaurante.salvar(restaurante);
 		}
-		catch(EntidadeNaoEncontradaException e) {
-			throw new NegocioException(e.getMessage());
+		catch(CozinhaNaoEncontradaException e) {
+			throw new NegocioException(e.getMessage(), e);
 		}
 	}
 	
 	@PutMapping("/{restauranteId}")
 	public Restaurante atualizar(@PathVariable Long restauranteId, @RequestBody Restaurante restaurante) {
-		Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(restauranteId);
-		BeanUtils.copyProperties(restaurante, restauranteAtual, 
-				"id", "formasPagamento", "endereco", "dataCadastro", "produtos");
-		
 		try {
+			Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(restauranteId);
+			BeanUtils.copyProperties(restaurante, restauranteAtual, 
+					"id", "formasPagamento", "endereco", "dataCadastro", "produtos");
 			return cadastroRestaurante.salvar(restauranteAtual);
 		}
-		catch(EntidadeNaoEncontradaException e) {
-			throw new NegocioException(e.getMessage());
+		catch(CozinhaNaoEncontradaException e) {
+			throw new NegocioException(e.getMessage(), e);
 		}
 	}
 	
