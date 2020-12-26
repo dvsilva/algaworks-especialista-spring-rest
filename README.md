@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-16-customizando-corpo-da-resposta-padrao-de-responseentityexceptionhandler
+git checkout -b 08-17-conhecendo-rfc7807-problem-details-for-http-apis
 git add .
-git commit -m "Customizando o corpo da resposta padrão de ResponseEntityExceptionHandler"
-git push origin 08-16-customizando-corpo-da-resposta-padrao-de-responseentityexceptionhandler
+git commit -m "Conhecendo a RFC 7807 (Problem Details for HTTP APIs)"
+git push origin 08-17-conhecendo-rfc7807-problem-details-for-http-apis
 
 git checkout master
-git merge --no-ff 08-16-customizando-corpo-da-resposta-padrao-de-responseentityexceptionhandler
+git merge --no-ff 08-17-conhecendo-rfc7807-problem-details-for-http-apis
 git push
 
 sair da tela de merge
