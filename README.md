@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-15-criando-um-exception-handler-global-com-responseentityexceptionhandler
+git checkout -b 08-16-customizando-corpo-da-resposta-padrao-de-responseentityexceptionhandler
 git add .
-git commit -m "Criando um exception handler global com ResponseEntityExceptionHandler"
-git push origin 08-15-criando-um-exception-handler-global-com-responseentityexceptionhandler
+git commit -m "Customizando o corpo da resposta padrão de ResponseEntityExceptionHandler"
+git push origin 08-16-customizando-corpo-da-resposta-padrao-de-responseentityexceptionhandler
 
 git checkout master
-git merge --no-ff 08-15-criando-um-exception-handler-global-com-responseentityexceptionhandler
+git merge --no-ff 08-16-customizando-corpo-da-resposta-padrao-de-responseentityexceptionhandler
 git push
 
 sair da tela de merge
