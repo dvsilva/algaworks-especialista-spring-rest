@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-14-desafio-implementando-exception-handler
+git checkout -b 08-15-criando-um-exception-handler-global-com-responseentityexceptionhandler
 git add .
-git commit -m "Desafio: implementando exception handler"
-git push origin 08-14-desafio-implementando-exception-handler
+git commit -m "Criando um exception handler global com ResponseEntityExceptionHandler"
+git push origin 08-15-criando-um-exception-handler-global-com-responseentityexceptionhandler
 
 git checkout master
-git merge --no-ff 08-14-desafio-implementando-exception-handler
+git merge --no-ff 08-15-criando-um-exception-handler-global-com-responseentityexceptionhandler
 git push
 
 sair da tela de merge
