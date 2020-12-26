@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-12-tratando-excecoes-em-nivel-de-controlador-com-exceptionhandler
+git checkout -b 08-13-tratando-excecoes-globais-com-exceptionhandler-e-controlleradvice
 git add .
-git commit -m "Tratando exceções em nível de controlador com @ExceptionHandler"
-git push origin 08-12-tratando-excecoes-em-nivel-de-controlador-com-exceptionhandler
+git commit -m "Tratando exceções globais com @ExceptionHandler e @ControllerAdvice"
+git push origin 08-13-tratando-excecoes-globais-com-exceptionhandler-e-controlleradvice
 
 git checkout master
-git merge --no-ff 08-12-tratando-excecoes-em-nivel-de-controlador-com-exceptionhandler
+git merge --no-ff 08-13-tratando-excecoes-globais-com-exceptionhandler-e-controlleradvice
 git push
 
 sair da tela de merge
