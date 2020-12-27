@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-27-desafio-tratando-outras-excecoes-nao-capturadas
+git checkout -b 08-28-estentendo-formato-do-problema-para-adicionar-novas-propriedades
 git add .
-git commit -m "Desafio: tratando outras exceções não capturadas"
-git push origin 08-27-desafio-tratando-outras-excecoes-nao-capturadas
+git commit -m "Estendendo o formato do problema para adicionar novas propriedades"
+git push origin 08-28-estentendo-formato-do-problema-para-adicionar-novas-propriedades
 
 git checkout master
-git merge --no-ff 08-27-desafio-tratando-outras-excecoes-nao-capturadas
+git merge --no-ff 08-28-estentendo-formato-do-problema-para-adicionar-novas-propriedades
 git push
 
 sair da tela de merge
