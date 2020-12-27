@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-17-conhecendo-rfc7807-problem-details-for-http-apis
+git checkout -b 08-18-padronizando-formato-de-problemas-no-corpo-de-respostas-com-rfc7807
 git add .
-git commit -m "Conhecendo a RFC 7807 (Problem Details for HTTP APIs)"
-git push origin 08-17-conhecendo-rfc7807-problem-details-for-http-apis
+git commit -m "Padronizando o formato de problemas no corpo de respostas com a RFC 7807"
+git push origin 08-18-padronizando-formato-de-problemas-no-corpo-de-respostas-com-rfc7807
 
 git checkout master
-git merge --no-ff 08-17-conhecendo-rfc7807-problem-details-for-http-apis
+git merge --no-ff 08-18-padronizando-formato-de-problemas-no-corpo-de-respostas-com-rfc7807
 git push
 
 sair da tela de merge
