@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-24-lancando-exception-de-desserializacao-na-atualizacao-parcial-patch
+git checkout -b 08-26-desafio-tratando-exception-nohandlerfoundexception
 git add .
-git commit -m "Lançando exception de desserialização na atualização parcial (PATCH)"
-git push origin 08-24-lancando-exception-de-desserializacao-na-atualizacao-parcial-patch
+git commit -m "Desafio: tratando a exceção NoHandlerFoundException"
+git push origin 08-26-desafio-tratando-exception-nohandlerfoundexception
 
 git checkout master
-git merge --no-ff 08-24-lancando-exception-de-desserializacao-na-atualizacao-parcial-patch
+git merge --no-ff 08-26-desafio-tratando-exception-nohandlerfoundexception
 git push
 
 sair da tela de merge
