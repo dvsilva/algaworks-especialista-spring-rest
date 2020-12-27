@@ -2,7 +2,7 @@ introdução ao tratamento e modelagem de erros
 - pensar sempre no consumidor da API
 - retornar código de status e mensagem adequada
 
-conhecendo a RFC 7807 (Problem Details for HTTP APIs)
+conhecendo a RFC 7807 (Problem Details for HTTP APIs) - https://tools.ietf.org/html/rfc7807
 - retornar status de erro e mensagem com descrição do erro para ajudar os clientes
 - exemplo de corpo de resposta: status, type, title, detail, instance
 - extendendo com: timestamp e cozinha
