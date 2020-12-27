@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-21-tratando-a-exception-invalidformatexception-na-desserializacao
+git checkout -b 08-22-habilitando-erros-na-desserializacao-de-propriedades-inexistentes-ou-ignoradas
 git add .
-git commit -m "Tratando a exception InvalidFormatException na desserialização"
-git push origin 08-21-tratando-a-exception-invalidformatexception-na-desserializacao
+git commit -m "Habilitando erros na desserialização de propriedades inexistentes ou ignoradas"
+git push origin 08-22-habilitando-erros-na-desserializacao-de-propriedades-inexistentes-ou-ignoradas
 
 git checkout master
-git merge --no-ff 08-21-tratando-a-exception-invalidformatexception-na-desserializacao
+git merge --no-ff 08-22-habilitando-erros-na-desserializacao-de-propriedades-inexistentes-ou-ignoradas
 git push
 
 sair da tela de merge
