@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-18-padronizando-formato-de-problemas-no-corpo-de-respostas-com-rfc7807
+git checkout -b 08-19-desafio-usando-formato-de-problema-no-corpo-de-respostas
 git add .
-git commit -m "Padronizando o formato de problemas no corpo de respostas com a RFC 7807"
-git push origin 08-18-padronizando-formato-de-problemas-no-corpo-de-respostas-com-rfc7807
+git commit -m "Desafio: usando o formato de problemas no corpo de respostas"
+git push origin 08-19-desafio-usando-formato-de-problema-no-corpo-de-respostas
 
 git checkout master
-git merge --no-ff 08-18-padronizando-formato-de-problemas-no-corpo-de-respostas-com-rfc7807
+git merge --no-ff 08-19-desafio-usando-formato-de-problema-no-corpo-de-respostas
 git push
 
 sair da tela de merge
