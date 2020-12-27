@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-26-desafio-tratando-exception-nohandlerfoundexception
+git checkout -b 08-27-desafio-tratando-outras-excecoes-nao-capturadas
 git add .
-git commit -m "Desafio: tratando a exceção NoHandlerFoundException"
-git push origin 08-26-desafio-tratando-exception-nohandlerfoundexception
+git commit -m "Desafio: tratando outras exceções não capturadas"
+git push origin 08-27-desafio-tratando-outras-excecoes-nao-capturadas
 
 git checkout master
-git merge --no-ff 08-26-desafio-tratando-exception-nohandlerfoundexception
+git merge --no-ff 08-27-desafio-tratando-outras-excecoes-nao-capturadas
 git push
 
 sair da tela de merge
