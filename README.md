@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-28-estentendo-formato-do-problema-para-adicionar-novas-propriedades
+git checkout -b 08-29-desafio-estendendo-o-formato-do-problema
 git add .
-git commit -m "Estendendo o formato do problema para adicionar novas propriedades"
-git push origin 08-28-estentendo-formato-do-problema-para-adicionar-novas-propriedades
+git commit -m "Desafio: estendendo o formato do problema"
+git push origin 08-29-desafio-estendendo-o-formato-do-problema
 
 git checkout master
-git merge --no-ff 08-28-estentendo-formato-do-problema-para-adicionar-novas-propriedades
+git merge --no-ff 08-29-desafio-estendendo-o-formato-do-problema
 git push
 
 sair da tela de merge
