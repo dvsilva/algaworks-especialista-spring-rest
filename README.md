@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-23-desafio-tratando-a-propertybindingexception-na-desserializacao
+git checkout -b 08-24-lancando-exception-de-desserializacao-na-atualizacao-parcial-patch
 git add .
-git commit -m "Desafio: tratando a PropertyBindingException na desserialização"
-git push origin 08-23-desafio-tratando-a-propertybindingexception-na-desserializacao
+git commit -m "Lançando exception de desserialização na atualização parcial (PATCH)"
+git push origin 08-24-lancando-exception-de-desserializacao-na-atualizacao-parcial-patch
 
 git checkout master
-git merge --no-ff 08-23-desafio-tratando-a-propertybindingexception-na-desserializacao
+git merge --no-ff 08-24-lancando-exception-de-desserializacao-na-atualizacao-parcial-patch
 git push
 
 sair da tela de merge
