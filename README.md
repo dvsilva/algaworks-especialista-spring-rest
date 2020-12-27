@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-19-desafio-usando-formato-de-problema-no-corpo-de-respostas
+git checkout -b 08-20-customizando-exception-handlers-de-responseentityexceptionhandler
 git add .
-git commit -m "Desafio: usando o formato de problemas no corpo de respostas"
-git push origin 08-19-desafio-usando-formato-de-problema-no-corpo-de-respostas
+git commit -m "Customizando exception handlers de ResponseEntityExceptionHandler"
+git push origin 08-20-customizando-exception-handlers-de-responseentityexceptionhandler
 
 git checkout master
-git merge --no-ff 08-19-desafio-usando-formato-de-problema-no-corpo-de-respostas
+git merge --no-ff 08-20-customizando-exception-handlers-de-responseentityexceptionhandler
 git push
 
 sair da tela de merge
