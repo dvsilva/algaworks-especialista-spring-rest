@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-20-customizando-exception-handlers-de-responseentityexceptionhandler
+git checkout -b 08-21-tratando-a-exception-invalidformatexception-na-desserializacao
 git add .
-git commit -m "Customizando exception handlers de ResponseEntityExceptionHandler"
-git push origin 08-20-customizando-exception-handlers-de-responseentityexceptionhandler
+git commit -m "Tratando a exception InvalidFormatException na desserialização"
+git push origin 08-21-tratando-a-exception-invalidformatexception-na-desserializacao
 
 git checkout master
-git merge --no-ff 08-20-customizando-exception-handlers-de-responseentityexceptionhandler
+git merge --no-ff 08-21-tratando-a-exception-invalidformatexception-na-desserializacao
 git push
 
 sair da tela de merge
