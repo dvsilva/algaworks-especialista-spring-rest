@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-22-habilitando-erros-na-desserializacao-de-propriedades-inexistentes-ou-ignoradas
+git checkout -b 08-23-desafio-tratando-a-propertybindingexception-na-desserializacao
 git add .
-git commit -m "Habilitando erros na desserialização de propriedades inexistentes ou ignoradas"
-git push origin 08-22-habilitando-erros-na-desserializacao-de-propriedades-inexistentes-ou-ignoradas
+git commit -m "Desafio: tratando a PropertyBindingException na desserialização"
+git push origin 08-23-desafio-tratando-a-propertybindingexception-na-desserializacao
 
 git checkout master
-git merge --no-ff 08-22-habilitando-erros-na-desserializacao-de-propriedades-inexistentes-ou-ignoradas
+git merge --no-ff 08-23-desafio-tratando-a-propertybindingexception-na-desserializacao
 git push
 
 sair da tela de merge
