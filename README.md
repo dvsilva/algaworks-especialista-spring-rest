@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-01-validacao-do-modelo-com-bean-validation
+git checkout -b 09-02-adicionando-constraints-e-validando-no-controller-com-valid
 git add .
-git commit -m "Validação do modelo com Bean Validation"
-git push origin 09-01-validacao-do-modelo-com-bean-validation
+git commit -m "Adicionando constraints e validando no controller com @Valid"
+git push origin 09-02-adicionando-constraints-e-validando-no-controller-com-valid
 
 git checkout master
-git merge --no-ff 09-01-validacao-do-modelo-com-bean-validation
+git merge --no-ff 09-02-adicionando-constraints-e-validando-no-controller-com-valid
 git push
 
 sair da tela de merge
