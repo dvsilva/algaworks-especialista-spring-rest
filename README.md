@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-04-estendendo-problem-details-para-adicionar-as-propriedades-com-constraints-violadas
+git checkout -b 09-06-validando-as-associacoes-de-uma-entidade-em-cascata
 git add .
-git commit -m "Estendendo o Problem Details para adicionar as propriedades com constraints violadas"
-git push origin 09-04-estendendo-problem-details-para-adicionar-as-propriedades-com-constraints-violadas
+git commit -m "Validando as associações de uma entidade em cascata"
+git push origin 09-06-validando-as-associacoes-de-uma-entidade-em-cascata
 
 git checkout master
-git merge --no-ff 09-04-estendendo-problem-details-para-adicionar-as-propriedades-com-constraints-violadas
+git merge --no-ff 09-06-validando-as-associacoes-de-uma-entidade-em-cascata
 git push
 
 sair da tela de merge
