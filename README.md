@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-02-adicionando-constraints-e-validando-no-controller-com-valid
+git checkout -b 09-03-desafio-tratando-exception-de-violacao-de-constraints-de-validacao
 git add .
-git commit -m "Adicionando constraints e validando no controller com @Valid"
-git push origin 09-02-adicionando-constraints-e-validando-no-controller-com-valid
+git commit -m "Desafio: tratando exception de violação de constraints de validação"
+git push origin 09-03-desafio-tratando-exception-de-violacao-de-constraints-de-validacao
 
 git checkout master
-git merge --no-ff 09-02-adicionando-constraints-e-validando-no-controller-com-valid
+git merge --no-ff 09-03-desafio-tratando-exception-de-violacao-de-constraints-de-validacao
 git push
 
 sair da tela de merge
