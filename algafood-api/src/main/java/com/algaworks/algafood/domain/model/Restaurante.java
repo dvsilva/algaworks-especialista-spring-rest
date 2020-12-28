@@ -44,7 +44,7 @@ public class Restaurante {
 	
 //	@NotNull // nao pode ser null
 //	@NotEmpty // nao pode ser vazio
-	@NotBlank // nao pode ter espacos em branco
+	@NotBlank(message = "Nome é obrigatório") // nao pode ter espacos em branco
 	@Column(nullable = false)
 	private String nome;
 	
