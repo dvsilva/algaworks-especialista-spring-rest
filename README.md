@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-05-conhecendo-e-adicionando-mais-contraints-de-validacao-do-modelo
+git checkout -b 09-06-validando-as-associacoes-de-uma-entidade-em-cascata
 git add .
-git commit -m "Conhecendo e adicionando mais constraints de validação no modelo"
-git push origin 09-05-conhecendo-e-adicionando-mais-contraints-de-validacao-do-modelo
+git commit -m "Validando as associações de uma entidade em cascata"
+git push origin 09-06-validando-as-associacoes-de-uma-entidade-em-cascata
 
 git checkout master
-git merge --no-ff 09-05-conhecendo-e-adicionando-mais-contraints-de-validacao-do-modelo
+git merge --no-ff 09-06-validando-as-associacoes-de-uma-entidade-em-cascata
 git push
 
 sair da tela de merge
