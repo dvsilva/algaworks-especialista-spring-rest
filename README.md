@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 08-29-desafio-estendendo-o-formato-do-problema
+git checkout -b 09-01-validacao-do-modelo-com-bean-validation
 git add .
-git commit -m "Desafio: estendendo o formato do problema"
-git push origin 08-29-desafio-estendendo-o-formato-do-problema
+git commit -m "Validação do modelo com Bean Validation"
+git push origin 09-01-validacao-do-modelo-com-bean-validation
 
 git checkout master
-git merge --no-ff 08-29-desafio-estendendo-o-formato-do-problema
+git merge --no-ff 09-01-validacao-do-modelo-com-bean-validation
 git push
 
 sair da tela de merge
