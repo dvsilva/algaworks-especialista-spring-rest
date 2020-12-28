@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-09-desafio-adicionando-constraints-de-validacao-no-modelo
+git checkout -b 09-20-customizando-mensagens-de-validacao-na-anotacao-da-constraint
 git add .
-git commit -m "Desafio: adicionando constraints de validação no modelo"
-git push origin 09-09-desafio-adicionando-constraints-de-validacao-no-modelo
+git commit -m "Customizando mensagens de validação na anotação da constraint"
+git push origin 09-20-customizando-mensagens-de-validacao-na-anotacao-da-constraint
 
 git checkout master
-git merge --no-ff 09-09-desafio-adicionando-constraints-de-validacao-no-modelo
+git merge --no-ff 09-20-customizando-mensagens-de-validacao-na-anotacao-da-constraint
 git push
 
 sair da tela de merge
