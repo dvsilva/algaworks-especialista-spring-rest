@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-03-desafio-tratando-exception-de-violacao-de-constraints-de-validacao
+git checkout -b 09-04-estendendo-problem-details-para-adicionar-as-propriedades-com-constraints-violadas
 git add .
-git commit -m "Desafio: tratando exception de violação de constraints de validação"
-git push origin 09-03-desafio-tratando-exception-de-violacao-de-constraints-de-validacao
+git commit -m "Estendendo o Problem Details para adicionar as propriedades com constraints violadas"
+git push origin 09-04-estendendo-problem-details-para-adicionar-as-propriedades-com-constraints-violadas
 
 git checkout master
-git merge --no-ff 09-03-desafio-tratando-exception-de-violacao-de-constraints-de-validacao
+git merge --no-ff 09-04-estendendo-problem-details-para-adicionar-as-propriedades-com-constraints-violadas
 git push
 
 sair da tela de merge
