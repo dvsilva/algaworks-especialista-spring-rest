@@ -20,11 +20,13 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.PositiveOrZero;
+import javax.validation.groups.ConvertGroup;
+import javax.validation.groups.Default;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import com.algaworks.algafood.api.Groups.CadastroRestaurante;
+import com.algaworks.algafood.api.Groups;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
@@ -42,17 +44,18 @@ public class Restaurante {
 	
 //	@NotNull // nao pode ser null
 //	@NotEmpty // nao pode ser vazio
-	@NotBlank(groups = CadastroRestaurante.class) // nao pode ter espacos em branco
+	@NotBlank // nao pode ter espacos em branco
 	@Column(nullable = false)
 	private String nome;
 	
 //	@DecimalMin("0")
-	@PositiveOrZero(groups = CadastroRestaurante.class)
+	@PositiveOrZero
 	@Column(name = "taxa_frete", nullable = false)
 	private BigDecimal taxaFrete;
 	
 	@Valid
-	@NotNull(groups = CadastroRestaurante.class)
+	@NotNull
+	@ConvertGroup(from = Default.class, to = Groups.CozinhaId.class)
 //	@JsonIgnoreProperties("hibernateLazyInitializer")
 //	@JsonIgnore
 	@ManyToOne // (fetch = FetchType.LAZY)

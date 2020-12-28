@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-06-validando-as-associacoes-de-uma-entidade-em-cascata
+git checkout -b 09-08-convertendo-grupos-de-constraints-para-validacao-em-cascata-com-convertgroup
 git add .
-git commit -m "Validando as associações de uma entidade em cascata"
-git push origin 09-06-validando-as-associacoes-de-uma-entidade-em-cascata
+git commit -m "Convertendo grupos de constraints para validação em cascata com @ConvertGroup"
+git push origin 09-08-convertendo-grupos-de-constraints-para-validacao-em-cascata-com-convertgroup
 
 git checkout master
-git merge --no-ff 09-06-validando-as-associacoes-de-uma-entidade-em-cascata
+git merge --no-ff 09-08-convertendo-grupos-de-constraints-para-validacao-em-cascata-com-convertgroup
 git push
 
 sair da tela de merge
