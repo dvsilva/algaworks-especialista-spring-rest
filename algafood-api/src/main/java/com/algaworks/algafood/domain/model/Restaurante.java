@@ -48,6 +48,7 @@ public class Restaurante {
 	@Column(nullable = false)
 	private String nome;
 	
+	@NotNull 
 //	@DecimalMin("0")
 	@PositiveOrZero
 	@Column(name = "taxa_frete", nullable = false)
