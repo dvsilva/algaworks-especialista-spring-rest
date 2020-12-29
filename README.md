@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-12-desafio-customizando-mensagens-de-validacao
+git checkout -b 09-13-resolvendo-mensagens-de-validacao-com-resource-bundle-do-bean-validation
 git add .
-git commit -m "Desafio: customizando mensagens de validação"
-git push origin 09-12-desafio-customizando-mensagens-de-validacao
+git commit -m "Resolvendo mensagens de validação com Resource Bundle do Bean Validation"
+git push origin 09-13-resolvendo-mensagens-de-validacao-com-resource-bundle-do-bean-validation
 
 git checkout master
-git merge --no-ff 09-12-desafio-customizando-mensagens-de-validacao
+git merge --no-ff 09-13-resolvendo-mensagens-de-validacao-com-resource-bundle-do-bean-validation
 git push
 
 sair da tela de merge
