@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-20-customizando-mensagens-de-validacao-na-anotacao-da-constraint
+git checkout -b 09-11-customizando-e-resolvendo-mensagens-de-validacao-globais-em-resource-bundle
 git add .
-git commit -m "Customizando mensagens de validação na anotação da constraint"
-git push origin 09-20-customizando-mensagens-de-validacao-na-anotacao-da-constraint
+git commit -m "Customizando e resolvendo mensagens de validação globais em Resource Bundle"
+git push origin 09-11-customizando-e-resolvendo-mensagens-de-validacao-globais-em-resource-bundle
 
 git checkout master
-git merge --no-ff 09-20-customizando-mensagens-de-validacao-na-anotacao-da-constraint
+git merge --no-ff 09-11-customizando-e-resolvendo-mensagens-de-validacao-globais-em-resource-bundle
 git push
 
 sair da tela de merge

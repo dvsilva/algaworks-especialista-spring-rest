@@ -7,3 +7,6 @@ validação do modelo com bean validation
 - também podemos extender para validar coisas específicas
 - precisamos de uma implementação - hibernate validator (starter web)
  
+ encoding propertie file
+ window - preferences - general - content types - text (Java Properties File e Spring Properties File mudar para UTF-8)
+ 
