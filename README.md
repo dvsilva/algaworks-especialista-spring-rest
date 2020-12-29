@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-14-usando-resource-bundle-do-spring-como-resource-bundle-do-bean-validation
+git checkout -b 09-15-criando-constraints-de-validacao-customizadas-usando-composicao
 git add .
-git commit -m "Usando o Resource Bundle do Spring como Resource Bundle do Bean Validation"
-git push origin 09-14-usando-resource-bundle-do-spring-como-resource-bundle-do-bean-validation
+git commit -m "Criando constraints de validação customizadas usando composição"
+git push origin 09-15-criando-constraints-de-validacao-customizadas-usando-composicao
 
 git checkout master
-git merge --no-ff 09-14-usando-resource-bundle-do-spring-como-resource-bundle-do-bean-validation
+git merge --no-ff 09-15-criando-constraints-de-validacao-customizadas-usando-composicao
 git push
 
 sair da tela de merge
