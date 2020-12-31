@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-16-criando-constraints-de-validacao-customizadas-com-implementacao-de-constraintvalidator
+git checkout -b 09-17-criando-constraints-de-validacao-customizadas-em-nivel-de-classe
 git add .
-git commit -m "Criando constraints de validação customizadas com implementação de ConstraintValidator"
-git push origin 09-16-criando-constraints-de-validacao-customizadas-com-implementacao-de-constraintvalidator
+git commit -m "Criando constraints de validação customizadas em nível de classe"
+git push origin 09-17-criando-constraints-de-validacao-customizadas-em-nivel-de-classe
 
 git checkout master
-git merge --no-ff 09-16-criando-constraints-de-validacao-customizadas-com-implementacao-de-constraintvalidator
+git merge --no-ff 09-17-criando-constraints-de-validacao-customizadas-em-nivel-de-classe
 git push
 
 sair da tela de merge
