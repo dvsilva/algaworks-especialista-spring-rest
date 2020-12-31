@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-19-executando-processo-de-validacao-programaticamente
+git checkout -b 09-20-desafio-tratando-exception-customizada-de-validacoes-programaticas
 git add .
-git commit -m "Executando processo de validação programaticamente"
-git push origin 09-19-executando-processo-de-validacao-programaticamente
+git commit -m "Desafio: tratando a exception customizada de validações programáticas"
+git push origin 09-20-desafio-tratando-exception-customizada-de-validacoes-programaticas
 
 git checkout master
-git merge --no-ff 09-19-executando-processo-de-validacao-programaticamente
+git merge --no-ff 09-20-desafio-tratando-exception-customizada-de-validacoes-programaticas
 git push
 
 sair da tela de merge
