@@ -14,6 +14,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -22,7 +23,6 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.algaworks.algafood.api.exceptionhandler.Problem.Field;
 import com.algaworks.algafood.domain.exception.EntidadeEmUsoException;
 import com.algaworks.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.algaworks.algafood.domain.exception.NegocioException;
@@ -49,12 +49,18 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 	        
 	    BindingResult bindingResult = ex.getBindingResult();
 	    
-	    List<Field> fields = bindingResult.getFieldErrors().stream()
-	    		.map(fieldError -> {
-	    			String message = messageSource.getMessage(fieldError, LocaleContextHolder.getLocale());
+	    List<Problem.Object> problemObjects = bindingResult.getAllErrors().stream()
+	    		.map(objectError  -> {
+	    			String message = messageSource.getMessage(objectError, LocaleContextHolder.getLocale());
 	    			
-	    			return Problem.Field.builder()
-	    					.name(fieldError.getField())
+	    			String name = objectError.getObjectName();
+	    			
+	    			if (objectError instanceof FieldError) {
+	    				name = ((FieldError) objectError).getField();
+	    			}
+	    			
+	    			return Problem.Object.builder()
+	    					.name(name)
 	    					.userMessage(message)
 	    					.build();
 	    		})
@@ -62,7 +68,7 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 	    
 		Problem problem = createProblemBuilder(status, problemType, detail)
 	        .userMessage(detail)
-	        .fields(fields)
+	        .objects(problemObjects)
 	        .build();
 	    
 	    return handleExceptionInternal(ex, problem, headers, status, request);
