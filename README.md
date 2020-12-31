@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-18-ajustando-exception-handler-para-adicionar-mensagens-de-validacao-em-nivel-de-classe
+git checkout -b 09-19-executando-processo-de-validacao-programaticamente
 git add .
-git commit -m "Ajustando Exception Handler para adicionar mensagens de validação em nível de classe"
-git push origin 09-18-ajustando-exception-handler-para-adicionar-mensagens-de-validacao-em-nivel-de-classe
+git commit -m "Executando processo de validação programaticamente"
+git push origin 09-19-executando-processo-de-validacao-programaticamente
 
 git checkout master
-git merge --no-ff 09-18-ajustando-exception-handler-para-adicionar-mensagens-de-validacao-em-nivel-de-classe
+git merge --no-ff 09-19-executando-processo-de-validacao-programaticamente
 git push
 
 sair da tela de merge
