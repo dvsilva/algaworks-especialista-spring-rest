@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-15-criando-constraints-de-validacao-customizadas-usando-composicao
+git checkout -b 09-16-criando-constraints-de-validacao-customizadas-com-implementacao-de-constraintvalidator
 git add .
-git commit -m "Criando constraints de validação customizadas usando composição"
-git push origin 09-15-criando-constraints-de-validacao-customizadas-usando-composicao
+git commit -m "Criando constraints de validação customizadas com implementação de ConstraintValidator"
+git push origin 09-16-criando-constraints-de-validacao-customizadas-com-implementacao-de-constraintvalidator
 
 git checkout master
-git merge --no-ff 09-15-criando-constraints-de-validacao-customizadas-usando-composicao
+git merge --no-ff 09-16-criando-constraints-de-validacao-customizadas-com-implementacao-de-constraintvalidator
 git push
 
 sair da tela de merge
