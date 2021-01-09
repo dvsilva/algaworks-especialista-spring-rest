@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-09-validando-corpo-da-resposta-http
+git checkout -b 10-10-criando-um-metodo-para-fazer-setup-dos-testes
 git add .
-git commit -m "Validando o corpo da resposta HTTP"
-git push origin 10-09-validando-corpo-da-resposta-http
+git commit -m "Criando um método para fazer setup dos testes"
+git push origin 10-10-criando-um-metodo-para-fazer-setup-dos-testes
 
 git checkout master
-git merge --no-ff 10-09-validando-corpo-da-resposta-http
+git merge --no-ff 10-10-criando-um-metodo-para-fazer-setup-dos-testes
 git push
 
 sair da tela de merge
