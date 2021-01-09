@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-07-configurando-maven-failsafe-plugin-no-projeto
+git checkout -b 10-08-implementando-testes-de-api-com-rest-assured-e-validando-o-codigo-de-status-http
 git add .
-git commit -m "Configurando Maven Failsafe Plugin no projeto"
-git push origin 10-07-configurando-maven-failsafe-plugin-no-projeto
+git commit -m "Implementando Testes de API com REST Assured e validando o código de status HTTP"
+git push origin 10-08-implementando-testes-de-api-com-rest-assured-e-validando-o-codigo-de-status-http
 
 git checkout master
-git merge --no-ff 10-07-configurando-maven-failsafe-plugin-no-projeto
+git merge --no-ff 10-08-implementando-testes-de-api-com-rest-assured-e-validando-o-codigo-de-status-http
 git push
 
 sair da tela de merge
