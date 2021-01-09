@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-01-introducao-aos-testes-de-integracao-e-testes-de-apis
+git checkout -b 10-02-preparando-projeto-para-testes-de-integracao
 git add .
-git commit -m "Introdução aos Testes de Integração e Testes de APIs"
-git push origin 10-01-introducao-aos-testes-de-integracao-e-testes-de-apis
+git commit -m "Preparando o projeto para testes de integração"
+git push origin 10-02-preparando-projeto-para-testes-de-integracao
 
 git checkout master
-git merge --no-ff 10-01-introducao-aos-testes-de-integracao-e-testes-de-apis
+git merge --no-ff 10-02-preparando-projeto-para-testes-de-integracao
 git push
 
 sair da tela de merge
