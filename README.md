@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-02-preparando-projeto-para-testes-de-integracao
+git checkout -b 10-03-criando-e-rodando-um-teste-de-integracao-com-spring-boot-junit-e-assertj
 git add .
-git commit -m "Preparando o projeto para testes de integração"
-git push origin 10-02-preparando-projeto-para-testes-de-integracao
+git commit -m "Criando e rodando um teste de integração com Spring Boot, JUnit e AssertJ"
+git push origin 10-03-criando-e-rodando-um-teste-de-integracao-com-spring-boot-junit-e-assertj
 
 git checkout master
-git merge --no-ff 10-02-preparando-projeto-para-testes-de-integracao
+git merge --no-ff 10-03-criando-e-rodando-um-teste-de-integracao-com-spring-boot-junit-e-assertj
 git push
 
 sair da tela de merge
