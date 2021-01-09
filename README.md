@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 09-20-desafio-tratando-exception-customizada-de-validacoes-programaticas
+git checkout -b 10-01-introducao-aos-testes-de-integracao-e-testes-de-apis
 git add .
-git commit -m "Desafio: tratando a exception customizada de validações programáticas"
-git push origin 09-20-desafio-tratando-exception-customizada-de-validacoes-programaticas
+git commit -m "Introdução aos Testes de Integração e Testes de APIs"
+git push origin 10-01-introducao-aos-testes-de-integracao-e-testes-de-apis
 
 git checkout master
-git merge --no-ff 09-20-desafio-tratando-exception-customizada-de-validacoes-programaticas
+git merge --no-ff 10-01-introducao-aos-testes-de-integracao-e-testes-de-apis
 git push
 
 sair da tela de merge
