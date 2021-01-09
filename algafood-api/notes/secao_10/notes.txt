@@ -11,5 +11,5 @@ rodar testes com maven
 ./mvnw test
 
 com maven failsafe
-./mvnw test e ./mvnw clean install - nao executam teste
-./mvnw verify - executa os testes
+./mvnw test e ./mvnw clean package - nao executam testes
+./mvnw verify ou ./mvnw clean install - executa os testes
