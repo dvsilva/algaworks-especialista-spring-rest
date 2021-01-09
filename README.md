@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-06-rodando-testes-pelo-maven
+git checkout -b 10-07-configurando-maven-failsafe-plugin-no-projeto
 git add .
-git commit -m "Rodando os testes pelo Maven"
-git push origin 10-06-rodando-testes-pelo-maven
+git commit -m "Configurando Maven Failsafe Plugin no projeto"
+git push origin 10-07-configurando-maven-failsafe-plugin-no-projeto
 
 git checkout master
-git merge --no-ff 10-06-rodando-testes-pelo-maven
+git merge --no-ff 10-07-configurando-maven-failsafe-plugin-no-projeto
 git push
 
 sair da tela de merge
