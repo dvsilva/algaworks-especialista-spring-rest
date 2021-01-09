@@ -7,4 +7,6 @@ testes de API
 	- testar codigo http e corpo da resposta
 	- se a implementação da (classe e contrato) estrutura for alterada, se o contrato e a funcionalidade opera da mesma forma o testes passa
 
- 
+rodar testes com maven
+./mvnw test
+
