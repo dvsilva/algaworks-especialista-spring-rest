@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-04-escrevendo-bons-nomes-de-testes
+git checkout -b 10-05-desafio-escrevendo-testes-de-integracao
 git add .
-git commit -m "Escrevendo bons nomes de testes"
-git push origin 10-04-escrevendo-bons-nomes-de-testes
+git commit -m "Desafio: escrevendo testes de integração"
+git push origin 10-05-desafio-escrevendo-testes-de-integracao
 
 git checkout master
-git merge --no-ff 10-04-escrevendo-bons-nomes-de-testes
+git merge --no-ff 10-05-desafio-escrevendo-testes-de-integracao
 git push
 
 sair da tela de merge
