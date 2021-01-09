@@ -13,3 +13,5 @@ rodar testes com maven
 com maven failsafe
 ./mvnw test e ./mvnw clean package - nao executam testes
 ./mvnw verify ou ./mvnw clean install - executa os testes
+
+Machers do hamcrest - cria expressoes com regras de correspondencia

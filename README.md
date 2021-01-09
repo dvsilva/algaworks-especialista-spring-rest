@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-08-implementando-testes-de-api-com-rest-assured-e-validando-o-codigo-de-status-http
+git checkout -b 10-09-validando-corpo-da-resposta-http
 git add .
-git commit -m "Implementando Testes de API com REST Assured e validando o código de status HTTP"
-git push origin 10-08-implementando-testes-de-api-com-rest-assured-e-validando-o-codigo-de-status-http
+git commit -m "Validando o corpo da resposta HTTP"
+git push origin 10-09-validando-corpo-da-resposta-http
 
 git checkout master
-git merge --no-ff 10-08-implementando-testes-de-api-com-rest-assured-e-validando-o-codigo-de-status-http
+git merge --no-ff 10-09-validando-corpo-da-resposta-http
 git push
 
 sair da tela de merge
