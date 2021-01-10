@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-13-configurando-banco-de-testes-e-usando-testpropertyresource
+git checkout -b 10-14-limpando-e-populando-o-bando-de-dados-de-teste
 git add .
-git commit -m "Configurando um banco de testes e usando @TestPropertySource"
-git push origin 10-13-configurando-banco-de-testes-e-usando-testpropertyresource
+git commit -m "Limpando e populando o banco de dados de teste"
+git push origin 10-14-limpando-e-populando-o-bando-de-dados-de-teste
 
 git checkout master
-git merge --no-ff 10-13-configurando-banco-de-testes-e-usando-testpropertyresource
+git merge --no-ff 10-14-limpando-e-populando-o-bando-de-dados-de-teste
 git push
 
 sair da tela de merge
