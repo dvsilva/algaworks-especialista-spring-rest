@@ -13,6 +13,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 public class RestauranteMixin {
 
+	// ignora propriedade apenas da desserialização (json de entrada)
 	@JsonIgnoreProperties(value = "nome", allowGetters = true)
 	private Cozinha cozinha;
 	
