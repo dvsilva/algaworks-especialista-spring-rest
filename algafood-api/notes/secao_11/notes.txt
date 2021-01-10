@@ -1,3 +1,5 @@
 @Transactional 
 - evitar o uso de duas transacoes comitando uma e dando erro em outra (problema de consistencia)
 - no service anotado com @Transactional nao abre outra tansacao para os repositorios
+
+mixin - é uma classe que possui membros de uma outra classe original onde a configuração do jackson ficam no mixin
