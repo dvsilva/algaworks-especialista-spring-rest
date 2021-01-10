@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-01-analisando-e-definindo-melhor-o-escopo-das-transacoes
+git checkout -b 11-02-refinando-payload-de-cadastro-com-jsonignoreproperties
 git add .
-git commit -m "Analisando e definindo melhor o escopo das transações"
-git push origin 11-01-analisando-e-definindo-melhor-o-escopo-das-transacoes
+git commit -m "Refinando o payload de cadastro com @JsonIgnoreProperties"
+git push origin 11-02-refinando-payload-de-cadastro-com-jsonignoreproperties
 
 git checkout master
-git merge --no-ff 11-01-analisando-e-definindo-melhor-o-escopo-das-transacoes
+git merge --no-ff 11-02-refinando-payload-de-cadastro-com-jsonignoreproperties
 git push
 
 sair da tela de merge
