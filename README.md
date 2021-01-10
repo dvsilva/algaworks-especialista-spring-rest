@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-06-boas-praticas-para-trabalhar-com-data-e-hora-em-rest-apis
+git checkout -b 11-07-configurando-e-refatorando-o-projeto-para-usar-utc
 git add .
-git commit -m "Boas práticas para trabalhar com data e hora em REST APIs"
-git push origin 11-06-boas-praticas-para-trabalhar-com-data-e-hora-em-rest-apis
+git commit -m "Configurando e refatorando o projeto para usar UTC"
+git push origin 11-07-configurando-e-refatorando-o-projeto-para-usar-utc
 
 git checkout master
-git merge --no-ff 11-06-boas-praticas-para-trabalhar-com-data-e-hora-em-rest-apis
+git merge --no-ff 11-07-configurando-e-refatorando-o-projeto-para-usar-utc
 git push
 
 sair da tela de merge
