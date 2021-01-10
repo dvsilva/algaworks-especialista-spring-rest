@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-12-voltando-estado-inicial-do-banco-de-dados-para-cada-execucao-de-teste-com-callback-do-flyway
+git checkout -b 10-13-configurando-banco-de-testes-e-usando-testpropertyresource
 git add .
-git commit -m "Voltando o estado inicial do banco de dados para cada execução de teste com callback do Flyway"
-git push origin 10-12-voltando-estado-inicial-do-banco-de-dados-para-cada-execucao-de-teste-com-callback-do-flyway
+git commit -m "Configurando um banco de testes e usando @TestPropertySource"
+git push origin 10-13-configurando-banco-de-testes-e-usando-testpropertyresource
 
 git checkout master
-git merge --no-ff 10-12-voltando-estado-inicial-do-banco-de-dados-para-cada-execucao-de-teste-com-callback-do-flyway
+git merge --no-ff 10-13-configurando-banco-de-testes-e-usando-testpropertyresource
 git push
 
 sair da tela de merge
