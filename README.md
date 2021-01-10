@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-03-criando-classes-de-mixin-para-usar-as-anotacoes-do-jackson
+git checkout -b 11-04-desafio-usando-jsonignoreproperties-e-jackson-mixin
 git add .
-git commit -m "Criando classes de mixin para usar as anotações do Jackson"
-git push origin 11-03-criando-classes-de-mixin-para-usar-as-anotacoes-do-jackson
+git commit -m "Desafio: usando @JsonIgnoreProperties e Jackson Mixin"
+git push origin 11-04-desafio-usando-jsonignoreproperties-e-jackson-mixin
 
 git checkout master
-git merge --no-ff 11-03-criando-classes-de-mixin-para-usar-as-anotacoes-do-jackson
+git merge --no-ff 11-04-desafio-usando-jsonignoreproperties-e-jackson-mixin
 git push
 
 sair da tela de merge
