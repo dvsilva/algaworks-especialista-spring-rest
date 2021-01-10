@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-16-desafio-refatorando-codigo-de-testes
+git checkout -b 10-17-escrevendo-testes-de-api
 git add .
-git commit -m "Desafio: refatorando o código de testes"
-git push origin 10-16-desafio-refatorando-codigo-de-testes
+git commit -m "Desafio: escrevendo testes de API"
+git push origin 10-17-escrevendo-testes-de-api
 
 git checkout master
-git merge --no-ff 10-16-desafio-refatorando-codigo-de-testes
+git merge --no-ff 10-17-escrevendo-testes-de-api
 git push
 
 sair da tela de merge
