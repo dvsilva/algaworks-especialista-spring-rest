@@ -3,3 +3,10 @@
 - no service anotado com @Transactional nao abre outra tansacao para os repositorios
 
 mixin - é uma classe que possui membros de uma outra classe original onde a configuração do jackson ficam no mixin
+
+offset - diferenca de horarios em relação ao Greenwich 
+GMT - Fuso horário Greenwich Mean Time
+BRT - Fuso horário de Brasília -> baseado no UTC - 3 
+BRST -  quanto tem horario de verão -> UTC - 2
+
+
