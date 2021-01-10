@@ -1,0 +1,3 @@
+@Transactional 
+- evitar o uso de duas transacoes comitando uma e dando erro em outra (problema de consistencia)
+- no service anotado com @Transactional nao abre outra tansacao para os repositorios
