@@ -9,4 +9,15 @@ GMT - Fuso horário Greenwich Mean Time
 BRT - Fuso horário de Brasília -> baseado no UTC - 3 
 BRST -  quanto tem horario de verão -> UTC - 2
 
-
+5 leis
+1 - use iso 8601 para formatar data/hora 
+	- padrão internacional para representação de data e hora publicado pela ISO
+	- objetivo é fornecer um método bem definido de representação de datas e horas 
+	- evitar problemas de interpretação e ambiguidade principalmente com dados trafegados entre paises com convenções diferentes de data e hora
+	- padrao flexivel e permite diversas combinações
+	- com offset -03:00 sem offset fica com Z
+2 - aceite qualquer fuso horário
+	- converter para o fuso horario utilizado pela api
+3 - armazene em UTC
+4 - retorne em UTC
+5 - não inclua o horário se não for necessário (problema de conversão para outro dia por casusa da hora) 
