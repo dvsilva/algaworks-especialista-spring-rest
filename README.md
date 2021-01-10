@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-05-antes-de-estudar-sobre-data-hora-relembrando-aulas-de-geografia-e-entendendo-fuso-horarios
+git checkout -b 11-06-boas-praticas-para-trabalhar-com-data-e-hora-em-rest-apis
 git add .
-git commit -m "Antes de estudar sobre data/hora: relembrando as aulas de geografia e entendendo os fusos horários"
-git push origin 11-05-antes-de-estudar-sobre-data-hora-relembrando-aulas-de-geografia-e-entendendo-fuso-horarios
+git commit -m "Boas práticas para trabalhar com data e hora em REST APIs"
+git push origin 11-06-boas-praticas-para-trabalhar-com-data-e-hora-em-rest-apis
 
 git checkout master
-git merge --no-ff 11-05-antes-de-estudar-sobre-data-hora-relembrando-aulas-de-geografia-e-entendendo-fuso-horarios
+git merge --no-ff 11-06-boas-praticas-para-trabalhar-com-data-e-hora-em-rest-apis
 git push
 
 sair da tela de merge
