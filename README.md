@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-14-limpando-e-populando-o-bando-de-dados-de-teste
+git checkout -b 10-15-testando-endpoint-passando-parametro-de-url
 git add .
-git commit -m "Limpando e populando o banco de dados de teste"
-git push origin 10-14-limpando-e-populando-o-bando-de-dados-de-teste
+git commit -m "Testando endpoint passando parâmetro de URL"
+git push origin 10-15-testando-endpoint-passando-parametro-de-url
 
 git checkout master
-git merge --no-ff 10-14-limpando-e-populando-o-bando-de-dados-de-teste
+git merge --no-ff 10-15-testando-endpoint-passando-parametro-de-url
 git push
 
 sair da tela de merge
