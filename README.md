@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-17-escrevendo-testes-de-api
+git checkout -b 11-01-analisando-e-definindo-melhor-o-escopo-das-transacoes
 git add .
-git commit -m "Desafio: escrevendo testes de API"
-git push origin 10-17-escrevendo-testes-de-api
+git commit -m "Analisando e definindo melhor o escopo das transações"
+git push origin 11-01-analisando-e-definindo-melhor-o-escopo-das-transacoes
 
 git checkout master
-git merge --no-ff 10-17-escrevendo-testes-de-api
+git merge --no-ff 11-01-analisando-e-definindo-melhor-o-escopo-das-transacoes
 git push
 
 sair da tela de merge
