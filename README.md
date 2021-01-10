@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-11-entendendo-o-problema-da-ordem-de-execucao-dos-testes
+git checkout -b 10-12-voltando-estado-inicial-do-banco-de-dados-para-cada-execucao-de-teste-com-callback-do-flyway
 git add .
-git commit -m "Entendendo o problema da ordem de execução dos testes"
-git push origin 10-11-entendendo-o-problema-da-ordem-de-execucao-dos-testes
+git commit -m "Voltando o estado inicial do banco de dados para cada execução de teste com callback do Flyway"
+git push origin 10-12-voltando-estado-inicial-do-banco-de-dados-para-cada-execucao-de-teste-com-callback-do-flyway
 
 git checkout master
-git merge --no-ff 10-11-entendendo-o-problema-da-ordem-de-execucao-dos-testes
+git merge --no-ff 10-12-voltando-estado-inicial-do-banco-de-dados-para-cada-execucao-de-teste-com-callback-do-flyway
 git push
 
 sair da tela de merge
