@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-10-criando-um-metodo-para-fazer-setup-dos-testes
+git checkout -b 10-11-entendendo-o-problema-da-ordem-de-execucao-dos-testes
 git add .
-git commit -m "Criando um método para fazer setup dos testes"
-git push origin 10-10-criando-um-metodo-para-fazer-setup-dos-testes
+git commit -m "Entendendo o problema da ordem de execução dos testes"
+git push origin 10-11-entendendo-o-problema-da-ordem-de-execucao-dos-testes
 
 git checkout master
-git merge --no-ff 10-10-criando-um-metodo-para-fazer-setup-dos-testes
+git merge --no-ff 10-11-entendendo-o-problema-da-ordem-de-execucao-dos-testes
 git push
 
 sair da tela de merge
