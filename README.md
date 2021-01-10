@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 10-15-testando-endpoint-passando-parametro-de-url
+git checkout -b 10-16-desafio-refatorando-codigo-de-testes
 git add .
-git commit -m "Testando endpoint passando parâmetro de URL"
-git push origin 10-15-testando-endpoint-passando-parametro-de-url
+git commit -m "Desafio: refatorando o código de testes"
+git push origin 10-16-desafio-refatorando-codigo-de-testes
 
 git checkout master
-git merge --no-ff 10-15-testando-endpoint-passando-parametro-de-url
+git merge --no-ff 10-16-desafio-refatorando-codigo-de-testes
 git push
 
 sair da tela de merge
