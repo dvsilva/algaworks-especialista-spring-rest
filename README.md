@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-02-refinando-payload-de-cadastro-com-jsonignoreproperties
+git checkout -b 11-03-criando-classes-de-mixin-para-usar-as-anotacoes-do-jackson
 git add .
 git commit -m "Criando classes de mixin para usar as anotações do Jackson"
-git push origin 11-02-refinando-payload-de-cadastro-com-jsonignoreproperties
+git push origin 11-03-criando-classes-de-mixin-para-usar-as-anotacoes-do-jackson
 
 git checkout master
-git merge --no-ff 11-02-refinando-payload-de-cadastro-com-jsonignoreproperties
+git merge --no-ff 11-03-criando-classes-de-mixin-para-usar-as-anotacoes-do-jackson
 git push
 
 sair da tela de merge
