@@ -5,7 +5,7 @@ github commands
 ```bash
 git checkout -b 11-02-refinando-payload-de-cadastro-com-jsonignoreproperties
 git add .
-git commit -m "Refinando o payload de cadastro com @JsonIgnoreProperties"
+git commit -m "Criando classes de mixin para usar as anotações do Jackson"
 git push origin 11-02-refinando-payload-de-cadastro-com-jsonignoreproperties
 
 git checkout master
