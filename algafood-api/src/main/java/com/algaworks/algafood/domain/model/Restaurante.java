@@ -45,23 +45,23 @@ public class Restaurante {
 	
 //	@NotNull // nao pode ser null
 //	@NotEmpty // nao pode ser vazio
-	@NotBlank // nao pode ter espacos em branco
+//	@NotBlank // nao pode ter espacos em branco
 	@Column(nullable = false)
 	private String nome;
 	
-	@NotNull 
 //	@DecimalMin("0")
-	@PositiveOrZero
 //	@TaxaFrete
 //	@Multiplo(numero = 5)
+//	@NotNull 
+//	@PositiveOrZero
 	@Column(name = "taxa_frete", nullable = false)
 	private BigDecimal taxaFrete;
 
-	@Valid
-	@NotNull
-	@ConvertGroup(from = Default.class, to = Groups.CozinhaId.class)
 //	@JsonIgnoreProperties("hibernateLazyInitializer")
 //	@JsonIgnore
+//	@Valid
+//	@NotNull
+//	@ConvertGroup(from = Default.class, to = Groups.CozinhaId.class)
 	@ManyToOne // (fetch = FetchType.LAZY)
 	@JoinColumn(name = "cozinha_id", nullable = false)
 	private Cozinha cozinha;
