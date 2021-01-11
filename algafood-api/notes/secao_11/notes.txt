@@ -28,4 +28,7 @@ BRST -  quanto tem horario de verão -> UTC - 2
 	- padrão de projetos para transporte de dados entre diferentes camadas, modulos ou via serialização de dados
 	- agrupa conjunto de propriedades de um ou mais classes de entidades em uma classe de transferencia de dados mais simples apenas com as propriedades desejadas
 
-
+model mapper - 3 estratégias
+1 - todos os tokens da origem devem corresponder aos tokens do destino
+2 - os token da origem e destino podem corresponder em qualquer ordem
+3 - nome da propriedade de origem deve ter pelo menos um token de correspondencia no destino
