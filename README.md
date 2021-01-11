@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-12-refatorando-e-criando-um-assembler-de-dto
+git checkout -b 11-13-desafio-refatorando-e-criando-um-disassembler-do-dto
 git add .
-git commit -m "Refatorando e criando um assembler de DTO"
-git push origin 11-12-refatorando-e-criando-um-assembler-de-dto
+git commit -m "Desafio: Refatorando e criando um disassembler do DTO"
+git push origin 11-13-desafio-refatorando-e-criando-um-disassembler-do-dto
 
 git checkout master
-git merge --no-ff 11-12-refatorando-e-criando-um-assembler-de-dto
+git merge --no-ff 11-13-desafio-refatorando-e-criando-um-disassembler-do-dto
 git push
 
 sair da tela de merge
