@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-08-desafio-refatorando-codigo-para-usar-offsetdatetime
+git checkout -b 11-09-isolando-domain-model-do-representation-model-com-padrao-dto
 git add .
-git commit -m "Desafio: refatorando o código para usar OffsetDateTime"
-git push origin 11-08-desafio-refatorando-codigo-para-usar-offsetdatetime
+git commit -m "Isolando o Domain Model do Representation Model com o padrão DTO"
+git push origin 11-09-isolando-domain-model-do-representation-model-com-padrao-dto
 
 git checkout master
-git merge --no-ff 11-08-desafio-refatorando-codigo-para-usar-offsetdatetime
+git merge --no-ff 11-09-isolando-domain-model-do-representation-model-com-padrao-dto
 git push
 
 sair da tela de merge
