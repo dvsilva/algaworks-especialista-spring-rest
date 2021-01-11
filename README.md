@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-11-criando-dtos-para-entrada-de-dados-na-api
+git checkout -b 11-12-refatorando-e-criando-um-assembler-de-dto
 git add .
-git commit -m "Criando DTOs para entrada de dados na API"
-git push origin 11-11-criando-dtos-para-entrada-de-dados-na-api
+git commit -m "Refatorando e criando um assembler de DTO"
+git push origin 11-12-refatorando-e-criando-um-assembler-de-dto
 
 git checkout master
-git merge --no-ff 11-11-criando-dtos-para-entrada-de-dados-na-api
+git merge --no-ff 11-12-refatorando-e-criando-um-assembler-de-dto
 git push
 
 sair da tela de merge
