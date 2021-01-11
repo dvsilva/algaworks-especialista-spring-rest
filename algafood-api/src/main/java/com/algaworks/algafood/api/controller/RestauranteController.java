@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -34,7 +33,6 @@ import com.algaworks.algafood.api.model.input.RestauranteInput;
 import com.algaworks.algafood.core.validation.ValidacaoException;
 import com.algaworks.algafood.domain.exception.CozinhaNaoEncontradaException;
 import com.algaworks.algafood.domain.exception.NegocioException;
-import com.algaworks.algafood.domain.model.Cozinha;
 import com.algaworks.algafood.domain.model.Restaurante;
 import com.algaworks.algafood.domain.repository.RestauranteRepository;
 import com.algaworks.algafood.domain.service.CadastroRestauranteService;
@@ -85,15 +83,15 @@ public class RestauranteController {
 	
 	@PutMapping("/{restauranteId}")
 	public RestauranteModel atualizar(@PathVariable Long restauranteId, @RequestBody @Valid RestauranteInput restauranteInput) {
-		Restaurante restaurante = restauranteInputDisassembler.toDomainObject(restauranteInput);
-		return atualizar(restauranteId, restaurante);
-	}
-
-	private RestauranteModel atualizar(Long restauranteId, Restaurante restaurante) {
 		try {
 			Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(restauranteId);
-			BeanUtils.copyProperties(restaurante, restauranteAtual, 
-					"id", "formasPagamento", "endereco", "dataCadastro", "produtos");
+
+//			Restaurante restaurante = restauranteInputDisassembler.toDomainObject(restauranteInput);
+//			BeanUtils.copyProperties(restaurante, restauranteAtual, 
+//					"id", "formasPagamento", "endereco", "dataCadastro", "produtos");
+			
+			restauranteInputDisassembler.copyToDomainObject(restauranteInput, restauranteAtual);
+			
 			return restauranteModelAssembler.toModel(cadastroRestaurante.salvar(restauranteAtual));
 		}
 		catch(CozinhaNaoEncontradaException e) {
@@ -107,7 +105,7 @@ public class RestauranteController {
 		Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(restauranteId);
 		merge(campos, restauranteAtual, request);
 		validate(restauranteAtual, "restaurante");
-		return atualizar(restauranteId, restauranteAtual);
+		return restauranteModelAssembler.toModel(cadastroRestaurante.salvar(restauranteAtual));
 	}
 	
 	private void validate(Restaurante restaurante, String objectName) {
