@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-20-desafio-usando-dtos-como-representation-model
+git checkout -b 11-21-corrigindo-bug-de-tratamento-de-exception-de-integridade-de-dados-com-flush-do-jpa
 git add .
-git commit -m "Desafio: usando DTOs como representation model"
-git push origin 11-20-desafio-usando-dtos-como-representation-model
+git commit -m "Corrigindo bug de tratamento de exception de integridade de dados com flush do JPA"
+git push origin 11-21-corrigindo-bug-de-tratamento-de-exception-de-integridade-de-dados-com-flush-do-jpa
 
 git checkout master
-git merge --no-ff 11-20-desafio-usando-dtos-como-representation-model
+git merge --no-ff 11-21-corrigindo-bug-de-tratamento-de-exception-de-integridade-de-dados-com-flush-do-jpa
 git push
 
 sair da tela de merge
