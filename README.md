@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-09-isolando-domain-model-do-representation-model-com-padrao-dto
+git checkout -b 11-10-implementando-a-conversao-de-entidade-para-dto
 git add .
-git commit -m "Isolando o Domain Model do Representation Model com o padrão DTO"
-git push origin 11-09-isolando-domain-model-do-representation-model-com-padrao-dto
+git commit -m "Implementando a conversão de entidade para DTO"
+git push origin 11-10-implementando-a-conversao-de-entidade-para-dto
 
 git checkout master
-git merge --no-ff 11-09-isolando-domain-model-do-representation-model-com-padrao-dto
+git merge --no-ff 11-10-implementando-a-conversao-de-entidade-para-dto
 git push
 
 sair da tela de merge
