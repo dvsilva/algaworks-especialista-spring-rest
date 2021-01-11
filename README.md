@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-21-corrigindo-bug-de-tratamento-de-exception-de-integridade-de-dados-com-flush-do-jpa
+git checkout -b 12-01-modelando-sub-recursos-para-relacionamentos
 git add .
-git commit -m "Corrigindo bug de tratamento de exception de integridade de dados com flush do JPA"
-git push origin 11-21-corrigindo-bug-de-tratamento-de-exception-de-integridade-de-dados-com-flush-do-jpa
+git commit -m "Modelando sub-recursos para relacionamentos"
+git push origin 12-01-modelando-sub-recursos-para-relacionamentos
 
 git checkout master
-git merge --no-ff 11-21-corrigindo-bug-de-tratamento-de-exception-de-integridade-de-dados-com-flush-do-jpa
+git merge --no-ff 12-01-modelando-sub-recursos-para-relacionamentos
 git push
 
 sair da tela de merge
