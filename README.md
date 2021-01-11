@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-15-entendendo-a-estrategia-padrao-modelmapper-para-correspondencia-de-propriedades
+git checkout -b 11-16-customizando-mapeamento-de-propriedades-com-modelmapper
 git add .
-git commit -m "Entendendo a estratégia padrão do ModelMapper para correspondência de propriedades"
-git push origin 11-15-entendendo-a-estrategia-padrao-modelmapper-para-correspondencia-de-propriedades
+git commit -m "Customizando o mapeamento de propriedades com ModelMapper"
+git push origin 11-16-customizando-mapeamento-de-propriedades-com-modelmapper
 
 git checkout master
-git merge --no-ff 11-15-entendendo-a-estrategia-padrao-modelmapper-para-correspondencia-de-propriedades
+git merge --no-ff 11-16-customizando-mapeamento-de-propriedades-com-modelmapper
 git push
 
 sair da tela de merge

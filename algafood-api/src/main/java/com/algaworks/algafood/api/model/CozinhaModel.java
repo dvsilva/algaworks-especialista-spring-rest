@@ -8,6 +8,6 @@ import lombok.Setter;
 public class CozinhaModel {
 
 	private Long id;
-	private String cozinhaNome;
+	private String nome;
 	
 }
