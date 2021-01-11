@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-10-implementando-a-conversao-de-entidade-para-dto
+git checkout -b 11-11-criando-dtos-para-entrada-de-dados-na-api
 git add .
-git commit -m "Implementando a conversão de entidade para DTO"
-git push origin 11-10-implementando-a-conversao-de-entidade-para-dto
+git commit -m "Criando DTOs para entrada de dados na API"
+git push origin 11-11-criando-dtos-para-entrada-de-dados-na-api
 
 git checkout master
-git merge --no-ff 11-10-implementando-a-conversao-de-entidade-para-dto
+git merge --no-ff 11-11-criando-dtos-para-entrada-de-dados-na-api
 git push
 
 sair da tela de merge
