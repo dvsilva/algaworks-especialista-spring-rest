@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-19-estrategias-de-nomes-de-propriedades-snake-case-vs-lower-camel-case
+git checkout -b 11-20-desafio-usando-dtos-como-representation-model
 git add .
-git commit -m "Estratégias de nomes de propriedades: snake case vs lower camel case"
-git push origin 11-19-estrategias-de-nomes-de-propriedades-snake-case-vs-lower-camel-case
+git commit -m "Desafio: usando DTOs como representation model"
+git push origin 11-20-desafio-usando-dtos-como-representation-model
 
 git checkout master
-git merge --no-ff 11-19-estrategias-de-nomes-de-propriedades-snake-case-vs-lower-camel-case
+git merge --no-ff 11-20-desafio-usando-dtos-como-representation-model
 git push
 
 sair da tela de merge
