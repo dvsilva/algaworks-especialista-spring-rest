@@ -21,3 +21,11 @@ BRST -  quanto tem horario de verão -> UTC - 2
 3 - armazene em UTC
 4 - retorne em UTC
 5 - não inclua o horário se não for necessário (problema de conversão para outro dia por casusa da hora) 
+
+- não compartihar mesma classe de dominio para representação
+- ocasiona problemas ao ignorar propriedades, diferentes propriedades para diferentes endpoints, mudanças nos atributos, adicionar propriedades etc
+- DTO (Data Transfer Object) 
+	- padrão de projetos para transporte de dados entre diferentes camadas, modulos ou via serialização de dados
+	- agrupa conjunto de propriedades de um ou mais classes de entidades em uma classe de transferencia de dados mais simples apenas com as propriedades desejadas
+
+
