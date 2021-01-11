@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-18-revisando-e-ajustando-as-mensagens-de-validacao-com-uso-de-dtos
+git checkout -b 11-19-estrategias-de-nomes-de-propriedades-snake-case-vs-lower-camel-case
 git add .
-git commit -m "Revisando e ajustando as mensagens de validação com o uso de DTOs"
-git push origin 11-18-revisando-e-ajustando-as-mensagens-de-validacao-com-uso-de-dtos
+git commit -m "Estratégias de nomes de propriedades: snake case vs lower camel case"
+git push origin 11-19-estrategias-de-nomes-de-propriedades-snake-case-vs-lower-camel-case
 
 git checkout master
-git merge --no-ff 11-18-revisando-e-ajustando-as-mensagens-de-validacao-com-uso-de-dtos
+git merge --no-ff 11-19-estrategias-de-nomes-de-propriedades-snake-case-vs-lower-camel-case
 git push
 
 sair da tela de merge
