@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-17-mapeando-para-uma-instancia-destino-e-nao-um-tipo-com-modelmapper
+git checkout -b 11-18-revisando-e-ajustando-as-mensagens-de-validacao-com-uso-de-dtos
 git add .
-git commit -m "Mapeando para uma instância destino (e não um tipo) com ModelMapper"
-git push origin 11-17-mapeando-para-uma-instancia-destino-e-nao-um-tipo-com-modelmapper
+git commit -m "Revisando e ajustando as mensagens de validação com o uso de DTOs"
+git push origin 11-18-revisando-e-ajustando-as-mensagens-de-validacao-com-uso-de-dtos
 
 git checkout master
-git merge --no-ff 11-17-mapeando-para-uma-instancia-destino-e-nao-um-tipo-com-modelmapper
+git merge --no-ff 11-18-revisando-e-ajustando-as-mensagens-de-validacao-com-uso-de-dtos
 git push
 
 sair da tela de merge
