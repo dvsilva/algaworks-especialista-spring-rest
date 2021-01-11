@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-13-desafio-refatorando-e-criando-um-disassembler-do-dto
+git checkout -b 11-14-adicionando-e-usando-o-modelmapper
 git add .
-git commit -m "Desafio: Refatorando e criando um disassembler do DTO"
-git push origin 11-13-desafio-refatorando-e-criando-um-disassembler-do-dto
+git commit -m "Adicionando e usando o ModelMapper"
+git push origin 11-14-adicionando-e-usando-o-modelmapper
 
 git checkout master
-git merge --no-ff 11-13-desafio-refatorando-e-criando-um-disassembler-do-dto
+git merge --no-ff 11-14-adicionando-e-usando-o-modelmapper
 git push
 
 sair da tela de merge
