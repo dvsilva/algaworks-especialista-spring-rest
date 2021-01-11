@@ -13,14 +13,20 @@ import lombok.Setter;
 @Setter
 @Getter
 public class RestauranteInput {
-
-	@NotBlank
+	
+//	@NotNull // nao pode ser null
+//	@NotEmpty // nao pode ser vazio
+	@NotBlank // nao pode ter espacos em branco
 	private String nome;
 	
-	@NotNull
+//	@DecimalMin("0")
+//	@TaxaFrete
+//	@Multiplo(numero = 5)
+	@NotNull 
 	@PositiveOrZero
 	private BigDecimal taxaFrete;
-	
+
+//	@ConvertGroup(from = Default.class, to = Groups.CozinhaId.class)
 	@Valid
 	@NotNull
 	private CozinhaIdInput cozinha;
