@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 11-16-customizando-mapeamento-de-propriedades-com-modelmapper
+git checkout -b 11-17-mapeando-para-uma-instancia-destino-e-nao-um-tipo-com-modelmapper
 git add .
-git commit -m "Customizando o mapeamento de propriedades com ModelMapper"
-git push origin 11-16-customizando-mapeamento-de-propriedades-com-modelmapper
+git commit -m "Mapeando para uma instância destino (e não um tipo) com ModelMapper"
+git push origin 11-17-mapeando-para-uma-instancia-destino-e-nao-um-tipo-com-modelmapper
 
 git checkout master
-git merge --no-ff 11-16-customizando-mapeamento-de-propriedades-com-modelmapper
+git merge --no-ff 11-17-mapeando-para-uma-instancia-destino-e-nao-um-tipo-com-modelmapper
 git push
 
 sair da tela de merge
