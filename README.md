@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-07-refatorando-servico-de-cadastro-de-restaurante-para-incluir-endereco
+git checkout -b 12-08-desafio-implementando-os-endpoints-de-grupos
 git add .
-git commit -m "Refatorando serviço de cadastro de restaurante para incluir endereço"
-git push origin 12-07-refatorando-servico-de-cadastro-de-restaurante-para-incluir-endereco
+git commit -m "Desafio: implementando os endpoints de grupos"
+git push origin 12-08-desafio-implementando-os-endpoints-de-grupos
 
 git checkout master
-git merge --no-ff 12-07-refatorando-servico-de-cadastro-de-restaurante-para-incluir-endereco
+git merge --no-ff 12-08-desafio-implementando-os-endpoints-de-grupos
 git push
 
 sair da tela de merge
