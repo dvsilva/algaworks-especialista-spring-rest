@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-02-granularidade-de-recursos-chatty-vs-chunky-apis
+git checkout -b 12-03-modelando-conceitos-abstratos-de-negocio-e-acoes-nao-crud-como-recursos
 git add .
-git commit -m "Granularidade de recursos: Chatty vs Chunky APIs"
-git push origin 12-02-granularidade-de-recursos-chatty-vs-chunky-apis
+git commit -m "Modelando conceitos abstratos de negócio e ações não-CRUD como recursos"
+git push origin 12-03-modelando-conceitos-abstratos-de-negocio-e-acoes-nao-crud-como-recursos
 
 git checkout master
-git merge --no-ff 12-02-granularidade-de-recursos-chatty-vs-chunky-apis
+git merge --no-ff 12-03-modelando-conceitos-abstratos-de-negocio-e-acoes-nao-crud-como-recursos
 git push
 
 sair da tela de merge
