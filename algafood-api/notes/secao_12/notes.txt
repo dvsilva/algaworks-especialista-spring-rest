@@ -8,3 +8,14 @@ chunky
 	- granularidade grossa 
 	- operações são feitas em uma unica chamada na api
 
+quando o crud nao é suficiente
+- ativação e inativação
+	- com put envia mais dados mais burocratico, pois passar todos os dados
+	- patch enviando apenas o ativo
+	- criar endpoint para ativar e inativar (ativacao e inativacao)
+	- modelar como subrecurso ativo e enviar true e false
+	- put em ativo (ativar) delete em ativo (desativar) e get em ativo para obter (true e false) se esta ativo ou não
+	- post em alteracoes-status enviando ativo e valor e get para obter historico sobre esses eventos
+- modelar processos de negocio como recursos (notificacoes-restaurantes)
+
+	
