@@ -1,5 +1,10 @@
 sub-recursos - recursos aninhados em outros recursos do sistema
 
-chatty (tagarela) - granularidade fina / precisa fazer diversas chamadas na api para executar uma operação (restaurante e endereço)
-chunky - granularidade grossa / operações são feitas em uma unica chamada na api
+chatty (tagarela) 
+	- granularidade fina 
+	- precisa fazer diversas chamadas na api para executar uma operação (restaurante e endereço)
+	- cuidado com o estado do recurso inconsistente (não cadastrar o endereço do restaurante)
+chunky 
+	- granularidade grossa 
+	- operações são feitas em uma unica chamada na api
 
