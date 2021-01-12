@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-01-modelando-sub-recursos-para-relacionamentos
+git checkout -b 12-02-granularidade-de-recursos-chatty-vs-chunky-apis
 git add .
-git commit -m "Modelando sub-recursos para relacionamentos"
-git push origin 12-01-modelando-sub-recursos-para-relacionamentos
+git commit -m "Granularidade de recursos: Chatty vs Chunky APIs"
+git push origin 12-02-granularidade-de-recursos-chatty-vs-chunky-apis
 
 git checkout master
-git merge --no-ff 12-01-modelando-sub-recursos-para-relacionamentos
+git merge --no-ff 12-02-granularidade-de-recursos-chatty-vs-chunky-apis
 git push
 
 sair da tela de merge
