@@ -1,0 +1,1278 @@
+{
+	"info": {
+		"_postman_id": "841ff08e-bcb1-4c66-be01-b69bb68fa1d9",
+		"name": "AlgaFood",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cozinhas",
+			"item": [
+				{
+					"name": "Cozinhas - Listar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/cozinhas",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cozinhas - Buscar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/cozinhas/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cozinhas - Remover",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/cozinhas/3",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cozinhas - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Argentina\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/cozinhas/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cozinhas - Adicionar XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " <cozinha>\r\n    <nome>Japonesa</nome>\r\n</cozinha>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/cozinhas",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cozinhas - Adicionar JSON",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Brasileira\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/cozinhas",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Restaurantes",
+			"item": [
+				{
+					"name": "Restaurantes - Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurantes - Buscar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurantes - Adicionar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"nome\": \"Comida Mineira\",\r\n    \"taxaFrete\": 12,\r\n    \"cozinha\": {\r\n        \"id\": 1\r\n    },\r\n    \"endereco\": {\r\n        \"cep\": \"38400-999\",\r\n        \"logradouro\": \"Rua João Pinheiro\",\r\n        \"numero\": \"1000\",\r\n        \"complemento\": null,\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": {\r\n            \"id\": 1\r\n        }\r\n    }\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurantes - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"nome\": \"Bom Prato\",\r\n    \"taxaFrete\": 5,\r\n    \"cozinha\": {\r\n        \"id\": 2\r\n    },\r\n    \"endereco\": {\r\n        \"cep\": \"38400-999\",\r\n        \"logradouro\": \"Rua João Pinheiro\",\r\n        \"numero\": \"1000\",\r\n        \"complemento\": null,\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": {\r\n            \"id\": 1\r\n        }\r\n    }\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurantes - Atualizar Parcial",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"nome\": \"Cozinha Goiana\",\r\n    \"taxaFrete\": 5,\r\n    \"cozinha\": {\r\n        \"id\": 2\r\n    }\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurantes - Remover",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/3",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurantes - Ativar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/ativo",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"ativo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurantes - Inativar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/ativo",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"ativo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estados",
+			"item": [
+				{
+					"name": "Estados - Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.algafood.local:8080/estados",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"estados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estados - Buscar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/estados/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"estados",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estados - Adicionar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Santa Catarina\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/estados",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"estados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estados - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Rio Grande do Sul\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/estados/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"estados",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estados - Remover",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/estados/4",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"estados",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Cidades",
+			"item": [
+				{
+					"name": "Cidades - Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.algafood.local:8080/cidades",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"cidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cidades - Buscar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/cidades/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"cidades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cidades - Adicionar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"nome\": \"Ouro Preto\",\r\n    \"estado\": {\r\n        \"id\": 1\r\n    }\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/cidades",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"cidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cidades - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"nome\": \"Guarulhos\",\r\n    \"estado\": {\r\n        \"id\": 2\r\n    }\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/cidades/6",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"cidades",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cidades - Remover",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/cidades/6",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"cidades",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Formas de Pagamento",
+			"item": [
+				{
+					"name": "Formas de Pagamento - Listar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/formas-pagamento",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"formas-pagamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Formas de Pagamento - Buscar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/formas-pagamento/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"formas-pagamento",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Formas de Pagamento - Adicionar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Vale Refeição\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/formas-pagamento",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"formas-pagamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Formas de Pagamento - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Vale Alimentação\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/formas-pagamento/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"formas-pagamento",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Formas de Pagamento - Remover",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/formas-pagamento/4",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"formas-pagamento",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Grupos",
+			"item": [
+				{
+					"name": "Grupos - Listar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/grupos",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"grupos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Grupos - Buscar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/grupos/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"grupos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Grupos - Adicionar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Cliente\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/grupos",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"grupos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Grupos - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Administrador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/grupos/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"grupos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Grupos - Remover",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/grupos/5",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"grupos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Usuarios - Listar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/usuarios",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios - Buscar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/usuarios/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios - Adicionar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"João da Silva\",\r\n    \"email\": \"joao.silva@algafood.com\",\r\n    \"senha\": \"senhadojoao\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/usuarios",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"João de Oliveira\",\r\n    \"email\": \"joao.oliveira@algafood.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/usuarios/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios - Alterar Senha",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"senhaAtual\": \"senhadojoao\",\r\n    \"novaSenha\": \"senhadojoao123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/usuarios/5/senha",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"5",
+								"senha"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
