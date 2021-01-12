@@ -1,0 +1,1 @@
+sub-recursos - recursos aninhados em outros recursos do sistema
