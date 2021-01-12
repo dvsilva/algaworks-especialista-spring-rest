@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-06-adicionando-endereco-no-modelo-da-representacao-do-recurso-de-restaurante
+git checkout -b 12-07-refatorando-servico-de-cadastro-de-restaurante-para-incluir-endereco
 git add .
-git commit -m "Adicionando endereço no modelo da representação do recurso de restaurante"
-git push origin 12-06-adicionando-endereco-no-modelo-da-representacao-do-recurso-de-restaurante
+git commit -m "Refatorando serviço de cadastro de restaurante para incluir endereço"
+git push origin 12-07-refatorando-servico-de-cadastro-de-restaurante-para-incluir-endereco
 
 git checkout master
-git merge --no-ff 12-06-adicionando-endereco-no-modelo-da-representacao-do-recurso-de-restaurante
+git merge --no-ff 12-07-refatorando-servico-de-cadastro-de-restaurante-para-incluir-endereco
 git push
 
 sair da tela de merge
