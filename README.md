@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-03-modelando-conceitos-abstratos-de-negocio-e-acoes-nao-crud-como-recursos
+git checkout -b 12-04-implementando-os-endpoints-de-ativacao-e-inativacao-de-restaurantes
 git add .
-git commit -m "Modelando conceitos abstratos de negócio e ações não-CRUD como recursos"
-git push origin 12-03-modelando-conceitos-abstratos-de-negocio-e-acoes-nao-crud-como-recursos
+git commit -m "Implementando os endpoints de ativação e inativação de restaurantes"
+git push origin 12-04-implementando-os-endpoints-de-ativacao-e-inativacao-de-restaurantes
 
 git checkout master
-git merge --no-ff 12-03-modelando-conceitos-abstratos-de-negocio-e-acoes-nao-crud-como-recursos
+git merge --no-ff 12-04-implementando-os-endpoints-de-ativacao-e-inativacao-de-restaurantes
 git push
 
 sair da tela de merge

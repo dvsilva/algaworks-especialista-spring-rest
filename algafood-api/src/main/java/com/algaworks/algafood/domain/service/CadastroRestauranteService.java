@@ -46,6 +46,22 @@ public class CadastroRestauranteService {
 		}
 	}
 	
+	@Transactional
+	public void ativar(Long restauranteId) {
+		Restaurante restauranteAtual = buscarOuFalhar(restauranteId);
+		restauranteAtual.ativar();
+		// opcional pois é sincronizada dentro da transacao pelo JPA
+		// return restauranteRepository.save(restaurante);
+	}
+	
+	@Transactional
+	public void inativar(Long restauranteId) {
+		Restaurante restauranteAtual = buscarOuFalhar(restauranteId);
+		restauranteAtual.inativar();
+		// opcional pois é sincronizada dentro da transacao pelo JPA
+		// return restauranteRepository.save(restaurante); 
+	}
+	
 	public Restaurante buscarOuFalhar(Long restauranteId) {
 		return restauranteRepository.findById(restauranteId)
 				.orElseThrow(() -> new RestauranteNaoEncontradoException(restauranteId));
