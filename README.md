@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-05-desafio-implementando-os-endpoints-de-formas-de-pagamento
+git checkout -b 12-06-adicionando-endereco-no-modelo-da-representacao-do-recurso-de-restaurante
 git add .
-git commit -m "Desafio: implementando os endpoints de formas de pagamento"
-git push origin 12-05-desafio-implementando-os-endpoints-de-formas-de-pagamento
+git commit -m "Adicionando endereço no modelo da representação do recurso de restaurante"
+git push origin 12-06-adicionando-endereco-no-modelo-da-representacao-do-recurso-de-restaurante
 
 git checkout master
-git merge --no-ff 12-05-desafio-implementando-os-endpoints-de-formas-de-pagamento
+git merge --no-ff 12-06-adicionando-endereco-no-modelo-da-representacao-do-recurso-de-restaurante
 git push
 
 sair da tela de merge
