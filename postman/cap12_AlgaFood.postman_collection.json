@@ -251,35 +251,6 @@
 					"response": []
 				},
 				{
-					"name": "Restaurantes - Listar Formas de Pagamento",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"type": "text",
-								"value": "application/xml",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "api.algafood.local:8080/restaurantes/1/formas-pagamento",
-							"host": [
-								"api",
-								"algafood",
-								"local"
-							],
-							"port": "8080",
-							"path": [
-								"restaurantes",
-								"1",
-								"formas-pagamento"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Restaurantes - Adicionar",
 					"request": {
 						"method": "POST",
@@ -476,6 +447,35 @@
 					"response": []
 				},
 				{
+					"name": "Restaurantes - Listar Formas de Pagamento",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/formas-pagamento",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"formas-pagamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Restaurantes - Associar Forma de Pagamento",
 					"request": {
 						"method": "PUT",
@@ -588,6 +588,95 @@
 								"restaurantes",
 								"1",
 								"fechamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurantes - Listar Responsáveis",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/responsaveis",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"responsaveis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurantes - Associar Responsáveis",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/responsaveis/3",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"responsaveis",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurantes - Desassociar Responsáveis",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/responsaveis/2",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"responsaveis",
+								"2"
 							]
 						}
 					},

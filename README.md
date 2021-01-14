@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-16-desafio-implementando-os-endpoints-de-associacao-de-usuarios-com-grupos
+git checkout -b 12-17-desafio-implementando-os-endpoints-de-associacao-de-usuarios-responsaveis-com-restaurantes
 git add .
-git commit -m "Desafio: implementando os endpoints de associação de usuários com grupos"
-git push origin 12-16-desafio-implementando-os-endpoints-de-associacao-de-usuarios-com-grupos
+git commit -m "Desafio: implementando endpoints de associação de usuários responsáveis com restaurantes"
+git push origin 12-17-desafio-implementando-os-endpoints-de-associacao-de-usuarios-responsaveis-com-restaurantes
 
 git checkout master
-git merge --no-ff 12-16-desafio-implementando-os-endpoints-de-associacao-de-usuarios-com-grupos
+git merge --no-ff 12-17-desafio-implementando-os-endpoints-de-associacao-de-usuarios-responsaveis-com-restaurantes
 git push
 
 sair da tela de merge
