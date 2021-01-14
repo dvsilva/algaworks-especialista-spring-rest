@@ -74,7 +74,6 @@ public class CadastroRestauranteService {
 		// opcional pois é sincronizada dentro da transacao pelo JPA
 		// return restauranteRepository.save(restaurante); 
 	}
-	
 
 	@Transactional
 	public void desassociarFormaPagamento(Long restauranteId, Long formaPagamentoId) {
