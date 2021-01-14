@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-10-um-pouco-mais-sobre-jpa-objeto-alterado-fora-da-transacao-e-sincronizado-com-o-banco-de-dados
+git checkout -b 12-11-implementando-regra-de-negocio-para-evitar-usuarios-com-emails-duplicados
 git add .
-git commit -m "Um pouco mais sobre JPA: objeto alterado fora da transação é sincronizado com o banco de dados"
-git push origin 12-10-um-pouco-mais-sobre-jpa-objeto-alterado-fora-da-transacao-e-sincronizado-com-o-banco-de-dados
+git commit -m "Implementando regra de negócio para evitar usuários com e-mails duplicados"
+git push origin 12-11-implementando-regra-de-negocio-para-evitar-usuarios-com-emails-duplicados
 
 git checkout master
-git merge --no-ff 12-10-um-pouco-mais-sobre-jpa-objeto-alterado-fora-da-transacao-e-sincronizado-com-o-banco-de-dados
+git merge --no-ff 12-11-implementando-regra-de-negocio-para-evitar-usuarios-com-emails-duplicados
 git push
 
 sair da tela de merge
