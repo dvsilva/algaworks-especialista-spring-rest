@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-09-desafio-implementando-os-endpoints-de-usuarios
+git checkout -b 12-10-um-pouco-mais-sobre-jpa-objeto-alterado-fora-da-transacao-e-sincronizado-com-o-banco-de-dados
 git add .
-git commit -m "Desafio: implementando os endpoints de usuarios"
-git push origin 12-09-desafio-implementando-os-endpoints-de-usuarios
+git commit -m "Um pouco mais sobre JPA: objeto alterado fora da transação é sincronizado com o banco de dados"
+git push origin 12-10-um-pouco-mais-sobre-jpa-objeto-alterado-fora-da-transacao-e-sincronizado-com-o-banco-de-dados
 
 git checkout master
-git merge --no-ff 12-09-desafio-implementando-os-endpoints-de-usuarios
+git merge --no-ff 12-10-um-pouco-mais-sobre-jpa-objeto-alterado-fora-da-transacao-e-sincronizado-com-o-banco-de-dados
 git push
 
 sair da tela de merge
