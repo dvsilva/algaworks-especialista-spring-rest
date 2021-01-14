@@ -1064,6 +1064,160 @@
 			]
 		},
 		{
+			"name": "Produtos",
+			"item": [
+				{
+					"name": "Produtos - Listar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/produtos",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Produtos - Buscar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/produtos/1",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"produtos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Produtos - Adicionar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Frango agridoce apimentado\",\r\n    \"descricao\": \"Delicioso frango agridoce com especiarias\",\r\n    \"preco\": 68.9,\r\n    \"ativo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/produtos",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Produtos - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Frango agridoce apimentado\",\r\n    \"descricao\": \"Delicioso frango agridoce com especiarias\",\r\n    \"preco\": 68.9,\r\n    \"ativo\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/produtos/10",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"produtos",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
 			"name": "Grupos",
 			"item": [
 				{
@@ -1210,6 +1364,104 @@
 							"path": [
 								"grupos",
 								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Grupos - Listar Permissões",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/grupos/1/permissoes",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"grupos",
+								"1",
+								"permissoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Grupos - Associar Permissões",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/grupos/1/permissoes/2",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"grupos",
+								"1",
+								"permissoes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Grupos - Desassociar Permissões",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/grupos/1/permissoes/2",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"grupos",
+								"1",
+								"permissoes",
+								"2"
 							]
 						}
 					},
@@ -1398,34 +1650,9 @@
 						}
 					},
 					"response": []
-				}
-			],
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
 				},
 				{
-					"listen": "test",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				}
-			]
-		},
-		{
-			"name": "Produtos",
-			"item": [
-				{
-					"name": "Produtos - Listar",
+					"name": "Usuarios - Listar Grupos",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1437,7 +1664,7 @@
 							}
 						],
 						"url": {
-							"raw": "api.algafood.local:8080/restaurantes/1/produtos",
+							"raw": "api.algafood.local:8080/usuarios/1/grupos",
 							"host": [
 								"api",
 								"algafood",
@@ -1445,77 +1672,16 @@
 							],
 							"port": "8080",
 							"path": [
-								"restaurantes",
+								"usuarios",
 								"1",
-								"produtos"
+								"grupos"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Produtos - Buscar",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"type": "text",
-								"value": "application/xml",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "api.algafood.local:8080/restaurantes/1/produtos/1",
-							"host": [
-								"api",
-								"algafood",
-								"local"
-							],
-							"port": "8080",
-							"path": [
-								"restaurantes",
-								"1",
-								"produtos",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Produtos - Adicionar",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Frango agridoce apimentado\",\r\n    \"descricao\": \"Delicioso frango agridoce com especiarias\",\r\n    \"preco\": 68.9,\r\n    \"ativo\": true\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "api.algafood.local:8080/restaurantes/1/produtos",
-							"host": [
-								"api",
-								"algafood",
-								"local"
-							],
-							"port": "8080",
-							"path": [
-								"restaurantes",
-								"1",
-								"produtos"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Produtos - Atualizar",
+					"name": "Usuarios - Associar Grupos",
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -1528,7 +1694,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Frango agridoce apimentado\",\r\n    \"descricao\": \"Delicioso frango agridoce com especiarias\",\r\n    \"preco\": 68.9,\r\n    \"ativo\": false\r\n}",
+							"raw": "{\r\n    \"nome\": \"João de Oliveira\",\r\n    \"email\": \"joao.oliveira@algafood.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1536,7 +1702,7 @@
 							}
 						},
 						"url": {
-							"raw": "api.algafood.local:8080/restaurantes/1/produtos/10",
+							"raw": "api.algafood.local:8080/usuarios/1/grupos/3",
 							"host": [
 								"api",
 								"algafood",
@@ -1544,10 +1710,49 @@
 							],
 							"port": "8080",
 							"path": [
-								"restaurantes",
+								"usuarios",
 								"1",
-								"produtos",
-								"10"
+								"grupos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios - Desssociar Grupos",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"João de Oliveira\",\r\n    \"email\": \"joao.oliveira@algafood.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.algafood.local:8080/usuarios/1/grupos/3",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"1",
+								"grupos",
+								"3"
 							]
 						}
 					},
