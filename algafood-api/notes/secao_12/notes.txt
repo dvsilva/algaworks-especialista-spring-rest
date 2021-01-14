@@ -18,4 +18,12 @@ quando o crud nao é suficiente
 	- post em alteracoes-status enviando ativo e valor e get para obter historico sobre esses eventos
 - modelar processos de negocio como recursos (notificacoes-restaurantes)
 
-	
+problema com atualização de objetos
+- objetos gerenciados pelo jpa ficam no contexto de persistencia
+- qualquer alteração feita é sincronizada com o banco de dados
+- se altera um objeto e depois faz uma transação mesmo que vazia sem o objeto passado ele salva
+- é feita uma transação mesmo sem salvar no repositorio ele salva no banco
+- para não salvar e a transação falhar, basta lançar uma runtimeexception por exemplo
+- mesmo se mandar descarregar (entityManager.flush()) se lança a exceção faz um rollback
+- no caso de criar a entidade será preciso chamar o repositorio.save(obj) para ser gerenciado pelo jpa
+
