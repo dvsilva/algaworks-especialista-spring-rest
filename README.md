@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-11-implementando-regra-de-negocio-para-evitar-usuarios-com-emails-duplicados
+git checkout -b 12-12-implementando-endpoints-de-associacao-de-formas-de-pagamento-em-restaurantes
 git add .
-git commit -m "Implementando regra de negócio para evitar usuários com e-mails duplicados"
-git push origin 12-11-implementando-regra-de-negocio-para-evitar-usuarios-com-emails-duplicados
+git commit -m "Implementando os endpoints de associação de formas de pagamento em restaurantes"
+git push origin 12-12-implementando-endpoints-de-associacao-de-formas-de-pagamento-em-restaurantes
 
 git checkout master
-git merge --no-ff 12-11-implementando-regra-de-negocio-para-evitar-usuarios-com-emails-duplicados
+git merge --no-ff 12-12-implementando-endpoints-de-associacao-de-formas-de-pagamento-em-restaurantes
 git push
 
 sair da tela de merge
