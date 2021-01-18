@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-18-implementando-ativacao-e-inativacao-em-massa-de-restaurantes
+git checkout -b 12-19-desafio-implementando-endpoints-de-consulta-de-pedidos
 git add .
-git commit -m "Implementando ativação e inativação em massa de restaurantes"
-git push origin 12-18-implementando-ativacao-e-inativacao-em-massa-de-restaurantes
+git commit -m "Desafio: Implementando os endpoints de consulta de pedidos"
+git push origin 12-19-desafio-implementando-endpoints-de-consulta-de-pedidos
 
 git checkout master
-git merge --no-ff 12-18-implementando-ativacao-e-inativacao-em-massa-de-restaurantes
+git merge --no-ff 12-19-desafio-implementando-endpoints-de-consulta-de-pedidos
 git push
 
 sair da tela de merge
