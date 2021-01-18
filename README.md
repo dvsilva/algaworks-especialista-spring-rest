@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-22-implementando-endpoint-de-transicao-de-status-de-pedidos
+git checkout -b 12-23-desafio-implementando-endpoints-de-transicao-de-status-de-pedidos
 git add .
-git commit -m "Implementando endpoint de transição de status de pedidos"
-git push origin 12-22-implementando-endpoint-de-transicao-de-status-de-pedidos
+git commit -m "Desafio: implementando endpoints de transição de status de pedidos"
+git push origin 12-23-desafio-implementando-endpoints-de-transicao-de-status-de-pedidos
 
 git checkout master
-git merge --no-ff 12-22-implementando-endpoint-de-transicao-de-status-de-pedidos
+git merge --no-ff 12-23-desafio-implementando-endpoints-de-transicao-de-status-de-pedidos
 git push
 
 sair da tela de merge
