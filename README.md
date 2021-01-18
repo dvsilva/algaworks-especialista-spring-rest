@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-19-desafio-implementando-endpoints-de-consulta-de-pedidos
+git checkout -b 12-20-otimizando-query-de-pedidos-e-retornando-model-resumido-na-listagem
 git add .
-git commit -m "Desafio: Implementando os endpoints de consulta de pedidos"
-git push origin 12-19-desafio-implementando-endpoints-de-consulta-de-pedidos
+git commit -m "Otimizando a query de pedidos e retornando model resumido na listagem"
+git push origin 12-20-otimizando-query-de-pedidos-e-retornando-model-resumido-na-listagem
 
 git checkout master
-git merge --no-ff 12-19-desafio-implementando-endpoints-de-consulta-de-pedidos
+git merge --no-ff 12-20-otimizando-query-de-pedidos-e-retornando-model-resumido-na-listagem
 git push
 
 sair da tela de merge
