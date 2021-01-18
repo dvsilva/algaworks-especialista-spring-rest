@@ -9,7 +9,7 @@ chunky
 	- operações são feitas em uma unica chamada na api
 
 quando o crud nao é suficiente
-- ativação e inativação
+- ativação e inativação (também se aplica na alteração de status - criado, cancelado, confirmado e entregue)
 	- com put envia mais dados mais burocratico, pois passar todos os dados
 	- patch enviando apenas o ativo
 	- criar endpoint para ativar e inativar (ativacao e inativacao)
@@ -26,4 +26,3 @@ problema com atualização de objetos
 - para não salvar e a transação falhar, basta lançar uma runtimeexception por exemplo
 - mesmo se mandar descarregar (entityManager.flush()) se lança a exceção faz um rollback
 - no caso de criar a entidade será preciso chamar o repositorio.save(obj) para ser gerenciado pelo jpa
-

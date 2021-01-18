@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-24-refatorando-o-codigo-de-regras-para-transicao-de-status-de-pedidos
+git checkout -b 12-25-usando-ids-vs-uuids-nas-uris-de-recursos
 git add .
-git commit -m "Refatorando o código de regras para transição de status de pedidos"
-git push origin 12-24-refatorando-o-codigo-de-regras-para-transicao-de-status-de-pedidos
+git commit -m "Usando IDs vs UUIDs nas URIs de recursos"
+git push origin 12-25-usando-ids-vs-uuids-nas-uris-de-recursos
 
 git checkout master
-git merge --no-ff 12-24-refatorando-o-codigo-de-regras-para-transicao-de-status-de-pedidos
+git merge --no-ff 12-25-usando-ids-vs-uuids-nas-uris-de-recursos
 git push
 
 sair da tela de merge
