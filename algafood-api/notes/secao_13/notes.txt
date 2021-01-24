@@ -1,0 +1,2 @@
+dto - possibilita mudar estrutura (adicionar atributos)
+jackson view - mais poluido o código com anotações mas simplifica para não ter muitos dtos

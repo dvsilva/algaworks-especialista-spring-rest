@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 12-25-usando-ids-vs-uuids-nas-uris-de-recursos
+git checkout -b 13-01-fazendo-projecao-de-recursos-com-jsonview-do-jackson
 git add .
-git commit -m "Usando IDs vs UUIDs nas URIs de recursos"
-git push origin 12-25-usando-ids-vs-uuids-nas-uris-de-recursos
+git commit -m "Fazendo projeção de recursos com @JsonView do Jackson"
+git push origin 13-01-fazendo-projecao-de-recursos-com-jsonview-do-jackson
 
 git checkout master
-git merge --no-ff 12-25-usando-ids-vs-uuids-nas-uris-de-recursos
+git merge --no-ff 13-01-fazendo-projecao-de-recursos-com-jsonview-do-jackson
 git push
 
 sair da tela de merge
