@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-02-limitando-campos-retornados-pela-api-com-jsonfilter-do-jackson
+git checkout -b 13-03-limitando-campos-retornados-pela-api-com-squiggly
 git add .
-git commit -m "Limitando os campos retornados pela API com @JsonFilter do Jackson"
-git push origin 13-02-limitando-campos-retornados-pela-api-com-jsonfilter-do-jackson
+git commit -m "Limitando os campos retornados pela API com Squiggly"
+git push origin 13-03-limitando-campos-retornados-pela-api-com-squiggly
 
 git checkout master
-git merge --no-ff 13-02-limitando-campos-retornados-pela-api-com-jsonfilter-do-jackson
+git merge --no-ff 13-03-limitando-campos-retornados-pela-api-com-squiggly
 git push
 
 sair da tela de merge

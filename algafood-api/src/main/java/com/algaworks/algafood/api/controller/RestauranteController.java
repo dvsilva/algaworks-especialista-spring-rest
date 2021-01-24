@@ -62,7 +62,7 @@ public class RestauranteController {
 	@Autowired
 	private SmartValidator validator;
 	
-	@JsonView(RestauranteView.Resumo.class)
+//	@JsonView(RestauranteView.Resumo.class)
 	@GetMapping
 	public List<RestauranteModel> listar() {
 		return restauranteModelAssembler.toCollectionModel(restauranteRepository.findAll());
