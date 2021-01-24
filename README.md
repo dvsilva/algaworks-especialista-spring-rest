@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-01-fazendo-projecao-de-recursos-com-jsonview-do-jackson
+git checkout -b 13-02-limitando-campos-retornados-pela-api-com-jsonfilter-do-jackson
 git add .
-git commit -m "Fazendo projeção de recursos com @JsonView do Jackson"
-git push origin 13-01-fazendo-projecao-de-recursos-com-jsonview-do-jackson
+git commit -m "Limitando os campos retornados pela API com @JsonFilter do Jackson"
+git push origin 13-02-limitando-campos-retornados-pela-api-com-jsonfilter-do-jackson
 
 git checkout master
-git merge --no-ff 13-01-fazendo-projecao-de-recursos-com-jsonview-do-jackson
+git merge --no-ff 13-02-limitando-campos-retornados-pela-api-com-jsonfilter-do-jackson
 git push
 
 sair da tela de merge
