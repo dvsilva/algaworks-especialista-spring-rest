@@ -25,7 +25,9 @@ import com.algaworks.algafood.domain.exception.NegocioException;
 import com.algaworks.algafood.domain.model.Pedido;
 import com.algaworks.algafood.domain.model.Usuario;
 import com.algaworks.algafood.domain.repository.PedidoRepository;
+import com.algaworks.algafood.domain.repository.filter.PedidoFilter;
 import com.algaworks.algafood.domain.service.EmissaoPedidoService;
+import com.algaworks.algafood.infrastructure.repository.spec.PedidoSpecs;
 
 @RestController
 @RequestMapping(value = "/pedidos")
@@ -65,9 +67,15 @@ public class PedidoController {
 //		return pedidosWrapper;
 //	}
 	
+//	@GetMapping
+//	public List<PedidoResumoModel> listar() {
+//		List<Pedido> todosPedidos = pedidoRepository.findAll();
+//		return pedidoResumoModelAssembler.toCollectionModel(todosPedidos);
+//	}
+	
 	@GetMapping
-	public List<PedidoResumoModel> listar() {
-		List<Pedido> todosPedidos = pedidoRepository.findAll();
+	public List<PedidoResumoModel> pesquisar(PedidoFilter filtro) {
+		List<Pedido> todosPedidos = pedidoRepository.findAll(PedidoSpecs.usandoFiltro(filtro));
 		return pedidoResumoModelAssembler.toCollectionModel(todosPedidos);
 	}
 
