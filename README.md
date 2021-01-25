@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-09-desafio-implementando-paginacao-e-ordenacao-de-pedidos
+git checkout -b 13-10-implementando-jsonserializer-para-customizar-representacao-de-paginacao
 git add .
-git commit -m "Desafio: implementando paginação e ordenação de pedidos"
-git push origin 13-09-desafio-implementando-paginacao-e-ordenacao-de-pedidos
+git commit -m "Implementando JsonSerializer para customizar representação de paginação"
+git push origin 13-10-implementando-jsonserializer-para-customizar-representacao-de-paginacao
 
 git checkout master
-git merge --no-ff 13-09-desafio-implementando-paginacao-e-ordenacao-de-pedidos
+git merge --no-ff 13-10-implementando-jsonserializer-para-customizar-representacao-de-paginacao
 git push
 
 sair da tela de merge
