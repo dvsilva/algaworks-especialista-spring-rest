@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-03-limitando-campos-retornados-pela-api-com-squiggly
+git checkout -b 13-04-implementando-pesquisa-simples-na-api
 git add .
-git commit -m "Limitando os campos retornados pela API com Squiggly"
-git push origin 13-03-limitando-campos-retornados-pela-api-com-squiggly
+git commit -m "Implementando pesquisas simples na API"
+git push origin 13-04-implementando-pesquisa-simples-na-api
 
 git checkout master
-git merge --no-ff 13-03-limitando-campos-retornados-pela-api-com-squiggly
+git merge --no-ff 13-04-implementando-pesquisa-simples-na-api
 git push
 
 sair da tela de merge
