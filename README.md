@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-06-implementando-pesquisas-complexas-na-api
+git checkout -b 13-07-tratando-bindexception-ao-enviar-parametros-de-url-invalidos
 git add .
-git commit -m "Implementando pesquisas complexas na API"
-git push origin 13-06-implementando-pesquisas-complexas-na-api
+git commit -m "Tratando BindException ao enviar parâmetros de URL inválidos"
+git push origin 13-07-tratando-bindexception-ao-enviar-parametros-de-url-invalidos
 
 git checkout master
-git merge --no-ff 13-06-implementando-pesquisas-complexas-na-api
+git merge --no-ff 13-07-tratando-bindexception-ao-enviar-parametros-de-url-invalidos
 git push
 
 sair da tela de merge
