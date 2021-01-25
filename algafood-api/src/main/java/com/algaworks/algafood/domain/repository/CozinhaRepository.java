@@ -16,6 +16,8 @@ public interface CozinhaRepository extends CustomJpaRepository<Cozinha, Long> {
 //	List<Cozinha> findTodasByNome(String nome); 
 	List<Cozinha> findTodasByNomeContaining(String nome);
 	
+//	Page<Cozinha> findTodasByNomeContaining(String nome, Pageable pageable);
+	
 	Optional<Cozinha> findByNome(String nome); 
 	
 	boolean existsByNome(String nome);
