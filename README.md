@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-05-modelando-pesquisas-complexas-na-api
+git checkout -b 13-06-implementando-pesquisas-complexas-na-api
 git add .
-git commit -m "Modelando pesquisas complexas na API"
-git push origin 13-05-modelando-pesquisas-complexas-na-api
+git commit -m "Implementando pesquisas complexas na API"
+git push origin 13-06-implementando-pesquisas-complexas-na-api
 
 git checkout master
-git merge --no-ff 13-05-modelando-pesquisas-complexas-na-api
+git merge --no-ff 13-06-implementando-pesquisas-complexas-na-api
 git push
 
 sair da tela de merge
