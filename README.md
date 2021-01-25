@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-08-implementando-paginacao-e-ordenacao-em-recursos-de-colecao-da-api
+git checkout -b 13-09-desafio-implementando-paginacao-e-ordenacao-de-pedidos
 git add .
-git commit -m "Implementando paginação e ordenação em recursos de coleção da API"
-git push origin 13-08-implementando-paginacao-e-ordenacao-em-recursos-de-colecao-da-api
+git commit -m "Desafio: implementando paginação e ordenação de pedidos"
+git push origin 13-09-desafio-implementando-paginacao-e-ordenacao-de-pedidos
 
 git checkout master
-git merge --no-ff 13-08-implementando-paginacao-e-ordenacao-em-recursos-de-colecao-da-api
+git merge --no-ff 13-09-desafio-implementando-paginacao-e-ordenacao-de-pedidos
 git push
 
 sair da tela de merge
