@@ -1282,7 +1282,7 @@
 			"name": "Produtos",
 			"item": [
 				{
-					"name": "Produtos - Listar",
+					"name": "Produtos - Listar Todos",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1305,6 +1305,48 @@
 								"restaurantes",
 								"1",
 								"produtos"
+							],
+							"query": [
+								{
+									"key": "incluirInativos",
+									"value": "false",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Produtos - Listar Com Inativos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/produtos?incluirInativos=true",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"produtos"
+							],
+							"query": [
+								{
+									"key": "incluirInativos",
+									"value": "true"
+								}
 							]
 						}
 					},
