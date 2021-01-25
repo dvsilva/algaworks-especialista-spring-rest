@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-07-tratando-bindexception-ao-enviar-parametros-de-url-invalidos
+git checkout -b 13-08-implementando-paginacao-e-ordenacao-em-recursos-de-colecao-da-api
 git add .
-git commit -m "Tratando BindException ao enviar parâmetros de URL inválidos"
-git push origin 13-07-tratando-bindexception-ao-enviar-parametros-de-url-invalidos
+git commit -m "Implementando paginação e ordenação em recursos de coleção da API"
+git push origin 13-08-implementando-paginacao-e-ordenacao-em-recursos-de-colecao-da-api
 
 git checkout master
-git merge --no-ff 13-07-tratando-bindexception-ao-enviar-parametros-de-url-invalidos
+git merge --no-ff 13-08-implementando-paginacao-e-ordenacao-em-recursos-de-colecao-da-api
 git push
 
 sair da tela de merge
