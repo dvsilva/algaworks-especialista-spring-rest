@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-10-implementando-jsonserializer-para-customizar-representacao-de-paginacao
+git checkout -b 13-11-implementando-conversor-de-propriedades-de-ordenacao
 git add .
-git commit -m "Implementando JsonSerializer para customizar representação de paginação"
-git push origin 13-10-implementando-jsonserializer-para-customizar-representacao-de-paginacao
+git commit -m "Implementando um conversor de propriedades de ordenação"
+git push origin 13-11-implementando-conversor-de-propriedades-de-ordenacao
 
 git checkout master
-git merge --no-ff 13-10-implementando-jsonserializer-para-customizar-representacao-de-paginacao
+git merge --no-ff 13-11-implementando-conversor-de-propriedades-de-ordenacao
 git push
 
 sair da tela de merge
