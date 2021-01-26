@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-13-discutindo-sobre-onde-implementar-consultas-com-dados-agregados
+git checkout -b 13-14-implementando-consulta-com-dados-agregados-de-vendas-diarias
 git add .
-git commit -m "Discutindo sobre onde implementar as consultas com dados agregados"
-git push origin 13-13-discutindo-sobre-onde-implementar-consultas-com-dados-agregados
+git commit -m "Implementando consulta com dados agregados de vendas diárias"
+git push origin 13-14-implementando-consulta-com-dados-agregados-de-vendas-diarias
 
 git checkout master
-git merge --no-ff 13-13-discutindo-sobre-onde-implementar-consultas-com-dados-agregados
+git merge --no-ff 13-14-implementando-consulta-com-dados-agregados-de-vendas-diarias
 git push
 
 sair da tela de merge
