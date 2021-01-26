@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-11-implementando-conversor-de-propriedades-de-ordenacao
+git checkout -b 13-12-modelando-endpoints-de-consultas-com-dados-agregados
 git add .
-git commit -m "Implementando um conversor de propriedades de ordenação"
-git push origin 13-11-implementando-conversor-de-propriedades-de-ordenacao
+git commit -m "Modelando endpoints de consultas com dados agregados (ideal para gráficos e dashboards)"
+git push origin 13-12-modelando-endpoints-de-consultas-com-dados-agregados
 
 git checkout master
-git merge --no-ff 13-11-implementando-conversor-de-propriedades-de-ordenacao
+git merge --no-ff 13-12-modelando-endpoints-de-consultas-com-dados-agregados
 git push
 
 sair da tela de merge
