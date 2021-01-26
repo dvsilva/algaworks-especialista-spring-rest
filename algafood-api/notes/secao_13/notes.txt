@@ -30,5 +30,10 @@ Modelando endpoints de consultas com projeções e agregação
 	- /relatorios/vendas-diarias
 	- /insights/vendas-diarias
 
+discussão da consulta
+- recurso /estatisticas/vendas-diarias
+- passar query params
+- retornar objetos com data, totalVendas, totalFaturado
+- implementar consulta no repositorio criar duas classes (VendaDiaria e VendaDiariaFilter)
+- implementar classe VendaDiaria
 
-	
