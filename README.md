@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-15-desafio-adicionando-filtros-na-consulta-de-vendas-diarias
+git checkout -b 13-16-tratando-time-offset-na-agregacao-de-vendas-diarias-por-data
 git add .
-git commit -m "Desafio: adicionando os filtros na consulta de vendas diárias"
-git push origin 13-15-desafio-adicionando-filtros-na-consulta-de-vendas-diarias
+git commit -m "Tratando time offset na agregação de vendas diárias por data"
+git push origin 13-16-tratando-time-offset-na-agregacao-de-vendas-diarias-por-data
 
 git checkout master
-git merge --no-ff 13-15-desafio-adicionando-filtros-na-consulta-de-vendas-diarias
+git merge --no-ff 13-16-tratando-time-offset-na-agregacao-de-vendas-diarias-por-data
 git push
 
 sair da tela de merge
