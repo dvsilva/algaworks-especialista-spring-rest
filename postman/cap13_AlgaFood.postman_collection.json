@@ -21,7 +21,7 @@
 							}
 						],
 						"url": {
-							"raw": "api.algafood.local:8080/cozinhas",
+							"raw": "api.algafood.local:8080/cozinhas?size=2&page=0",
 							"host": [
 								"api",
 								"algafood",
@@ -30,6 +30,26 @@
 							"port": "8080",
 							"path": [
 								"cozinhas"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "sort",
+									"value": "nome,desc",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "id",
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -2101,6 +2121,71 @@
 					"response": []
 				},
 				{
+					"name": "Pedidos - Filtrar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/pedidos?dataCriacaoInicio=2019-10-30T00:00:00Z&size=2&sort=codigo,desc&sort=cliente.nome",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"pedidos"
+							],
+							"query": [
+								{
+									"key": "clienteId",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "restauranteId",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "dataCriacaoInicio",
+									"value": "2019-10-30T00:00:00Z"
+								},
+								{
+									"key": "dataCriacaoFim",
+									"value": "2019-11-01T00:00:00Z",
+									"disabled": true
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "sort",
+									"value": "nomeCliente",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "codigo,desc"
+								},
+								{
+									"key": "sort",
+									"value": "cliente.nome"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Pedidos  - Buscar",
 					"request": {
 						"method": "GET",
@@ -2246,6 +2331,50 @@
 								"pedidos",
 								"f9981ca4-5a5e-4da3-af04-933861df3e55",
 								"entrega"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estatisticas",
+			"item": [
+				{
+					"name": "Vendas Diarias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.algafood.local:8080/estatisticas/vendas-diarias?restauranteId=1&dataCriacaoInicio=2019-10-30T00:00:00Z&dataCriacaoFim=2019-11-04T23:59:59Z&timeOffset=-03:00",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"estatisticas",
+								"vendas-diarias"
+							],
+							"query": [
+								{
+									"key": "restauranteId",
+									"value": "1"
+								},
+								{
+									"key": "dataCriacaoInicio",
+									"value": "2019-10-30T00:00:00Z"
+								},
+								{
+									"key": "dataCriacaoFim",
+									"value": "2019-11-04T23:59:59Z"
+								},
+								{
+									"key": "timeOffset",
+									"value": "-03:00"
+								}
 							]
 						}
 					},
