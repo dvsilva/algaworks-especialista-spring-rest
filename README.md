@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-14-implementando-consulta-com-dados-agregados-de-vendas-diarias
+git checkout -b 13-15-desafio-adicionando-filtros-na-consulta-de-vendas-diarias
 git add .
-git commit -m "Implementando consulta com dados agregados de vendas diárias"
-git push origin 13-14-implementando-consulta-com-dados-agregados-de-vendas-diarias
+git commit -m "Desafio: adicionando os filtros na consulta de vendas diárias"
+git push origin 13-15-desafio-adicionando-filtros-na-consulta-de-vendas-diarias
 
 git checkout master
-git merge --no-ff 13-14-implementando-consulta-com-dados-agregados-de-vendas-diarias
+git merge --no-ff 13-15-desafio-adicionando-filtros-na-consulta-de-vendas-diarias
 git push
 
 sair da tela de merge
