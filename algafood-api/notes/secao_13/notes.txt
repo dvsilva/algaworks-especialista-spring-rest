@@ -20,3 +20,15 @@ modelagem de pesquisas complexas (mais de um parametro)
 	- parecido com o 2 (POST e retorna 201 created)
 	- para obter deve passar o id como parametro na URL
 	- criar operadores de igualdade dentro do objeto de criterio e operadores lógicos (e / ou)
+	
+Modelando endpoints de consultas com projeções e agregação
+- GET em um recurso (estatisticas/vendas-diarias) com query params de consulta
+- algumas opções
+	- /estatisticas/vendas-diarias
+	- /restaurantes/1/estatisticas/vendas-diarias
+	- /pedidos/estatisticas/vendas-diarias
+	- /relatorios/vendas-diarias
+	- /insights/vendas-diarias
+
+
+	
