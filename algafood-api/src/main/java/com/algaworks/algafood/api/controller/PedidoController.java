@@ -27,10 +27,10 @@ import com.algaworks.algafood.api.model.input.PedidoInput;
 import com.algaworks.algafood.core.data.PageableTranslator;
 import com.algaworks.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.algaworks.algafood.domain.exception.NegocioException;
+import com.algaworks.algafood.domain.filter.PedidoFilter;
 import com.algaworks.algafood.domain.model.Pedido;
 import com.algaworks.algafood.domain.model.Usuario;
 import com.algaworks.algafood.domain.repository.PedidoRepository;
-import com.algaworks.algafood.domain.repository.filter.PedidoFilter;
 import com.algaworks.algafood.domain.service.EmissaoPedidoService;
 import com.algaworks.algafood.infrastructure.repository.spec.PedidoSpecs;
 import com.google.common.collect.ImmutableMap;
@@ -117,7 +117,7 @@ public class PedidoController {
 		var mapeamento = ImmutableMap.of(
 				"codigo", "codigo",
 				"restaurante.nome", "restaurante.nome",
-				"nomeCliente", "cliente.nome",
+				"cliente.nome", "cliente.nome",
 				"valorTotal", "valorTotal"
 			);
 		
