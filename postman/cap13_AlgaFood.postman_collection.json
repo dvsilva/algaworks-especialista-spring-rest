@@ -2379,6 +2379,51 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Vendas Diarias em PDF",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/pdf,application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/estatisticas/vendas-diarias?restauranteId=1&dataCriacaoInicio=2019-10-30T00:00:00Z&dataCriacaoFim=2019-11-04T23:59:59Z&timeOffset=-03:00",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"estatisticas",
+								"vendas-diarias"
+							],
+							"query": [
+								{
+									"key": "restauranteId",
+									"value": "1"
+								},
+								{
+									"key": "dataCriacaoInicio",
+									"value": "2019-10-30T00:00:00Z"
+								},
+								{
+									"key": "dataCriacaoFim",
+									"value": "2019-11-04T23:59:59Z"
+								},
+								{
+									"key": "timeOffset",
+									"value": "-03:00"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
