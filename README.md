@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-16-tratando-time-offset-na-agregacao-de-vendas-diarias-por-data
+git checkout -b 13-17-conhecendo-o-jaspersoft-studio
 git add .
-git commit -m "Tratando time offset na agregação de vendas diárias por data"
-git push origin 13-16-tratando-time-offset-na-agregacao-de-vendas-diarias-por-data
+git commit -m "Conhecendo o JasperSoft Studio"
+git push origin 13-17-conhecendo-o-jaspersoft-studio
 
 git checkout master
-git merge --no-ff 13-16-tratando-time-offset-na-agregacao-de-vendas-diarias-por-data
+git merge --no-ff 13-17-conhecendo-o-jaspersoft-studio
 git push
 
 sair da tela de merge
