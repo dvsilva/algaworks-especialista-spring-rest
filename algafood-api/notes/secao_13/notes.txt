@@ -37,3 +37,9 @@ discussão da consulta
 - implementar consulta no repositorio criar duas classes (VendaDiaria e VendaDiariaFilter)
 - implementar classe VendaDiaria
 
+jasper reports (https://community.jaspersoft.com/)
+- biblioteca para relatórios em java em diferentes formatos
+- permite diferentes fontes de dados (banco de dados, jdbc, hibernate, xml ...)
+- jasper soft studio - interface para escrever os arquivos xml do jasper
+- fazer download em https://community.jaspersoft.com/project/jaspersoft-studio/releases
+
