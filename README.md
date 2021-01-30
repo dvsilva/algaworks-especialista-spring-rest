@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-19-estruturando-endpoint-e-servico-de-emissao-de-relatorio-em-pdf
+git checkout -b 13-20-preenchendo-relatorio-jasperreports-com-javabeans-e-gerando-bytes-do-pdf
 git add .
-git commit -m "Estruturando endpoint e serviço de emissão de relatório em PDF"
-git push origin 13-19-estruturando-endpoint-e-servico-de-emissao-de-relatorio-em-pdf
+git commit -m "Preenchendo um relatório JasperReports com JavaBeans e gerando bytes do PDF"
+git push origin 13-20-preenchendo-relatorio-jasperreports-com-javabeans-e-gerando-bytes-do-pdf
 
 git checkout master
-git merge --no-ff 13-19-estruturando-endpoint-e-servico-de-emissao-de-relatorio-em-pdf
+git merge --no-ff 13-20-preenchendo-relatorio-jasperreports-com-javabeans-e-gerando-bytes-do-pdf
 git push
 
 sair da tela de merge
