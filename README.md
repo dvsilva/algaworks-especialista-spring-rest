@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-18--criando-um-layout-do-relatorio-jasperreports-de-vendas-diarias
+git checkout -b 13-19-estruturando-endpoint-e-servico-de-emissao-de-relatorio-em-pdf
 git add .
-git commit -m "Criando um layout do relatório JasperReports de vendas diárias"
-git push origin 13-18--criando-um-layout-do-relatorio-jasperreports-de-vendas-diarias
+git commit -m "Estruturando endpoint e serviço de emissão de relatório em PDF"
+git push origin 13-19-estruturando-endpoint-e-servico-de-emissao-de-relatorio-em-pdf
 
 git checkout master
-git merge --no-ff 13-18--criando-um-layout-do-relatorio-jasperreports-de-vendas-diarias
+git merge --no-ff 13-19-estruturando-endpoint-e-servico-de-emissao-de-relatorio-em-pdf
 git push
 
 sair da tela de merge
