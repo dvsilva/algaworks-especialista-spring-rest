@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 13-17-conhecendo-o-jaspersoft-studio
+git checkout -b 13-18--criando-um-layout-do-relatorio-jasperreports-de-vendas-diarias
 git add .
-git commit -m "Conhecendo o JasperSoft Studio"
-git push origin 13-17-conhecendo-o-jaspersoft-studio
+git commit -m "Criando um layout do relatório JasperReports de vendas diárias"
+git push origin 13-18--criando-um-layout-do-relatorio-jasperreports-de-vendas-diarias
 
 git checkout master
-git merge --no-ff 13-17-conhecendo-o-jaspersoft-studio
+git merge --no-ff 13-18--criando-um-layout-do-relatorio-jasperreports-de-vendas-diarias
 git push
 
 sair da tela de merge
