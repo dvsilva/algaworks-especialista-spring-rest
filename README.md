@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-02-implementando-upload-de-arquivo-com-multipart-form-data
+git checkout -b 14-03-validando-tamanho-maximo-do-arquivo
 git add .
-git commit -m "Implementando upload de arquivo com multipart/form-data"
-git push origin 14-02-implementando-upload-de-arquivo-com-multipart-form-data
+git commit -m "Validando o tamanho máximo do arquivo"
+git push origin 14-03-validando-tamanho-maximo-do-arquivo
 
 git checkout master
-git merge --no-ff 14-02-implementando-upload-de-arquivo-com-multipart-form-data
+git merge --no-ff 14-03-validando-tamanho-maximo-do-arquivo
 git push
 
 sair da tela de merge
