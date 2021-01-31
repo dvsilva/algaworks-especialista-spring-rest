@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-04-desafio-validando-content-type-do-arquivo
+git checkout -b 14-05-mapeando-entidade-fotoproduto-e-relacionamento-um-para-um
 git add .
-git commit -m "Desafio: Validando o content type do arquivo"
-git push origin 14-04-desafio-validando-content-type-do-arquivo
+git commit -m "Mapeando entidade FotoProduto e relacionamento um-para-um"
+git push origin 14-05-mapeando-entidade-fotoproduto-e-relacionamento-um-para-um
 
 git checkout master
-git merge --no-ff 14-04-desafio-validando-content-type-do-arquivo
+git merge --no-ff 14-05-mapeando-entidade-fotoproduto-e-relacionamento-um-para-um
 git push
 
 sair da tela de merge
