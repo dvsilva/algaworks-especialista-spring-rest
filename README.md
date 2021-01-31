@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-05-mapeando-entidade-fotoproduto-e-relacionamento-um-para-um
+git checkout -b 14-06-implementando-servico-de-cadastro-de-foto-de-produto
 git add .
-git commit -m "Mapeando entidade FotoProduto e relacionamento um-para-um"
-git push origin 14-05-mapeando-entidade-fotoproduto-e-relacionamento-um-para-um
+git commit -m "Implementando serviço de cadastro de foto de produto"
+git push origin 14-06-implementando-servico-de-cadastro-de-foto-de-produto
 
 git checkout master
-git merge --no-ff 14-05-mapeando-entidade-fotoproduto-e-relacionamento-um-para-um
+git merge --no-ff 14-06-implementando-servico-de-cadastro-de-foto-de-produto
 git push
 
 sair da tela de merge
