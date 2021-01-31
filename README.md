@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-01-conhecendo-solucoes-para-upload-de-arquivos-em-rest-apis
+git checkout -b 14-02-implementando-upload-de-arquivo-com-multipart-form-data
 git add .
-git commit -m "Conhecendo soluções para upload de arquivos em REST APIs"
-git push origin 14-01-conhecendo-solucoes-para-upload-de-arquivos-em-rest-apis
+git commit -m "Implementando upload de arquivo com multipart/form-data"
+git push origin 14-02-implementando-upload-de-arquivo-com-multipart-form-data
 
 git checkout master
-git merge --no-ff 14-01-conhecendo-solucoes-para-upload-de-arquivos-em-rest-apis
+git merge --no-ff 14-02-implementando-upload-de-arquivo-com-multipart-form-data
 git push
 
 sair da tela de merge
