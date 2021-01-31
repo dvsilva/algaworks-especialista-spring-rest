@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-03-validando-tamanho-maximo-do-arquivo
+git checkout -b 14-04-desafio-validando-content-type-do-arquivo
 git add .
-git commit -m "Validando o tamanho máximo do arquivo"
-git push origin 14-03-validando-tamanho-maximo-do-arquivo
+git commit -m "Desafio: Validando o content type do arquivo"
+git push origin 14-04-desafio-validando-content-type-do-arquivo
 
 git checkout master
-git merge --no-ff 14-03-validando-tamanho-maximo-do-arquivo
+git merge --no-ff 14-04-desafio-validando-content-type-do-arquivo
 git push
 
 sair da tela de merge
