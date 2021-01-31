@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-06-implementando-servico-de-cadastro-de-foto-de-produto
+git checkout -b 14-07-excluindo-e-substituindo-cadastro-de-foto-de-produto
 git add .
-git commit -m "Implementando serviço de cadastro de foto de produto"
-git push origin 14-06-implementando-servico-de-cadastro-de-foto-de-produto
+git commit -m "Excluindo e substituindo cadastro de foto de produto"
+git push origin 14-07-excluindo-e-substituindo-cadastro-de-foto-de-produto
 
 git checkout master
-git merge --no-ff 14-06-implementando-servico-de-cadastro-de-foto-de-produto
+git merge --no-ff 14-07-excluindo-e-substituindo-cadastro-de-foto-de-produto
 git push
 
 sair da tela de merge
