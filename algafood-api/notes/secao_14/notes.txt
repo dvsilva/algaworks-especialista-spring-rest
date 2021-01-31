@@ -1,0 +1,14 @@
+Conhecendo soluções para upload de arquivos em REST APIs
+1 - content-type application/json / verbo PUT
+	- passar a propriedade arquivo atraves de string em formato base64 no corpo da requisição
+	- arquivo fica bem maior / string gigante / deserialização
+	- problema de memória (codificação e decodificação) por causa do tamanho do arquivo
+	- codificação do arquivo do client
+2 - content-type multipart/form-data / verbo PUT
+	- boundary - delimita informações / campo para outro
+	- para cada parte da informação passa um content-disposition para delimitar o arquivo e as propriedades
+	- arquivo não fica na memória, geralmente o fluxo de entrada do upload é automaticamente colocado em um arquivo temporário para não sobre carregar os servidores
+	- padrão para envio de arquivos
+	- envia o binário do arquivo 
+	- mais complicado de implementar
+
