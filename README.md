@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-14-checando-media-type-ao-servir-arquivos-de-fotos
+git checkout -b 14-15-desafio-implementando-endpoint-de-exclusao-de-foto-de-produto
 git add .
-git commit -m "Checando media type ao servir arquivos de fotos"
-git push origin 14-14-checando-media-type-ao-servir-arquivos-de-fotos
+git commit -m "Desafio: implementando endpoint de exclusão de foto de produto"
+git push origin 14-15-desafio-implementando-endpoint-de-exclusao-de-foto-de-produto
 
 git checkout master
-git merge --no-ff 14-14-checando-media-type-ao-servir-arquivos-de-fotos
+git merge --no-ff 14-15-desafio-implementando-endpoint-de-exclusao-de-foto-de-produto
 git push
 
 sair da tela de merge

@@ -2467,10 +2467,61 @@
 						"header": [
 							{
 								"key": "Accept",
-								"value": "image/jpeg",
+								"value": "image/jpeg,image/jpg,image/png",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "image/*",
 								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "image/png",
+								"type": "text",
+								"disabled": true
 							}
 						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/produtos/1/foto",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"produtos",
+								"1",
+								"foto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fotos de Produtos - Remover",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "descricao",
+									"value": "blablabla",
+									"type": "text"
+								},
+								{
+									"key": "arquivo",
+									"type": "file",
+									"src": "/C:/Users/danyl/OneDrive/Imagens/perfil.jpg"
+								}
+							]
+						},
 						"url": {
 							"raw": "api.algafood.local:8080/restaurantes/1/produtos/1/foto",
 							"host": [
