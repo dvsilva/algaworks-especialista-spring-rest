@@ -30,4 +30,9 @@ criar acesso via IAM
 - vincular política AlgaFootTest_GravacaoFotosS3 ao usuário
 - cliar em próximo, próximo, criar
 
+criar chave de acesso
+- no usuario, ver Credenciais de segurança
+- Criar chave de acesso, copiar dados para outro lugar pois não é possível obter os dados depois que fechar
+
+
 
