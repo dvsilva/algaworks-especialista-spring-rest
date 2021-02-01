@@ -2431,10 +2431,46 @@
 			"name": "Fotos de Produtos",
 			"item": [
 				{
-					"name": "Fotos de Produtos - Buscar",
+					"name": "Fotos de Produtos - Buscar JSON",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "api.algafood.local:8080/restaurantes/1/produtos/1/foto",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"1",
+								"produtos",
+								"1",
+								"foto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fotos de Produtos - Buscar Imagem",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "image/jpeg",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "api.algafood.local:8080/restaurantes/1/produtos/1/foto",
 							"host": [

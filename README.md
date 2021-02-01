@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-12-desafio-implementando-endpoint-de-consulta-de-foto-de-produto
+git checkout -b 14-13-servindo-arquivos-de-fotos-pela-api
 git add .
-git commit -m "Desafio: Implementando endpoint de consulta de foto de produto"
-git push origin 14-12-desafio-implementando-endpoint-de-consulta-de-foto-de-produto
+git commit -m "Servindo arquivos de fotos pela API"
+git push origin 14-13-servindo-arquivos-de-fotos-pela-api
 
 git checkout master
-git merge --no-ff 14-12-desafio-implementando-endpoint-de-consulta-de-foto-de-produto
+git merge --no-ff 14-13-servindo-arquivos-de-fotos-pela-api
 git push
 
 sair da tela de merge
