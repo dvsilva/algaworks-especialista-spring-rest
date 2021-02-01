@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-15-desafio-implementando-endpoint-de-exclusao-de-foto-de-produto
+git checkout -b 14-16-corrigindo-exception-handler-de-mediatype-nao-aceita
 git add .
-git commit -m "Desafio: implementando endpoint de exclusão de foto de produto"
-git push origin 14-15-desafio-implementando-endpoint-de-exclusao-de-foto-de-produto
+git commit -m "Corrigindo exception handler de media type não aceita"
+git push origin 14-16-corrigindo-exception-handler-de-mediatype-nao-aceita
 
 git checkout master
-git merge --no-ff 14-15-desafio-implementando-endpoint-de-exclusao-de-foto-de-produto
+git merge --no-ff 14-16-corrigindo-exception-handler-de-mediatype-nao-aceita
 git push
 
 sair da tela de merge
