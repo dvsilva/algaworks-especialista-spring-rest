@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-16-corrigindo-exception-handler-de-mediatype-nao-aceita
+git checkout -b 14-17-conhecendo-o-servico-de-storage-da-aws
 git add .
-git commit -m "Corrigindo exception handler de media type não aceita"
-git push origin 14-16-corrigindo-exception-handler-de-mediatype-nao-aceita
+git commit -m "Amazon S3: conhecendo o serviço de storage da AWS"
+git push origin 14-17-conhecendo-o-servico-de-storage-da-aws
 
 git checkout master
-git merge --no-ff 14-16-corrigindo-exception-handler-de-mediatype-nao-aceita
+git merge --no-ff 14-17-conhecendo-o-servico-de-storage-da-aws
 git push
 
 sair da tela de merge
