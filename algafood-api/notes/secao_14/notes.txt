@@ -12,3 +12,8 @@ Conhecendo soluções para upload de arquivos em REST APIs
 	- envia o binário do arquivo 
 	- mais complicado de implementar
 
+Amazon S3
+- criar um bucket algafood-test
+- leste EUA
+- desmarcar bloquear todo o acesso público
+- criar pasta catalogo
