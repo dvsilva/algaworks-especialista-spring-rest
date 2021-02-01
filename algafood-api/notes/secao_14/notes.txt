@@ -13,7 +13,21 @@ Conhecendo soluções para upload de arquivos em REST APIs
 	- mais complicado de implementar
 
 Amazon S3
-- criar um bucket algafood-test
+- criar um bucket dvsilva-algafood-test
 - leste EUA
 - desmarcar bloquear todo o acesso público
 - criar pasta catalogo
+
+criar acesso via IAM
+- adicionar um novo usuário
+- Anexar políticas existentes de forma direta
+	- criar uma política
+	- adicionar serviço s3
+	- nivel de acesso: gravação (Put Object e Delete Object) gerenciamento de permissões (PutObjectAcl e PutObjectVersionAcl)
+	- recursos, adicionar ARM: colocar nome do bucket e em object name deixar como qualquer (*)
+	- nomear política como: AlgaFootTest_GravacaoFotosS3
+	- criar política
+- vincular política AlgaFootTest_GravacaoFotosS3 ao usuário
+- cliar em próximo, próximo, criar
+
+

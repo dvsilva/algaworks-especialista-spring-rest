@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-17-conhecendo-o-servico-de-storage-da-aws
+git checkout -b 14-18-criando-usuario-com-permissoes-para-adicionar-objetos-na-amazon-s3
 git add .
-git commit -m "Amazon S3: conhecendo o serviço de storage da AWS"
-git push origin 14-17-conhecendo-o-servico-de-storage-da-aws
+git commit -m "Criando usuário com permissões para adicionar objetos na Amazon S3"
+git push origin 14-18-criando-usuario-com-permissoes-para-adicionar-objetos-na-amazon-s3
 
 git checkout master
-git merge --no-ff 14-17-conhecendo-o-servico-de-storage-da-aws
+git merge --no-ff 14-18-criando-usuario-com-permissoes-para-adicionar-objetos-na-amazon-s3
 git push
 
 sair da tela de merge
