@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-09-integrando-servico-de-catalogo-de-fotos-com-servico-de-armazenagem
+git checkout -b 14-11-desafio-implementando-recuperacao-de-foto-no-servico-de-armazenagem
 git add .
-git commit -m "Integrando o serviço de catálogo de fotos com o serviço de armazenagem"
-git push origin 14-09-integrando-servico-de-catalogo-de-fotos-com-servico-de-armazenagem
+git commit -m "Desafio: Implementando recuperação de foto no serviço de armazenagem"
+git push origin 14-11-desafio-implementando-recuperacao-de-foto-no-servico-de-armazenagem
 
 git checkout master
-git merge --no-ff 14-09-integrando-servico-de-catalogo-de-fotos-com-servico-de-armazenagem
+git merge --no-ff 14-11-desafio-implementando-recuperacao-de-foto-no-servico-de-armazenagem
 git push
 
 sair da tela de merge
