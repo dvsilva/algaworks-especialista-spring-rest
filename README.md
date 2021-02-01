@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-13-servindo-arquivos-de-fotos-pela-api
+git checkout -b 14-14-checando-media-type-ao-servir-arquivos-de-fotos
 git add .
-git commit -m "Servindo arquivos de fotos pela API"
-git push origin 14-13-servindo-arquivos-de-fotos-pela-api
+git commit -m "Checando media type ao servir arquivos de fotos"
+git push origin 14-14-checando-media-type-ao-servir-arquivos-de-fotos
 
 git checkout master
-git merge --no-ff 14-13-servindo-arquivos-de-fotos-pela-api
+git merge --no-ff 14-14-checando-media-type-ao-servir-arquivos-de-fotos
 git push
 
 sair da tela de merge
