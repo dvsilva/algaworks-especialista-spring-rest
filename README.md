@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-20-criando-bean-de-propriedades-de-configuracao-dos-servicos-de-storage
+git checkout -b 14-21-adicionando-sdk-java-amazon-s3-no-projeto-e-criando-classe-do-servico-de-storage
 git add .
-git commit -m "Criando bean de propriedades de configuração dos serviços de storage"
-git push origin 14-20-criando-bean-de-propriedades-de-configuracao-dos-servicos-de-storage
+git commit -m "Adicionando o SDK Java da Amazon S3 no projeto e criando classe do serviço de storage"
+git push origin 14-21-adicionando-sdk-java-amazon-s3-no-projeto-e-criando-classe-do-servico-de-storage
 
 git checkout master
-git merge --no-ff 14-20-criando-bean-de-propriedades-de-configuracao-dos-servicos-de-storage
+git merge --no-ff 14-21-adicionando-sdk-java-amazon-s3-no-projeto-e-criando-classe-do-servico-de-storage
 git push
 
 sair da tela de merge
