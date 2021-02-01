@@ -34,5 +34,6 @@ criar chave de acesso
 - no usuario, ver Credenciais de segurança
 - Criar chave de acesso, copiar dados para outro lugar pois não é possível obter os dados depois que fechar
 
-
+para rodar no STS colocar propriedades do application.properties na configuração
+- direito no projeto do boot dashboard, open config, override properties
 

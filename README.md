@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-19-criando-chaves-de-acesso-para-api-da-aws
+git checkout -b 14-20-criando-bean-de-propriedades-de-configuracao-dos-servicos-de-storage
 git add .
-git commit -m "Criando chaves de acesso para a API da AWS"
-git push origin 14-19-criando-chaves-de-acesso-para-api-da-aws
+git commit -m "Criando bean de propriedades de configuração dos serviços de storage"
+git push origin 14-20-criando-bean-de-propriedades-de-configuracao-dos-servicos-de-storage
 
 git checkout master
-git merge --no-ff 14-19-criando-chaves-de-acesso-para-api-da-aws
+git merge --no-ff 14-20-criando-bean-de-propriedades-de-configuracao-dos-servicos-de-storage
 git push
 
 sair da tela de merge
