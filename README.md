@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-22-definindo-bean-do-client-da-amazon-s3-configurando-credenciais
+git checkout -b 14-23-implementando-a-inclusao-de-objetos-no-bucket-da-amazon-s3
 git add .
-git commit -m "Definindo bean do client da Amazon S3 e configurando credenciais"
-git push origin 14-22-definindo-bean-do-client-da-amazon-s3-configurando-credenciais
+git commit -m "Implementando a inclusão de objetos no bucket da Amazon S3"
+git push origin 14-23-implementando-a-inclusao-de-objetos-no-bucket-da-amazon-s3
 
 git checkout master
-git merge --no-ff 14-22-definindo-bean-do-client-da-amazon-s3-configurando-credenciais
+git merge --no-ff 14-23-implementando-a-inclusao-de-objetos-no-bucket-da-amazon-s3
 git push
 
 sair da tela de merge
