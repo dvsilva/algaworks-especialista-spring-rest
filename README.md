@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-25-implementando-recuperacao-de-foto-no-servico-de-storage-do-s3
+git checkout -b 14-26-selecionando-a-implementacao-do-servico-de-storage-de-fotos
 git add .
-git commit -m "Implementando a recuperação de foto no serviço de storage do S3"
-git push origin 14-25-implementando-recuperacao-de-foto-no-servico-de-storage-do-s3
+git commit -m "Selecionando a implementação do serviço de storage de fotos"
+git push origin 14-26-selecionando-a-implementacao-do-servico-de-storage-de-fotos
 
 git checkout master
-git merge --no-ff 14-25-implementando-recuperacao-de-foto-no-servico-de-storage-do-s3
+git merge --no-ff 14-26-selecionando-a-implementacao-do-servico-de-storage-de-fotos
 git push
 
 sair da tela de merge
