@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-21-adicionando-sdk-java-amazon-s3-no-projeto-e-criando-classe-do-servico-de-storage
+git checkout -b 14-22-definindo-bean-do-client-da-amazon-s3-configurando-credenciais
 git add .
-git commit -m "Adicionando o SDK Java da Amazon S3 no projeto e criando classe do serviço de storage"
-git push origin 14-21-adicionando-sdk-java-amazon-s3-no-projeto-e-criando-classe-do-servico-de-storage
+git commit -m "Definindo bean do client da Amazon S3 e configurando credenciais"
+git push origin 14-22-definindo-bean-do-client-da-amazon-s3-configurando-credenciais
 
 git checkout master
-git merge --no-ff 14-21-adicionando-sdk-java-amazon-s3-no-projeto-e-criando-classe-do-servico-de-storage
+git merge --no-ff 14-22-definindo-bean-do-client-da-amazon-s3-configurando-credenciais
 git push
 
 sair da tela de merge
