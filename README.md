@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-23-implementando-a-inclusao-de-objetos-no-bucket-da-amazon-s3
+git checkout -b 14-24-desafio-implementando-a-exclusao-de-objetos-do-bucket-da-amazon-s3
 git add .
-git commit -m "Implementando a inclusão de objetos no bucket da Amazon S3"
-git push origin 14-23-implementando-a-inclusao-de-objetos-no-bucket-da-amazon-s3
+git commit -m "Desafio: Implementando a exclusão de objetos do bucket da Amazon S3"
+git push origin 14-24-desafio-implementando-a-exclusao-de-objetos-do-bucket-da-amazon-s3
 
 git checkout master
-git merge --no-ff 14-23-implementando-a-inclusao-de-objetos-no-bucket-da-amazon-s3
+git merge --no-ff 14-24-desafio-implementando-a-exclusao-de-objetos-do-bucket-da-amazon-s3
 git push
 
 sair da tela de merge
