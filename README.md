@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 15-03-implementando-servico-de-infraestrutura-de-envio-de-emails-com-spring
+git checkout -b 15-04-usando-o-servico-de-envio-de-emails-na-confirmacao-de-pedidos
 git add .
-git commit -m "Implementando o serviço de infraestrutura de envio de e-mails com Spring"
-git push origin 15-03-implementando-servico-de-infraestrutura-de-envio-de-emails-com-spring
+git commit -m "Usando o serviço de envio de e-mails na confirmação de pedidos"
+git push origin 15-04-usando-o-servico-de-envio-de-emails-na-confirmacao-de-pedidos
 
 git checkout master
-git merge --no-ff 15-03-implementando-servico-de-infraestrutura-de-envio-de-emails-com-spring
+git merge --no-ff 15-04-usando-o-servico-de-envio-de-emails-na-confirmacao-de-pedidos
 git push
 
 sair da tela de merge
