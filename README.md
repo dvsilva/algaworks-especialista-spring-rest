@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 14-26-selecionando-a-implementacao-do-servico-de-storage-de-fotos
+git checkout -b 15-01-conhecendo-solucoes-para-envio-de-emails-transacionais
 git add .
-git commit -m "Selecionando a implementação do serviço de storage de fotos"
-git push origin 14-26-selecionando-a-implementacao-do-servico-de-storage-de-fotos
+git commit -m "Conhecendo soluções para envio de e-mails transacionais"
+git push origin 15-01-conhecendo-solucoes-para-envio-de-emails-transacionais
 
 git checkout master
-git merge --no-ff 14-26-selecionando-a-implementacao-do-servico-de-storage-de-fotos
+git merge --no-ff 15-01-conhecendo-solucoes-para-envio-de-emails-transacionais
 git push
 
 sair da tela de merge
