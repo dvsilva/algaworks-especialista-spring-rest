@@ -1,0 +1,8 @@
+Conhecendo soluções para envio de e-mails transacionais
+- tipo de mensagem enviada quando algo acontece na aplicação
+- opções de serviços 
+	- amazon SES (precisa de cartão de crédito (cc) internacional)
+	- mandrill (não é gratuito)
+	- mailgun (tem plano gratuito mas precisa de cc)
+	- sendgrid (até 100 e-mails por dia, não precisa de cc)
+
