@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 15-01-conhecendo-solucoes-para-envio-de-emails-transacionais
+git checkout -b 15-02-configurando-projeto-para-envio-de-emails-usando-servidor-smtp
 git add .
-git commit -m "Conhecendo soluções para envio de e-mails transacionais"
-git push origin 15-01-conhecendo-solucoes-para-envio-de-emails-transacionais
+git commit -m "Configurando o projeto para envio de e-mails usando servidor SMTP"
+git push origin 15-02-configurando-projeto-para-envio-de-emails-usando-servidor-smtp
 
 git checkout master
-git merge --no-ff 15-01-conhecendo-solucoes-para-envio-de-emails-transacionais
+git merge --no-ff 15-02-configurando-projeto-para-envio-de-emails-usando-servidor-smtp
 git push
 
 sair da tela de merge
