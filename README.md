@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 15-04-usando-o-servico-de-envio-de-emails-na-confirmacao-de-pedidos
+git checkout -b 15-05-processamento-template-do-corpo-de-emails-com-apache-freemarker
 git add .
-git commit -m "Usando o serviço de envio de e-mails na confirmação de pedidos"
-git push origin 15-04-usando-o-servico-de-envio-de-emails-na-confirmacao-de-pedidos
+git commit -m "Processando template do corpo de e-mails com Apache FreeMarker"
+git push origin 15-05-processamento-template-do-corpo-de-emails-com-apache-freemarker
 
 git checkout master
-git merge --no-ff 15-04-usando-o-servico-de-envio-de-emails-na-confirmacao-de-pedidos
+git merge --no-ff 15-05-processamento-template-do-corpo-de-emails-com-apache-freemarker
 git push
 
 sair da tela de merge
