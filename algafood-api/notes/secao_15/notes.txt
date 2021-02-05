@@ -6,3 +6,12 @@ Conhecendo soluções para envio de e-mails transacionais
 	- mailgun (tem plano gratuito mas precisa de cc)
 	- sendgrid (até 100 e-mails por dia, não precisa de cc)
 
+Conhecendo o padrão Domain Events do DDD
+- exemplo atendente cozinheiros (hamburguer e salada)
+- a principio ele diz o que é para ser feito para cada um
+- orientado a eventos: atendente dispara evento e cozinheiros escutam e reagem
+- se adicionar outro cozinheiro (batata frita) não implica mudanças
+- permite flexibilidade no ambiente de negocio de forma que nao precisa modificar nada
+- responsabilidade única (SRP) -> atendende gera os pedidos, os cozinheiros fazem os lanches
+- aberto e fechado (OCP) -> tem que modificar/adicionar quando tiver alterações, o bom seria ter pontos de extensão
+- sistema: gerar evento quando o pedido é confirmado
