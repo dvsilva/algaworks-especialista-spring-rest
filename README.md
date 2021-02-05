@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 15-09-desafio-implementando-servido-de-envio-de-email-sandbox
+git checkout -b 15-10-conhecendo-padrao-domain-events-do-ddd
 git add .
-git commit -m "Desafio: Implementando serviço de envio de e-mail sandbox"
-git push origin 15-09-desafio-implementando-servido-de-envio-de-email-sandbox
+git commit -m "Conhecendo o padrão Domain Events do DDD"
+git push origin 15-10-conhecendo-padrao-domain-events-do-ddd
 
 git checkout master
-git merge --no-ff 15-09-desafio-implementando-servido-de-envio-de-email-sandbox
+git merge --no-ff 15-10-conhecendo-padrao-domain-events-do-ddd
 git push
 
 sair da tela de merge
