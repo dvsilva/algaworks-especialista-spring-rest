@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 15-05-processamento-template-do-corpo-de-emails-com-apache-freemarker
+git checkout -b 15-06-melhorando-texto-do-email-com-ftl-freemarker-template-language
 git add .
-git commit -m "Processando template do corpo de e-mails com Apache FreeMarker"
-git push origin 15-05-processamento-template-do-corpo-de-emails-com-apache-freemarker
+git commit -m "Melhorando o texto do e-mail com FTL (FreeMarker Template Language)"
+git push origin 15-06-melhorando-texto-do-email-com-ftl-freemarker-template-language
 
 git checkout master
-git merge --no-ff 15-05-processamento-template-do-corpo-de-emails-com-apache-freemarker
+git merge --no-ff 15-06-melhorando-texto-do-email-com-ftl-freemarker-template-language
 git push
 
 sair da tela de merge
