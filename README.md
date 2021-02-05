@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 15-06-melhorando-texto-do-email-com-ftl-freemarker-template-language
+git checkout -b 15-07-formatando-valores-monetarios-com-ftl
 git add .
-git commit -m "Melhorando o texto do e-mail com FTL (FreeMarker Template Language)"
-git push origin 15-06-melhorando-texto-do-email-com-ftl-freemarker-template-language
+git commit -m "Formatando valores monetários com FTL"
+git push origin 15-07-formatando-valores-monetarios-com-ftl
 
 git checkout master
-git merge --no-ff 15-06-melhorando-texto-do-email-com-ftl-freemarker-template-language
+git merge --no-ff 15-07-formatando-valores-monetarios-com-ftl
 git push
 
 sair da tela de merge
