@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 15-07-formatando-valores-monetarios-com-ftl
+git checkout -b 15-08-desafio-implementando-servico-de-envio-de-email-fake
 git add .
-git commit -m "Formatando valores monetários com FTL"
-git push origin 15-07-formatando-valores-monetarios-com-ftl
+git commit -m "Desafio: implementando serviço de envio de e-mail fake"
+git push origin 15-08-desafio-implementando-servico-de-envio-de-email-fake
 
 git checkout master
-git merge --no-ff 15-07-formatando-valores-monetarios-com-ftl
+git merge --no-ff 15-08-desafio-implementando-servico-de-envio-de-email-fake
 git push
 
 sair da tela de merge
