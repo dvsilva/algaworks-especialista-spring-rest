@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 15-13-reagindo-a-domain-events-em-fases-especificas-da-transacao
+git checkout -b 15-14-desafio-enviando-emails-no-cancelamento-de-pedidos
 git add .
-git commit -m "Reagindo a Domain Events em fases específicas da transação"
-git push origin 15-13-reagindo-a-domain-events-em-fases-especificas-da-transacao
+git commit -m "Desafio: enviando e-mails no cancelamento de pedidos"
+git push origin 15-14-desafio-enviando-emails-no-cancelamento-de-pedidos
 
 git checkout master
-git merge --no-ff 15-13-reagindo-a-domain-events-em-fases-especificas-da-transacao
+git merge --no-ff 15-14-desafio-enviando-emails-no-cancelamento-de-pedidos
 git push
 
 sair da tela de merge

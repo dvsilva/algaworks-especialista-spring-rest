@@ -29,6 +29,9 @@ public class FluxoPedidoService {
 	public void cancelar(String codigoPedido) {
 		Pedido pedido = emissaoPedido.buscarOuFalhar(codigoPedido);
 		pedido.cancelar();
+		
+		// para o spring data disparar o evento é necessario fazer o save no repositorio
+		pedidoRepository.save(pedido);
 	}
 	
 	@Transactional
