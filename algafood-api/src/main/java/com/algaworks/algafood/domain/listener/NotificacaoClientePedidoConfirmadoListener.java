@@ -1,8 +1,8 @@
 package com.algaworks.algafood.domain.listener;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.event.TransactionalEventListener;
 
 import com.algaworks.algafood.domain.event.PedidoConfirmadoEvent;
 import com.algaworks.algafood.domain.model.Pedido;
@@ -15,9 +15,20 @@ public class NotificacaoClientePedidoConfirmadoListener {
 	@Autowired
 	private EnvioEmailService envioEmail;
 	
-	@EventListener
+//	@EventListener
+	// define a fase especifica da transacao para ser executada 
+	// executa depois que a transacao foi commitada
+	@TransactionalEventListener // (phase = TransactionPhase.BEFORE_COMMIT) não faz o update se der erro no envio de email
 	public void aoConfirmarPedido(PedidoConfirmadoEvent event) {
+//		if(true) throw new IllegalArgumentException();
+		
 		Pedido pedido = event.getPedido();
+
+//		var mensagem = Mensagem.builder()
+//		.assunto(pedido.getRestaurante().getNome() + " - Pedido confirmado")
+//		.corpo("O pedido de código <strong>" + pedido.getCodigo() + "</strong> foi confirmado!")
+//		.destinatario(pedido.getCliente().getEmail())
+//		.build();
 		
 		var mensagem = Mensagem.builder()
 				.assunto(pedido.getRestaurante().getNome() + " - Pedido confirmado")

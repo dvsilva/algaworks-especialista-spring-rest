@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 15-12-observando-e-reagindo-domain-events
+git checkout -b 15-13-reagindo-a-domain-events-em-fases-especificas-da-transacao
 git add .
 git commit -m "Reagindo a Domain Events em fases específicas da transação"
-git push origin 15-12-observando-e-reagindo-domain-events
+git push origin 15-13-reagindo-a-domain-events-em-fases-especificas-da-transacao
 
 git checkout master
-git merge --no-ff 15-12-observando-e-reagindo-domain-events
+git merge --no-ff 15-13-reagindo-a-domain-events-em-fases-especificas-da-transacao
 git push
 
 sair da tela de merge
