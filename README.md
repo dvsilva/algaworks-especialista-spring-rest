@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 15-11-publicando-domain-events-a-partir-do-aggregate-root
+git checkout -b 15-12-observando-e-reagindo-domain-events
 git add .
-git commit -m "Publicando Domain Events a partir do Aggregate Root"
-git push origin 15-11-publicando-domain-events-a-partir-do-aggregate-root
+git commit -m "Observando e reagindo a Domain Events"
+git push origin 15-12-observando-e-reagindo-domain-events
 
 git checkout master
-git merge --no-ff 15-11-publicando-domain-events-a-partir-do-aggregate-root
+git merge --no-ff 15-12-observando-e-reagindo-domain-events
 git push
 
 sair da tela de merge
