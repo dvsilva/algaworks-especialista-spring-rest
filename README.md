@@ -5,7 +5,7 @@ github commands
 ```bash
 git checkout -b 15-12-observando-e-reagindo-domain-events
 git add .
-git commit -m "Observando e reagindo a Domain Events"
+git commit -m "Reagindo a Domain Events em fases específicas da transação"
 git push origin 15-12-observando-e-reagindo-domain-events
 
 git checkout master
