@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 15-14-desafio-enviando-emails-no-cancelamento-de-pedidos
+git checkout -b 16-01-implementando-uma-chamada-rest-api-com-javascript
 git add .
-git commit -m "Desafio: enviando e-mails no cancelamento de pedidos"
-git push origin 15-14-desafio-enviando-emails-no-cancelamento-de-pedidos
+git commit -m "Implementando uma chamada na REST API com JavaScript"
+git push origin 16-01-implementando-uma-chamada-rest-api-com-javascript
 
 git checkout master
-git merge --no-ff 15-14-desafio-enviando-emails-no-cancelamento-de-pedidos
+git merge --no-ff 16-01-implementando-uma-chamada-rest-api-com-javascript
 git push
 
 sair da tela de merge
