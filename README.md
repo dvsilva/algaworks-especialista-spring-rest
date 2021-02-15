@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 16-01-implementando-uma-chamada-rest-api-com-javascript
+git checkout -b 16-02-testando-requisicao-na-api-com-javascript-e-entendendo-same-origin-policy
 git add .
-git commit -m "Implementando uma chamada na REST API com JavaScript"
-git push origin 16-01-implementando-uma-chamada-rest-api-com-javascript
+git commit -m "Testando a requisição na API com JavaScript e entendendo a Same Origin Policy"
+git push origin 16-02-testando-requisicao-na-api-com-javascript-e-entendendo-same-origin-policy
 
 git checkout master
-git merge --no-ff 16-01-implementando-uma-chamada-rest-api-com-javascript
+git merge --no-ff 16-02-testando-requisicao-na-api-com-javascript-e-entendendo-same-origin-policy
 git push
 
 sair da tela de merge
