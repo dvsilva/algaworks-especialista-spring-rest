@@ -9,7 +9,9 @@ import javax.validation.Valid;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.server.ServletServerHttpRequest;
 import org.springframework.util.ReflectionUtils;
@@ -62,17 +64,22 @@ public class RestauranteController {
 	@Autowired
 	private SmartValidator validator;
 	
-//	@JsonView(RestauranteView.Resumo.class)
+	@JsonView(RestauranteView.Resumo.class)
 	@GetMapping
-	public List<RestauranteModel> listar() {
-		return restauranteModelAssembler.toCollectionModel(restauranteRepository.findAll());
+	public ResponseEntity<List<RestauranteModel>> listar() {
+		List<RestauranteModel> restaurantesModel = restauranteModelAssembler
+				.toCollectionModel(restauranteRepository.findAll());
+		
+		return ResponseEntity.ok()
+				.header(HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN, "*")
+				.body(restaurantesModel);
 	}
 	
-	@JsonView(RestauranteView.ApenasNome.class)
-	@GetMapping(params = "projecao=apenas-nome")
-	public List<RestauranteModel> listarApenasNomes() {
-		return listar();
-	}
+//	@JsonView(RestauranteView.ApenasNome.class)
+//	@GetMapping(params = "projecao=apenas-nome")
+//	public List<RestauranteModel> listarApenasNomes() {
+//		return listar();
+//	}
 	
 //	@GetMapping
 //	public MappingJacksonValue listar(@RequestParam(required = false) String projecao) {
