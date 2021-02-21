@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 16-09-desafio-implementando-uma-requisicao-delete-com-javascript
+git checkout -b 16-10-implementando-um-client-da-rest-api-com-java-e-spring-resttemplate
 git add .
-git commit -m "Desafio: implementando uma requisição DELETE com JavaScript"
-git push origin 16-09-desafio-implementando-uma-requisicao-delete-com-javascript
+git commit -m "Implementando um client da REST API com Java e Spring (RestTemplate)"
+git push origin 16-10-implementando-um-client-da-rest-api-com-java-e-spring-resttemplate
 
 git checkout master
-git merge --no-ff 16-09-desafio-implementando-uma-requisicao-delete-com-javascript
+git merge --no-ff 16-10-implementando-um-client-da-rest-api-com-java-e-spring-resttemplate
 git push
 
 sair da tela de merge
