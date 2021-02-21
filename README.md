@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 16-10-implementando-um-client-da-rest-api-com-java-e-spring-resttemplate
+git checkout -b 16-11-tratando-respostas-com-codigo-de-erro-no-client-java
 git add .
-git commit -m "Implementando um client da REST API com Java e Spring (RestTemplate)"
-git push origin 16-10-implementando-um-client-da-rest-api-com-java-e-spring-resttemplate
+git commit -m "Tratando respostas com código de erro no client Java"
+git push origin 16-11-tratando-respostas-com-codigo-de-erro-no-client-java
 
 git checkout master
-git merge --no-ff 16-10-implementando-um-client-da-rest-api-com-java-e-spring-resttemplate
+git merge --no-ff 16-11-tratando-respostas-com-codigo-de-erro-no-client-java
 git push
 
 sair da tela de merge
