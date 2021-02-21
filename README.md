@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 16-08-implementando-um-formulario-de-cadastro-e-fazendo-requisicao-post-com-javascript
+git checkout -b 16-09-desafio-implementando-uma-requisicao-delete-com-javascript
 git add .
-git commit -m "Implementando um formulário de cadastro e fazendo requisição POST com JavaScript"
-git push origin 16-08-implementando-um-formulario-de-cadastro-e-fazendo-requisicao-post-com-javascript
+git commit -m "Desafio: implementando uma requisição DELETE com JavaScript"
+git push origin 16-09-desafio-implementando-uma-requisicao-delete-com-javascript
 
 git checkout master
-git merge --no-ff 16-08-implementando-um-formulario-de-cadastro-e-fazendo-requisicao-post-com-javascript
+git merge --no-ff 16-09-desafio-implementando-uma-requisicao-delete-com-javascript
 git push
 
 sair da tela de merge
