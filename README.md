@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 16-04-habilitando-cors-em-controladores-e-metodos-com-crossorigin
+git checkout -b 16-05-entendendo-o-funcionamento-de-preflight-do-cors
 git add .
-git commit -m "Habilitando CORS em controladores e métodos com @CrossOrigin"
-git push origin 16-04-habilitando-cors-em-controladores-e-metodos-com-crossorigin
+git commit -m "Entendendo o funcionamento de preflight do CORS"
+git push origin 16-05-entendendo-o-funcionamento-de-preflight-do-cors
 
 git checkout master
-git merge --no-ff 16-04-habilitando-cors-em-controladores-e-metodos-com-crossorigin
+git merge --no-ff 16-05-entendendo-o-funcionamento-de-preflight-do-cors
 git push
 
 sair da tela de merge
