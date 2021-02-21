@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 16-05-entendendo-o-funcionamento-de-preflight-do-cors
+git checkout -b 16-06-habilitando-cors-globalmente-no-projeto-da-api
 git add .
-git commit -m "Entendendo o funcionamento de preflight do CORS"
-git push origin 16-05-entendendo-o-funcionamento-de-preflight-do-cors
+git commit -m "Habilitando CORS globalmente no projeto da API"
+git push origin 16-06-habilitando-cors-globalmente-no-projeto-da-api
 
 git checkout master
-git merge --no-ff 16-05-entendendo-o-funcionamento-de-preflight-do-cors
+git merge --no-ff 16-06-habilitando-cors-globalmente-no-projeto-da-api
 git push
 
 sair da tela de merge
