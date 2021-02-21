@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 16-06-habilitando-cors-globalmente-no-projeto-da-api
+git checkout -b 16-07-desafio-implementando-uma-requisicao-get-com-javascript
 git add .
-git commit -m "Habilitando CORS globalmente no projeto da API"
-git push origin 16-06-habilitando-cors-globalmente-no-projeto-da-api
+git commit -m "Desafio: implementando uma requisição GET com JavaScript"
+git push origin 16-07-desafio-implementando-uma-requisicao-get-com-javascript
 
 git checkout master
-git merge --no-ff 16-06-habilitando-cors-globalmente-no-projeto-da-api
+git merge --no-ff 16-07-desafio-implementando-uma-requisicao-get-com-javascript
 git push
 
 sair da tela de merge

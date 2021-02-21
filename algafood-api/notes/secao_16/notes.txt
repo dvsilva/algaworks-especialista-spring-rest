@@ -22,7 +22,7 @@ CORS (cross origin resource sharing - compartilhamento de recursos com origens d
 implementando CORS
 - colocar um atributo no header da resposta
 - utilizar a anotação @CrossOrigin (não deixa nem o método do controller ser executado)
-
+- habilitar globalmente usando WebMvcConfigurer e o metodo addCorsMappings
 
 preflight do cors
 - envia uma chamada de verificação (OPTIONS) para saber se pode executar o método solicitado
