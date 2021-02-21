@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 16-11-tratando-respostas-com-codigo-de-erro-no-client-java
+git checkout -b 16-12-desafio-implementando-uma-requisicao-post-no-client-java
 git add .
-git commit -m "Tratando respostas com código de erro no client Java"
-git push origin 16-11-tratando-respostas-com-codigo-de-erro-no-client-java
+git commit -m "Desafio: Implementando uma requisição POST no client Java"
+git push origin 16-12-desafio-implementando-uma-requisicao-post-no-client-java
 
 git checkout master
-git merge --no-ff 16-11-tratando-respostas-com-codigo-de-erro-no-client-java
+git merge --no-ff 16-12-desafio-implementando-uma-requisicao-post-no-client-java
 git push
 
 sair da tela de merge
