@@ -22,3 +22,11 @@ CORS (cross origin resource sharing - compartilhamento de recursos com origens d
 implementando CORS
 - colocar um atributo no header da resposta
 - utilizar a anotação @CrossOrigin (não deixa nem o método do controller ser executado)
+
+
+preflight do cors
+- envia uma chamada de verificação (OPTIONS) para saber se pode executar o método solicitado
+- resulta em duas requisições
+- retorna os cabeçalhos do cors
+- requisições simples (get, post e head) não ativam o preflight do cors
+
