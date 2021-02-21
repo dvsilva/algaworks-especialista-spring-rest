@@ -18,3 +18,7 @@ Same Origin Policy (politica de mesma origem)
 CORS (cross origin resource sharing - compartilhamento de recursos com origens diferentes)
 - mecanismo que habilitam requisições de origens diferentes
 - navegadores implementam a especificação de CORS, mas precisa configurar a aplicação servidora para suportar CORS
+
+implementando CORS
+- colocar um atributo no header da resposta
+- utilizar a anotação @CrossOrigin (não deixa nem o método do controller ser executado)
