@@ -17,3 +17,6 @@ quando não usar cache
 	- ex: atualização de nome de fornecedor
 	- fica com dados diferentes por um periodo (quando esta fresh)
 - dados mudam com muita frequencia
+
+plugin para testes no navegador - Talend API Tester - Free Edition
+https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm/related

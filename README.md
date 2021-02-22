@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 17-01-introducao-ao-cache-http
+git checkout -b 17-02-habilitando-o-cache-com-o-cabecalho-cache-control-e-diretiva-max-age
 git add .
-git commit -m "Introdução ao Cache de HTTP"
-git push origin 17-01-introducao-ao-cache-http
+git commit -m "Habilitando o cache com o cabeçalho Cache-Control e a diretiva max-age"
+git push origin 17-02-habilitando-o-cache-com-o-cabecalho-cache-control-e-diretiva-max-age
 
 git checkout master
-git merge --no-ff 17-01-introducao-ao-cache-http
+git merge --no-ff 17-02-habilitando-o-cache-com-o-cabecalho-cache-control-e-diretiva-max-age
 git push
 
 sair da tela de merge
