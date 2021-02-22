@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 16-12-desafio-implementando-uma-requisicao-post-no-client-java
+git checkout -b 17-01-introducao-ao-cache-http
 git add .
-git commit -m "Desafio: Implementando uma requisição POST no client Java"
-git push origin 16-12-desafio-implementando-uma-requisicao-post-no-client-java
+git commit -m "Introdução ao Cache de HTTP"
+git push origin 17-01-introducao-ao-cache-http
 
 git checkout master
-git merge --no-ff 16-12-desafio-implementando-uma-requisicao-post-no-client-java
+git merge --no-ff 17-01-introducao-ao-cache-http
 git push
 
 sair da tela de merge
