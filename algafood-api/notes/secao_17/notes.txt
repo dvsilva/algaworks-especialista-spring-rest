@@ -1,0 +1,19 @@
+cache http
+- aproveitar a infra da web
+- habilidade que componentes de software tem em armazenar dados acessados frequentemente
+- evita varias requisições http
+- cada consumidor guarda em um cache local (representação fresca, stail faz requisição)
+- ao inves de fazer a segunda requisição busca no cache local
+- proxy com cache compartilhado -> requisições chegam no proxy que redireciona para a API e arnazena no seu cache (pode ter cache local)
+
+beneficios
+- reduz uso de banda (quantidade de requisições)
+- reduz latência
+- reduz carga nos servidores
+- esconde problemas na rede (requisições com cache são servidas normalmente mesmo que o servidor esteja fora)
+
+quando não usar cache
+- não tolera diferenças no estado entre o que esta no cache local e no servidor 
+	- ex: atualização de nome de fornecedor
+	- fica com dados diferentes por um periodo (quando esta fresh)
+- dados mudam com muita frequencia
