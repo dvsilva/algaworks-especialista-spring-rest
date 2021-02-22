@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 17-02-habilitando-o-cache-com-o-cabecalho-cache-control-e-diretiva-max-age
+git checkout -b 17-03-desafio-adicionando-cabecalho-cache-control-na-resposta
 git add .
-git commit -m "Habilitando o cache com o cabeçalho Cache-Control e a diretiva max-age"
-git push origin 17-02-habilitando-o-cache-com-o-cabecalho-cache-control-e-diretiva-max-age
+git commit -m "Desafio: adicionando o cabeçalho Cache-Control na resposta"
+git push origin 17-03-desafio-adicionando-cabecalho-cache-control-na-resposta
 
 git checkout master
-git merge --no-ff 17-02-habilitando-o-cache-com-o-cabecalho-cache-control-e-diretiva-max-age
+git merge --no-ff 17-03-desafio-adicionando-cabecalho-cache-control-na-resposta
 git push
 
 sair da tela de merge
