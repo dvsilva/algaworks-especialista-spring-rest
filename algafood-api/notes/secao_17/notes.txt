@@ -29,3 +29,7 @@ etags - entity tags (hash codigo unico que identifica a representação retornad
 - retorna 304 not modified, porem o chrome camufla e retorna 200 na resposta
 - quando coloca o cabeçalho cache-control: no-cache na requisição, não usa o cache e o origin server (servidor) responde
 
+deep etags
+- se coincidir o etags com o if none match não processa o metodo no controller (não executa a consulta no banco de dados)
+- economiza processamento no servidor
+- 

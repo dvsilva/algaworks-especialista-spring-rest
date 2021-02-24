@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 17-07-usando-a-diretiva-no-cache-no-cabecalho-cache-control-da-requisicao
+git checkout -b 17-08-entendendo-e-preparando-a-implementacao-de-deep-etags
 git add .
-git commit -m "Usando a diretiva no-cache no cabeçalho Cache-Control da requisição"
-git push origin 17-07-usando-a-diretiva-no-cache-no-cabecalho-cache-control-da-requisicao
+git commit -m "Entendendo e preparando a implementação de Deep ETags"
+git push origin 17-08-entendendo-e-preparando-a-implementacao-de-deep-etags
 
 git checkout master
-git merge --no-ff 17-07-usando-a-diretiva-no-cache-no-cabecalho-cache-control-da-requisicao
+git merge --no-ff 17-08-entendendo-e-preparando-a-implementacao-de-deep-etags
 git push
 
 sair da tela de merge
