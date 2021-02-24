@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 17-09-implementando-requisicoes-condicionais-com-deep-etags
+git checkout -b 17-10-desafio-implementando-requisicoes-condicionais-com-deep-etags
 git add .
-git commit -m "Implementando requisições condicionais com Deep ETags"
-git push origin 17-09-implementando-requisicoes-condicionais-com-deep-etags
+git commit -m "Desafio: implementando requisições condicionais com Deep ETags"
+git push origin 17-10-desafio-implementando-requisicoes-condicionais-com-deep-etags
 
 git checkout master
-git merge --no-ff 17-09-implementando-requisicoes-condicionais-com-deep-etags
+git merge --no-ff 17-10-desafio-implementando-requisicoes-condicionais-com-deep-etags
 git push
 
 sair da tela de merge

@@ -32,4 +32,4 @@ etags - entity tags (hash codigo unico que identifica a representação retornad
 deep etags
 - se coincidir o etags com o if none match não processa o metodo no controller (não executa a consulta no banco de dados)
 - economiza processamento no servidor
-- 
+- implementação mais complexa, avaliar se realmente é necessário
