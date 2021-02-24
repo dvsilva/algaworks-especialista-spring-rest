@@ -1,0 +1,71 @@
+o que é persistencia de dados  
+- termo utilizado para dizer que queremos preservar os dados por um tempo além da utilização de um software
+
+como funciona persistencia no banco de dados utilizando java
+- código Java -> diver JDBC -> MySQL
+
+o que é ORM (Object Relational Mapping - Mapeamento de Objeto-Relacional) 
+- tecnica para mapeamento de classes para tabelas de bancos de dados relacional
+- simplificar a persistencia de dados para que o programador trabalhe mais com orientação à objetos e menos com o modelo relacional
+
+mapeamento objeto-relacional
+modelo relacional -> modelo OO
+tabela -> classe
+linha -> objeto
+coluna -> atributo
+---- -> metodo
+chave estrangeira -> associação
+
+como funciona persistencia com ORM e Java
+- código Java -> ORM -> diver JDBC -> MySQL
+
+o que é Java Persistence API (JPA)?
+- é uma especificação (descreve como algo deve funcionar JEE)
+- é uma solução ORM para persistencia de dados que é padronizada para desenvolvimento de apliações java
+- JPA define a forma de mapeamento objeto-relacional
+- possui API de consultas e modificação de dados 
+- possui linguagem de consulta
+- utiliza anotações
+
+hibernate
+- é uma implementação da especificação JPA
+- mais usada mas nao é a unica (eclipse link)
+- não existe vendor locking
+
+como funciona persistencia com JPA e Java
+- código Java -> JPA (hibernate) -> diver JDBC -> MySQL
+
+configuração da conexão no arquivo application.properties
+# configuração do banco de dados
+spring.datasource.url=jdbc:mysql://localhost/algafood?createDatabaseIfNotExist=true&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=123456
+
+# gerar e executar ddl (criar tabelas automaticamente)
+spring.jpa.generate-ddl=true
+# create - a cada execução deleta tabelas e cria tabelas
+spring.jpa.hibernate.ddl-auto=create
+# mostrar o sql quando executar consulta no banco de dados
+spring.jpa.show-sql=true
+ 
+DDD
+- abordagem de desenvolvimento de software que ajuda a construir um software com qualidade com foco no domínio
+- livro do Eric Evans e artigo Martin Fowler
+- padrão aggregate - grupo de objetos de dominio que podem ser tratados como uma unica unidade
+- diagrama de classes segmentados em partes maiores
+ - aggregate root - raiz do agregado ("classe principal")
+ - exemplo: Pedido e ItemPedido
+ 
+ padrão repository
+ - padrão do ddd
+ - adiciona uma camada de abstração para acesso aos dados
+ - imita uma coleção de forma que quem usa o repository não precisa saber qual o mecanismo de persistencia que esta sendo usado pelo repository
+ 
+ lombok
+ - biblioteca java
+ - foco em produtividade e redução de código boilerplate usando anotações próprias
+ - boilerplate - códigos repetitivos, nao acrescentam tanto mas precisam estar ali (constutores, hascode, equals, gets e sets)
+ 
+ engine myisam do mysql não cria foreign keys - acrescentar no application.properties
+# configuração do dialeto - engine (problema da chave estrangeira)
+spring.jpa.properties.hibernate-dialect=org.hibernate.dialect.MySQL57Dialect
