@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 17-06-adicionando-outras-diretivas-de-cache-control-na-resposta-http
+git checkout -b 17-07-usando-a-diretiva-no-cache-no-cabecalho-cache-control-da-requisicao
 git add .
-git commit -m "Adicionando outras diretivas de Cache-Control na resposta HTTP"
-git push origin 17-06-adicionando-outras-diretivas-de-cache-control-na-resposta-http
+git commit -m "Usando a diretiva no-cache no cabeçalho Cache-Control da requisição"
+git push origin 17-07-usando-a-diretiva-no-cache-no-cabecalho-cache-control-da-requisicao
 
 git checkout master
-git merge --no-ff 17-06-adicionando-outras-diretivas-de-cache-control-na-resposta-http
+git merge --no-ff 17-07-usando-a-diretiva-no-cache-no-cabecalho-cache-control-da-requisicao
 git push
 
 sair da tela de merge
