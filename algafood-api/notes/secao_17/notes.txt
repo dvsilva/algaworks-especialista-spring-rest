@@ -27,5 +27,5 @@ etags - entity tags (hash codigo unico que identifica a representação retornad
 - retorna no cabeçalho da resposta um atributo etag com a hash
 - para atualizar apos o cache ficar stale, envia um parametro if-none-match com a hash
 - retorna 304 not modified, porem o chrome camufla e retorna 200 na resposta
-
+- quando coloca o cabeçalho cache-control: no-cache na requisição, não usa o cache e o origin server (servidor) responde
 
