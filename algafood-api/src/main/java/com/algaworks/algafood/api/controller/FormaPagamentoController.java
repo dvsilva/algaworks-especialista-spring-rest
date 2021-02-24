@@ -1,5 +1,6 @@
 package com.algaworks.algafood.api.controller;
 
+import java.time.OffsetDateTime;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -18,6 +19,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.request.ServletWebRequest;
+import org.springframework.web.filter.ShallowEtagHeaderFilter;
 
 import com.algaworks.algafood.api.assembler.FormaPagamentoInputDisassembler;
 import com.algaworks.algafood.api.assembler.FormaPagamentoModelAssembler;
@@ -44,14 +47,40 @@ public class FormaPagamentoController {
     private FormaPagamentoInputDisassembler formaPagamentoInputDisassembler;
     
 	@GetMapping
-	public ResponseEntity<List<FormaPagamentoModel>> listar() {
+	public ResponseEntity<List<FormaPagamentoModel>> listar(ServletWebRequest request) {
+		// desabilitar o shallow etag para essa requisição
+		ShallowEtagHeaderFilter.disableContentCaching(request.getRequest());
+		
+		String eTag = "0";
+		
+		OffsetDateTime dataUltimaAtualizacao = formaPagamentoRepository.getDataUltimaAtualizacao();
+		
+		if (dataUltimaAtualizacao != null) {
+			eTag = String.valueOf(dataUltimaAtualizacao.toEpochSecond());
+		}
+		
+		// if none match conincide com a etag
+		// senao tem alguma representação em stail e deve continuar
+		if (request.checkNotModified(eTag)) {
+			return null;
+		}
+		
 		List<FormaPagamento> todasFormasPagamentos = formaPagamentoRepository.findAll();
 		
 		List<FormaPagamentoModel> formasPagamentosModel = formaPagamentoModelAssembler
 				.toCollectionModel(todasFormasPagamentos);
 		
 		return ResponseEntity.ok()
-				.cacheControl(CacheControl.maxAge(10, TimeUnit.SECONDS))
+//				.cacheControl(CacheControl.maxAge(10, TimeUnit.SECONDS))
+				// resposta armazenada apenas no cache local, cache compartilhado como proxies não podem fazer o cache
+//				.cacheControl(CacheControl.maxAge(10, TimeUnit.SECONDS).cachePrivate())
+				// resposta pode ser armazenada em cache local e compartilhados [public e padrao]
+				.cacheControl(CacheControl.maxAge(10, TimeUnit.SECONDS).cachePublic())
+				// se a resposta for cacheada sempre vai precisar fazer uma requisição para validacao (é como se a resposta estivesse sempre stale)
+//				.cacheControl(CacheControl.noCache())
+				// torna a resposta não cacheavel, desativa o cache
+//				.cacheControl(CacheControl.noStore())
+				.eTag(eTag)
 				.body(formasPagamentosModel);
 	}
     
@@ -68,15 +97,7 @@ public class FormaPagamentoController {
 		FormaPagamentoModel formaPagamentoModel =  formaPagamentoModelAssembler.toModel(formaPagamento);
 		
 		return ResponseEntity.ok()
-//				.cacheControl(CacheControl.maxAge(10, TimeUnit.SECONDS))
-				// resposta armazenada apenas no cache local, cache compartilhado como proxies não podem fazer o cache
-//				.cacheControl(CacheControl.maxAge(10, TimeUnit.SECONDS).cachePrivate())
-				// resposta pode ser armazenada em cache local e compartilhados [public e padrao]
-				.cacheControl(CacheControl.maxAge(10, TimeUnit.SECONDS).cachePublic())
-				// se a resposta for cacheada sempre vai precisar fazer uma requisição para validacao (é como se a resposta estivesse sempre stale)
-//				.cacheControl(CacheControl.noCache())
-				// torna a resposta não cacheavel, desativa o cache
-//				.cacheControl(CacheControl.noStore())
+				.cacheControl(CacheControl.maxAge(10, TimeUnit.SECONDS))
 				.body(formaPagamentoModel);
 	}
 	
