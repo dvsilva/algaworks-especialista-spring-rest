@@ -68,7 +68,15 @@ public class FormaPagamentoController {
 		FormaPagamentoModel formaPagamentoModel =  formaPagamentoModelAssembler.toModel(formaPagamento);
 		
 		return ResponseEntity.ok()
-				.cacheControl(CacheControl.maxAge(10, TimeUnit.SECONDS))
+//				.cacheControl(CacheControl.maxAge(10, TimeUnit.SECONDS))
+				// resposta armazenada apenas no cache local, cache compartilhado como proxies não podem fazer o cache
+//				.cacheControl(CacheControl.maxAge(10, TimeUnit.SECONDS).cachePrivate())
+				// resposta pode ser armazenada em cache local e compartilhados [public e padrao]
+				.cacheControl(CacheControl.maxAge(10, TimeUnit.SECONDS).cachePublic())
+				// se a resposta for cacheada sempre vai precisar fazer uma requisição para validacao (é como se a resposta estivesse sempre stale)
+//				.cacheControl(CacheControl.noCache())
+				// torna a resposta não cacheavel, desativa o cache
+//				.cacheControl(CacheControl.noStore())
 				.body(formaPagamentoModel);
 	}
 	
