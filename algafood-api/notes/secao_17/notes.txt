@@ -20,3 +20,11 @@ quando não usar cache
 
 plugin para testes no navegador - Talend API Tester - Free Edition
 https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm/related
+
+etags - entity tags (hash codigo unico que identifica a representação retornada)
+- validações de representações em cache com etags
+- validações e requisições condicionais com e tags
+- retorna no cabeçalho da resposta um atributo etag com a hash
+- para atualizar apos o cache ficar stale, envia um parametro if-none-match com a hash
+
+

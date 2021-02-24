@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 17-03-desafio-adicionando-cabecalho-cache-control-na-resposta
+git checkout -b 17-04-entendendo-a-validacao-de-representacoes-em-cache-com-etags
 git add .
-git commit -m "Desafio: adicionando o cabeçalho Cache-Control na resposta"
-git push origin 17-03-desafio-adicionando-cabecalho-cache-control-na-resposta
+git commit -m "Entendendo a validação de representações em cache com ETags"
+git push origin 17-04-entendendo-a-validacao-de-representacoes-em-cache-com-etags
 
 git checkout master
-git merge --no-ff 17-03-desafio-adicionando-cabecalho-cache-control-na-resposta
+git merge --no-ff 17-04-entendendo-a-validacao-de-representacoes-em-cache-com-etags
 git push
 
 sair da tela de merge
