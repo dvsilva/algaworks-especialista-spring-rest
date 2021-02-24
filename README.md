@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 17-04-entendendo-a-validacao-de-representacoes-em-cache-com-etags
+git checkout -b 17-05-implementando-requisicoes-condicionais-com-shallow-etags
 git add .
-git commit -m "Entendendo a validação de representações em cache com ETags"
-git push origin 17-04-entendendo-a-validacao-de-representacoes-em-cache-com-etags
+git commit -m "Implementando requisições condicionais com Shallow ETags"
+git push origin 17-05-implementando-requisicoes-condicionais-com-shallow-etags
 
 git checkout master
-git merge --no-ff 17-04-entendendo-a-validacao-de-representacoes-em-cache-com-etags
+git merge --no-ff 17-05-implementando-requisicoes-condicionais-com-shallow-etags
 git push
 
 sair da tela de merge
