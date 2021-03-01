@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-02-conhecendo-a-openapi-antes-conhecida-como-swagger
+git checkout -b 18-03-gerando-a-definicao-openapi-em-json-com-springfox
 git add .
-git commit -m "Conhecendo a OpenAPI (antes conhecida como Swagger)"
-git push origin 18-02-conhecendo-a-openapi-antes-conhecida-como-swagger
+git commit -m "Gerando a definição OpenAPI em JSON com SpringFox"
+git push origin 18-03-gerando-a-definicao-openapi-em-json-com-springfox
 
 git checkout master
-git merge --no-ff 18-02-conhecendo-a-openapi-antes-conhecida-como-swagger
+git merge --no-ff 18-03-gerando-a-definicao-openapi-em-json-com-springfox
 git push
 
 sair da tela de merge
