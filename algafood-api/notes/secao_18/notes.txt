@@ -1,0 +1,14 @@
+documentar - escrevendo boa documentação
+- facilitar a vida de outras pessoas
+- cuidado e atenção
+- descrever de forma simples e clara o que o endpoint faz
+- descrever parâmetros e modelos de entrada (obrigatório, formato ..)
+- descrever o modelo de representação retornado em caso de sucesso
+- descrever código de status possíveis nos casos de retorno
+- descrever o modelo de representação de problema
+- garantir que existe consistência entre documentação e a forma que a API funciona
+
+soluções para documentação
+- especificações abertas para descrever API em formato padrão e gerar documentação através de ferramentas que sequem a especificação
+- ex: RAML, API blueprint e OpenApi (swagger)
+
