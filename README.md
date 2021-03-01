@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-08-descrevendo-as-operacoes-de-endpoints-na-documentacao
+git checkout -b 18-09-descrevendo-os-parametros-de-entrada-na-documentacao
 git add .
-git commit -m "Descrevendo as operações de endpoints na documentação"
-git push origin 18-08-descrevendo-as-operacoes-de-endpoints-na-documentacao
+git commit -m "Descrevendo parâmetros de entrada na documentação"
+git push origin 18-09-descrevendo-os-parametros-de-entrada-na-documentacao
 
 git checkout master
-git merge --no-ff 18-08-descrevendo-as-operacoes-de-endpoints-na-documentacao
+git merge --no-ff 18-09-descrevendo-os-parametros-de-entrada-na-documentacao
 git push
 
 sair da tela de merge
