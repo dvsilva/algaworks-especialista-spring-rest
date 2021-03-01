@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-05-selecionando-os-endpoints-da-api-para-gerar-a-documentacao
+git checkout -b 18-06-descrevendo-informacoes-da-api-na-documentacao
 git add .
-git commit -m "Selecionando os endpoints da API para gerar a documentação"
-git push origin 18-05-selecionando-os-endpoints-da-api-para-gerar-a-documentacao
+git commit -m "Descrevendo informações da API na documentação"
+git push origin 18-06-descrevendo-informacoes-da-api-na-documentacao
 
 git checkout master
-git merge --no-ff 18-05-selecionando-os-endpoints-da-api-para-gerar-a-documentacao
+git merge --no-ff 18-06-descrevendo-informacoes-da-api-na-documentacao
 git push
 
 sair da tela de merge
