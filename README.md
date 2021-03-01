@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-09-descrevendo-os-parametros-de-entrada-na-documentacao
+git checkout -b 18-10-descrevendo-modelos-de-representacao-e-suas-propriedades
 git add .
-git commit -m "Descrevendo parâmetros de entrada na documentação"
-git push origin 18-09-descrevendo-os-parametros-de-entrada-na-documentacao
+git commit -m "Descrevendo modelos de representações e suas propriedades"
+git push origin 18-10-descrevendo-modelos-de-representacao-e-suas-propriedades
 
 git checkout master
-git merge --no-ff 18-09-descrevendo-os-parametros-de-entrada-na-documentacao
+git merge --no-ff 18-10-descrevendo-modelos-de-representacao-e-suas-propriedades
 git push
 
 sair da tela de merge
