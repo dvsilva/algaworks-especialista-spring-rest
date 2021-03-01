@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-07-descrevendo-tags-na-documentacao-e-associando-com-controllers
+git checkout -b 18-08-descrevendo-as-operacoes-de-endpoints-na-documentacao
 git add .
-git commit -m "Descrevendo tags na documentação e associando com controllers"
-git push origin 18-07-descrevendo-tags-na-documentacao-e-associando-com-controllers
+git commit -m "Descrevendo as operações de endpoints na documentação"
+git push origin 18-08-descrevendo-as-operacoes-de-endpoints-na-documentacao
 
 git checkout master
-git merge --no-ff 18-07-descrevendo-tags-na-documentacao-e-associando-com-controllers
+git merge --no-ff 18-08-descrevendo-as-operacoes-de-endpoints-na-documentacao
 git push
 
 sair da tela de merge
