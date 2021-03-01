@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-01-introducao-a-documentacao-de-rest-apis
+git checkout -b 18-02-conhecendo-a-openapi-antes-conhecida-como-swagger
 git add .
-git commit -m "Introdução à documentação de REST APIs"
-git push origin 18-01-introducao-a-documentacao-de-rest-apis
+git commit -m "Conhecendo a OpenAPI (antes conhecida como Swagger)"
+git push origin 18-02-conhecendo-a-openapi-antes-conhecida-como-swagger
 
 git checkout master
-git merge --no-ff 18-01-introducao-a-documentacao-de-rest-apis
+git merge --no-ff 18-02-conhecendo-a-openapi-antes-conhecida-como-swagger
 git push
 
 sair da tela de merge
