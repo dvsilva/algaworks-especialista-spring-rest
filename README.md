@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-04-gerando-a-documentacao-da-api-em-html-com-swaggerui-e-springfox
+git checkout -b 18-05-selecionando-os-endpoints-da-api-para-gerar-a-documentacao
 git add .
-git commit -m "Gerando a documentação da API em HTML com Swagger UI e SpringFox"
-git push origin 18-04-gerando-a-documentacao-da-api-em-html-com-swaggerui-e-springfox
+git commit -m "Selecionando os endpoints da API para gerar a documentação"
+git push origin 18-05-selecionando-os-endpoints-da-api-para-gerar-a-documentacao
 
 git checkout master
-git merge --no-ff 18-04-gerando-a-documentacao-da-api-em-html-com-swaggerui-e-springfox
+git merge --no-ff 18-05-selecionando-os-endpoints-da-api-para-gerar-a-documentacao
 git push
 
 sair da tela de merge
