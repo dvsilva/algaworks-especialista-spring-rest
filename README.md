@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-16-descrevendo-codigos-de-status-de-respostas-em-endpoints-especificos
+git checkout -b 18-17-desacoplando-anotacoes-do-swagger-dos-controladores
 git add .
-git commit -m "Descrevendo códigos de status de respostas em endpoints específicos"
-git push origin 18-16-descrevendo-codigos-de-status-de-respostas-em-endpoints-especificos
+git commit -m "Desacoplando anotações do Swagger dos controladores"
+git push origin 18-17-desacoplando-anotacoes-do-swagger-dos-controladores
 
 git checkout master
-git merge --no-ff 18-16-descrevendo-codigos-de-status-de-respostas-em-endpoints-especificos
+git merge --no-ff 18-17-desacoplando-anotacoes-do-swagger-dos-controladores
 git push
 
 sair da tela de merge
