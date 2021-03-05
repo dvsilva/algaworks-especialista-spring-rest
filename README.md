@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-14-descrevendo-o-modelo-de-representacao-de-problema
+git checkout -b 18-15-referenciando-modelo-de-representacao-de-problema-com-codigos-de-status-de-erro
 git add .
-git commit -m "Descrevendo o modelo de representação de problema"
-git push origin 18-14-descrevendo-o-modelo-de-representacao-de-problema
+git commit -m "Referenciando modelo de representação de problema com códigos de status de erro"
+git push origin 18-15-referenciando-modelo-de-representacao-de-problema-com-codigos-de-status-de-erro
 
 git checkout master
-git merge --no-ff 18-14-descrevendo-o-modelo-de-representacao-de-problema
+git merge --no-ff 18-15-referenciando-modelo-de-representacao-de-problema-com-codigos-de-status-de-erro
 git push
 
 sair da tela de merge
