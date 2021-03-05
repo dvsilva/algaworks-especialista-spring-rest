@@ -39,6 +39,9 @@ public class SpringFoxConfig implements WebMvcConfigurer {
 					.build()
 				.useDefaultResponseMessages(false)
 				.globalResponseMessage(RequestMethod.GET, globalGetResponseMessages())
+				.globalResponseMessage(RequestMethod.POST, globalPostPutResponseMessages())
+				.globalResponseMessage(RequestMethod.PUT, globalPostPutResponseMessages())
+				.globalResponseMessage(RequestMethod.DELETE, globalDeleteResponseMessages())
 				.apiInfo(apiInfo())
 				.tags(new Tag("Cidades", "Gerencia as cidades"));
 	}
@@ -52,6 +55,40 @@ public class SpringFoxConfig implements WebMvcConfigurer {
 				new ResponseMessageBuilder()
 					.code(HttpStatus.NOT_ACCEPTABLE.value())
 					.message("Recurso não possui representação que poderia ser aceita pelo consumidor")
+					.build()
+			);
+	}
+	
+	private List<ResponseMessage> globalPostPutResponseMessages() {
+		return Arrays.asList(
+				new ResponseMessageBuilder()
+					.code(HttpStatus.BAD_REQUEST.value())
+					.message("Requisição inválida (erro do cliente)")
+					.build(),
+				new ResponseMessageBuilder()
+					.code(HttpStatus.INTERNAL_SERVER_ERROR.value())
+					.message("Erro interno no servidor")
+					.build(),
+				new ResponseMessageBuilder()
+					.code(HttpStatus.NOT_ACCEPTABLE.value())
+					.message("Recurso não possui representação que poderia ser aceita pelo consumidor")
+					.build(),
+				new ResponseMessageBuilder()
+					.code(HttpStatus.UNSUPPORTED_MEDIA_TYPE.value())
+					.message("Requisição recusada porque o corpo está em um formato não suportado")
+					.build()
+			);
+	}
+	
+	private List<ResponseMessage> globalDeleteResponseMessages() {
+		return Arrays.asList(
+				new ResponseMessageBuilder()
+					.code(HttpStatus.BAD_REQUEST.value())
+					.message("Requisição inválida (erro do cliente)")
+					.build(),
+				new ResponseMessageBuilder()
+					.code(HttpStatus.INTERNAL_SERVER_ERROR.value())
+					.message("Erro interno no servidor")
 					.build()
 			);
 	}
