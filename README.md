@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-15-referenciando-modelo-de-representacao-de-problema-com-codigos-de-status-de-erro
+git checkout -b 18-16-descrevendo-codigos-de-status-de-respostas-em-endpoints-especificos
 git add .
-git commit -m "Referenciando modelo de representação de problema com códigos de status de erro"
-git push origin 18-15-referenciando-modelo-de-representacao-de-problema-com-codigos-de-status-de-erro
+git commit -m "Descrevendo códigos de status de respostas em endpoints específicos"
+git push origin 18-16-descrevendo-codigos-de-status-de-respostas-em-endpoints-especificos
 
 git checkout master
-git merge --no-ff 18-15-referenciando-modelo-de-representacao-de-problema-com-codigos-de-status-de-erro
+git merge --no-ff 18-16-descrevendo-codigos-de-status-de-respostas-em-endpoints-especificos
 git push
 
 sair da tela de merge
