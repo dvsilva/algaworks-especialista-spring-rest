@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-10-descrevendo-modelos-de-representacao-e-suas-propriedades
+git checkout -b 18-11-descrevendo-restricoes-de-validacao-de-propriedades-do-modelo
 git add .
-git commit -m "Descrevendo modelos de representações e suas propriedades"
-git push origin 18-10-descrevendo-modelos-de-representacao-e-suas-propriedades
+git commit -m "Descrevendo restrições de validação de propriedades do modelo"
+git push origin 18-11-descrevendo-restricoes-de-validacao-de-propriedades-do-modelo
 
 git checkout master
-git merge --no-ff 18-10-descrevendo-modelos-de-representacao-e-suas-propriedades
+git merge --no-ff 18-11-descrevendo-restricoes-de-validacao-de-propriedades-do-modelo
 git push
 
 sair da tela de merge
