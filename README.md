@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-13-desafio-descrevendo-codigos-de-status-de-respostas-de-forma-global
+git checkout -b 18-14-descrevendo-o-modelo-de-representacao-de-problema
 git add .
-git commit -m "Desafio: descrevendo códigos de status de respostas de forma global"
-git push origin 18-13-desafio-descrevendo-codigos-de-status-de-respostas-de-forma-global
+git commit -m "Descrevendo o modelo de representação de problema"
+git push origin 18-14-descrevendo-o-modelo-de-representacao-de-problema
 
 git checkout master
-git merge --no-ff 18-13-desafio-descrevendo-codigos-de-status-de-respostas-de-forma-global
+git merge --no-ff 18-14-descrevendo-o-modelo-de-representacao-de-problema
 git push
 
 sair da tela de merge
