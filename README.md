@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-34-desafio-descrevendo-documentacao-de-endpoints-de-produtos
+git checkout -b 18-35-desafio-descrevendo-documentacao-de-endpoints-de-fotos-de-produtos
 git add .
-git commit -m "18.34. Desafio: descrevendo documentação de endpoints de produtos"
-git push origin 18-34-desafio-descrevendo-documentacao-de-endpoints-de-produtos
+git commit -m "Desafio: descrevendo documentação de endpoints de fotos de produtos"
+git push origin 18-35-desafio-descrevendo-documentacao-de-endpoints-de-fotos-de-produtos
 
 git checkout master
-git merge --no-ff 18-34-desafio-descrevendo-documentacao-de-endpoints-de-produtos
+git merge --no-ff 18-35-desafio-descrevendo-documentacao-de-endpoints-de-fotos-de-produtos
 git push
 
 sair da tela de merge
