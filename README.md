@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-17-desacoplando-anotacoes-do-swagger-dos-controladores
+git checkout -b 18-18-desafio-descrevendo-documentacao-de-endpoints-de-grupos
 git add .
-git commit -m "Desacoplando anotações do Swagger dos controladores"
-git push origin 18-17-desacoplando-anotacoes-do-swagger-dos-controladores
+git commit -m "Desafio: descrevendo documentação de endpoints de grupos"
+git push origin 18-18-desafio-descrevendo-documentacao-de-endpoints-de-grupos
 
 git checkout master
-git merge --no-ff 18-17-desacoplando-anotacoes-do-swagger-dos-controladores
+git merge --no-ff 18-18-desafio-descrevendo-documentacao-de-endpoints-de-grupos
 git push
 
 sair da tela de merge
