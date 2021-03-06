@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-26-descrevendo-parametros-implicitos-em-operacoes
+git checkout -b 18-27-desafio-descrevendo-documentacao-de-endpoints-de-pedidos
 git add .
-git commit -m "Descrevendo parâmetros implícitos em operações"
-git push origin 18-26-descrevendo-parametros-implicitos-em-operacoes
+git commit -m "Desafio: descrevendo documentação de endpoints de pedidos"
+git push origin 18-27-desafio-descrevendo-documentacao-de-endpoints-de-pedidos
 
 git checkout master
-git merge --no-ff 18-26-descrevendo-parametros-implicitos-em-operacoes
+git merge --no-ff 18-27-desafio-descrevendo-documentacao-de-endpoints-de-pedidos
 git push
 
 sair da tela de merge
