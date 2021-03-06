@@ -7,18 +7,21 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.PositiveOrZero;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
 @Setter
 @Getter
 public class RestauranteInput {
-	
+
+	@ApiModelProperty(example = "Thai Gourmet", required = true)
 //	@NotNull // nao pode ser null
 //	@NotEmpty // nao pode ser vazio
 	@NotBlank // nao pode ter espacos em branco
 	private String nome;
-	
+
+	@ApiModelProperty(example = "12.00", required = true)
 //	@DecimalMin("0")
 //	@TaxaFrete
 //	@Multiplo(numero = 5)

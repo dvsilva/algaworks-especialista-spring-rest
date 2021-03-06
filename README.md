@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-28-descrevendo-parametros-de-projecoes-em-endpoints-de-consultas
+git checkout -b 18-29-desafio-descrevendo-documentacao-de-endpoints-de-restaurantes
 git add .
-git commit -m "Descrevendo parâmetros de projeções em endpoints de consultas"
-git push origin 18-28-descrevendo-parametros-de-projecoes-em-endpoints-de-consultas
+git commit -m "Desafio: descrevendo documentação de endpoints de restaurantes"
+git push origin 18-29-desafio-descrevendo-documentacao-de-endpoints-de-restaurantes
 
 git checkout master
-git merge --no-ff 18-28-descrevendo-parametros-de-projecoes-em-endpoints-de-consultas
+git merge --no-ff 18-29-desafio-descrevendo-documentacao-de-endpoints-de-restaurantes
 git push
 
 sair da tela de merge
