@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-20-corrigindo-documentacao-com-substituicao-de-pageable
+git checkout -b 18-21-corrigindo-documentacao-com-substituicao-de-page
 git add .
-git commit -m "Corrigindo documentação com substituição de Pageable"
-git push origin 18-20-corrigindo-documentacao-com-substituicao-de-pageable
+git commit -m "Corrigindo documentação com substituição de Page"
+git push origin 18-21-corrigindo-documentacao-com-substituicao-de-page
 
 git checkout master
-git merge --no-ff 18-20-corrigindo-documentacao-com-substituicao-de-pageable
+git merge --no-ff 18-21-corrigindo-documentacao-com-substituicao-de-page
 git push
 
 sair da tela de merge
