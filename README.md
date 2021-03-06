@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-19-descrevendo-media-type-da-resposta-nos-endpoints
+git checkout -b 18-20-corrigindo-documentacao-com-substituicao-de-pageable
 git add .
-git commit -m "Descrevendo media type da resposta nos endpoints"
-git push origin 18-19-descrevendo-media-type-da-resposta-nos-endpoints
+git commit -m "Corrigindo documentação com substituição de Pageable"
+git push origin 18-20-corrigindo-documentacao-com-substituicao-de-pageable
 
 git checkout master
-git merge --no-ff 18-19-descrevendo-media-type-da-resposta-nos-endpoints
+git merge --no-ff 18-20-corrigindo-documentacao-com-substituicao-de-pageable
 git push
 
 sair da tela de merge
