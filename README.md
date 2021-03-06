@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-18-desafio-descrevendo-documentacao-de-endpoints-de-grupos
+git checkout -b 18-19-descrevendo-media-type-da-resposta-nos-endpoints
 git add .
-git commit -m "Desafio: descrevendo documentação de endpoints de grupos"
-git push origin 18-18-desafio-descrevendo-documentacao-de-endpoints-de-grupos
+git commit -m "Descrevendo media type da resposta nos endpoints"
+git push origin 18-19-descrevendo-media-type-da-resposta-nos-endpoints
 
 git checkout master
-git merge --no-ff 18-18-desafio-descrevendo-documentacao-de-endpoints-de-grupos
+git merge --no-ff 18-19-descrevendo-media-type-da-resposta-nos-endpoints
 git push
 
 sair da tela de merge
