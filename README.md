@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-22-desafio-descrevendo-documentacao-de-endpoints-de-cozinhas
+git checkout -b 18-23-ignorando-tipos-de-parametros-de-operacoes-na-documentacao
 git add .
-git commit -m "Desafio: descrevendo documentação de endpoints de cozinhas"
-git push origin 18-22-desafio-descrevendo-documentacao-de-endpoints-de-cozinhas
+git commit -m "Ignorando tipos de parâmetros de operações na documentação"
+git push origin 18-23-ignorando-tipos-de-parametros-de-operacoes-na-documentacao
 
 git checkout master
-git merge --no-ff 18-22-desafio-descrevendo-documentacao-de-endpoints-de-cozinhas
+git merge --no-ff 18-23-ignorando-tipos-de-parametros-de-operacoes-na-documentacao
 git push
 
 sair da tela de merge
