@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-23-ignorando-tipos-de-parametros-de-operacoes-na-documentacao
+git checkout -b 18-24-desafio-descrevendo-documentacao-de-endpoints-de-formas-de-pagamento
 git add .
-git commit -m "Ignorando tipos de parâmetros de operações na documentação"
-git push origin 18-23-ignorando-tipos-de-parametros-de-operacoes-na-documentacao
+git commit -m "Desafio: descrevendo documentação de endpoints de formas de pagamento"
+git push origin 18-24-desafio-descrevendo-documentacao-de-endpoints-de-formas-de-pagamento
 
 git checkout master
-git merge --no-ff 18-23-ignorando-tipos-de-parametros-de-operacoes-na-documentacao
+git merge --no-ff 18-24-desafio-descrevendo-documentacao-de-endpoints-de-formas-de-pagamento
 git push
 
 sair da tela de merge
