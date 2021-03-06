@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-21-corrigindo-documentacao-com-substituicao-de-page
+git checkout -b 18-22-desafio-descrevendo-documentacao-de-endpoints-de-cozinhas
 git add .
-git commit -m "Corrigindo documentação com substituição de Page"
-git push origin 18-21-corrigindo-documentacao-com-substituicao-de-page
+git commit -m "Desafio: descrevendo documentação de endpoints de cozinhas"
+git push origin 18-22-desafio-descrevendo-documentacao-de-endpoints-de-cozinhas
 
 git checkout master
-git merge --no-ff 18-21-corrigindo-documentacao-com-substituicao-de-page
+git merge --no-ff 18-22-desafio-descrevendo-documentacao-de-endpoints-de-cozinhas
 git push
 
 sair da tela de merge
