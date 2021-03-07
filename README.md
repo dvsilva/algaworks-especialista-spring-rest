@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-40-desafio-descrevendo-documentacao-de-endpoints-de-estatisticas
+git checkout -b 19-01-introducao-a-discoverability-e-hateoas
 git add .
-git commit -m "Desafio: descrevendo documentação de endpoint de estatísticas"
-git push origin 18-40-desafio-descrevendo-documentacao-de-endpoints-de-estatisticas
+git commit -m "Introdução à Discoverability e HATEOAS"
+git push origin 19-01-introducao-a-discoverability-e-hateoas
 
 git checkout master
-git merge --no-ff 18-40-desafio-descrevendo-documentacao-de-endpoints-de-estatisticas
+git merge --no-ff 19-01-introducao-a-discoverability-e-hateoas
 git push
 
 sair da tela de merge
