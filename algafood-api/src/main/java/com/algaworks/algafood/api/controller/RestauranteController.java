@@ -176,7 +176,7 @@ public class RestauranteController implements RestauranteControllerOpenApi {
 			objectMapper.configure(DeserializationFeature.FAIL_ON_IGNORED_PROPERTIES, true);
 			objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
 			
-			RestauranteInput restauranteOrigem = objectMapper.convertValue(dadosOrigem, RestauranteInput.class);
+			Restaurante restauranteOrigem = objectMapper.convertValue(dadosOrigem, Restaurante.class);
 //			System.out.println(restauranteOrigem);
 	
 			dadosOrigem.forEach((nomePropriedade, valorPropriedade) -> {
@@ -191,15 +191,16 @@ public class RestauranteController implements RestauranteControllerOpenApi {
 			});
 		} 
 		catch (IllegalArgumentException e) {
+			e.printStackTrace();
 			Throwable rootCause = ExceptionUtils.getRootCause(e);
 			throw new HttpMessageNotReadableException(e.getMessage(), rootCause, serverHttpRequest);
 		}
 	}
 
-	@DeleteMapping("/{restauranteId}")
-	public void remover(@PathVariable Long restauranteId) {
-		cadastroRestaurante.excluir(restauranteId);
-	}
+//	@DeleteMapping("/{restauranteId}")
+//	public void remover(@PathVariable Long restauranteId) {
+//		cadastroRestaurante.excluir(restauranteId);
+//	}
 	
 	@PutMapping("/{restauranteId}/ativo")
 	@ResponseStatus(HttpStatus.NO_CONTENT)

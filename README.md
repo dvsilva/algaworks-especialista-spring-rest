@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-39-desafio-descrevendo-documentacao-de-endpoints-de-associacao-de-grupos-com-usuarios
+git checkout -b 18-40-desafio-descrevendo-documentacao-de-endpoints-de-estatisticas
 git add .
-git commit -m "Desafio: descrevendo documentação de endpoints de associação de grupos com usuários"
-git push origin 18-39-desafio-descrevendo-documentacao-de-endpoints-de-associacao-de-grupos-com-usuarios
+git commit -m "Desafio: descrevendo documentação de endpoint de estatísticas"
+git push origin 18-40-desafio-descrevendo-documentacao-de-endpoints-de-estatisticas
 
 git checkout master
-git merge --no-ff 18-39-desafio-descrevendo-documentacao-de-endpoints-de-associacao-de-grupos-com-usuarios
+git merge --no-ff 18-40-desafio-descrevendo-documentacao-de-endpoints-de-estatisticas
 git push
 
 sair da tela de merge

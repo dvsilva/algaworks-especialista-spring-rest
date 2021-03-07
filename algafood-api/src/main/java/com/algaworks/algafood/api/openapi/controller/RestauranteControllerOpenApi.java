@@ -1,6 +1,9 @@
 package com.algaworks.algafood.api.openapi.controller;
 
 import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
 
 import com.algaworks.algafood.api.exceptionhandler.Problem;
 import com.algaworks.algafood.api.model.RestauranteModel;
@@ -61,6 +64,21 @@ public interface RestauranteControllerOpenApi {
 				required = true)
 			RestauranteInput restauranteInput);
 	
+	@ApiOperation("Atualiza somente alguns campos de um restaurante por ID")
+	@ApiResponses({
+		@ApiResponse(code = 200, message = "Restaurante atualizado"),
+		@ApiResponse(code = 404, message = "Restaurante não encontrado", response = Problem.class)
+	})
+	RestauranteModel atualizarParcial(
+			@ApiParam(value = "ID de um restaurante", example = "1", required = true)
+			Long restauranteId,
+			
+			@ApiParam(name = "corpo", value = "Representação de um restaurante com os novos dados", required = true)
+			Map<String, Object> campos,
+			
+			@ApiParam(hidden = true)
+			HttpServletRequest request);
+
 	@ApiOperation("Ativa um restaurante por ID")
 	@ApiResponses({
 		@ApiResponse(code = 204, message = "Restaurante ativado com sucesso"),
