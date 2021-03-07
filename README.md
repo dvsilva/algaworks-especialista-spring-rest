@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-37-desafio-descrevendo-documentacao-de-endpoints-de-associacao-de-permissoes-com-grupos
+git checkout -b 18-38-desafio-descrevendo-documentacao-de-endpoints-de-usuarios
 git add .
-git commit -m "Desafio: descrevendo documentação de endpoints de associação de permissões com grupos"
-git push origin 18-37-desafio-descrevendo-documentacao-de-endpoints-de-associacao-de-permissoes-com-grupos
+git commit -m "Desafio: descrevendo documentação de endpoints de usuários"
+git push origin 18-38-desafio-descrevendo-documentacao-de-endpoints-de-usuarios
 
 git checkout master
-git merge --no-ff 18-37-desafio-descrevendo-documentacao-de-endpoints-de-associacao-de-permissoes-com-grupos
+git merge --no-ff 18-38-desafio-descrevendo-documentacao-de-endpoints-de-usuarios
 git push
 
 sair da tela de merge
