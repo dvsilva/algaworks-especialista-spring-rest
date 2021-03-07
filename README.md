@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 18-36-corrigindo-documentacao-no-swagger-ui-para-upload-de-arquivos
+git checkout -b 18-37-desafio-descrevendo-documentacao-de-endpoints-de-associacao-de-permissoes-com-grupos
 git add .
-git commit -m "Corrigindo documentação no Swagger UI para upload de arquivos"
-git push origin 18-36-corrigindo-documentacao-no-swagger-ui-para-upload-de-arquivos
+git commit -m "Desafio: descrevendo documentação de endpoints de associação de permissões com grupos"
+git push origin 18-37-desafio-descrevendo-documentacao-de-endpoints-de-associacao-de-permissoes-com-grupos
 
 git checkout master
-git merge --no-ff 18-36-corrigindo-documentacao-no-swagger-ui-para-upload-de-arquivos
+git merge --no-ff 18-37-desafio-descrevendo-documentacao-de-endpoints-de-associacao-de-permissoes-com-grupos
 git push
 
 sair da tela de merge
