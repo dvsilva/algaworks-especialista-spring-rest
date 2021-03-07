@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-03-adiconando-o-spring-hateoas-no-projeto
+git checkout -b 19-04-atualizando-o-projeto
 git add .
-git commit -m "Adicionando o Spring HATEOAS no projeto"
-git push origin 19-03-adiconando-o-spring-hateoas-no-projeto
+git commit -m "Atualizando o projeto para Spring Boot 2.2 (Spring HATEOAS 1.0)"
+git push origin 19-04-atualizando-o-projeto
 
 git checkout master
-git merge --no-ff 19-03-adiconando-o-spring-hateoas-no-projeto
+git merge --no-ff 19-04-atualizando-o-projeto
 git push
 
 sair da tela de merge
