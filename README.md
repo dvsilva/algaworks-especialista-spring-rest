@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-05-resolvendo-conflito-de-dependencias-com-spring-hateoas-e-springfox
+git checkout -b 19-06-conhecendo-especificacoes-para-formatos-hypermedia
 git add .
-git commit -m "Resolvendo conflito de dependências com Spring HATEOAS e SpringFox"
-git push origin 19-05-resolvendo-conflito-de-dependencias-com-spring-hateoas-e-springfox
+git commit -m "Conhecendo especificações para formatos Hypermedia"
+git push origin 19-06-conhecendo-especificacoes-para-formatos-hypermedia
 
 git checkout master
-git merge --no-ff 19-05-resolvendo-conflito-de-dependencias-com-spring-hateoas-e-springfox
+git merge --no-ff 19-06-conhecendo-especificacoes-para-formatos-hypermedia
 git push
 
 sair da tela de merge

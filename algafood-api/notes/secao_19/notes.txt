@@ -1,17 +1,28 @@
 discoveratibilty 
-	- é um conceito  
-	- é capacidade que a API dá aos consumidores de navegar em seus recursos sem conhecer previamente as suas URIs 
+- é um conceito  
+- é capacidade que a API dá aos consumidores de navegar em seus recursos sem conhecer previamente as suas URIs
+ 
 HATEOAS 
-	- componente do REST que torna a discoveratibilty possível, através da inclusão de hypermedia nas respostas 
-	- retorna links dos recursos e o consumidor pode consumir a API se guiando apenas pelos links sem ter que conhecer nada alem do ponto de entrada da API
+- componente do REST que torna a discoveratibilty possível, através da inclusão de hypermedia nas respostas 
+- retorna links dos recursos e o consumidor pode consumir a API se guiando apenas pelos links sem ter que conhecer nada alem do ponto de entrada da API
 
 REST não existe sem HATEOAS 
-	- segundo o criador não existe
-	- o mercado chama as APIs sem HATEOAS de REST
-	- não importa muito se seria REST ou não
+- segundo o criador não existe
+- o mercado chama as APIs sem HATEOAS de REST
+- não importa muito se seria REST ou não
 
 como decidir?
-	- evoluir sem quebrar as coisas a cada evolução 
-		- remover link da operação, ai os consumidores não vão chamar mais a operação removida
-		- consumidores devem seguir os links (hypermedia) sem usar links hardcoded
+- evoluir sem quebrar as coisas a cada evolução 
+	- remover link da operação, ai os consumidores não vão chamar mais a operação removida
+	- consumidores devem seguir os links (hypermedia) sem usar links hardcoded
+
+formatos para hypermedia (vamos usar HAL)
+- documento JSON usando o formato HAL (Hypertext Application Language)
+- JSON tem propriedades do recurso e propriedades dos links
+- outras especificações: 
+	- UBER (HATEOAS possui suporte)
+	- JSON:API (HATEOAS não possui suporte)
+	- JSON-LD (HATEOAS não possui suporte)
+	- Collection+JSON (HATEOAS possui suporte)
+	- Siren (HATEOAS não possui suporte)
 
