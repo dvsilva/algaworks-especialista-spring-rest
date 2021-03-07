@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-02-adicionando-a-uri-do-recurso-criado-no-header-da-resposta
+git checkout -b 19-03-adiconando-o-spring-hateoas-no-projeto
 git add .
-git commit -m "Adicionando a URI do recurso criado no header da resposta"
-git push origin 19-02-adicionando-a-uri-do-recurso-criado-no-header-da-resposta
+git commit -m "Adicionando o Spring HATEOAS no projeto"
+git push origin 19-03-adiconando-o-spring-hateoas-no-projeto
 
 git checkout master
-git merge --no-ff 19-02-adicionando-a-uri-do-recurso-criado-no-header-da-resposta
+git merge --no-ff 19-03-adiconando-o-spring-hateoas-no-projeto
 git push
 
 sair da tela de merge
