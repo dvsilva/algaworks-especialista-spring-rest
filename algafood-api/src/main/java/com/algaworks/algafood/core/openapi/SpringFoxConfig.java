@@ -1,11 +1,17 @@
 package com.algaworks.algafood.core.openapi;
 
+import java.io.File;
+import java.io.InputStream;
+import java.net.URI;
+import java.net.URL;
+import java.net.URLStreamHandler;
 import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.core.io.Resource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -67,7 +73,10 @@ public class SpringFoxConfig implements WebMvcConfigurer {
 //							.build()))
 				.additionalModels(typeResolver.resolve(Problem.class))
 				// ignorar dependencia que eh injetada pelo spring para fazer o cache de formas de pagamento
-				.ignoredParameterTypes(ServletWebRequest.class)
+				// ignorar models listados pelo swagger pela url de foto de produto
+				.ignoredParameterTypes(ServletWebRequest.class,
+						URL.class, URI.class, URLStreamHandler.class, Resource.class, 
+						File.class, InputStream.class)
 				// adicionar paginacao a documentacao
 				.directModelSubstitute(Pageable.class, PageableModelOpenApi.class)
 				.alternateTypeRules(AlternateTypeRules.newRule(
