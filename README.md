@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-01-introducao-a-discoverability-e-hateoas
+git checkout -b 19-02-adicionando-a-uri-do-recurso-criado-no-header-da-resposta
 git add .
-git commit -m "Introdução à Discoverability e HATEOAS"
-git push origin 19-01-introducao-a-discoverability-e-hateoas
+git commit -m "Adicionando a URI do recurso criado no header da resposta"
+git push origin 19-02-adicionando-a-uri-do-recurso-criado-no-header-da-resposta
 
 git checkout master
-git merge --no-ff 19-01-introducao-a-discoverability-e-hateoas
+git merge --no-ff 19-02-adicionando-a-uri-do-recurso-criado-no-header-da-resposta
 git push
 
 sair da tela de merge
