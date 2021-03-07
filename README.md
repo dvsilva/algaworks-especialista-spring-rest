@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-04-atualizando-o-projeto
+git checkout -b 19-05-resolvendo-conflito-de-dependencias-com-spring-hateoas-e-springfox
 git add .
-git commit -m "Atualizando o projeto para Spring Boot 2.2 (Spring HATEOAS 1.0)"
-git push origin 19-04-atualizando-o-projeto
+git commit -m "Resolvendo conflito de dependências com Spring HATEOAS e SpringFox"
+git push origin 19-05-resolvendo-conflito-de-dependencias-com-spring-hateoas-e-springfox
 
 git checkout master
-git merge --no-ff 19-04-atualizando-o-projeto
+git merge --no-ff 19-05-resolvendo-conflito-de-dependencias-com-spring-hateoas-e-springfox
 git push
 
 sair da tela de merge
