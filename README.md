@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-08-construindo-links-dinamicos-com-webmvclinkbuilder
+git checkout -b 19-09-construindo-links-que-apontam-para-metodos
 git add .
-git commit -m "Construindo links dinâmicos com WebMvcLinkBuilder"
-git push origin 19-08-construindo-links-dinamicos-com-webmvclinkbuilder
+git commit -m "Construindo links que apontam para métodos"
+git push origin 19-09-construindo-links-que-apontam-para-metodos
 
 git checkout master
-git merge --no-ff 19-08-construindo-links-dinamicos-com-webmvclinkbuilder
+git merge --no-ff 19-09-construindo-links-que-apontam-para-metodos
 git push
 
 sair da tela de merge
