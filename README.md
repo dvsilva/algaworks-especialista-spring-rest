@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-09-construindo-links-que-apontam-para-metodos
+git checkout -b 19-10-adicionando-hypermedia-na-representacao-de-recursos-de-colecao
 git add .
-git commit -m "Construindo links que apontam para métodos"
-git push origin 19-09-construindo-links-que-apontam-para-metodos
+git commit -m "Adicionando hypermedia na representação de recursos de coleção"
+git push origin 19-10-adicionando-hypermedia-na-representacao-de-recursos-de-colecao
 
 git checkout master
-git merge --no-ff 19-09-construindo-links-que-apontam-para-metodos
+git merge --no-ff 19-10-adicionando-hypermedia-na-representacao-de-recursos-de-colecao
 git push
 
 sair da tela de merge
