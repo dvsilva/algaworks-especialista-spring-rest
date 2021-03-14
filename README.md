@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-14-desafio-adicionando-hypermedia-nos-recursos-de-estados
+git checkout -b 19-15-adicionando-hypermedia-em-recursos-com-paginacao
 git add .
-git commit -m "Desafio: adicionando hypermedia nos recursos de estados"
-git push origin 19-14-desafio-adicionando-hypermedia-nos-recursos-de-estados
+git commit -m "Adicionando hypermedia em recursos com paginação"
+git push origin 19-15-adicionando-hypermedia-em-recursos-com-paginacao
 
 git checkout master
-git merge --no-ff 19-14-desafio-adicionando-hypermedia-nos-recursos-de-estados
+git merge --no-ff 19-15-adicionando-hypermedia-em-recursos-com-paginacao
 git push
 
 sair da tela de merge
