@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-06-conhecendo-especificacoes-para-formatos-hypermedia
+git checkout -b 19-07-adicionando-hypermedia-na-representacao-de-recurso-unico-com-hal
 git add .
-git commit -m "Conhecendo especificações para formatos Hypermedia"
-git push origin 19-06-conhecendo-especificacoes-para-formatos-hypermedia
+git commit -m "Adicionando hypermedia na representação de recurso único com HAL"
+git push origin 19-07-adicionando-hypermedia-na-representacao-de-recurso-unico-com-hal
 
 git checkout master
-git merge --no-ff 19-06-conhecendo-especificacoes-para-formatos-hypermedia
+git merge --no-ff 19-07-adicionando-hypermedia-na-representacao-de-recurso-unico-com-hal
 git push
 
 sair da tela de merge
