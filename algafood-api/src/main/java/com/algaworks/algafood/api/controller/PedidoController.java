@@ -1,5 +1,7 @@
 package com.algaworks.algafood.api.controller;
 
+import java.util.Map;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +27,7 @@ import com.algaworks.algafood.api.model.PedidoModel;
 import com.algaworks.algafood.api.model.PedidoResumoModel;
 import com.algaworks.algafood.api.model.input.PedidoInput;
 import com.algaworks.algafood.api.openapi.controller.PedidoControllerOpenApi;
+import com.algaworks.algafood.core.data.PageWrapper;
 import com.algaworks.algafood.core.data.PageableTranslator;
 import com.algaworks.algafood.domain.exception.EntidadeNaoEncontradaException;
 import com.algaworks.algafood.domain.exception.NegocioException;
@@ -34,7 +37,6 @@ import com.algaworks.algafood.domain.model.Usuario;
 import com.algaworks.algafood.domain.repository.PedidoRepository;
 import com.algaworks.algafood.domain.service.EmissaoPedidoService;
 import com.algaworks.algafood.infrastructure.repository.spec.PedidoSpecs;
-import com.google.common.collect.ImmutableMap;
 
 @RestController
 @RequestMapping(path = "/pedidos", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -85,15 +87,18 @@ public class PedidoController implements PedidoControllerOpenApi {
 	
 	@GetMapping
 	public PagedModel<PedidoResumoModel> pesquisar(PedidoFilter filtro, @PageableDefault(size = 10) Pageable pageable) {
-		pageable = traduzirPageable(pageable);
+		Pageable pageableTraduzido = traduzirPageable(pageable);
 		
-		Page<Pedido> pedidosPage = pedidoRepository.findAll(PedidoSpecs.usandoFiltro(filtro), pageable);
-		
+		Page<Pedido> pedidosPage = pedidoRepository.findAll(PedidoSpecs.usandoFiltro(filtro), pageableTraduzido);
 		
 //		List<PedidoResumoModel> pedidosResumoModel = pedidoResumoModelAssembler.toCollectionModel(pedidosPage.getContent());
 //		Page<PedidoResumoModel> pedidosResumoModelPage = new PageImpl<>(pedidosResumoModel, pageable,
 //				pedidosPage.getTotalElements());
 
+		// manter informacoes de ornedacao devido a nomes de parametros diferentes (nomerestaurante e restaurante.nome)
+		// deveria manter o parametro passado (nomerestaurante) ao inves do traduzido (restaurante.nome)
+		pedidosPage = new PageWrapper<>(pedidosPage, pageable);
+		
 		PagedModel<PedidoResumoModel> pedidosPagedModel = 
 				pagedResourcesAssembler.toModel(pedidosPage, pedidoResumoModelAssembler);
 	    
@@ -125,11 +130,16 @@ public class PedidoController implements PedidoControllerOpenApi {
 	}
 	
 	private Pageable traduzirPageable(Pageable apiPageable) {
-		var mapeamento = ImmutableMap.of(
+		var mapeamento = Map.of(
 				"codigo", "codigo",
+				"subtotal", "subtotal",
+				"taxaFrete", "taxaFrete",
+				"valorTotal", "valorTotal",
+				"dataCriacao", "dataCriacao",
 				"restaurante.nome", "restaurante.nome",
-				"cliente.nome", "cliente.nome",
-				"valorTotal", "valorTotal"
+				"restaurante.id", "restaurante.id",
+				"cliente.id", "cliente.id",
+				"cliente.nome", "cliente.nome"
 			);
 		
 		return PageableTranslator.translate(apiPageable, mapeamento);
