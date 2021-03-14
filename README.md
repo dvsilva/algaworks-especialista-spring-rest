@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-20-refatorando-construcao-e-inclusao-de-links-em-representation-model
+git checkout -b 19-21-desafio-refatorando-construcao-e-inclusao-de-links
 git add .
-git commit -m "Refatorando construção e inclusão de links em representation model"
-git push origin 19-20-refatorando-construcao-e-inclusao-de-links-em-representation-model
+git commit -m "Desafio: refatorando construção e inclusão de links"
+git push origin 19-21-desafio-refatorando-construcao-e-inclusao-de-links
 
 git checkout master
-git merge --no-ff 19-20-refatorando-construcao-e-inclusao-de-links-em-representation-model
+git merge --no-ff 19-21-desafio-refatorando-construcao-e-inclusao-de-links
 git push
 
 sair da tela de merge
