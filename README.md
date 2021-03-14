@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-19-desafio-adicionando-template-variables-do-filtro-de-pedidos
+git checkout -b 19-20-refatorando-construcao-e-inclusao-de-links-em-representation-model
 git add .
-git commit -m "Desafio: adicionando template variables do filtro de pedidos"
-git push origin 19-19-desafio-adicionando-template-variables-do-filtro-de-pedidos
+git commit -m "Refatorando construção e inclusão de links em representation model"
+git push origin 19-20-refatorando-construcao-e-inclusao-de-links-em-representation-model
 
 git checkout master
-git merge --no-ff 19-19-desafio-adicionando-template-variables-do-filtro-de-pedidos
+git merge --no-ff 19-20-refatorando-construcao-e-inclusao-de-links-em-representation-model
 git push
 
 sair da tela de merge
