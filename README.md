@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-17-corrigindo-links-de-paginacao-com-ordenacao
+git checkout -b 19-18-adicionando-links-com-template-variables
 git add .
-git commit -m "Corrigindo links de paginação com ordenação"
-git push origin 19-17-corrigindo-links-de-paginacao-com-ordenacao
+git commit -m "Adicionando links com template variables"
+git push origin 19-18-adicionando-links-com-template-variables
 
 git checkout master
-git merge --no-ff 19-17-corrigindo-links-de-paginacao-com-ordenacao
+git merge --no-ff 19-18-adicionando-links-com-template-variables
 git push
 
 sair da tela de merge
