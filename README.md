@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-07-adicionando-hypermedia-na-representacao-de-recurso-unico-com-hal
+git checkout -b 19-08-construindo-links-dinamicos-com-webmvclinkbuilder
 git add .
-git commit -m "Adicionando hypermedia na representação de recurso único com HAL"
-git push origin 19-07-adicionando-hypermedia-na-representacao-de-recurso-unico-com-hal
+git commit -m "Construindo links dinâmicos com WebMvcLinkBuilder"
+git push origin 19-08-construindo-links-dinamicos-com-webmvclinkbuilder
 
 git checkout master
-git merge --no-ff 19-07-adicionando-hypermedia-na-representacao-de-recurso-unico-com-hal
+git merge --no-ff 19-08-construindo-links-dinamicos-com-webmvclinkbuilder
 git push
 
 sair da tela de merge
