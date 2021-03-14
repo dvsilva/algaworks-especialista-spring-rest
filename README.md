@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-11-montando-modelo-de-repressentacao-com-representationmodelassembler
+git checkout -b 19-12-desafio-adicionando-hypermedia-nos-recursos-de-usuarios
 git add .
-git commit -m "Montando modelo de representação com RepresentationModelAssembler"
-git push origin 19-11-montando-modelo-de-repressentacao-com-representationmodelassembler
+git commit -m "Desafio: adicionando hypermedia nos recursos de usuários"
+git push origin 19-12-desafio-adicionando-hypermedia-nos-recursos-de-usuarios
 
 git checkout master
-git merge --no-ff 19-11-montando-modelo-de-repressentacao-com-representationmodelassembler
+git merge --no-ff 19-12-desafio-adicionando-hypermedia-nos-recursos-de-usuarios
 git push
 
 sair da tela de merge
