@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-31-desafio-adicionando-hypermedia-nos-recursos-de-produtos
+git checkout -b 19-32-desafio-adicionando-links-para-recurso-de-foto-de-produto
 git add .
-git commit -m "Desafio: adicionando hypermedia nos recursos de produtos"
-git push origin 19-31-desafio-adicionando-hypermedia-nos-recursos-de-produtos
+git commit -m "Desafio: adicionando links para recurso de foto de produto"
+git push origin 19-32-desafio-adicionando-links-para-recurso-de-foto-de-produto
 
 git checkout master
-git merge --no-ff 19-31-desafio-adicionando-hypermedia-nos-recursos-de-produtos
+git merge --no-ff 19-32-desafio-adicionando-links-para-recurso-de-foto-de-produto
 git push
 
 sair da tela de merge
