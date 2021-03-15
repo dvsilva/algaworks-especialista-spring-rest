@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-22-adicionando-links-de-transicoes-de-status-de-pedidos
+git checkout -b 19-23-adicionando-links-condicionalmente
 git add .
-git commit -m "Adicionando links de transições de status de pedidos"
-git push origin 19-22-adicionando-links-de-transicoes-de-status-de-pedidos
+git commit -m "Adicionando links condicionalmente"
+git push origin 19-23-adicionando-links-condicionalmente
 
 git checkout master
-git merge --no-ff 19-22-adicionando-links-de-transicoes-de-status-de-pedidos
+git merge --no-ff 19-23-adicionando-links-condicionalmente
 git push
 
 sair da tela de merge
