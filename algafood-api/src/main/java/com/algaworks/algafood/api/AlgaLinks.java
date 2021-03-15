@@ -46,6 +46,21 @@ public class AlgaLinks {
 				PAGINACAO_VARIABLES.concat(filtroVariables)), "pedidos");
 	}
 	
+	public Link linkToConfirmacaoPedido(String codigoPedido, String rel) {
+		return linkTo(methodOn(FluxoPedidoController.class)
+				.confirmar(codigoPedido)).withRel(rel);
+	}
+	
+	public Link linkToEntregaPedido(String codigoPedido, String rel) {
+		return linkTo(methodOn(FluxoPedidoController.class)
+				.entregar(codigoPedido)).withRel(rel);
+	}
+	
+	public Link linkToCancelamentoPedido(String codigoPedido, String rel) {
+		return linkTo(methodOn(FluxoPedidoController.class)
+				.cancelar(codigoPedido)).withRel(rel);
+	}
+
 	public Link linkToRestaurantes(String rel) {
 	    return linkTo(RestauranteController.class).withRel(rel);
 	}
@@ -57,6 +72,26 @@ public class AlgaLinks {
 	public Link linkToRestauranteFormasPagamento(Long restauranteId, String rel) {
 	    return linkTo(methodOn(RestauranteFormaPagamentoController.class)
 	            .listar(restauranteId)).withRel(rel);
+	}
+	
+	public Link linkToRestauranteAbertura(Long restauranteId, String rel) {
+	    return linkTo(methodOn(RestauranteController.class)
+	            .abrir(restauranteId)).withRel(rel);
+	}
+
+	public Link linkToRestauranteFechamento(Long restauranteId, String rel) {
+	    return linkTo(methodOn(RestauranteController.class)
+	            .fechar(restauranteId)).withRel(rel);
+	}
+
+	public Link linkToRestauranteInativacao(Long restauranteId, String rel) {
+	    return linkTo(methodOn(RestauranteController.class)
+	            .inativar(restauranteId)).withRel(rel);
+	}
+
+	public Link linkToRestauranteAtivacao(Long restauranteId, String rel) {
+	    return linkTo(methodOn(RestauranteController.class)
+	            .ativar(restauranteId)).withRel(rel);
 	}
 
 	public Link linkToCozinha(Long cozinhaId, String rel) {
@@ -73,21 +108,6 @@ public class AlgaLinks {
 	            .buscar(restauranteId)).withRel(rel);
 	}
 	
-	public Link linkToConfirmacaoPedido(String codigoPedido, String rel) {
-		return linkTo(methodOn(FluxoPedidoController.class)
-				.confirmar(codigoPedido)).withRel(rel);
-	}
-	
-	public Link linkToEntregaPedido(String codigoPedido, String rel) {
-		return linkTo(methodOn(FluxoPedidoController.class)
-				.entregar(codigoPedido)).withRel(rel);
-	}
-	
-	public Link linkToCancelamentoPedido(String codigoPedido, String rel) {
-		return linkTo(methodOn(FluxoPedidoController.class)
-				.cancelar(codigoPedido)).withRel(rel);
-	}
-
 	public Link linkToRestaurante(Long restauranteId) {
 	    return linkToRestaurante(restauranteId, IanaLinkRelations.SELF.value());
 	}
