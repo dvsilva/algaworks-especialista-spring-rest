@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-30-desafio-adicionando-links-de-associacao-de-restaurantes-com-responsaveis
+git checkout -b 19-31-desafio-adicionando-hypermedia-nos-recursos-de-produtos
 git add .
-git commit -m "Desafio: adicionando links de associação de restaurantes com responsáveis"
-git push origin 19-30-desafio-adicionando-links-de-associacao-de-restaurantes-com-responsaveis
+git commit -m "Desafio: adicionando hypermedia nos recursos de produtos"
+git push origin 19-31-desafio-adicionando-hypermedia-nos-recursos-de-produtos
 
 git checkout master
-git merge --no-ff 19-30-desafio-adicionando-links-de-associacao-de-restaurantes-com-responsaveis
+git merge --no-ff 19-31-desafio-adicionando-hypermedia-nos-recursos-de-produtos
 git push
 
 sair da tela de merge
