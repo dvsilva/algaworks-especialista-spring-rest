@@ -11,7 +11,7 @@
 	</parent>
 
 	<groupId>com.algaworks</groupId>
-	<artifactId>algafood-api</artifactId>
+	<artifactId>emails-transacionais-domain-events</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>emails-transacionais-domain-events</name>
 	<description>API de delivery de comida</description>
