@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-21-desafio-refatorando-construcao-e-inclusao-de-links
+git checkout -b 19-22-adicionando-links-de-transicoes-de-status-de-pedidos
 git add .
-git commit -m "Desafio: refatorando construção e inclusão de links"
-git push origin 19-21-desafio-refatorando-construcao-e-inclusao-de-links
+git commit -m "Adicionando links de transições de status de pedidos"
+git push origin 19-22-adicionando-links-de-transicoes-de-status-de-pedidos
 
 git checkout master
-git merge --no-ff 19-21-desafio-refatorando-construcao-e-inclusao-de-links
+git merge --no-ff 19-22-adicionando-links-de-transicoes-de-status-de-pedidos
 git push
 
 sair da tela de merge
