@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-25-desafio-adicionando-links-condicionais-no-recurso-de-restaurante
+git checkout -b 19-26-desafio-adicionando-template-variable-de-projecao-de-restaurantes
 git add .
-git commit -m "Desafio: adicionando links condicionais no recurso de restaurante"
-git push origin 19-25-desafio-adicionando-links-condicionais-no-recurso-de-restaurante
+git commit -m "Desafio: adicionando template variable de projeção de restaurantes"
+git push origin 19-26-desafio-adicionando-template-variable-de-projecao-de-restaurantes
 
 git checkout master
-git merge --no-ff 19-25-desafio-adicionando-links-condicionais-no-recurso-de-restaurante
+git merge --no-ff 19-26-desafio-adicionando-template-variable-de-projecao-de-restaurantes
 git push
 
 sair da tela de merge
