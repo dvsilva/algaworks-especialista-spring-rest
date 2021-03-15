@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-26-desafio-adicionando-template-variable-de-projecao-de-restaurantes
+git checkout -b 19-27-desafio-adicionando-hypermedia-nos-recursos-de-formas-de-pagamento
 git add .
-git commit -m "Desafio: adicionando template variable de projeção de restaurantes"
-git push origin 19-26-desafio-adicionando-template-variable-de-projecao-de-restaurantes
+git commit -m "Desafio: adicionando hypermedia nos recursos de formas de pagamento"
+git push origin 19-27-desafio-adicionando-hypermedia-nos-recursos-de-formas-de-pagamento
 
 git checkout master
-git merge --no-ff 19-26-desafio-adicionando-template-variable-de-projecao-de-restaurantes
+git merge --no-ff 19-27-desafio-adicionando-hypermedia-nos-recursos-de-formas-de-pagamento
 git push
 
 sair da tela de merge
