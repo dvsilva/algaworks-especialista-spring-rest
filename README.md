@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-27-desafio-adicionando-hypermedia-nos-recursos-de-formas-de-pagamento
+git checkout -b 19-28-adicionando-links-para-desassicoacao-de-formas-de-pagamento-com-restaurante
 git add .
-git commit -m "Desafio: adicionando hypermedia nos recursos de formas de pagamento"
-git push origin 19-27-desafio-adicionando-hypermedia-nos-recursos-de-formas-de-pagamento
+git commit -m "Adicionando links para desassociação de formas de pagamento com restaurante"
+git push origin 19-28-adicionando-links-para-desassicoacao-de-formas-de-pagamento-com-restaurante
 
 git checkout master
-git merge --no-ff 19-27-desafio-adicionando-hypermedia-nos-recursos-de-formas-de-pagamento
+git merge --no-ff 19-28-adicionando-links-para-desassicoacao-de-formas-de-pagamento-com-restaurante
 git push
 
 sair da tela de merge
