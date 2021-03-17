@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-34-desafio-adicionando-links-de-associacao-de-grupos-com-permissoes
+git checkout -b 19-35-desafio-adicionando-links-de-associacao-de-usuarios-com-grupos
 git add .
-git commit -m "Desafio: adicionando links de associação de grupos com permissões"
-git push origin 19-34-desafio-adicionando-links-de-associacao-de-grupos-com-permissoes
+git commit -m "Desafio: adicionando links de associação de usuários com grupos"
+git push origin 19-35-desafio-adicionando-links-de-associacao-de-usuarios-com-grupos
 
 git checkout master
-git merge --no-ff 19-34-desafio-adicionando-links-de-associacao-de-grupos-com-permissoes
+git merge --no-ff 19-35-desafio-adicionando-links-de-associacao-de-usuarios-com-grupos
 git push
 
 sair da tela de merge
