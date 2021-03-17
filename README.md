@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-37-desafio-implementando-endpoint-com-links-de-recursos-de-estatisticas
+git checkout -b 19-38-comprimindo-as-respostas-http-com-gzip
 git add .
-git commit -m "Desafio: implementando endpoint com links de recursos de estatísticas"
-git push origin 19-37-desafio-implementando-endpoint-com-links-de-recursos-de-estatisticas
+git commit -m "Comprimindo as respostas HTTP com Gzip"
+git push origin 19-38-comprimindo-as-respostas-http-com-gzip
 
 git checkout master
-git merge --no-ff 19-37-desafio-implementando-endpoint-com-links-de-recursos-de-estatisticas
+git merge --no-ff 19-38-comprimindo-as-respostas-http-com-gzip
 git push
 
 sair da tela de merge
