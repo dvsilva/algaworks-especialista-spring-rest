@@ -27,10 +27,12 @@ import com.algaworks.algafood.api.exceptionhandler.Problem;
 import com.algaworks.algafood.api.model.CidadeModel;
 import com.algaworks.algafood.api.model.CozinhaModel;
 import com.algaworks.algafood.api.model.EstadoModel;
+import com.algaworks.algafood.api.model.FormaPagamentoModel;
 import com.algaworks.algafood.api.model.PedidoResumoModel;
 import com.algaworks.algafood.api.openapi.model.CidadesModelOpenApi;
 import com.algaworks.algafood.api.openapi.model.CozinhasModelOpenApi;
 import com.algaworks.algafood.api.openapi.model.EstadosModelOpenApi;
+import com.algaworks.algafood.api.openapi.model.FormasPagamentoModelOpenApi;
 import com.algaworks.algafood.api.openapi.model.LinksModelOpenApi;
 import com.algaworks.algafood.api.openapi.model.PageableModelOpenApi;
 import com.algaworks.algafood.api.openapi.model.PedidosResumoModelOpenApi;
@@ -89,20 +91,29 @@ public class SpringFoxConfig implements WebMvcConfigurer {
 				.directModelSubstitute(Pageable.class, PageableModelOpenApi.class)
 				// coniguracao para modelar os links do HATEOAS na documentacao
 				.directModelSubstitute(Links.class, LinksModelOpenApi.class)
+				
 				// mudar de Page.class para PagedModel.class
 				.alternateTypeRules(AlternateTypeRules.newRule(
 						typeResolver.resolve(PagedModel.class, CozinhaModel.class),
 						CozinhasModelOpenApi.class))
+				
 				.alternateTypeRules(AlternateTypeRules.newRule(
 						typeResolver.resolve(Page.class, PedidoResumoModel.class),
 						PedidosResumoModelOpenApi.class))
+				
 				// coniguracao para modelar o CollectionModel (listagens) do HATEOAS na documentacao
 				.alternateTypeRules(AlternateTypeRules.newRule(
 						typeResolver.resolve(CollectionModel.class, CidadeModel.class),
 						CidadesModelOpenApi.class))
+				
 				.alternateTypeRules(AlternateTypeRules.newRule(
 				        typeResolver.resolve(CollectionModel.class, EstadoModel.class),
 				        EstadosModelOpenApi.class))
+				
+				.alternateTypeRules(AlternateTypeRules.newRule(
+					    typeResolver.resolve(CollectionModel.class, FormaPagamentoModel.class),
+					    FormasPagamentoModelOpenApi.class))
+				
 				.apiInfo(apiInfo())
 				.tags(new Tag("Cidades", "Gerencia as cidades"),
 						new Tag("Grupos", "Gerencia os grupos de usuários"),
