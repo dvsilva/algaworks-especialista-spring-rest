@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-36-implementando-root-entry-point-da-api
+git checkout -b 19-37-desafio-implementando-endpoint-com-links-de-recursos-de-estatisticas
 git add .
-git commit -m "Implementando o Root Entry Point da API"
-git push origin 19-36-implementando-root-entry-point-da-api
+git commit -m "Desafio: implementando endpoint com links de recursos de estatísticas"
+git push origin 19-37-desafio-implementando-endpoint-com-links-de-recursos-de-estatisticas
 
 git checkout master
-git merge --no-ff 19-36-implementando-root-entry-point-da-api
+git merge --no-ff 19-37-desafio-implementando-endpoint-com-links-de-recursos-de-estatisticas
 git push
 
 sair da tela de merge
