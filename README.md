@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-38-comprimindo-as-respostas-http-com-gzip
+git checkout -b 19-39-corrigindo-as-propriedades-de-links-na-documentacao
 git add .
-git commit -m "Comprimindo as respostas HTTP com Gzip"
-git push origin 19-38-comprimindo-as-respostas-http-com-gzip
+git commit -m "Corrigindo as propriedades de links na documentação"
+git push origin 19-39-corrigindo-as-propriedades-de-links-na-documentacao
 
 git checkout master
-git merge --no-ff 19-38-comprimindo-as-respostas-http-com-gzip
+git merge --no-ff 19-39-corrigindo-as-propriedades-de-links-na-documentacao
 git push
 
 sair da tela de merge
