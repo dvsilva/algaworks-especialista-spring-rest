@@ -1,0 +1,32 @@
+iniciar um server http
+python -m SimpleHTTPServer 8000
+ou
+npm install http-server -g
+http-server -p 8000
+
+colocar no arquivo hosts
+127.0.0.1       api.algafood.local
+127.0.0.1       www.algafood.local
+127.0.0.1       www.matafome.local
+
+Same Origin Policy (politica de mesma origem)
+- o navegador bloqueia por segurança
+- restringe requisições http de origens cruzadas
+- aplicações de origens diferentes (cruzadas) não deixa o código javascript que faz a requisição execute completamente
+- ocorre somente em navegadores
+
+CORS (cross origin resource sharing - compartilhamento de recursos com origens diferentes)
+- mecanismo que habilitam requisições de origens diferentes
+- navegadores implementam a especificação de CORS, mas precisa configurar a aplicação servidora para suportar CORS
+
+implementando CORS
+- colocar um atributo no header da resposta
+- utilizar a anotação @CrossOrigin (não deixa nem o método do controller ser executado)
+- habilitar globalmente usando WebMvcConfigurer e o metodo addCorsMappings
+
+preflight do cors
+- envia uma chamada de verificação (OPTIONS) para saber se pode executar o método solicitado
+- resulta em duas requisições
+- retorna os cabeçalhos do cors
+- requisições simples (get, post e head) não ativam o preflight do cors
+

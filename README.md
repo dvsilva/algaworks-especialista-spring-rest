@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-48-removendo-modelo-de-representacao-inutilizado-da-documentacao
+git checkout -b 20-01-evoluindo-a-api-com-gestao-de-mudancas
 git add .
-git commit -m "Removendo modelo de representação inutilizado da documentação"
-git push origin 19-48-removendo-modelo-de-representacao-inutilizado-da-documentacao
+git commit -m "Evoluindo a API com gestão de mudanças"
+git push origin 20-01-evoluindo-a-api-com-gestao-de-mudancas
 
 git checkout master
-git merge --no-ff 19-48-removendo-modelo-de-representacao-inutilizado-da-documentacao
+git merge --no-ff 20-01-evoluindo-a-api-com-gestao-de-mudancas
 git push
 
 sair da tela de merge
