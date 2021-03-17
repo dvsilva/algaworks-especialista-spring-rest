@@ -26,3 +26,6 @@ formatos para hypermedia (vamos usar HAL)
 	- Collection+JSON (HATEOAS possui suporte)
 	- Siren (HATEOAS não possui suporte)
 
+compressão gzip
+- ganha em menos tráfego e tamanho da resposta
+- perde em processamento do servidor (comprimir respostas acima de 2KB)
