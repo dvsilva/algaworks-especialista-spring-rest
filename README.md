@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-33-desafio-adicionando-hypermedia-nos-recursos-de-grupos
+git checkout -b 19-34-desafio-adicionando-links-de-associacao-de-grupos-com-permissoes
 git add .
-git commit -m "Desafio: adicionando hypermedia nos recursos de grupos"
-git push origin 19-33-desafio-adicionando-hypermedia-nos-recursos-de-grupos
+git commit -m "Desafio: adicionando links de associação de grupos com permissões"
+git push origin 19-34-desafio-adicionando-links-de-associacao-de-grupos-com-permissoes
 
 git checkout master
-git merge --no-ff 19-33-desafio-adicionando-hypermedia-nos-recursos-de-grupos
+git merge --no-ff 19-34-desafio-adicionando-links-de-associacao-de-grupos-com-permissoes
 git push
 
 sair da tela de merge
