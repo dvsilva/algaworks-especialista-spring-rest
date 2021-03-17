@@ -29,7 +29,6 @@ public class PermissaoController implements PermissaoControllerOpenApi {
 	@GetMapping
 	public CollectionModel<PermissaoModel> listar() {
 		List<Permissao> todasPermissoes = permissaoRepository.findAll();
-		
 		return permissaoModelAssembler.toCollectionModel(todasPermissoes);
 	}
 	
