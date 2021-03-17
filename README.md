@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-39-corrigindo-as-propriedades-de-links-na-documentacao
+git checkout -b 19-40-corrigindo-a-documentacao-dos-endpoints-de-cidades
 git add .
-git commit -m "Corrigindo as propriedades de links na documentação"
-git push origin 19-39-corrigindo-as-propriedades-de-links-na-documentacao
+git commit -m "Corrigindo a documentação dos endpoints de cidades"
+git push origin 19-40-corrigindo-a-documentacao-dos-endpoints-de-cidades
 
 git checkout master
-git merge --no-ff 19-39-corrigindo-as-propriedades-de-links-na-documentacao
+git merge --no-ff 19-40-corrigindo-a-documentacao-dos-endpoints-de-cidades
 git push
 
 sair da tela de merge
