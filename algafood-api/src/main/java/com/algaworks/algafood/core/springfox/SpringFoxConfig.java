@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.io.Resource;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.Links;
@@ -101,10 +100,6 @@ public class SpringFoxConfig implements WebMvcConfigurer {
 						typeResolver.resolve(PagedModel.class, CozinhaModel.class),
 						CozinhasModelOpenApi.class))
 				
-				.alternateTypeRules(AlternateTypeRules.newRule(
-						typeResolver.resolve(Page.class, PedidoResumoModel.class),
-						PedidosResumoModelOpenApi.class))
-				
 				// coniguracao para modelar o CollectionModel (listagens) do HATEOAS na documentacao
 				.alternateTypeRules(AlternateTypeRules.newRule(
 						typeResolver.resolve(CollectionModel.class, CidadeModel.class),
@@ -125,6 +120,10 @@ public class SpringFoxConfig implements WebMvcConfigurer {
 				.alternateTypeRules(AlternateTypeRules.newRule(
 				        typeResolver.resolve(CollectionModel.class, PermissaoModel.class),
 				        PermissoesModelOpenApi.class))
+				
+				.alternateTypeRules(AlternateTypeRules.newRule(
+					    typeResolver.resolve(PagedModel.class, PedidoResumoModel.class),
+					    PedidosResumoModelOpenApi.class))
 				
 				.apiInfo(apiInfo())
 				.tags(new Tag("Cidades", "Gerencia as cidades"),
