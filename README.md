@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 19-41-corrigindo-a-paginacao-da-documentacao
+git checkout -b 19-42-desafio-corrigindo-a-documentacao-dos-endpoints-de-estados
 git add .
-git commit -m "Corrigindo a paginação na documentação"
-git push origin 19-41-corrigindo-a-paginacao-da-documentacao
+git commit -m "Desafio: corrigindo a documentação dos endpoints de estados"
+git push origin 19-42-desafio-corrigindo-a-documentacao-dos-endpoints-de-estados
 
 git checkout master
-git merge --no-ff 19-41-corrigindo-a-paginacao-da-documentacao
+git merge --no-ff 19-42-desafio-corrigindo-a-documentacao-dos-endpoints-de-estados
 git push
 
 sair da tela de merge
