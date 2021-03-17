@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.core.io.Resource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.Links;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,8 +23,10 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.algaworks.algafood.api.exceptionhandler.Problem;
+import com.algaworks.algafood.api.model.CidadeModel;
 import com.algaworks.algafood.api.model.CozinhaModel;
 import com.algaworks.algafood.api.model.PedidoResumoModel;
+import com.algaworks.algafood.api.openapi.model.CidadesModelOpenApi;
 import com.algaworks.algafood.api.openapi.model.CozinhasModelOpenApi;
 import com.algaworks.algafood.api.openapi.model.LinksModelOpenApi;
 import com.algaworks.algafood.api.openapi.model.PageableModelOpenApi;
@@ -81,7 +84,7 @@ public class SpringFoxConfig implements WebMvcConfigurer {
 						File.class, InputStream.class)
 				// adicionar paginacao a documentacao
 				.directModelSubstitute(Pageable.class, PageableModelOpenApi.class)
-				// coniguracao sobre HATEOAS
+				// coniguracao para modelar os links do HATEOAS na documentacao
 				.directModelSubstitute(Links.class, LinksModelOpenApi.class)
 				.alternateTypeRules(AlternateTypeRules.newRule(
 						typeResolver.resolve(Page.class, CozinhaModel.class),
@@ -89,6 +92,10 @@ public class SpringFoxConfig implements WebMvcConfigurer {
 				.alternateTypeRules(AlternateTypeRules.newRule(
 						typeResolver.resolve(Page.class, PedidoResumoModel.class),
 						PedidosResumoModelOpenApi.class))
+				// coniguracao para modelar o CollectionModel (listagens) do HATEOAS na documentacao
+				.alternateTypeRules(AlternateTypeRules.newRule(
+						typeResolver.resolve(CollectionModel.class, CidadeModel.class),
+						CidadesModelOpenApi.class))
 				.apiInfo(apiInfo())
 				.tags(new Tag("Cidades", "Gerencia as cidades"),
 						new Tag("Grupos", "Gerencia os grupos de usuários"),
