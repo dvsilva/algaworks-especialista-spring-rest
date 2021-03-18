@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-08-as-principais-tecnicas-de-versionamento-de-apis
+git checkout -b 20-09-as-principais-abordagens-para-manter-a-base-de-codigo-de-apis-versionadas
 git add .
-git commit -m "As principais técnicas de versionamento de APIs"
-git push origin 20-08-as-principais-tecnicas-de-versionamento-de-apis
+git commit -m "As principais abordagens para manter a base de código de APIs versionadas"
+git push origin 20-09-as-principais-abordagens-para-manter-a-base-de-codigo-de-apis-versionadas
 
 git checkout master
-git merge --no-ff 20-08-as-principais-tecnicas-de-versionamento-de-apis
+git merge --no-ff 20-09-as-principais-abordagens-para-manter-a-base-de-codigo-de-apis-versionadas
 git push
 
 sair da tela de merge
