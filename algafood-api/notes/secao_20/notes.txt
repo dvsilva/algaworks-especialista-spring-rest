@@ -4,3 +4,11 @@ evolução da API
 	- versionamento de API
 - quebrar a compatibilidade
 	- quebrar os clients
+	
+evitar quebrar clients (nova propriedade)
+- inclusão de nova propriedade de saída tem retrocompatibilidade
+- inclusão de nova propriedade de entrada
+	- se for opcional tem retrocompatibilidade
+	- se obrigatório não tem 
+	- veja se pode ser aos poucos, adiciona como opcional e depois coloca como obrigatório
+	

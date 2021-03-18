@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-01-evoluindo-a-api-com-gestao-de-mudancas
+git checkout -b 20-02-evitando-quebrar-os-clientes-nova-propriedade-do-modelo
 git add .
-git commit -m "Evoluindo a API com gestão de mudanças"
-git push origin 20-01-evoluindo-a-api-com-gestao-de-mudancas
+git commit -m "Evitando quebrar os clientes: nova propriedade no modelo"
+git push origin 20-02-evitando-quebrar-os-clientes-nova-propriedade-do-modelo
 
 git checkout master
-git merge --no-ff 20-01-evoluindo-a-api-com-gestao-de-mudancas
+git merge --no-ff 20-02-evitando-quebrar-os-clientes-nova-propriedade-do-modelo
 git push
 
 sair da tela de merge
