@@ -73,6 +73,19 @@ versionando API
 			- planeje bem a sua API desde a primeira versão para que possa ter uma vida longa
 			- apenas versione a API no último caso, quanto a API atual não estiver mais suportando as necessidades de negócio e de seus consumidores
 
-	
+técnicas de versionamento de APIs
+	- objetivo: criar API boa para não precisar versionar por um bom tempo
+	- criar novas versões da API não é uma coisa boa, deve tentar ao máximo manter a API sem versionar
+		- colocar novidades dentro da versão atual sem quebrar os clientes
+	- quais são as técnicas para versionar a API (client vai escolher qual vai usar)
+		- duas aplicações rodando ou uma aplicação com dois controllers
+		- formas de implementar em uma mesma aplicação
+			- adicionar o versionamento no media type (accept)
+				- media type customizado (application/vnd.algafood.v2+json)
+				- vnd -> padrao conhecido para customização de mediatypes
+				- algafood.v2 -> empresa e versão da API
+			- adicionar versionamento na URI
+				- /v1/cozinhas e /v2/cozinhas
+
 
 
