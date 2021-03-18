@@ -25,15 +25,27 @@ evitar quebrar clients
 alteração de tipo de propriedade do modelo
 	- modelo de representação de saída
 		- tipo amplo para específico tem retrocompatibilidade (taxafrete string para decimal)
-		- tipo específico para amplo não tem retrocompatibilidade (taxafrete decimal para string)
+		- tipo específico para amplo quebra a compatibilidade (taxafrete decimal para string)
 			- client precisa fazer conversão
 			- deve ter uma motivação
 			- solução: adicione uma nova propriedade no modelo de saída
 	- modelo de representação de entrada
-		- tipo amplo para específico não tem retrocompatibilidade (taxafrete string para decimal) 
+		- tipo amplo para específico quebra a compatibilidade (taxafrete string para decimal) 
 			- vai depender de como esta implementado
 		- tipo específico para amplo tem retrocompatibilidade (taxafrete decimal para string)
 
+alteração na estrutura de dados do modelo
+	- modelo de representação de saída tem retrocompatibilidade
+		- ao inves do objeto cozinha (com id) retornar objeto principal com cozinhaId e cozinhaNome
+		- retornar ao inves de objeto propriedades no objeto de respostas
+		- solução: adicionar propriedade e depreciar a propriedade antiga
+	- modelo de representação de entrada quebra a compatibilidade
+		- ao inves do objeto cozinha (com id) receber objeto principal com cozinhaId
+		- receber ao inves de objeto propriedades no objeto de respostas
+		- solução: permita as duas coisas e implementar obrigatoriedade flexivel (de um ou de outro)
+		- depreciar propriedade antiga
 
+
+		
 
 
