@@ -22,3 +22,18 @@ evitar quebrar clients
 		- ocultar apenas na documentação mas continuar no modelo (aceita a entrada) mas ignora o valor da propriedade
 		- ex: RestauranteInput -> ApiModelProperty(hidden=true), remove validação (@NotNull e @PositiveOrZero)
 
+alteração de tipo de propriedade do modelo
+	- modelo de representação de saída
+		- tipo amplo para específico tem retrocompatibilidade (taxafrete string para decimal)
+		- tipo específico para amplo não tem retrocompatibilidade (taxafrete decimal para string)
+			- client precisa fazer conversão
+			- deve ter uma motivação
+			- solução: adicione uma nova propriedade no modelo de saída
+	- modelo de representação de entrada
+		- tipo amplo para específico não tem retrocompatibilidade (taxafrete string para decimal) 
+			- vai depender de como esta implementado
+		- tipo específico para amplo tem retrocompatibilidade (taxafrete decimal para string)
+
+
+
+
