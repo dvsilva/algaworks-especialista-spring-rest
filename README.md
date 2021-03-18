@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-05-evitando-quebrar-os-clientes-alteracao-na-estrutura-de-dados-do-modelo
+git checkout -b 20-06-evitando-quebrar-os-clientes-alteracao-de-url-de-recurso
 git add .
-git commit -m "Evitando quebrar os clientes: alteração na estrutura de dados do modelo"
-git push origin 20-05-evitando-quebrar-os-clientes-alteracao-na-estrutura-de-dados-do-modelo
+git commit -m "Evitando quebrar os clientes: alteração de URL de recurso"
+git push origin 20-06-evitando-quebrar-os-clientes-alteracao-de-url-de-recurso
 
 git checkout master
-git merge --no-ff 20-05-evitando-quebrar-os-clientes-alteracao-na-estrutura-de-dados-do-modelo
+git merge --no-ff 20-06-evitando-quebrar-os-clientes-alteracao-de-url-de-recurso
 git push
 
 sair da tela de merge
