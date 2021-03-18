@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-06-evitando-quebrar-os-clientes-alteracao-de-url-de-recurso
+git checkout -b 20-07-o-que-e-e-quando-versionar-uma-api
 git add .
-git commit -m "Evitando quebrar os clientes: alteração de URL de recurso"
-git push origin 20-06-evitando-quebrar-os-clientes-alteracao-de-url-de-recurso
+git commit -m "O que é e quando versionar uma API?"
+git push origin 20-07-o-que-e-e-quando-versionar-uma-api
 
 git checkout master
-git merge --no-ff 20-06-evitando-quebrar-os-clientes-alteracao-de-url-de-recurso
+git merge --no-ff 20-07-o-que-e-e-quando-versionar-uma-api
 git push
 
 sair da tela de merge

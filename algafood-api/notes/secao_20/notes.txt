@@ -52,6 +52,27 @@ alteração de URL de recurso
 		- aceitar duas URLs
 		- utilizar HATEOAS (se nao mudar o link relation do root entity, pode adicionar outro link para novo nome)
 
+versionando API
+	- evite quebrar compatibilidade
+	- quando precisar quebrar a compatibilidade, versione a API
+		- mudanças drasticas no negócio
+		- redisign dos recursos (criação feita de forma errada)
+		- pensar em versionamento desde o início para ficar preparado
+	- o que é versionamento de APIs
+		- dar um numero de versão (parecido com software)
+		- percepção de software avançado, para API demonstra que não tem boa API (muda muito)
+		- clients não querem retrabalho para integrar com novas versões (não agregam valor)
+		- manter versão antiga e nova rodando ao mesmo tempo
+		- os clients postergam ao maximo a mudança para novas versões 
+		- muda quando tem aviso ou precisa de uma nova funcionalidade)
+		- vamos ter clientes usando a versão antiga e a nova
+		- evite versionamento da API ao máximo
+			- da trabalho para voce e para os consumidores
+			- desenvolver API novamente
+			- dar suporte para a versão antiga por um bom tempo até que todos os consumidores migrem para a nova versão
+			- planeje bem a sua API desde a primeira versão para que possa ter uma vida longa
+			- apenas versione a API no último caso, quanto a API atual não estiver mais suportando as necessidades de negócio e de seus consumidores
+
 	
 
 
