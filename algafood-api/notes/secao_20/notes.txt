@@ -5,10 +5,20 @@ evolução da API
 - quebrar a compatibilidade
 	- quebrar os clients
 	
-evitar quebrar clients (nova propriedade)
-- inclusão de nova propriedade de saída tem retrocompatibilidade
-- inclusão de nova propriedade de entrada
-	- se for opcional tem retrocompatibilidade
-	- se obrigatório não tem 
-	- veja se pode ser aos poucos, adiciona como opcional e depois coloca como obrigatório
+evitar quebrar clients 
+
+- nova propriedade
+	- inclusão de nova propriedade no modelo de representação de saída tem retrocompatibilidade
+	- inclusão de nova propriedade no modelo de representação de entrada
+		- se for opcional tem retrocompatibilidade
+		- se obrigatório não tem 
+		- veja se pode ser aos poucos, adiciona como opcional e depois coloca como obrigatório
 	
+- exclusão de propriedade do modelo
+	- exclusão de uma propriedade no modelo de representação de saída quebra a compatibilidade
+		- deixar a propriedade por mais tempo (taxa frete sempre zerado)
+	- exclusão de uma propriedade no modelo de representação de entrada pode quebrar a compatibilidade
+		- como está configurado a API ao enviar propriedade que não existe (aceita/ignora ou retorna erro?)
+		- ocultar apenas na documentação mas continuar no modelo (aceita a entrada) mas ignora o valor da propriedade
+		- ex: RestauranteInput -> ApiModelProperty(hidden=true), remove validação (@NotNull e @PositiveOrZero)
+
