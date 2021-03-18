@@ -45,7 +45,13 @@ alteração na estrutura de dados do modelo
 		- solução: permita as duas coisas e implementar obrigatoriedade flexivel (de um ou de outro)
 		- depreciar propriedade antiga
 
+alteração de URL de recurso
+	- alteração no nome da URL tem quebra de compatibilidade (gastronomias e cozinhas)
+	- soluções:
+		- evitar de fazer isso
+		- aceitar duas URLs
+		- utilizar HATEOAS (se nao mudar o link relation do root entity, pode adicionar outro link para novo nome)
 
-		
+	
 
 
