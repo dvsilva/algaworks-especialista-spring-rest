@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-10-preparando-o-projeto-para-versionamento-da-api-por-media-type
+git checkout -b 20-11-implementando-o-versionamento-da-api-por-media-type
 git add .
-git commit -m "Preparando o projeto para versionamento da API por Media Type"
-git push origin 20-10-preparando-o-projeto-para-versionamento-da-api-por-media-type
+git commit -m "Implementando o versionamento da API por Media Type"
+git push origin 20-11-implementando-o-versionamento-da-api-por-media-type
 
 git checkout master
-git merge --no-ff 20-10-preparando-o-projeto-para-versionamento-da-api-por-media-type
+git merge --no-ff 20-11-implementando-o-versionamento-da-api-por-media-type
 git push
 
 sair da tela de merge
