@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-04-evitando-quebrar-os-clientes-alteracao-de-tipo-de-propriedade-do-modelo
+git checkout -b 20-05-evitando-quebrar-os-clientes-alteracao-na-estrutura-de-dados-do-modelo
 git add .
-git commit -m "Evitando quebrar os clientes: alteração de tipo de propriedade do modelo"
-git push origin 20-04-evitando-quebrar-os-clientes-alteracao-de-tipo-de-propriedade-do-modelo
+git commit -m "Evitando quebrar os clientes: alteração na estrutura de dados do modelo"
+git push origin 20-05-evitando-quebrar-os-clientes-alteracao-na-estrutura-de-dados-do-modelo
 
 git checkout master
-git merge --no-ff 20-04-evitando-quebrar-os-clientes-alteracao-de-tipo-de-propriedade-do-modelo
+git merge --no-ff 20-05-evitando-quebrar-os-clientes-alteracao-na-estrutura-de-dados-do-modelo
 git push
 
 sair da tela de merge
