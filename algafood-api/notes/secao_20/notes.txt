@@ -87,5 +87,35 @@ técnicas de versionamento de APIs
 			- adicionar versionamento na URI
 				- /v1/cozinhas e /v2/cozinhas
 
-
+manter a base de código de APIs versionadas
+ 	- manter a versão nova e antiga rodando
+	- pode usar a mesmo código para as duas mas precisa garantir que mudanças da nova versão não afetem a outra versão
+	- abordagens
+		1 - projeto separado para cada versão (boa)
+			- dois servidores rodando cada versão (v1 e v2)
+			- utiliza um proxy reverso para rotear as requisições com base na URI (/v1 e /v2)
+			- vantagens
+				- manutenções em uma aplicação não afeta a outra (periodos de indisponibilidade)
+				- versões de API desenvolvidas com linguagens diferentes
+				- ajuda nas manutenções
+			- desvantagens
+				- replicação de código 
+		2 - mesmo projeto com reaproveitamento da camada de API
+			- um mesmo controlador responde para os recursos que não mudaram (API Base)
+			- cria um outro controlador específico para responder o recurso que mudou (API V2)
+			- as versões precisam ser desenvolvidas na mesma stack de tecnologias ou versões de libs (spring)
+			- camada de dominio e infraestrutura são compartilhados
+			- vantagens
+				- evita duplicação de código
+			- desvantagens
+				- manutenções na v2 pode alterar o funcionamento da v1
+				- o risco de dar problema para manter o código é maior
+		3 - mesmo projeto com separação total da camada da API (boa)
+			- desenvolve toda a camada da API novamente
+			- as versões precisam ser desenvolvidas na mesma stack de tecnologias ou versões de libs (spring)
+			- camada de dominio e infraestrutura são compartilhados
+			- vantagens
+				- reduz risco de mexer em uma versão e alterar outra
+			- desvantagens
+				- duplicação de código
 
