@@ -1,0 +1,6 @@
+evolução da API
+- retrocompatibilidade
+	- mantem compatibilidade sem que os clients precisem mexer em nada
+	- versionamento de API
+- quebrar a compatibilidade
+	- quebrar os clients
