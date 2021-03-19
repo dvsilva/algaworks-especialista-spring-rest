@@ -15,6 +15,9 @@ public class WebConfig implements WebMvcConfigurer {
 
 	@Autowired
 	private ApiDeprecationHandler apiDeprecationHandler;
+
+	@Autowired
+	private ApiRetirementHandler apiRetirementHandler;
 	
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
@@ -30,10 +33,11 @@ public class WebConfig implements WebMvcConfigurer {
 //		configurer.defaultContentType(AlgaMediaTypes.V2_APPLICATION_JSON);
 //	}
 
-	// incercepta requisições para adicionar header sobre depreciação de versões
+	// Adciona incerceptadores de requisições (utilizado para versionamento de API)
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		registry.addInterceptor(apiDeprecationHandler);
+//		registry.addInterceptor(apiDeprecationHandler);
+		registry.addInterceptor(apiRetirementHandler);
 	}
 	
 	@Bean
