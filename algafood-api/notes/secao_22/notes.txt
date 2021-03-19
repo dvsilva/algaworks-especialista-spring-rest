@@ -1,0 +1,23 @@
+Segurança de REST APIs
+- uma mesma API pode ser acessada de diversos tipos de clientes
+
+- autenticação - consumidor possa se identificar
+- autorização - garantir que somentes consumidores autorizados para fazer determinada coisa possam fazer requisições para os endpoints específicos
+
+HTTP Basic Autentication
+- sempre que o cliente for fazer requisição deve passar o header Authorization
+- Exemplo -> Authorization: Basic xxxx (codificação de acesso) 
+- codificação -> nome_usuario:senha (nome de usuario  + senha) codificado com base 64 (pode decodificar facilmente)
+- risco de segurança -> dados sensíveis trafegando em todas as requisições
+- adicionar https mas dependendo do cliente ainda pode oferecer risco pois armazena essas informações
+- pouco usado -> APIs corporativas usadas apenas internamente (firewall - origem não autorizada + https)
+
+OAuth2 (mais usada)
+- cliente solicita autorização informando usuario e senha
+- servidor de autorização fornece um token de acesso
+- sempre que o cliente for fazer requisição deve passar o token
+- Exemplo -> Authorization: Bearer xxxx (token) 
+- Token é expirado e perde a validade, então precisa gerar um novo token
+- mais segurança pois expira o token
+- diminui risco
+- um token pode dar acesso a determinadas coisas (restringir acesso a endpoints)
