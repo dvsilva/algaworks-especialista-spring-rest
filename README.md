@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 21-01-introducao-ao-logback-e-slf4j
+git checkout -b 21-02-desafio-registrando-logs-de-exceptions-nao-tratadas
 git add .
-git commit -m "Introdução ao Logback e SLF4J"
-git push origin 21-01-introducao-ao-logback-e-slf4j
+git commit -m "Desafio: registrando logs de exceptions não tratadas"
+git push origin 21-02-desafio-registrando-logs-de-exceptions-nao-tratadas
 
 git checkout master
-git merge --no-ff 21-01-introducao-ao-logback-e-slf4j
+git merge --no-ff 21-02-desafio-registrando-logs-de-exceptions-nao-tratadas
 git push
 
 sair da tela de merge
