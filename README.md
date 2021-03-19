@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 21-03-criando-conta-no-loggly-servico-de-gerenciamento-de-logs-na-nuvem
+git checkout -b 21-04-configurando-appender-do-loggly-no-logback
 git add .
-git commit -m "Criando uma conta no Loggly: serviço de gerenciamento de logs na nuvem"
-git push origin 21-03-criando-conta-no-loggly-servico-de-gerenciamento-de-logs-na-nuvem
+git commit -m "Configurando o appender do Loggly no Logback"
+git push origin 21-04-configurando-appender-do-loggly-no-logback
 
 git checkout master
-git merge --no-ff 21-03-criando-conta-no-loggly-servico-de-gerenciamento-de-logs-na-nuvem
+git merge --no-ff 21-04-configurando-appender-do-loggly-no-logback
 git push
 
 sair da tela de merge
