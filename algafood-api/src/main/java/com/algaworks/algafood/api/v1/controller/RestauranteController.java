@@ -53,7 +53,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 // maxAge - tempo que o OPTIONS sera armazenar no cache e nao precisara fazer duas requisicoes
 //@CrossOrigin(maxAge = 20) // (origins = "http://www.algafood.local:8000") 
 @RestController
-@RequestMapping(path = "/restaurantes", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(path = "/v1/restaurantes", produces = MediaType.APPLICATION_JSON_VALUE)
 public class RestauranteController implements RestauranteControllerOpenApi {
 
 	@Autowired
