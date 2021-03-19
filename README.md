@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-18-depreciando-uma-versao-da-api
+git checkout -b 20-19-desligando-uma-versao-da-api
 git add .
-git commit -m "Depreciando uma versão da API"
-git push origin 20-18-depreciando-uma-versao-da-api
+git commit -m "Desligando uma versão da API"
+git push origin 20-19-desligando-uma-versao-da-api
 
 git checkout master
-git merge --no-ff 20-18-depreciando-uma-versao-da-api
+git merge --no-ff 20-19-desligando-uma-versao-da-api
 git push
 
 sair da tela de merge
