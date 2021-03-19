@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-14-desafio-refatorando-controladores-para-adicionar-v1-nas-uris
+git checkout -b 20-15-desafio-adicionando-os-recursos-de-cozinhas-na-v2-da-api
 git add .
-git commit -m "Desafio: Refatorando controladores para adicionar /v1 nas URIs"
-git push origin 20-14-desafio-refatorando-controladores-para-adicionar-v1-nas-uris
+git commit -m "Desafio: adicionando os recursos de cozinhas na v2 da API"
+git push origin 20-15-desafio-adicionando-os-recursos-de-cozinhas-na-v2-da-api
 
 git checkout master
-git merge --no-ff 20-14-desafio-refatorando-controladores-para-adicionar-v1-nas-uris
+git merge --no-ff 20-15-desafio-adicionando-os-recursos-de-cozinhas-na-v2-da-api
 git push
 
 sair da tela de merge
