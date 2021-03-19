@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-12-definindo-a-versao-padrao-da-api-quando-o-media-type-nao-e-informado
+git checkout -b 20-13-implementando-o-versionamento-da-api-por-uri
 git add .
-git commit -m "Definindo a versão padrão da API quando o Media Type não é informado"
-git push origin 20-12-definindo-a-versao-padrao-da-api-quando-o-media-type-nao-e-informado
+git commit -m "Implementando o versionamento da API por URI"
+git push origin 20-13-implementando-o-versionamento-da-api-por-uri
 
 git checkout master
-git merge --no-ff 20-12-definindo-a-versao-padrao-da-api-quando-o-media-type-nao-e-informado
+git merge --no-ff 20-13-implementando-o-versionamento-da-api-por-uri
 git push
 
 sair da tela de merge

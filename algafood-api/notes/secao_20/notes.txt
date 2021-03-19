@@ -119,3 +119,5 @@ manter a base de código de APIs versionadas
 			- desvantagens
 				- duplicação de código
 
+implantar em prod com o v1 para não quebrar os clientes
+possibilita evoluir a API
