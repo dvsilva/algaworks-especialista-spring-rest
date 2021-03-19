@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-15-desafio-adicionando-os-recursos-de-cozinhas-na-v2-da-api
+git checkout -b 20-16-gerando-documentacao-das-versoes-da-api-com-springfox-e-swaggerui
 git add .
-git commit -m "Desafio: adicionando os recursos de cozinhas na v2 da API"
-git push origin 20-15-desafio-adicionando-os-recursos-de-cozinhas-na-v2-da-api
+git commit -m "Gerando documentação das versões da API com SpringFox e Swagger UI"
+git push origin 20-16-gerando-documentacao-das-versoes-da-api-com-springfox-e-swaggerui
 
 git checkout master
-git merge --no-ff 20-15-desafio-adicionando-os-recursos-de-cozinhas-na-v2-da-api
+git merge --no-ff 20-16-gerando-documentacao-das-versoes-da-api-com-springfox-e-swaggerui
 git push
 
 sair da tela de merge
