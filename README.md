@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-17-desafio-revisando-documentacao-da-v2-da-api
+git checkout -b 20-18-depreciando-uma-versao-da-api
 git add .
-git commit -m "Desafio: revisando documentação da v2 da API"
-git push origin 20-17-desafio-revisando-documentacao-da-v2-da-api
+git commit -m "Depreciando uma versão da API"
+git push origin 20-18-depreciando-uma-versao-da-api
 
 git checkout master
-git merge --no-ff 20-17-desafio-revisando-documentacao-da-v2-da-api
+git merge --no-ff 20-18-depreciando-uma-versao-da-api
 git push
 
 sair da tela de merge
