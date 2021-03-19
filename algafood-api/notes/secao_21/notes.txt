@@ -5,5 +5,8 @@ slf4j (http://www.slf4j.org)
 	- funciona como uma faixada
 	- nosso código conversa/integra com o SLF4J que repassa as operações para o framework de logging (logback)
 
+loggly (https://www.loggly.com)
+- gerenciamento de logs na nuvem
+- armazenar logs em máquinas na nuvem é um problema
+- complexo gerenciar o log de diversas instâncias
 
-	 

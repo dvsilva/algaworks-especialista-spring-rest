@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 21-02-desafio-registrando-logs-de-exceptions-nao-tratadas
+git checkout -b 21-03-criando-conta-no-loggly-servico-de-gerenciamento-de-logs-na-nuvem
 git add .
-git commit -m "Desafio: registrando logs de exceptions não tratadas"
-git push origin 21-02-desafio-registrando-logs-de-exceptions-nao-tratadas
+git commit -m "Criando uma conta no Loggly: serviço de gerenciamento de logs na nuvem"
+git push origin 21-03-criando-conta-no-loggly-servico-de-gerenciamento-de-logs-na-nuvem
 
 git checkout master
-git merge --no-ff 21-02-desafio-registrando-logs-de-exceptions-nao-tratadas
+git merge --no-ff 21-03-criando-conta-no-loggly-servico-de-gerenciamento-de-logs-na-nuvem
 git push
 
 sair da tela de merge
