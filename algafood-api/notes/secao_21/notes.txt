@@ -9,4 +9,3 @@ loggly (https://www.loggly.com)
 - gerenciamento de logs na nuvem
 - armazenar logs em máquinas na nuvem é um problema
 - complexo gerenciar o log de diversas instâncias
-

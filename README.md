@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 21-04-configurando-appender-do-loggly-no-logback
+git checkout -b 21-05-configurando-logback-para-alternar-as-configuracoes-por-spring-profiles
 git add .
-git commit -m "Configurando o appender do Loggly no Logback"
-git push origin 21-04-configurando-appender-do-loggly-no-logback
+git commit -m "Configurando o Logback para alternar as configurações por Spring Profiles"
+git push origin 21-05-configurando-logback-para-alternar-as-configuracoes-por-spring-profiles
 
 git checkout master
-git merge --no-ff 21-04-configurando-appender-do-loggly-no-logback
+git merge --no-ff 21-05-configurando-logback-para-alternar-as-configuracoes-por-spring-profiles
 git push
 
 sair da tela de merge
