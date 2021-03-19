@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 21-05-configurando-logback-para-alternar-as-configuracoes-por-spring-profiles
+git checkout -b 22-01-introducao-a-segurancao-de-rest-apis
 git add .
-git commit -m "Configurando o Logback para alternar as configurações por Spring Profiles"
-git push origin 21-05-configurando-logback-para-alternar-as-configuracoes-por-spring-profiles
+git commit -m "Introdução à segurança de REST APIs"
+git push origin 22-01-introducao-a-segurancao-de-rest-apis
 
 git checkout master
-git merge --no-ff 21-05-configurando-logback-para-alternar-as-configuracoes-por-spring-profiles
+git merge --no-ff 22-01-introducao-a-segurancao-de-rest-apis
 git push
 
 sair da tela de merge

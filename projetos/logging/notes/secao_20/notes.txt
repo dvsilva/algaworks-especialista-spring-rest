@@ -1,0 +1,123 @@
+evolução da API
+- retrocompatibilidade
+	- mantem compatibilidade sem que os clients precisem mexer em nada
+	- versionamento de API
+- quebrar a compatibilidade
+	- quebrar os clients
+	
+evitar quebrar clients 
+
+- nova propriedade
+	- inclusão de nova propriedade no modelo de representação de saída tem retrocompatibilidade
+	- inclusão de nova propriedade no modelo de representação de entrada
+		- se for opcional tem retrocompatibilidade
+		- se obrigatório não tem 
+		- veja se pode ser aos poucos, adiciona como opcional e depois coloca como obrigatório
+	
+- exclusão de propriedade do modelo
+	- exclusão de uma propriedade no modelo de representação de saída quebra a compatibilidade
+		- deixar a propriedade por mais tempo (taxa frete sempre zerado)
+	- exclusão de uma propriedade no modelo de representação de entrada pode quebrar a compatibilidade
+		- como está configurado a API ao enviar propriedade que não existe (aceita/ignora ou retorna erro?)
+		- ocultar apenas na documentação mas continuar no modelo (aceita a entrada) mas ignora o valor da propriedade
+		- ex: RestauranteInput -> ApiModelProperty(hidden=true), remove validação (@NotNull e @PositiveOrZero)
+
+alteração de tipo de propriedade do modelo
+	- modelo de representação de saída
+		- tipo amplo para específico tem retrocompatibilidade (taxafrete string para decimal)
+		- tipo específico para amplo quebra a compatibilidade (taxafrete decimal para string)
+			- client precisa fazer conversão
+			- deve ter uma motivação
+			- solução: adicione uma nova propriedade no modelo de saída
+	- modelo de representação de entrada
+		- tipo amplo para específico quebra a compatibilidade (taxafrete string para decimal) 
+			- vai depender de como esta implementado
+		- tipo específico para amplo tem retrocompatibilidade (taxafrete decimal para string)
+
+alteração na estrutura de dados do modelo
+	- modelo de representação de saída tem retrocompatibilidade
+		- ao inves do objeto cozinha (com id) retornar objeto principal com cozinhaId e cozinhaNome
+		- retornar ao inves de objeto propriedades no objeto de respostas
+		- solução: adicionar propriedade e depreciar a propriedade antiga
+	- modelo de representação de entrada quebra a compatibilidade
+		- ao inves do objeto cozinha (com id) receber objeto principal com cozinhaId
+		- receber ao inves de objeto propriedades no objeto de respostas
+		- solução: permita as duas coisas e implementar obrigatoriedade flexivel (de um ou de outro)
+		- depreciar propriedade antiga
+
+alteração de URL de recurso
+	- alteração no nome da URL tem quebra de compatibilidade (gastronomias e cozinhas)
+	- soluções:
+		- evitar de fazer isso
+		- aceitar duas URLs
+		- utilizar HATEOAS (se nao mudar o link relation do root entity, pode adicionar outro link para novo nome)
+
+versionando API
+	- evite quebrar compatibilidade
+	- quando precisar quebrar a compatibilidade, versione a API
+		- mudanças drasticas no negócio
+		- redisign dos recursos (criação feita de forma errada)
+		- pensar em versionamento desde o início para ficar preparado
+	- o que é versionamento de APIs
+		- dar um numero de versão (parecido com software)
+		- percepção de software avançado, para API demonstra que não tem boa API (muda muito)
+		- clients não querem retrabalho para integrar com novas versões (não agregam valor)
+		- manter versão antiga e nova rodando ao mesmo tempo
+		- os clients postergam ao maximo a mudança para novas versões 
+		- muda quando tem aviso ou precisa de uma nova funcionalidade)
+		- vamos ter clientes usando a versão antiga e a nova
+		- evite versionamento da API ao máximo
+			- da trabalho para voce e para os consumidores
+			- desenvolver API novamente
+			- dar suporte para a versão antiga por um bom tempo até que todos os consumidores migrem para a nova versão
+			- planeje bem a sua API desde a primeira versão para que possa ter uma vida longa
+			- apenas versione a API no último caso, quanto a API atual não estiver mais suportando as necessidades de negócio e de seus consumidores
+
+técnicas de versionamento de APIs
+	- objetivo: criar API boa para não precisar versionar por um bom tempo
+	- criar novas versões da API não é uma coisa boa, deve tentar ao máximo manter a API sem versionar
+		- colocar novidades dentro da versão atual sem quebrar os clientes
+	- quais são as técnicas para versionar a API (client vai escolher qual vai usar)
+		- duas aplicações rodando ou uma aplicação com dois controllers
+		- formas de implementar em uma mesma aplicação
+			- adicionar o versionamento no media type (accept)
+				- media type customizado (application/vnd.algafood.v2+json)
+				- vnd -> padrao conhecido para customização de mediatypes
+				- algafood.v2 -> empresa e versão da API
+			- adicionar versionamento na URI
+				- /v1/cozinhas e /v2/cozinhas
+
+manter a base de código de APIs versionadas
+ 	- manter a versão nova e antiga rodando
+	- pode usar a mesmo código para as duas mas precisa garantir que mudanças da nova versão não afetem a outra versão
+	- abordagens
+		1 - projeto separado para cada versão (boa)
+			- dois servidores rodando cada versão (v1 e v2)
+			- utiliza um proxy reverso para rotear as requisições com base na URI (/v1 e /v2)
+			- vantagens
+				- manutenções em uma aplicação não afeta a outra (periodos de indisponibilidade)
+				- versões de API desenvolvidas com linguagens diferentes
+				- ajuda nas manutenções
+			- desvantagens
+				- replicação de código 
+		2 - mesmo projeto com reaproveitamento da camada de API
+			- um mesmo controlador responde para os recursos que não mudaram (API Base)
+			- cria um outro controlador específico para responder o recurso que mudou (API V2)
+			- as versões precisam ser desenvolvidas na mesma stack de tecnologias ou versões de libs (spring)
+			- camada de dominio e infraestrutura são compartilhados
+			- vantagens
+				- evita duplicação de código
+			- desvantagens
+				- manutenções na v2 pode alterar o funcionamento da v1
+				- o risco de dar problema para manter o código é maior
+		3 - mesmo projeto com separação total da camada da API (boa)
+			- desenvolve toda a camada da API novamente
+			- as versões precisam ser desenvolvidas na mesma stack de tecnologias ou versões de libs (spring)
+			- camada de dominio e infraestrutura são compartilhados
+			- vantagens
+				- reduz risco de mexer em uma versão e alterar outra
+			- desvantagens
+				- duplicação de código
+
+implantar em prod com o v1 para não quebrar os clientes
+possibilita evoluir a API
