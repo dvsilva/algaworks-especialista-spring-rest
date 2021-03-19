@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-01-introducao-a-segurancao-de-rest-apis
+git checkout -b 22-02-adicionando-seguranca-na-api-com-spring-security
 git add .
-git commit -m "Introdução à segurança de REST APIs"
-git push origin 22-01-introducao-a-segurancao-de-rest-apis
+git commit -m "Adicionando segurança na API com Spring Security"
+git push origin 22-02-adicionando-seguranca-na-api-com-spring-security
 
 git checkout master
-git merge --no-ff 22-01-introducao-a-segurancao-de-rest-apis
+git merge --no-ff 22-02-adicionando-seguranca-na-api-com-spring-security
 git push
 
 sair da tela de merge
