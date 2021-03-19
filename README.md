@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-19-desligando-uma-versao-da-api
+git checkout -b 21-01-introducao-ao-logback-e-slf4j
 git add .
-git commit -m "Desligando uma versão da API"
-git push origin 20-19-desligando-uma-versao-da-api
+git commit -m "Introdução ao Logback e SLF4J"
+git push origin 21-01-introducao-ao-logback-e-slf4j
 
 git checkout master
-git merge --no-ff 20-19-desligando-uma-versao-da-api
+git merge --no-ff 21-01-introducao-ao-logback-e-slf4j
 git push
 
 sair da tela de merge
