@@ -2632,316 +2632,602 @@
 			"name": "Versionamento",
 			"item": [
 				{
-					"name": "Cidades V1",
+					"name": "Media Type",
 					"item": [
 						{
-							"name": "Cidades - Listar",
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/vnd.algafood.v1+json",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "api.algafood.local:8080/cidades",
-									"host": [
-										"api",
-										"algafood",
-										"local"
-									],
-									"port": "8080",
-									"path": [
-										"cidades"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Cidades - Buscar",
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"type": "text",
-										"value": "application/vnd.algafood.v1+json"
-									}
-								],
-								"url": {
-									"raw": "api.algafood.local:8080/cidades/1",
-									"host": [
-										"api",
-										"algafood",
-										"local"
-									],
-									"port": "8080",
-									"path": [
-										"cidades",
-										"1"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Cidades - Adicionar",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/vnd.algafood.v1+json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": " {\r\n    \"nome\": \"Ouro Preto\",\r\n    \"estado\": {\r\n        \"id\": 1\r\n    }\r\n }",
-									"options": {
-										"raw": {
-											"language": "json"
+							"name": "Cidades V2",
+							"item": [
+								{
+									"name": "Cidades - Listar",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/vnd.algafood.v2+json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "api.algafood.local:8080/cidades",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"cidades"
+											]
 										}
-									}
+									},
+									"response": []
 								},
-								"url": {
-									"raw": "api.algafood.local:8080/cidades",
-									"host": [
-										"api",
-										"algafood",
-										"local"
-									],
-									"port": "8080",
-									"path": [
-										"cidades"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Cidades - Atualizar",
-							"request": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Accept",
-										"type": "text",
-										"value": "application/vnd.algafood.v1+json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": " {\r\n    \"nome\": \"Guarulhos\",\r\n    \"estado\": {\r\n        \"id\": 2\r\n    }\r\n }",
-									"options": {
-										"raw": {
-											"language": "json"
+								{
+									"name": "Cidades - Buscar",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/vnd.algafood.v2+json"
+											}
+										],
+										"url": {
+											"raw": "api.algafood.local:8080/cidades/1",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"cidades",
+												"1"
+											]
 										}
-									}
+									},
+									"response": []
 								},
-								"url": {
-									"raw": "api.algafood.local:8080/cidades/6",
-									"host": [
-										"api",
-										"algafood",
-										"local"
-									],
-									"port": "8080",
-									"path": [
-										"cidades",
-										"6"
-									]
+								{
+									"name": "Cidades - Adicionar",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/vnd.algafood.v2+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nomeCidade\": \"Contagem\",\r\n    \"idEstado\": 1\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "api.algafood.local:8080/cidades",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Atualizar",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/vnd.algafood.v2+json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nomeCidade\": \"Guarulhos\",\r\n    \"idEstado\": 2\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "api.algafood.local:8080/cidades/6",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Remover",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/xml",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "api.algafood.local:8080/cidades/6",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
 								}
-							},
-							"response": []
+							]
 						},
 						{
-							"name": "Cidades - Remover",
-							"request": {
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "Accept",
-										"type": "text",
-										"value": "application/xml",
-										"disabled": true
-									}
-								],
-								"url": {
-									"raw": "api.algafood.local:8080/cidades/6",
-									"host": [
-										"api",
-										"algafood",
-										"local"
-									],
-									"port": "8080",
-									"path": [
-										"cidades",
-										"6"
-									]
+							"name": "Cidades V1",
+							"item": [
+								{
+									"name": "Cidades - Listar",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/vnd.algafood.v1+json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "api.algafood.local:8080/cidades",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Buscar",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/vnd.algafood.v1+json"
+											}
+										],
+										"url": {
+											"raw": "api.algafood.local:8080/cidades/1",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"cidades",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Adicionar",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/vnd.algafood.v1+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nome\": \"Ouro Preto\",\r\n    \"estado\": {\r\n        \"id\": 1\r\n    }\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "api.algafood.local:8080/cidades",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Atualizar",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/vnd.algafood.v1+json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nome\": \"Guarulhos\",\r\n    \"estado\": {\r\n        \"id\": 2\r\n    }\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "api.algafood.local:8080/cidades/6",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Remover",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/xml",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "api.algafood.local:8080/cidades/6",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
 								}
-							},
-							"response": []
+							]
 						}
 					]
 				},
 				{
-					"name": "Cidades V2",
+					"name": "URI",
 					"item": [
 						{
-							"name": "Cidades - Listar",
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/vnd.algafood.v2+json",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "api.algafood.local:8080/cidades",
-									"host": [
-										"api",
-										"algafood",
-										"local"
-									],
-									"port": "8080",
-									"path": [
-										"cidades"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Cidades - Buscar",
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"type": "text",
-										"value": "application/vnd.algafood.v2+json"
-									}
-								],
-								"url": {
-									"raw": "api.algafood.local:8080/cidades/1",
-									"host": [
-										"api",
-										"algafood",
-										"local"
-									],
-									"port": "8080",
-									"path": [
-										"cidades",
-										"1"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Cidades - Adicionar",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/vnd.algafood.v2+json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": " {\r\n    \"nomeCidade\": \"Contagem\",\r\n    \"idEstado\": 1\r\n }",
-									"options": {
-										"raw": {
-											"language": "json"
+							"name": "Cidades V1",
+							"item": [
+								{
+									"name": "Cidades - Listar",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "api.algafood.local:8080/v1/cidades",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"cidades"
+											]
 										}
-									}
+									},
+									"response": []
 								},
-								"url": {
-									"raw": "api.algafood.local:8080/cidades",
-									"host": [
-										"api",
-										"algafood",
-										"local"
-									],
-									"port": "8080",
-									"path": [
-										"cidades"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Cidades - Atualizar",
-							"request": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Accept",
-										"type": "text",
-										"value": "application/vnd.algafood.v2+json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": " {\r\n    \"nomeCidade\": \"Guarulhos\",\r\n    \"idEstado\": 2\r\n }",
-									"options": {
-										"raw": {
-											"language": "json"
+								{
+									"name": "Cidades - Buscar",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "api.algafood.local:8080/v1/cidades/1",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"cidades",
+												"1"
+											]
 										}
-									}
+									},
+									"response": []
 								},
-								"url": {
-									"raw": "api.algafood.local:8080/cidades/6",
-									"host": [
-										"api",
-										"algafood",
-										"local"
-									],
-									"port": "8080",
-									"path": [
-										"cidades",
-										"6"
-									]
+								{
+									"name": "Cidades - Adicionar",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nome\": \"Ouro Preto\",\r\n    \"estado\": {\r\n        \"id\": 1\r\n    }\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "api.algafood.local:8080/v1/cidades",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Atualizar",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nome\": \"Guarulhos\",\r\n    \"estado\": {\r\n        \"id\": 2\r\n    }\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "api.algafood.local:8080/v1/cidades/6",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Remover",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/xml",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "api.algafood.local:8080/v1/cidades/6",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
 								}
-							},
-							"response": []
+							]
 						},
 						{
-							"name": "Cidades - Remover",
-							"request": {
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "Accept",
-										"type": "text",
-										"value": "application/xml",
-										"disabled": true
-									}
-								],
-								"url": {
-									"raw": "api.algafood.local:8080/cidades/6",
-									"host": [
-										"api",
-										"algafood",
-										"local"
-									],
-									"port": "8080",
-									"path": [
-										"cidades",
-										"6"
-									]
+							"name": "Cidades V2",
+							"item": [
+								{
+									"name": "Cidades - Listar",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "api.algafood.local:8080/v2/cidades",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Buscar",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "api.algafood.local:8080/v2/cidades/1",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"cidades",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Adicionar",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nomeCidade\": \"Contagem\",\r\n    \"idEstado\": 1\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "api.algafood.local:8080/v2/cidades",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Atualizar",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nomeCidade\": \"Guarulhos\",\r\n    \"idEstado\": 2\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "api.algafood.local:8080/v2/cidades/6",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Remover",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/xml",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "api.algafood.local:8080/v2/cidades/6",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
 								}
-							},
-							"response": []
+							]
 						}
 					]
 				}
