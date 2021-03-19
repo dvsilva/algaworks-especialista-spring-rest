@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-16-gerando-documentacao-das-versoes-da-api-com-springfox-e-swaggerui
+git checkout -b 20-17-desafio-revisando-documentacao-da-v2-da-api
 git add .
-git commit -m "Gerando documentação das versões da API com SpringFox e Swagger UI"
-git push origin 20-16-gerando-documentacao-das-versoes-da-api-com-springfox-e-swaggerui
+git commit -m "Desafio: revisando documentação da v2 da API"
+git push origin 20-17-desafio-revisando-documentacao-da-v2-da-api
 
 git checkout master
-git merge --no-ff 20-16-gerando-documentacao-das-versoes-da-api-com-springfox-e-swaggerui
+git merge --no-ff 20-17-desafio-revisando-documentacao-da-v2-da-api
 git push
 
 sair da tela de merge

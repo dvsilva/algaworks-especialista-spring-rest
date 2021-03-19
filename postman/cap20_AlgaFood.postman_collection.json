@@ -3077,6 +3077,26 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Root Entry Point V2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.algafood.local:8080/v2",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"v2"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
