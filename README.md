@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 20-13-implementando-o-versionamento-da-api-por-uri
+git checkout -b 20-14-desafio-refatorando-controladores-para-adicionar-v1-nas-uris
 git add .
-git commit -m "Implementando o versionamento da API por URI"
-git push origin 20-13-implementando-o-versionamento-da-api-por-uri
+git commit -m "Desafio: Refatorando controladores para adicionar /v1 nas URIs"
+git push origin 20-14-desafio-refatorando-controladores-para-adicionar-v1-nas-uris
 
 git checkout master
-git merge --no-ff 20-13-implementando-o-versionamento-da-api-por-uri
+git merge --no-ff 20-14-desafio-refatorando-controladores-para-adicionar-v1-nas-uris
 git push
 
 sair da tela de merge
