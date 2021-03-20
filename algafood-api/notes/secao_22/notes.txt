@@ -82,6 +82,12 @@ Resource Owner Password Credentials (password credencials, password flow, passwo
 
 opaque token -> não conseguimos exergar dentro dele / as informações sobre ele (contrario do transparente)
 
+- resource server deve verificar se o access token é valido atraves do authorizationserver
+- a especificação oauth2 não diz como deve acontecer
+- a RFC 7662 defini isso (o que deve retornar)
+- checagem de introspecção - verificar se está válido
+
+
 
 
 		

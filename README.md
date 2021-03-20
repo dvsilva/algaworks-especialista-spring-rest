@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-09-configurando-fluxo-authorization-server-com-password-credentials-e-opaque-tokens
+git checkout -b 22-10-configurando-enpoint-de-introspeccao-de-tokens-no-authorization-server
 git add .
-git commit -m "Configurando o fluxo Authorization Server com Password Credentials e Opaque Tokens"
-git push origin 22-09-configurando-fluxo-authorization-server-com-password-credentials-e-opaque-tokens
+git commit -m "Configurando o endpoint de introspecção de tokens no Authorization Server"
+git push origin 22-10-configurando-enpoint-de-introspeccao-de-tokens-no-authorization-server
 
 git checkout master
-git merge --no-ff 22-09-configurando-fluxo-authorization-server-com-password-credentials-e-opaque-tokens
+git merge --no-ff 22-10-configurando-enpoint-de-introspeccao-de-tokens-no-authorization-server
 git push
 
 sair da tela de merge
