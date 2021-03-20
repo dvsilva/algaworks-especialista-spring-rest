@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-03-configurando-spring-security-com-http-basic
+git checkout -b 22-04-configurando-autenticacao-de-usuarios-em-memoria
 git add .
-git commit -m "Configurando Spring Security com HTTP Basic"
-git push origin 22-03-configurando-spring-security-com-http-basic
+git commit -m "Configurando autenticação de usuários em memória"
+git push origin 22-04-configurando-autenticacao-de-usuarios-em-memoria
 
 git checkout master
-git merge --no-ff 22-03-configurando-spring-security-com-http-basic
+git merge --no-ff 22-04-configurando-autenticacao-de-usuarios-em-memoria
 git push
 
 sair da tela de merge
