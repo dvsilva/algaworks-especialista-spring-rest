@@ -50,6 +50,12 @@ Introdução ao OAuth2
 			-> resource server (retorna o recurso solicitado)
 			-> client (usa o recurso e mostra alguma coisa) 
 
--
+- resource server e o authorization server 
+	- não precisam estar no mesmo projeto
+	- podem usar tecnologias diferentes
+	- o authorization server pode ser fornecido por terceiros
+	
+- Spring Security OAuth (suporte para resource server e o authorization server) - ideia é depreciar
+- Spring Security incorporaram OAuth (porem sem authorization server, talvez tenha no futuro)
 
 
