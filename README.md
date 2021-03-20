@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-04-configurando-autenticacao-de-usuarios-em-memoria
+git checkout -b 22-05-introducao-ao-oauth2
 git add .
-git commit -m "Configurando autenticação de usuários em memória"
-git push origin 22-04-configurando-autenticacao-de-usuarios-em-memoria
+git commit -m "Introdução ao OAuth2"
+git push origin 22-05-introducao-ao-oauth2
 
 git checkout master
-git merge --no-ff 22-04-configurando-autenticacao-de-usuarios-em-memoria
+git merge --no-ff 22-05-introducao-ao-oauth2
 git push
 
 sair da tela de merge

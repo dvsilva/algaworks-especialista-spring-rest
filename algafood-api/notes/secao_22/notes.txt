@@ -21,3 +21,35 @@ OAuth2 (mais usada)
 - mais segurança pois expira o token
 - diminui risco
 - um token pode dar acesso a determinadas coisas (restringir acesso a endpoints)
+
+Introdução ao OAuth2
+- tradicional
+	- a aplicação cliente deve repassar as credenciais do usuario final
+	- a aplicação terceira pode armazenar usuario e senha de um usuario de API terceira e teria o acesso desse usuário na API
+	- não tem como revogar o acesso, só mudando a senha, mas vai impactar acesso às outras aplicações terceiras (tudo ou nada)
+- OAuth2
+	- framework de autorização para permitir que aplicações terceiras obtenham acesso limitado a serviços (API) usando HTTP
+	- conjunto de regras / protocolo (RFC 6749) padrão / especificação
+	- define 4 papéis (roles)
+		- resource server -> servidor que hospeda os serviços protegidos (API)
+		- resource owner -> usuário final / dono dos recursos
+		- client -> aplicação (web, mobile e desktop) que tem interesse em acessar os recursos protegidos do resource server (resource owner precisa autoriza-lo)
+		- authorization server 
+			- autentica o resource owner e garante a autorização de acesso à um determinado client para acessar o resource server em nome do resource owner
+			- exemplo: porteiro (authorization server), sala (resource server), dono da sala (resource owner) e você (client)
+		- fluxo de execução (grant_type: authorization code grant/flow)
+			-> resource owner (acessa aplicação/client) 
+			-> client (solicita autorização redirect) 
+			-> resource owner (autentica e autoriza client)
+			-> authorization server (gera código de autorização para o client) 
+			-> client (solicita access token) 
+			-> authorization server (retorna access token) 
+			-> client (faz requisição em um recurso da API [resource server] usando o access token)
+			-> resource server (consulta o authorization server sobre o access token)
+			-> authorization server (retorna se o access token está válido) 
+			-> resource server (retorna o recurso solicitado)
+			-> client (usa o recurso e mostra alguma coisa) 
+
+-
+
+
