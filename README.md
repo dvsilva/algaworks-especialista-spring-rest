@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-10-configurando-enpoint-de-introspeccao-de-tokens-no-authorization-server
+git checkout -b 22-11-configurando-resource-server-com-a-nova-stack-do-spring-security
 git add .
-git commit -m "Configurando o endpoint de introspecção de tokens no Authorization Server"
-git push origin 22-10-configurando-enpoint-de-introspeccao-de-tokens-no-authorization-server
+git commit -m "Configurando o Resource Server com a nova stack do Spring Security"
+git push origin 22-11-configurando-resource-server-com-a-nova-stack-do-spring-security
 
 git checkout master
-git merge --no-ff 22-10-configurando-enpoint-de-introspeccao-de-tokens-no-authorization-server
+git merge --no-ff 22-11-configurando-resource-server-com-a-nova-stack-do-spring-security
 git push
 
 sair da tela de merge

@@ -153,16 +153,61 @@
 							"name": "Cozinhas - Listar",
 							"request": {
 								"auth": {
-									"type": "basic",
-									"basic": [
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "algafood-web",
+											"type": "string"
+										},
+										{
+											"key": "headerPrefix",
+											"value": "Bearer ",
+											"type": "string"
+										},
+										{
+											"key": "client_authentication",
+											"value": "header",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "web123",
+											"type": "string"
+										},
 										{
 											"key": "password",
-											"value": "123456",
+											"value": "123",
 											"type": "string"
 										},
 										{
 											"key": "username",
-											"value": "algafood",
+											"value": "thiago",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "auth.algafood.local:8081/oauth/token",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "Token AlgaFood",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "password_credentials",
+											"type": "string"
+										},
+										{
+											"key": "challengeAlgorithm",
+											"value": "S256",
 											"type": "string"
 										}
 									]
@@ -178,6 +223,12 @@
 									{
 										"key": "Authorization",
 										"value": "Basic YWxnYWZvb2Q6MTIzNDU2",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 5d6038a0-3820-42b1-b663-1d106c2f42b7",
 										"type": "text",
 										"disabled": true
 									}
@@ -3730,7 +3781,7 @@
 			"name": "Auth",
 			"item": [
 				{
-					"name": "Get Acces Token",
+					"name": "Password Flow - Solicitar Token",
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -3799,6 +3850,71 @@
 							"path": [
 								"oauth",
 								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Password Flow - Verificar Token",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "algafood-web",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "web123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"value": "thiago",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "123",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "grant_type",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "token",
+									"value": "d257c47e-91e8-4f90-8e33-dc5cb6d4e47d",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "auth.algafood.local:8081/oauth/check_token",
+							"host": [
+								"auth",
+								"algafood",
+								"local"
+							],
+							"port": "8081",
+							"path": [
+								"oauth",
+								"check_token"
 							]
 						}
 					},
