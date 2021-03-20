@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-06-solucoes-para-oauth2-nova-stack-do-spring-security-vs-spring-security-oauth
+git checkout -b 22-07-conhecendo-o-fluxo-resource-owner-password-credentials
 git add .
-git commit -m "Soluções para OAuth2: nova stack do Spring Security vs Spring Security OAuth"
-git push origin 22-06-solucoes-para-oauth2-nova-stack-do-spring-security-vs-spring-security-oauth
+git commit -m "Conhecendo o fluxo Resource Owner Password Credentials"
+git push origin 22-07-conhecendo-o-fluxo-resource-owner-password-credentials
 
 git checkout master
-git merge --no-ff 22-06-solucoes-para-oauth2-nova-stack-do-spring-security-vs-spring-security-oauth
+git merge --no-ff 22-07-conhecendo-o-fluxo-resource-owner-password-credentials
 git push
 
 sair da tela de merge

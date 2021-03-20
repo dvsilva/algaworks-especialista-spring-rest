@@ -58,4 +58,28 @@ Introdução ao OAuth2
 - Spring Security OAuth (suporte para resource server e o authorization server) - ideia é depreciar
 - Spring Security incorporaram OAuth (porem sem authorization server, talvez tenha no futuro)
 
+- fluxo de autorização (grant_type) 
+	- sequencia da comunicação que deve acontecer entre os componentes 
+	- possibilita um token de autorização de acesso seja emitido para o client acessar os recursos do resource server
+	- vai depender do tipo de client
 
+Resource Owner Password Credentials (password credencials, password flow, password grant ou password grant type)
+- obter um access token a partir de um usuário e senha
+- usar apenas aplicações que você desenvolveu pois o usuário da nossa API deve informar usuário e senha em um client terceiro
+
+- fluxo de execução 
+	-> resource owner (informa credenciais para aplicação/client) 
+	-> client (solicita access token)
+		- informa as credenciais do usuário no corpo, grant_type=password e passa a autenticação do client (header Authorization)
+		- não armazena usuario e senha, mas o access token (ganha mais segurança, se interceptar o token ele expira)
+	-> authorization server (retorna access token, token_type, expires_in e scope)
+	-> repete o fluxo básico
+		-> client (faz requisição em um recurso da API [resource server] usando o access token)
+		-> resource server (consulta o authorization server sobre o access token)
+		-> authorization server (retorna se o access token está válido) 
+		-> resource server (retorna o recurso solicitado)
+		-> client (usa o recurso e mostra alguma coisa) 
+
+
+
+		
