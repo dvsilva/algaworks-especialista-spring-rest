@@ -80,6 +80,8 @@ Resource Owner Password Credentials (password credencials, password flow, passwo
 		-> resource server (retorna o recurso solicitado)
 		-> client (usa o recurso e mostra alguma coisa) 
 
+opaque token -> não conseguimos exergar dentro dele / as informações sobre ele (contrario do transparente)
+
 
 
 		

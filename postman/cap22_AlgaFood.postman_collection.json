@@ -3727,45 +3727,130 @@
 			]
 		},
 		{
-			"name": "Spring Fox - API docs",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "api.algafood.local:8080/v2/api-docs",
-					"host": [
-						"api",
-						"algafood",
-						"local"
-					],
-					"port": "8080",
-					"path": [
-						"v2",
-						"api-docs"
-					]
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Get Acces Token",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "algafood-web",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "web123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"value": "thiago",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "123",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "grant_type",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "thiago",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "auth.algafood.local:8081/oauth/token",
+							"host": [
+								"auth",
+								"algafood",
+								"local"
+							],
+							"port": "8081",
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Spring UI - HTML",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "api.algafood.local:8080/swagger-ui.html",
-					"host": [
-						"api",
-						"algafood",
-						"local"
-					],
-					"port": "8080",
-					"path": [
-						"swagger-ui.html"
-					]
+			"name": "Swagger",
+			"item": [
+				{
+					"name": "Spring Fox - API docs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.algafood.local:8080/v2/api-docs",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"v2",
+								"api-docs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Spring UI - HTML",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.algafood.local:8080/swagger-ui.html",
+							"host": [
+								"api",
+								"algafood",
+								"local"
+							],
+							"port": "8080",
+							"path": [
+								"swagger-ui.html"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }
