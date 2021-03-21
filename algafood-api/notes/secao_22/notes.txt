@@ -120,7 +120,7 @@ authorization code grant (fluxo inicial) - pode ter refresh_token
 		-> resource server (retorna o recurso solicitado)
 		-> client (usa o recurso e mostra alguma coisa)
 
-URL para autorização
+URL para autorização (authorization code)
 auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodnanalytics&state=abc&redirect_uris=http://aplicacao-cliente
 
 implicit grant (parecido com o authorization code grant)
@@ -129,6 +129,8 @@ implicit grant (parecido com o authorization code grant)
 - retornar access token na url sem a confirmação do cliente gera um risco de segurança 
 - response_type=token
 
+URL para autorização (implicit grant type)
+auth.algafood.local:8081/oauth/authorize?response_type=token&client_id=webadmin&state=abc&redirect_uris=http://aplicacao-cliente
 
 
 		
