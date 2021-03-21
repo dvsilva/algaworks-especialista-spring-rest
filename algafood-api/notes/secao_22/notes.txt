@@ -121,7 +121,7 @@ authorization code grant (fluxo inicial) - pode ter refresh_token
 		-> client (usa o recurso e mostra alguma coisa)
 
 URL para autorização (authorization code)
-auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodnanalytics&state=abc&redirect_uris=http://aplicacao-cliente
+auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&state=abc&redirect_uris=http://www.foodanalytics.local:8082
 
 implicit grant (parecido com o authorization code grant)
 - ao inves de retornar um code, o authorization server retorna diretamente um access token
@@ -133,19 +133,20 @@ URL para autorização (implicit grant type)
 auth.algafood.local:8081/oauth/authorize?response_type=token&client_id=webadmin&state=abc&redirect_uris=http://aplicacao-cliente
 http://aplicacao-cliente/#access_token=e4fb3ac8-c6c5-4196-8f0c-30f04083f7e4&token_type=bearer&state=abc&expires_in=43199&scope=read%20write
 
-Authorization Code e PCKE
+Authorization Code e PKCE
 - extensão da especificação oauth2
-- PCKE (pixi) RFC 7636
+- PKCE (pixi) RFC 7636
 - problema: fluxo sendo usado para um cliente publico 
 - esse cliente não consegue manter a confidencialidade das credencais do cliente (client_id e client_secret)
 - ex: a app js criada na aula anterior, conseguimos acessar o js da pagina e pegar o client_id e client_secret
 
-solução fluxo Authorization Code com PCKE (projeto oauth2 não tem suporte ao PCKE)
-- PCKE -> Proof Key for Code Exchange - chave de prova para troca de código
+solução fluxo Authorization Code com PKCE (projeto oauth2 não tem suporte ao PKCE)
+- PKCE -> Proof Key for Code Exchange - chave de prova para troca de código
 - essa extensão é uma técnica para reduzir o risco de ataque de interceptação do código de autorização gerado pelo fluxo Authorization Code
 - a ideia é mesmo que o codigo seja intereceptado ele não possa ser usado para gerar novos access tokens
 - ao inves de depender das credenciais do cliente agora existe um desafio a ser resolvido
 - mais segurança, o code challenge subistitui a necessidade de autenticação do client
+- só tem uma tentativa de pegar o access token, o code é invalidado após a tentativa
 - o cliente define um código de desafio e só quem tem o código verificador consegue resolver esse desafio
 - solicita autorização
 	- code verifier -> code challenge em SHA-256 e Base64Url
@@ -158,4 +159,11 @@ solução fluxo Authorization Code com PCKE (projeto oauth2 não tem suporte ao 
 	- valida o code_challenge com o code_verifier
 	- pode usar o refresh_token
 
-implementação do PCKE - https://gist.github.com/thiagofa/daca4f4790b5b18fed800b83747127ca
+implementação do PKCE - https://gist.github.com/thiagofa/daca4f4790b5b18fed800b83747127ca
+
+URL para autorização (PKCE com authorization code)
+
+plain: code_challenge = code_verifier
+http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=plain
+
+
