@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-12-conhecendo-o-fluxo-para-emitir-e-usar-refresh-tokens
+git checkout -b 22-13-configurando-refresh-token-grant-type-no-authorization-server
 git add .
-git commit -m "Conhecendo o fluxo para emitir e usar Refresh Tokens"
-git push origin 22-12-conhecendo-o-fluxo-para-emitir-e-usar-refresh-tokens
+git commit -m "Configurando o Refresh Token Grant Type no Authorization Server"
+git push origin 22-13-configurando-refresh-token-grant-type-no-authorization-server
 
 git checkout master
-git merge --no-ff 22-12-conhecendo-o-fluxo-para-emitir-e-usar-refresh-tokens
+git merge --no-ff 22-13-configurando-refresh-token-grant-type-no-authorization-server
 git push
 
 sair da tela de merge
