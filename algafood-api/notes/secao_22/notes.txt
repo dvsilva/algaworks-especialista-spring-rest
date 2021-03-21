@@ -108,7 +108,7 @@ client credentials token
 
 authorization code grant (fluxo inicial) - pode ter refresh_token
 	-> resource owner (acessa aplicação/client) 
-	-> client (solicita autorização redirect) 
+	-> client (solicita autorização redirect) (response_type=code)
 	-> resource owner (autentica [tela de login] e autoriza client [tela de autorizar ou negar])
 	-> authorization server (gera código de autorização para o client [fornecer state para o cliente verificar veracidade da resposta]) 
 	-> client (solicita access token [fornece o code e o grant_type=authorization_type) 
@@ -120,8 +120,15 @@ authorization code grant (fluxo inicial) - pode ter refresh_token
 		-> resource server (retorna o recurso solicitado)
 		-> client (usa o recurso e mostra alguma coisa)
 
+URL para autorização
 auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodnanalytics&state=abc&redirect_uris=http://aplicacao-cliente
-		
+
+implicit grant (parecido com o authorization code grant)
+- ao inves de retornar um code, o authorization server retorna diretamente um access token
+- o uso desse grant é desencorajado (considerado como um  token legado)
+- retornar access token na url sem a confirmação do cliente gera um risco de segurança 
+- response_type=token
+
 
 
 		
