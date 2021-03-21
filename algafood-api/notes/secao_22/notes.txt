@@ -98,6 +98,14 @@ refresh tokens
 - refresh token oferece problemas de segurança caso seja interceptado pois pode gerar novos access tokens
 - mais cuidado com o refresh token, como guardar para que outra pessoa sem permissão não tenha acesso a ele
 
+client credentials token
+- access token -> chave de acesso ao resource server pra fazer coisas em nome do resource owner
+- client credentials -> uma app fazer consultas em nome da própria aplicação (para fazer coisas no nome do próprio client)
+- client credentials grant -> gera um token apenas com as credenciais do client (apenas o client se autentica)
+- ex: app backend para backend
+- grant_type = client_credentials
+- não usa o refresh_token e não tem a participação do resource owner
+
 
 
 		
