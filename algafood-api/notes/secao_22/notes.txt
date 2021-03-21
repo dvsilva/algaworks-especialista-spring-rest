@@ -87,6 +87,16 @@ opaque token -> não conseguimos exergar dentro dele / as informações sobre el
 - a RFC 7662 defini isso (o que deve retornar)
 - checagem de introspecção - verificar se está válido
 
+refresh tokens
+- token usado para gerar um novo access token quando o access token expirar
+- refresh token tempo maior de expiração que o access token
+- client deve implementar lógica para verificar expiração do access token e solicitar um novo com o refresh token
+- grant_type = refresh_token
+- pode retornar o mesmo refresh token ou um novo, depende de como está configurado
+- client substitui o access token
+- resolve o problema de pedir credenciais ao usuário
+- refresh token oferece problemas de segurança caso seja interceptado pois pode gerar novos access tokens
+- mais cuidado com o refresh token, como guardar para que outra pessoa sem permissão não tenha acesso a ele
 
 
 
