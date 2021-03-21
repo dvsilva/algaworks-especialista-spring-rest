@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-21-configurando-o-fluxo-implicit-grant-type
+git checkout -b 22-22-mais-seguranca-com-pcke-e-authorization-code-grant
 git add .
-git commit -m "Configurando o fluxo Implicit Grant Type"
-git push origin 22-21-configurando-o-fluxo-implicit-grant-type
+git commit -m "Mais segurança com PKCE e Authorization Code Grant"
+git push origin 22-22-mais-seguranca-com-pcke-e-authorization-code-grant
 
 git checkout master
-git merge --no-ff 22-21-configurando-o-fluxo-implicit-grant-type
+git merge --no-ff 22-22-mais-seguranca-com-pcke-e-authorization-code-grant
 git push
 
 sair da tela de merge
