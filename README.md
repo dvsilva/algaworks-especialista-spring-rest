@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-18-configurando-authorization-code-grant-type
+git checkout -b 22-19-testando-fluxo-authorization-com-um-client-javascript
 git add .
-git commit -m "Configurando o Authorization Code Grant Type"
-git push origin 22-18-configurando-authorization-code-grant-type
+git commit -m "Testando o fluxo Authorization Code com um client JavaScript"
+git push origin 22-19-testando-fluxo-authorization-com-um-client-javascript
 
 git checkout master
-git merge --no-ff 22-18-configurando-authorization-code-grant-type
+git merge --no-ff 22-19-testando-fluxo-authorization-com-um-client-javascript
 git push
 
 sair da tela de merge
@@ -23,3 +23,11 @@ git branch -d localBranchName
 // delete branch remotely
 git push origin --delete remoteBranchName
 ```
+
+configurar hosts
+
+127.0.0.1       api.algafood.local
+127.0.0.1       auth.algafood.local
+127.0.0.1       www.algafood.local
+127.0.0.1       www.matafome.local
+127.0.0.1       www.foodanalytics.local
