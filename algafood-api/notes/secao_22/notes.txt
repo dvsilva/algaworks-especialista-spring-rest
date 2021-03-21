@@ -106,7 +106,7 @@ client credentials token
 - grant_type = client_credentials
 - não usa o refresh_token e não tem a participação do resource owner
 
-authorization code grant (fluxo inicial)
+authorization code grant (fluxo inicial) - pode ter refresh_token
 	-> resource owner (acessa aplicação/client) 
 	-> client (solicita autorização redirect) 
 	-> resource owner (autentica [tela de login] e autoriza client [tela de autorizar ou negar])
@@ -119,6 +119,8 @@ authorization code grant (fluxo inicial)
 		-> authorization server (retorna se o access token está válido) 
 		-> resource server (retorna o recurso solicitado)
 		-> client (usa o recurso e mostra alguma coisa)
+
+auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodnanalytics&state=abc&redirect_uris=http://aplicacao-cliente
 		
 
 
