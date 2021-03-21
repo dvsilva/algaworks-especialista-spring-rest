@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-19-testando-fluxo-authorization-com-um-client-javascript
+git checkout -b 22-20-conhecendo-o-fluxo-implicit
 git add .
-git commit -m "Testando o fluxo Authorization Code com um client JavaScript"
-git push origin 22-19-testando-fluxo-authorization-com-um-client-javascript
+git commit -m "Conhecendo o fluxo Implicit"
+git push origin 22-20-conhecendo-o-fluxo-implicit
 
 git checkout master
-git merge --no-ff 22-19-testando-fluxo-authorization-com-um-client-javascript
+git merge --no-ff 22-20-conhecendo-o-fluxo-implicit
 git push
 
 sair da tela de merge
