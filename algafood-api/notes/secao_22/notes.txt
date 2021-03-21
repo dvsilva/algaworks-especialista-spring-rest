@@ -140,7 +140,7 @@ Authorization Code e PCKE
 - esse cliente não consegue manter a confidencialidade das credencais do cliente (client_id e client_secret)
 - ex: a app js criada na aula anterior, conseguimos acessar o js da pagina e pegar o client_id e client_secret
 
-solução fluxo Authorization Code com PCKE 
+solução fluxo Authorization Code com PCKE (projeto oauth2 não tem suporte ao PCKE)
 - PCKE -> Proof Key for Code Exchange - chave de prova para troca de código
 - essa extensão é uma técnica para reduzir o risco de ataque de interceptação do código de autorização gerado pelo fluxo Authorization Code
 - a ideia é mesmo que o codigo seja intereceptado ele não possa ser usado para gerar novos access tokens
@@ -158,4 +158,4 @@ solução fluxo Authorization Code com PCKE
 	- valida o code_challenge com o code_verifier
 	- pode usar o refresh_token
 
-
+implementação do PCKE - https://gist.github.com/thiagofa/daca4f4790b5b18fed800b83747127ca
