@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-20-conhecendo-o-fluxo-implicit
+git checkout -b 22-21-configurando-o-fluxo-implicit-grant-type
 git add .
-git commit -m "Conhecendo o fluxo Implicit"
-git push origin 22-20-conhecendo-o-fluxo-implicit
+git commit -m "Configurando o fluxo Implicit Grant Type"
+git push origin 22-21-configurando-o-fluxo-implicit-grant-type
 
 git checkout master
-git merge --no-ff 22-20-conhecendo-o-fluxo-implicit
+git merge --no-ff 22-21-configurando-o-fluxo-implicit-grant-type
 git push
 
 sair da tela de merge
