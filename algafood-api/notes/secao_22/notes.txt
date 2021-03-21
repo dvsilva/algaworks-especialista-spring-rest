@@ -106,6 +106,20 @@ client credentials token
 - grant_type = client_credentials
 - não usa o refresh_token e não tem a participação do resource owner
 
+authorization code grant (fluxo inicial)
+	-> resource owner (acessa aplicação/client) 
+	-> client (solicita autorização redirect) 
+	-> resource owner (autentica [tela de login] e autoriza client [tela de autorizar ou negar])
+	-> authorization server (gera código de autorização para o client [fornecer state para o cliente verificar veracidade da resposta]) 
+	-> client (solicita access token [fornece o code e o grant_type=authorization_type) 
+	-> authorization server (invalida o code e retorna access token) 
+	-> repete o fluxo básico
+		-> client (faz requisição em um recurso da API [resource server] usando o access token)
+		-> resource server (consulta o authorization server sobre o access token)
+		-> authorization server (retorna se o access token está válido) 
+		-> resource server (retorna o recurso solicitado)
+		-> client (usa o recurso e mostra alguma coisa)
+		
 
 
 		
