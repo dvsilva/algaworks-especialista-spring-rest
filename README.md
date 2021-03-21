@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-16-configurando-client-credentials-grant-type-no-authorization-server
+git checkout -b 22-17-revisando-o-fluxo-authorization-code
 git add .
-git commit -m "Configurando o Client Credentials Grant Type no Authorization Server"
-git push origin 22-16-configurando-client-credentials-grant-type-no-authorization-server
+git commit -m "Revisando o fluxo Authorization Code"
+git push origin 22-17-revisando-o-fluxo-authorization-code
 
 git checkout master
-git merge --no-ff 22-16-configurando-client-credentials-grant-type-no-authorization-server
+git merge --no-ff 22-17-revisando-o-fluxo-authorization-code
 git push
 
 sair da tela de merge
