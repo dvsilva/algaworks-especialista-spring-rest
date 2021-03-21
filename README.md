@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-11-configurando-resource-server-com-a-nova-stack-do-spring-security
+git checkout -b 22-12-conhecendo-o-fluxo-para-emitir-e-usar-refresh-tokens
 git add .
-git commit -m "Configurando o Resource Server com a nova stack do Spring Security"
-git push origin 22-11-configurando-resource-server-com-a-nova-stack-do-spring-security
+git commit -m "Conhecendo o fluxo para emitir e usar Refresh Tokens"
+git push origin 22-12-conhecendo-o-fluxo-para-emitir-e-usar-refresh-tokens
 
 git checkout master
-git merge --no-ff 22-11-configurando-resource-server-com-a-nova-stack-do-spring-security
+git merge --no-ff 22-12-conhecendo-o-fluxo-para-emitir-e-usar-refresh-tokens
 git push
 
 sair da tela de merge
