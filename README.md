@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-14-configurando-a-validade-e-nao-reutilizacao-de-refresh-tokens
+git checkout -b 22-15-conhecendo-o-fluxo-client-credentials
 git add .
-git commit -m "Configurando a validade e não reutilização de Refresh Tokens"
-git push origin 22-14-configurando-a-validade-e-nao-reutilizacao-de-refresh-tokens
+git commit -m "Conhecendo o fluxo Client Credentials"
+git push origin 22-15-conhecendo-o-fluxo-client-credentials
 
 git checkout master
-git merge --no-ff 22-14-configurando-a-validade-e-nao-reutilizacao-de-refresh-tokens
+git merge --no-ff 22-15-conhecendo-o-fluxo-client-credentials
 git push
 
 sair da tela de merge
