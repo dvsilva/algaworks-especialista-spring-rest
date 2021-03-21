@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-17-revisando-o-fluxo-authorization-code
+git checkout -b 22-18-configurando-authorization-code-grant-type
 git add .
-git commit -m "Revisando o fluxo Authorization Code"
-git push origin 22-17-revisando-o-fluxo-authorization-code
+git commit -m "Configurando o Authorization Code Grant Type"
+git push origin 22-18-configurando-authorization-code-grant-type
 
 git checkout master
-git merge --no-ff 22-17-revisando-o-fluxo-authorization-code
+git merge --no-ff 22-18-configurando-authorization-code-grant-type
 git push
 
 sair da tela de merge
