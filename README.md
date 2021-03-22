@@ -5,7 +5,7 @@ github commands
 ```bash
 git checkout -b 23-02-configurando-o-redistokenstore
 git add .
-git commit -m "Configurando o RedisTokenStore"
+git commit -m "Entendendo a diferença entre Stateful e Stateless Authentication"
 git push origin 23-02-configurando-o-redistokenstore
 
 git checkout master
