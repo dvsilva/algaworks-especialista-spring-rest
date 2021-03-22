@@ -157,7 +157,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "e4fb3ac8-c6c5-4196-8f0c-30f04083f7e4",
+											"value": "70003630-9cf4-47ee-8507-e5905c962092",
 											"type": "string"
 										}
 									]
@@ -4011,7 +4011,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodnanalytics&state=abc&redirect_uris=http://aplicacao-cliente",
+							"raw": "auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&state=abc&redirect_uris=http://www.foodanalytics.local:8082",
 							"host": [
 								"auth",
 								"algafood",
@@ -4029,7 +4029,7 @@
 								},
 								{
 									"key": "client_id",
-									"value": "foodnanalytics"
+									"value": "foodanalytics"
 								},
 								{
 									"key": "state",
@@ -4037,7 +4037,7 @@
 								},
 								{
 									"key": "redirect_uris",
-									"value": "http://aplicacao-cliente"
+									"value": "http://www.foodanalytics.local:8082"
 								}
 							]
 						}
@@ -4051,13 +4051,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "password",
-									"value": "food123",
+									"key": "username",
+									"value": "foodanalytics",
 									"type": "string"
 								},
 								{
-									"key": "username",
-									"value": "foodnanalytics",
+									"key": "password",
+									"value": "food123",
 									"type": "string"
 								}
 							]
@@ -4099,6 +4099,247 @@
 								{
 									"key": "redirect_uri",
 									"value": "http://aplicacao-cliente",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "auth.algafood.local:8081/oauth/token",
+							"host": [
+								"auth",
+								"algafood",
+								"local"
+							],
+							"port": "8081",
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[PLAIN] PKCE Authorization Code Grant - Authenticate and Authorize",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=plain",
+							"protocol": "http",
+							"host": [
+								"auth",
+								"algafood",
+								"local"
+							],
+							"port": "8081",
+							"path": [
+								"oauth",
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "response_type",
+									"value": "code"
+								},
+								{
+									"key": "client_id",
+									"value": "foodanalytics"
+								},
+								{
+									"key": "redirect_uris",
+									"value": "http://www.foodanalytics.local:8082"
+								},
+								{
+									"key": "code_challenge",
+									"value": "teste123"
+								},
+								{
+									"key": "code_challenge_method",
+									"value": "plain"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[SHA256] PKCE Authorization Code Grant - Authenticate and Authorize",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=KJFg2w2fOfmuF1TE7JwW-QtQ4y4JxftUga5kKz09GjY&code_challenge_method=s256",
+							"protocol": "http",
+							"host": [
+								"auth",
+								"algafood",
+								"local"
+							],
+							"port": "8081",
+							"path": [
+								"oauth",
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "response_type",
+									"value": "code"
+								},
+								{
+									"key": "client_id",
+									"value": "foodanalytics"
+								},
+								{
+									"key": "redirect_uris",
+									"value": "http://www.foodanalytics.local:8082"
+								},
+								{
+									"key": "code_challenge",
+									"value": "KJFg2w2fOfmuF1TE7JwW-QtQ4y4JxftUga5kKz09GjY"
+								},
+								{
+									"key": "code_challenge_method",
+									"value": "s256"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PKCE Authorization Code - Solicitar Token",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "foodanalytics",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "food123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"value": "thiago",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "123",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "grant_type",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "wAABzb",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "text"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "http://www.foodanalytics.local:8082",
+									"type": "text"
+								},
+								{
+									"key": "code_verifier",
+									"value": "teste123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "auth.algafood.local:8081/oauth/token",
+							"host": [
+								"auth",
+								"algafood",
+								"local"
+							],
+							"port": "8081",
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Without Basic Authentication - PKCE Authorization Code - Solicitar Token",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"value": "thiago",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "123",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "grant_type",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "A8KOD6",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "text"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "http://www.foodanalytics.local:8082",
+									"type": "text"
+								},
+								{
+									"key": "code_verifier",
+									"value": "teste123",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "foodanalytics",
 									"type": "text"
 								}
 							]
