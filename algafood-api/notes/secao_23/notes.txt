@@ -1,0 +1,4 @@
+- token fica armazenado na memória do authorization server
+- se reeniciar perde a informação e ao validar o token retorna inválido
+
+
