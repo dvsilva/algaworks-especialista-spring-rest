@@ -170,3 +170,26 @@ sha256 + base64
 http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=s256
 Ferramenta online para gerar Code Verifier e Code Challenge (PKCE) - https://tonyxu-io.github.io/pkce-generator/
 
+qual fluxo usar do oauth2 (5 opções) ?
+
+- levar em condideração
+	- tipo do cliente
+		- publico 
+			- usuario pode visualizar ou modificar o codigo dela e acessar o client_secret que é utilizado para autenticar o cliente no authorization server
+			- ex: app javascript que roda no navegador (SPA) e app nativos (mobile e desktop)
+		- confidencial
+			- quando o código fonte não pode ser acessado pelo usuário
+			- entao pode garantir a confidencialidade do client_secret
+			- ex: app server side (feito no servidor)
+	- clientes confiáveis e não confiável
+		- confiáveis -> app proória que você ou sua empresa desenvolveu
+		- não confiável 
+			- app terceira que utiliza o authorization server mas não podemos confiar pois nao esta no seu poder ou empresa
+			- os reais objetivos são desconhecidos por voce, nao tem certeza sobre o que ela vai fazer (recebendo o usuario e senha se vai armazenar o que vai fazer ...)
+		
+cliente é publico -> authorization code com pkce
+cliente não é público 
+	- o cliente não tem usuários finais -> client credentials flow 
+	- o cliente tem usuários finais (pode usar o authorization code com pkce)
+		- cliente é confiável e outros fluxos não são viáveis -> password flow (app web server side) (usar em ultimo caso)
+		- cliente não é confiável -> authorization code flow

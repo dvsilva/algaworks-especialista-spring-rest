@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-26-testando-um-client-javascript-com-pkce-e-authorization-code
+git checkout -b 22-27-decidindo-qual-fluxo-oauth2-usar
 git add .
-git commit -m "Testando um client JavaScript com PKCE e Authorization Code"
-git push origin 22-26-testando-um-client-javascript-com-pkce-e-authorization-code
+git commit -m "Decidindo qual fluxo OAuth2 usar"
+git push origin 22-27-decidindo-qual-fluxo-oauth2-usar
 
 git checkout master
-git merge --no-ff 22-26-testando-um-client-javascript-com-pkce-e-authorization-code
+git merge --no-ff 22-27-decidindo-qual-fluxo-oauth2-usar
 git push
 
 sair da tela de merge
