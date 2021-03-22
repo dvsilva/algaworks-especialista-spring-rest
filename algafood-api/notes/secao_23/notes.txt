@@ -1,4 +1,11 @@
 - token fica armazenado na memória do authorization server
 - se reeniciar perde a informação e ao validar o token retorna inválido
+- mais de uma instância da app ao validar em uma ou outra instancia pode retornar inválido
+- colocar token em um banco de dados que tenha a persistencia (não armazenar na memória)
 
+- redis
+acessar o redis-cli
+conectar com autenticação -> AUTH 123123
+visualizar o conteudo -> KEYS *
+limpar todos os dados -> flushall
 
