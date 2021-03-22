@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-27-decidindo-qual-fluxo-oauth2-usar
+git checkout -b 23-01-armazenando-tokens-no-redis-um-banco-de-dados-nosql
 git add .
-git commit -m "Decidindo qual fluxo OAuth2 usar"
-git push origin 22-27-decidindo-qual-fluxo-oauth2-usar
+git commit -m "Armazenando tokens no Redis: um banco de dados NoSQL"
+git push origin 23-01-armazenando-tokens-no-redis-um-banco-de-dados-nosql
 
 git checkout master
-git merge --no-ff 22-27-decidindo-qual-fluxo-oauth2-usar
+git merge --no-ff 23-01-armazenando-tokens-no-redis-um-banco-de-dados-nosql
 git push
 
 sair da tela de merge
