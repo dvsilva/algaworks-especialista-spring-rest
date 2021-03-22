@@ -166,4 +166,7 @@ URL para autorização (PKCE com authorization code)
 plain: code_challenge = code_verifier
 http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=plain
 
+sha256 + base64
+http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=s256
+Ferramenta online para gerar Code Verifier e Code Challenge (PKCE) - https://tonyxu-io.github.io/pkce-generator/
 

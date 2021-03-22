@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 22-24-testando-o-fluxo-code-com-pkce-com-metodo-plain
+git checkout -b 22-25-testando-o-fluxo-code-com-pkce-com-metodo-sha256
 git add .
-git commit -m "Testando o fluxo Authorization Code com PKCE com o método plain"
-git push origin 22-24-testando-o-fluxo-code-com-pkce-com-metodo-plain
+git commit -m "Testando o fluxo Authorization Code com PKCE com o método SHA-256"
+git push origin 22-25-testando-o-fluxo-code-com-pkce-com-metodo-sha256
 
 git checkout master
-git merge --no-ff 22-24-testando-o-fluxo-code-com-pkce-com-metodo-plain
+git merge --no-ff 22-25-testando-o-fluxo-code-com-pkce-com-metodo-sha256
 git push
 
 sair da tela de merge
