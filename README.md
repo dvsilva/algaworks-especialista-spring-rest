@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-01-armazenando-tokens-no-redis-um-banco-de-dados-nosql
+git checkout -b 23-02-configurando-o-redistokenstore
 git add .
-git commit -m "Armazenando tokens no Redis: um banco de dados NoSQL"
-git push origin 23-01-armazenando-tokens-no-redis-um-banco-de-dados-nosql
+git commit -m "Configurando o RedisTokenStore"
+git push origin 23-02-configurando-o-redistokenstore
 
 git checkout master
-git merge --no-ff 23-01-armazenando-tokens-no-redis-um-banco-de-dados-nosql
+git merge --no-ff 23-02-configurando-o-redistokenstore
 git push
 
 sair da tela de merge
