@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-05-gerando-jwt-com-chave-simetrica-no-authorization-server
+git checkout -b 23-06-configurando-resource-server-para-jwt-assinado-com-chave-simetrica
 git add .
-git commit -m "Gerando JWT com chave simétrica (HMAC SHA-256) no Authorization Server"
-git push origin 23-05-gerando-jwt-com-chave-simetrica-no-authorization-server
+git commit -m "Configurando o Resource Server para JWT assinado com chave simétrica"
+git push origin 23-06-configurando-resource-server-para-jwt-assinado-com-chave-simetrica
 
 git checkout master
-git merge --no-ff 23-05-gerando-jwt-com-chave-simetrica-no-authorization-server
+git merge --no-ff 23-06-configurando-resource-server-para-jwt-assinado-com-chave-simetrica
 git push
 
 sair da tela de merge
