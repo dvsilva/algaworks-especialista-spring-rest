@@ -89,9 +89,9 @@ Listando as entradas de um arquivo JKS
 keytool -list -keystore algafood.jks
  "C:\Program Files\Java\jdk1.8.0_221\bin\keytool.exe" -list -keystore algafood.jks
 
-
 Gerando o certificado
 keytool -export -rfc -alias algafood -keystore algafood.jks -file algafood-cert.pem
+"C:\Program Files\Java\jdk1.8.0_221\bin\keytool.exe" -export -rfc -alias algafood -keystore algafood.jks -file algafood-cert.pem
 
 Gerando a chave pública
 openssl x509 -pubkey -noout -in algafood-cert.pem > algafood-pkey.pem

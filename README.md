@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-11-extraindo-chave-publica-no-formato-pem
+git checkout -b 23-12-configurando-validacao-de-jwt-no-resource-server-com-a-chave-publica
 git add .
-git commit -m "Extraindo a chave pública no formato PEM"
-git push origin 23-11-extraindo-chave-publica-no-formato-pem
+git commit -m "Configurando a validação de JWT no Resource Server com a chave pública"
+git push origin 23-12-configurando-validacao-de-jwt-no-resource-server-com-a-chave-publica
 
 git checkout master
-git merge --no-ff 23-11-extraindo-chave-publica-no-formato-pem
+git merge --no-ff 23-12-configurando-validacao-de-jwt-no-resource-server-com-a-chave-publica
 git push
 
 sair da tela de merge
