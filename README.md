@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-07-entendendo-a-diferenca-entre-assinatura-com-chave-simetrica-e-assimetrica
+git checkout -b 23-08-gerando-um-par-de-chaves-com-keytool
 git add .
-git commit -m "Entendendo a diferença entre assinatura com chave simétrica e assimétrica"
-git push origin 23-07-entendendo-a-diferenca-entre-assinatura-com-chave-simetrica-e-assimetrica
+git commit -m "Gerando um par de chaves com keytool"
+git push origin 23-08-gerando-um-par-de-chaves-com-keytool
 
 git checkout master
-git merge --no-ff 23-07-entendendo-a-diferenca-entre-assinatura-com-chave-simetrica-e-assimetrica
+git merge --no-ff 23-08-gerando-um-par-de-chaves-com-keytool
 git push
 
 sair da tela de merge
