@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-08-gerando-um-par-de-chaves-com-keytool
+git checkout -b 23-09-assinando-jwt-com-rsa-sha256-chave-assimetrica
 git add .
-git commit -m "Gerando um par de chaves com keytool"
-git push origin 23-08-gerando-um-par-de-chaves-com-keytool
+git commit -m "Assinando o JWT com RSA SHA-256 (chave assimétrica)"
+git push origin 23-09-assinando-jwt-com-rsa-sha256-chave-assimetrica
 
 git checkout master
-git merge --no-ff 23-08-gerando-um-par-de-chaves-com-keytool
+git merge --no-ff 23-09-assinando-jwt-com-rsa-sha256-chave-assimetrica
 git push
 
 sair da tela de merge

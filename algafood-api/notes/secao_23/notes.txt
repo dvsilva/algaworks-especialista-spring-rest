@@ -88,3 +88,4 @@ Listando as entradas de um arquivo JKS
 keytool -list -keystore algafood.jks
  "C:\Program Files\Java\jdk1.8.0_221\bin\keytool.exe" -list -keystore algafood.jks
 
+usar chaves diferentes para desenv e prod para melhorar segurança (invasão, saída de colaboradores, etc)
