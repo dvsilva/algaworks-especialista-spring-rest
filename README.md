@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-06-configurando-resource-server-para-jwt-assinado-com-chave-simetrica
+git checkout -b 23-07-entendendo-a-diferenca-entre-assinatura-com-chave-simetrica-e-assimetrica
 git add .
-git commit -m "Configurando o Resource Server para JWT assinado com chave simétrica"
-git push origin 23-06-configurando-resource-server-para-jwt-assinado-com-chave-simetrica
+git commit -m "Entendendo a diferença entre assinatura com chave simétrica e assimétrica"
+git push origin 23-07-entendendo-a-diferenca-entre-assinatura-com-chave-simetrica-e-assimetrica
 
 git checkout master
-git merge --no-ff 23-06-configurando-resource-server-para-jwt-assinado-com-chave-simetrica
+git merge --no-ff 23-07-entendendo-a-diferenca-entre-assinatura-com-chave-simetrica-e-assimetrica
 git push
 
 sair da tela de merge

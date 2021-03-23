@@ -63,10 +63,21 @@ JSON Web Tokens (JWT) - RFC 7519
 - dividido em header, payload e assinatura
 - não deve colocar informações sensíveis (como senha)
 
-criptografica simétrica 
-	- usa uma única chave secreta que é compartilhada por quem emite e quem recebe a mensagem (authorization server e resource server)
+assinatura com chave simétrica
+	- usa uma única chave secreta que é compartilhada por quem emite (authorization server) e quem recebe/consome a mensagem (resource server)
 	- quem tem a chave pode verificar mas também pode emitir
+	- o receptor (resource server) tem que ser altamente confiável pois pode criar novos tokens e assinar como se fosse legítimos
+	- se tem possibilidade de outros componentes terceiros que tem que validar token jwt não deve usar chave simétrica (entregar chave da casa a um estranho)
+	- algoritmo usado HmacSHA256 (HS256)
 
+assinatura com chave assimétrica
+	 - algoritmo RSA Signature 256 (RS256) que usa um par de chaves (uma privada e uma publica)
+	 - authorization server tem a chave privada que deve ser mantida em segredo
+	 - o receptor usa uma chave publica para validar a assinatura do token
+	 - dessa forma não tem o risco de criar novos tokens legitimos por parte de terceiros
+	 - só se tiver acesso a chave privada
+	 - authorization server usa a chave privada assinar o token
+	 - resource server usa a chave pública para validar a assinatura
 
 
 
