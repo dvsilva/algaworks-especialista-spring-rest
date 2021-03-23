@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-03-entendendo-a-diferenca-entre-stateful-e-stateless-authentication
+git checkout -b 23-04-transparent-tokens-conhecendo-json-web-tokens-jwt
 git add .
-git commit -m "Entendendo a diferença entre Stateful e Stateless Authentication"
-git push origin 23-03-entendendo-a-diferenca-entre-stateful-e-stateless-authentication
+git commit -m "Transparent Tokens: conhecendo o JSON Web Tokens (JWT)"
+git push origin 23-04-transparent-tokens-conhecendo-json-web-tokens-jwt
 
 git checkout master
-git merge --no-ff 23-03-entendendo-a-diferenca-entre-stateful-e-stateless-authentication
+git merge --no-ff 23-04-transparent-tokens-conhecendo-json-web-tokens-jwt
 git push
 
 sair da tela de merge
