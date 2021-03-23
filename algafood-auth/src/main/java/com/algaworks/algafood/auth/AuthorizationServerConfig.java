@@ -75,6 +75,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
 //		security.checkTokenAccess("isAuthenticated()");
 		security.checkTokenAccess("permitAll()")
+			.tokenKeyAccess("permitAll()") // obter a chave publica /oauth/token_key
 			.allowFormAuthenticationForClients();// permitir passar credenciais no corpo da resposta (client_id)
 	}
 	

@@ -71,13 +71,14 @@ assinatura com chave simétrica
 	- algoritmo usado HmacSHA256 (HS256)
 
 assinatura com chave assimétrica
-	 - algoritmo RSA Signature 256 (RS256) que usa um par de chaves (uma privada e uma publica)
-	 - authorization server tem a chave privada que deve ser mantida em segredo
-	 - o receptor usa uma chave publica para validar a assinatura do token
-	 - dessa forma não tem o risco de criar novos tokens legitimos por parte de terceiros
-	 - só se tiver acesso a chave privada
-	 - authorization server usa a chave privada assinar o token
-	 - resource server usa a chave pública para validar a assinatura
+ 	- algoritmo RSA Signature 256 (RS256) que usa um par de chaves (uma privada e uma publica)
+	- authorization server tem a chave privada que deve ser mantida em segredo
+	- o receptor usa uma chave publica para validar a assinatura do token
+	- dessa forma não tem o risco de criar novos tokens legitimos por parte de terceiros
+	- só se tiver acesso a chave privada
+	- authorization server usa a chave privada assinar o token
+	- resource server usa a chave pública para validar a assinatura
+	- usar chaves diferentes para desenv e prod para melhorar segurança (invasão, saída de colaboradores, etc)
 
 gerando um arquivo JKS (Java Key Store) com um par de chaves 
 repositorio para armazenar conjunto de chaves criptograficas ou certificados em formato binário
@@ -88,4 +89,9 @@ Listando as entradas de um arquivo JKS
 keytool -list -keystore algafood.jks
  "C:\Program Files\Java\jdk1.8.0_221\bin\keytool.exe" -list -keystore algafood.jks
 
-usar chaves diferentes para desenv e prod para melhorar segurança (invasão, saída de colaboradores, etc)
+
+Gerando o certificado
+keytool -export -rfc -alias algafood -keystore algafood.jks -file algafood-cert.pem
+
+Gerando a chave pública
+openssl x509 -pubkey -noout -in algafood-cert.pem > algafood-pkey.pem

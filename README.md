@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-10-desafio-criando-bean-de-propriedades-de-configuracao-do-keystore
+git checkout -b 23-11-extraindo-chave-publica-no-formato-pem
 git add .
-git commit -m "Desafio: criando bean de propriedades de configuração do KeyStore"
-git push origin 23-10-desafio-criando-bean-de-propriedades-de-configuracao-do-keystore
+git commit -m "Extraindo a chave pública no formato PEM"
+git push origin 23-11-extraindo-chave-publica-no-formato-pem
 
 git checkout master
-git merge --no-ff 23-10-desafio-criando-bean-de-propriedades-de-configuracao-do-keystore
+git merge --no-ff 23-11-extraindo-chave-publica-no-formato-pem
 git push
 
 sair da tela de merge
