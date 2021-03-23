@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-09-assinando-jwt-com-rsa-sha256-chave-assimetrica
+git checkout -b 23-10-desafio-criando-bean-de-propriedades-de-configuracao-do-keystore
 git add .
-git commit -m "Assinando o JWT com RSA SHA-256 (chave assimétrica)"
-git push origin 23-09-assinando-jwt-com-rsa-sha256-chave-assimetrica
+git commit -m "Desafio: criando bean de propriedades de configuração do KeyStore"
+git push origin 23-10-desafio-criando-bean-de-propriedades-de-configuracao-do-keystore
 
 git checkout master
-git merge --no-ff 23-09-assinando-jwt-com-rsa-sha256-chave-assimetrica
+git merge --no-ff 23-10-desafio-criando-bean-de-propriedades-de-configuracao-do-keystore
 git push
 
 sair da tela de merge
