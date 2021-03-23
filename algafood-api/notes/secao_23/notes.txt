@@ -58,6 +58,10 @@ qual solução escolher
 - precisar revogar tokens -> stateful
 - não pode ter unico ponto de falha -> stateless
 
+JSON Web Tokens (JWT) - RFC 7519
+- é uma string codificada em base64 e assinada com um hash criptogratico
+- dividido em header, payload e assinatura
+- não deve colocar informações sensíveis (como senha)
 
 
 
