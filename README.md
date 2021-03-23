@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-02-configurando-o-redistokenstore
+git checkout -b 23-03-entendendo-a-diferenca-entre-stateful-e-stateless-authentication
 git add .
 git commit -m "Entendendo a diferença entre Stateful e Stateless Authentication"
-git push origin 23-02-configurando-o-redistokenstore
+git push origin 23-03-entendendo-a-diferenca-entre-stateful-e-stateless-authentication
 
 git checkout master
-git merge --no-ff 23-02-configurando-o-redistokenstore
+git merge --no-ff 23-03-entendendo-a-diferenca-entre-stateful-e-stateless-authentication
 git push
 
 sair da tela de merge

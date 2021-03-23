@@ -9,3 +9,55 @@ conectar com autenticação -> AUTH 123123
 visualizar o conteudo -> KEYS *
 limpar todos os dados -> flushall
 
+stateless e stateful authentication
+- com e sem estado
+- a comunicação deve ser stateless (sem estado) por natureza
+- de forma que cada requisição do cliente para o servidor deve conter todas as informações necessárias para entendê-la
+- e não pode usar informações contextuais armazenadas no servidor
+- o estado da sessão deve ser armazenado inteiramente no cliente
+- application state (sessão do usuário) vs resource state (entidades)
+- o estado da aplicação não deve ser armazenada no servidor
+- ex: stateful -> enviar os dados do pedido uma unica vez
+
+- stateful authentication (token armazenado no servidor)
+	- usando opaque tokens
+	- o codigo do token não significa nada (apenas uma string aleatoria) - não tem nenhuma informação, precisa do authorization server
+	- o client passa o token para o resource server que precisa validar  o token com o authorization server a cada requisição
+	- pode passar por cookie ou header (authorization)
+	- vantagens 
+		- revogar tokens (vazamento de token)
+		- dados do token podem ser alterados a qualquer momento
+	- desvantagens 
+		- precisa de mais infra do servidor como banco de dados e replicação do mesmo [redis ou mysql] (authorization server)
+		- cria dependencia de todos os resource server e authorization server (se o authorization server parar todos os serviços param)
+		- authorization server se torna um single point of failure (para todo o sistema pois depende dele) - criar várias instâncias
+
+- stateless authentication
+	- dados da sessão são armazenadas no cliente
+	- servidor emite tokens mas não sabe quais, ele só tem o poder de valida-los
+	- transparent token 
+		- não é aleatória, contem informações dentro do token
+		- tem informações autocontidas dentro dele, token maior que o opaco
+		- assinado com um hash criptográfico (assinatura)
+	- fluxo
+		- cliente solicita token para o authorization server (não armazena token)
+		- cliente acessa recursos protegidos no resource server 
+			- verifica a integridade do token atraves da assinatura e extrai as informações do token
+			- resource server não precisa do authorization server para validar tokens
+	- vantagens
+		- não precisa de infra do lado do servidor (authorization server)
+		- uma vez emitido não precisa o authorization server para usar os tokens
+		- se falhar não emite mais tokens mas os que foram emitidos funcionam
+		- mais facil escalar a aplicação
+	- desvantagens
+		- não pode revogar o token, tem que esperar a expiração
+		- mais dados trafegados nas requisições (tamanho do token e envia em todas as requisições)
+		- uma vez emitido não conseguimos alterar até que ele expire (inconsistencia de informações do usuário)
+
+qual solução escolher
+- precisar revogar tokens -> stateful
+- não pode ter unico ponto de falha -> stateless
+
+
+
+
