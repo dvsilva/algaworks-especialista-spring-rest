@@ -79,5 +79,12 @@ assinatura com chave assimétrica
 	 - authorization server usa a chave privada assinar o token
 	 - resource server usa a chave pública para validar a assinatura
 
+gerando um arquivo JKS (Java Key Store) com um par de chaves 
+repositorio para armazenar conjunto de chaves criptograficas ou certificados em formato binário
+keytool -genkeypair -alias algafood -keyalg RSA -keypass 123456 -keystore algafood.jks -storepass 123456 -validity 3650
+ "C:\Program Files\Java\jdk1.8.0_221\bin\keytool.exe" -genkeypair -alias algafood -keyalg RSA -keypass 123456 -keystore algafood.jks -storepass 123456 -validity 3650
 
+Listando as entradas de um arquivo JKS
+keytool -list -keystore algafood.jks
+ "C:\Program Files\Java\jdk1.8.0_221\bin\keytool.exe" -list -keystore algafood.jks
 
