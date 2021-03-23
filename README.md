@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-04-transparent-tokens-conhecendo-json-web-tokens-jwt
+git checkout -b 23-05-gerando-jwt-com-chave-simetrica-no-authorization-server
 git add .
-git commit -m "Transparent Tokens: conhecendo o JSON Web Tokens (JWT)"
-git push origin 23-04-transparent-tokens-conhecendo-json-web-tokens-jwt
+git commit -m "Gerando JWT com chave simétrica (HMAC SHA-256) no Authorization Server"
+git push origin 23-05-gerando-jwt-com-chave-simetrica-no-authorization-server
 
 git checkout master
-git merge --no-ff 23-04-transparent-tokens-conhecendo-json-web-tokens-jwt
+git merge --no-ff 23-05-gerando-jwt-com-chave-simetrica-no-authorization-server
 git push
 
 sair da tela de merge
