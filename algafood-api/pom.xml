@@ -208,6 +208,7 @@
 			<artifactId>oauth2-oidc-sdk</artifactId>
 			<version>${oauth2-oidc-sdk.version}</version>
 		</dependency>
+		
 	</dependencies>
 
 	<build>
