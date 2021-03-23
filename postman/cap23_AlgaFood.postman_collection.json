@@ -3728,7 +3728,7 @@
 			]
 		},
 		{
-			"name": "Auth",
+			"name": "OAuth2",
 			"item": [
 				{
 					"name": "Password Flow - Solicitar Token",
@@ -4355,6 +4355,27 @@
 							"path": [
 								"oauth",
 								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Public Key - Token Key",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "auth.algafood.local:8081/oauth/token_key",
+							"host": [
+								"auth",
+								"algafood",
+								"local"
+							],
+							"port": "8081",
+							"path": [
+								"oauth",
+								"token_key"
 							]
 						}
 					},
