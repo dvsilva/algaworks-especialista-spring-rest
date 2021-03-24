@@ -95,3 +95,9 @@ keytool -export -rfc -alias algafood -keystore algafood.jks -file algafood-cert.
 
 Gerando a chave pública
 openssl x509 -pubkey -noout -in algafood-cert.pem > algafood-pkey.pem
+
+scopes (escopos) 
+- limita acesso de aplicações clientes apenas para determinado escopo
+- mesmo que o token do usuario tenha acesso é liberado apenas o escopo descrito para a aplicação
+- o usuário aprova apenas os escopos que ele deseja que determinada app faça em nome dele
+- também pode ser limitada pelo tipo de client na configuração do authorization server

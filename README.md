@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-23-simplificando-o-controle-de-acesso-em-metodos-com-meta-anotacoes
+git checkout -b 23-24-entendendo-os escopos-do-oauth2
 git add .
-git commit -m "Simplificando o controle de acesso em métodos com meta-anotações"
-git push origin 23-23-simplificando-o-controle-de-acesso-em-metodos-com-meta-anotacoes
+git commit -m "Entendendo os escopos do OAuth2"
+git push origin 23-24-entendendo-os escopos-do-oauth2
 
 git checkout master
-git merge --no-ff 23-23-simplificando-o-controle-de-acesso-em-metodos-com-meta-anotacoes
+git merge --no-ff 23-24-entendendo-os escopos-do-oauth2
 git push
 
 sair da tela de merge
