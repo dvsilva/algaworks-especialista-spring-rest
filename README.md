@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-21-method-security-restringindo-acesso-com-preauthorize-e-spel
+git checkout -b 23-22-desafio-tratando-accessdeniedexception-no-exceptionhandler
 git add .
-git commit -m "Method Security: Restringindo acesso com @PreAuthorize e SpEL"
-git push origin 23-21-method-security-restringindo-acesso-com-preauthorize-e-spel
+git commit -m "Desafio: tratando AccessDeniedException no ExceptionHandler"
+git push origin 23-22-desafio-tratando-accessdeniedexception-no-exceptionhandler
 
 git checkout master
-git merge --no-ff 23-21-method-security-restringindo-acesso-com-preauthorize-e-spel
+git merge --no-ff 23-22-desafio-tratando-accessdeniedexception-no-exceptionhandler
 git push
 
 sair da tela de merge
