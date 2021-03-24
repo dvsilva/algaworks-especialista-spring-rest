@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-19-carregando-as-permissoes-concedidas-na-autenticacao
+git checkout -b 23-20-carregando-grant-authorities-e-restringindo-acesso-a-endpoints-na-api
 git add .
-git commit -m "Carregando as permissões concedidas na autenticação"
-git push origin 23-19-carregando-as-permissoes-concedidas-na-autenticacao
+git commit -m "Carregando as Granted Authorities e restringindo acesso a endpoints na API"
+git push origin 23-20-carregando-grant-authorities-e-restringindo-acesso-a-endpoints-na-api
 
 git checkout master
-git merge --no-ff 23-19-carregando-as-permissoes-concedidas-na-autenticacao
+git merge --no-ff 23-20-carregando-grant-authorities-e-restringindo-acesso-a-endpoints-na-api
 git push
 
 sair da tela de merge
