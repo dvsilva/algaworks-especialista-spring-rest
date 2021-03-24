@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-15-desafio-refatorando-servicos-de-usuarios-para-usar-bcrypt
+git checkout -b 23-16-adicionando-claims-customizadas-no-payload-do-jwt
 git add .
-git commit -m "Desafio: refatorando serviços de usuários para usar BCrypt"
-git push origin 23-15-desafio-refatorando-servicos-de-usuarios-para-usar-bcrypt
+git commit -m "Adicionando claims customizadas no payload do JWT"
+git push origin 23-16-adicionando-claims-customizadas-no-payload-do-jwt
 
 git checkout master
-git merge --no-ff 23-15-desafio-refatorando-servicos-de-usuarios-para-usar-bcrypt
+git merge --no-ff 23-16-adicionando-claims-customizadas-no-payload-do-jwt
 git push
 
 sair da tela de merge
