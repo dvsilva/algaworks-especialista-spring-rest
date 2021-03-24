@@ -157,7 +157,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "70003630-9cf4-47ee-8507-e5905c962092",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTY2MDAxNDcsInVzZXJfbmFtZSI6InRoaWFnbyIsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iXSwianRpIjoiOGUyYTZlN2EtMzBjMS00MzY2LTliYmItZjVjZmI0ZmYwZjc4IiwiY2xpZW50X2lkIjoiYWxnYWZvb2Qtd2ViIiwic2NvcGUiOlsid3JpdGUiLCJyZWFkIl19.FGZ-jZLYi_QdVGfRFZ8-zIBZlpQzy5gF5DilRdMF_SQplCBa4ePc5WwyFMbY1Qx4rAoVBxC7V4K9LwqQZrsntO-kQXXCamEIrguSyrC-BR1OqYq6UIWCKaLSgso4C9vNJGs0fhUTeIflB4Cac5de7a45_cnaaw7AAM4kU76Dcdlfagd02I5i4SMxgwcMZ9U-02GsKpAXqAeeWRPtQJ0Y-OE_CmlgeBebX46690xPz3bOJcOn7nQCCNhMk4HkNEf7Siu6k7ROpd36L4IvxBAzo9rQi_agcl69ZOvlx4jN_q8QB2z2e1qR-jpMt5Uf--gJUczt1kPjkqhwj7DqqsjjEg",
 											"type": "string"
 										}
 									]
@@ -1962,6 +1962,16 @@
 						{
 							"name": "Usuarios - Alterar Senha",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTY2MDMwMDgsInVzZXJfbmFtZSI6ImpvYW8uZ2VyQGFsZ2Fmb29kLmNvbS5iciIsImp0aSI6ImU0YjNjN2FjLWFkNmUtNGNmYS1iZWUxLThlNTAxOTEyYjJmYiIsImNsaWVudF9pZCI6ImFsZ2Fmb29kLXdlYiIsInNjb3BlIjpbIndyaXRlIiwicmVhZCJdfQ.QBb-WE4ml3pBg8BBWmgtQWrndIVhXl7r-PiqJzrgv-MAItYKchAD9o-HXHKfteZu0ueNeovHM6HaBHKXiP5Y51hEy_3XDWhDdjnxkgMIq5ZKPnjvvV1kEK7u9_uI0TELI6BYHu0y6OnQP7A9NhvlmPN07WjTk76dmS7SkrVEhDniVQZEaPhZ6KwCjtrt6wIDwtdHzKW9_zWSbUbdUEcV8ps9i7rYOXhQsr-PpVmmjGZNvsuw4fezmzM0vEWG5Ph9idxufgbL897vYbVgRF0njXzQcFrQIH_sSxTla1MW0i9ypUJ6gpNScBQ8swSbfgT8WfxCCAWjRxFOLTfl5o2W_A",
+											"type": "string"
+										}
+									]
+								},
 								"method": "PUT",
 								"header": [
 									{
@@ -1981,7 +1991,7 @@
 									}
 								},
 								"url": {
-									"raw": "api.algafood.local:8080/v1/usuarios/5/senha",
+									"raw": "api.algafood.local:8080/v1/usuarios/1/senha",
 									"host": [
 										"api",
 										"algafood",
@@ -1991,7 +2001,7 @@
 									"path": [
 										"v1",
 										"usuarios",
-										"5",
+										"1",
 										"senha"
 									]
 								}
@@ -2293,6 +2303,16 @@
 						{
 							"name": "Pedidos  - Adicionar",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjo3LCJ1c2VyX25hbWUiOiJlbWFpbC50ZXN0ZS5hdytjYXJsb3NAZ21haWwuY29tIiwic2NvcGUiOlsid3JpdGUiLCJyZWFkIl0sImV4cCI6MTYxNjYwNDEwMSwianRpIjoiMDU4MDU1YWEtMjJmZC00Y2QyLWI5MjUtMzUzOTZjYmRjYzY2Iiwibm9tZV9jb21wbGV0byI6IkNhcmxvcyBMaW1hIiwiY2xpZW50X2lkIjoiYWxnYWZvb2Qtd2ViIn0.Wvd7dRt3axx7MrTJp8IS7hj5w94cQfh7ks_D83t7V8wrOyXNcKbSccSGLvtwgmYsFmlmthP4qo6bic6sWapTxkMu57QRfHTwvin29FJzryHkR4uK66XNljXAdr0WbJ0ehi0AJD6wwiHl0zqKnMUZlUmdLqISGt339-c0y8dvpQ8g1dTKA9MzxXZaS5_2JUuZrtkkZu6iBUPUpakWGdDCD3yde31HRiXxyRcDZIzt88Y4AdFxWYH6LDOnyZInE67F4yoQnsRCiWXFkdEUCXS63qyObbLG_lXdSsQMJ9BSMuc24qGzN6RIHDkp7mDKfpQiI2u6YjZcSnc5L2ajlhiQ8w",
+											"type": "string"
+										}
+									]
+								},
 								"method": "POST",
 								"header": [
 									{
@@ -3737,13 +3757,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "algafood-web",
+									"key": "password",
+									"value": "web123",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "web123",
+									"key": "username",
+									"value": "algafood-web",
 									"type": "string"
 								}
 							]
@@ -3774,7 +3794,7 @@
 							"urlencoded": [
 								{
 									"key": "username",
-									"value": "thiago",
+									"value": "email.teste.aw+carlos@gmail.com",
 									"type": "text"
 								},
 								{
