@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-20-carregando-grant-authorities-e-restringindo-acesso-a-endpoints-na-api
+git checkout -b 23-21-method-security-restringindo-acesso-com-preauthorize-e-spel
 git add .
-git commit -m "Carregando as Granted Authorities e restringindo acesso a endpoints na API"
-git push origin 23-20-carregando-grant-authorities-e-restringindo-acesso-a-endpoints-na-api
+git commit -m "Method Security: Restringindo acesso com @PreAuthorize e SpEL"
+git push origin 23-21-method-security-restringindo-acesso-com-preauthorize-e-spel
 
 git checkout master
-git merge --no-ff 23-20-carregando-grant-authorities-e-restringindo-acesso-a-endpoints-na-api
+git merge --no-ff 23-21-method-security-restringindo-acesso-com-preauthorize-e-spel
 git push
 
 sair da tela de merge
