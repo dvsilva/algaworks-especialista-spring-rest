@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-18-definindo-e-criando-as-permissoes-de-acesso
+git checkout -b 23-19-carregando-as-permissoes-concedidas-na-autenticacao
 git add .
-git commit -m "Definindo e criando as permissões de acesso"
-git push origin 23-18-definindo-e-criando-as-permissoes-de-acesso
+git commit -m "Carregando as permissões concedidas na autenticação"
+git push origin 23-19-carregando-as-permissoes-concedidas-na-autenticacao
 
 git checkout master
-git merge --no-ff 23-18-definindo-e-criando-as-permissoes-de-acesso
+git merge --no-ff 23-19-carregando-as-permissoes-concedidas-na-autenticacao
 git push
 
 sair da tela de merge
