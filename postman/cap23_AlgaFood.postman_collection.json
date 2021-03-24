@@ -1711,6 +1711,16 @@
 						{
 							"name": "Grupos - Listar Permissões",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjo3LCJ1c2VyX25hbWUiOiJlbWFpbC50ZXN0ZS5hdytjYXJsb3NAZ21haWwuY29tIiwic2NvcGUiOlsid3JpdGUiLCJyZWFkIl0sImV4cCI6MTYxNjYwNDU3NywianRpIjoiNDI1ZTE0MmYtMWFmMy00NTIyLThlY2UtYWNkZTQ2ZDYwNGZlIiwibm9tZV9jb21wbGV0byI6IkNhcmxvcyBMaW1hIiwiY2xpZW50X2lkIjoiYWxnYWZvb2Qtd2ViIn0.j0mFbx7y4UzRwNBZX0qAjRKkZthPANKKuF2bCNe9_8Ldx6od8MuTo7GvYnGe4rCW6DVMvn-Zpe0mmM9N9cFUVp15cGw7MHKVCDcKxJ8OOkiulkMKuG2NxGBIGxxKS0raEWUTt7oXzSILknGVo5kBdYDMgFKCLQbHpzxVDk5ZHQwoola5YeY6rG23jlI3Gjr7WRMTpAYoo6IjpTqkKX99g3o5WQJZNra8-RiS72CmRDV71cmjDm1OBGFHuboMEdzCrje0PDsRFXwgDtXDxHxXtejG48A2tB4hz94NN4pnTwFbH_vdVfl8CEsaO1kFDW1kvtAiEOSPRPkP12lykq4YjQ",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [
 									{
