@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-12-configurando-validacao-de-jwt-no-resource-server-com-a-chave-publica
+git checkout -b 23-13-revisando-o-fluxo-de-aprovacao-do-authorization-code-com-jwt
 git add .
-git commit -m "Configurando a validação de JWT no Resource Server com a chave pública"
-git push origin 23-12-configurando-validacao-de-jwt-no-resource-server-com-a-chave-publica
+git commit -m "Revisando o fluxo de aprovação do Authorization Code com JWT"
+git push origin 23-13-revisando-o-fluxo-de-aprovacao-do-authorization-code-com-jwt
 
 git checkout master
-git merge --no-ff 23-12-configurando-validacao-de-jwt-no-resource-server-com-a-chave-publica
+git merge --no-ff 23-13-revisando-o-fluxo-de-aprovacao-do-authorization-code-com-jwt
 git push
 
 sair da tela de merge
