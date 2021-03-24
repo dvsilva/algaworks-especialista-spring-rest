@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-13-revisando-o-fluxo-de-aprovacao-do-authorization-code-com-jwt
+git checkout -b 23-14-autenticando-usuario-com-dados-do-banco-de-dados
 git add .
-git commit -m "Revisando o fluxo de aprovação do Authorization Code com JWT"
-git push origin 23-13-revisando-o-fluxo-de-aprovacao-do-authorization-code-com-jwt
+git commit -m "Autenticando usuário com dados do banco de dados"
+git push origin 23-14-autenticando-usuario-com-dados-do-banco-de-dados
 
 git checkout master
-git merge --no-ff 23-13-revisando-o-fluxo-de-aprovacao-do-authorization-code-com-jwt
+git merge --no-ff 23-14-autenticando-usuario-com-dados-do-banco-de-dados
 git push
 
 sair da tela de merge
