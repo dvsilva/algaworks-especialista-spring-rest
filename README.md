@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-17-obtendo-usuario-autenticado-no-resource-server
+git checkout -b 23-18-definindo-e-criando-as-permissoes-de-acesso
 git add .
-git commit -m "Obtendo usuário autenticado no Resource Server"
-git push origin 23-17-obtendo-usuario-autenticado-no-resource-server
+git commit -m "Definindo e criando as permissões de acesso"
+git push origin 23-18-definindo-e-criando-as-permissoes-de-acesso
 
 git checkout master
-git merge --no-ff 23-17-obtendo-usuario-autenticado-no-resource-server
+git merge --no-ff 23-18-definindo-e-criando-as-permissoes-de-acesso
 git push
 
 sair da tela de merge
