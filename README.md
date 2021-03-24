@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-16-adicionando-claims-customizadas-no-payload-do-jwt
+git checkout -b 23-17-obtendo-usuario-autenticado-no-resource-server
 git add .
-git commit -m "Adicionando claims customizadas no payload do JWT"
-git push origin 23-16-adicionando-claims-customizadas-no-payload-do-jwt
+git commit -m "Obtendo usuário autenticado no Resource Server"
+git push origin 23-17-obtendo-usuario-autenticado-no-resource-server
 
 git checkout master
-git merge --no-ff 23-16-adicionando-claims-customizadas-no-payload-do-jwt
+git merge --no-ff 23-17-obtendo-usuario-autenticado-no-resource-server
 git push
 
 sair da tela de merge
