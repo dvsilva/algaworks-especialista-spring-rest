@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-14-autenticando-usuario-com-dados-do-banco-de-dados
+git checkout -b 23-15-desafio-refatorando-servicos-de-usuarios-para-usar-bcrypt
 git add .
-git commit -m "Autenticando usuário com dados do banco de dados"
-git push origin 23-14-autenticando-usuario-com-dados-do-banco-de-dados
+git commit -m "Desafio: refatorando serviços de usuários para usar BCrypt"
+git push origin 23-15-desafio-refatorando-servicos-de-usuarios-para-usar-bcrypt
 
 git checkout master
-git merge --no-ff 23-14-autenticando-usuario-com-dados-do-banco-de-dados
+git merge --no-ff 23-15-desafio-refatorando-servicos-de-usuarios-para-usar-bcrypt
 git push
 
 sair da tela de merge
