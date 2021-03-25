@@ -90,6 +90,7 @@ public class PedidoController implements PedidoControllerOpenApi {
 //		return pedidoResumoModelAssembler.toCollectionModel(todosPedidos);
 //	}
 	
+	@CheckSecurity.Pedidos.PodePesquisar
 	@GetMapping
 	public PagedModel<PedidoResumoModel> pesquisar(PedidoFilter filtro, @PageableDefault(size = 10) Pageable pageable) {
 		Pageable pageableTraduzido = traduzirPageable(pageable);

@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-29-restringindo-acessos-com-postauthorize
+git checkout -b 23-30-desafio-restringindo-acessos-ao-endpoint-de-pesquisa-de-pedidos
 git add .
-git commit -m "Restringindo acessos com @PostAuthorize"
-git push origin 23-29-restringindo-acessos-com-postauthorize
+git commit -m "Desafio: restringindo acessos ao endpoint de pesquisa de pedidos"
+git push origin 23-30-desafio-restringindo-acessos-ao-endpoint-de-pesquisa-de-pedidos
 
 git checkout master
-git merge --no-ff 23-29-restringindo-acessos-com-postauthorize
+git merge --no-ff 23-30-desafio-restringindo-acessos-ao-endpoint-de-pesquisa-de-pedidos
 git push
 
 sair da tela de merge
