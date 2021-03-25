@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-32-desafio-restringindo-acessos-aos-endpoints-de-formas-de-pagamentos
+git checkout -b 23-33-desafio-restringindo-acessos-aos-endpoints-de-cidades-e-estados
 git add .
-git commit -m "Desafio: restringindo acessos aos endpoints de formas de pagamentos"
-git push origin 23-32-desafio-restringindo-acessos-aos-endpoints-de-formas-de-pagamentos
+git commit -m "Desafio: restringindo acessos aos endpoints de cidades e estados"
+git push origin 23-33-desafio-restringindo-acessos-aos-endpoints-de-cidades-e-estados
 
 git checkout master
-git merge --no-ff 23-32-desafio-restringindo-acessos-aos-endpoints-de-formas-de-pagamentos
+git merge --no-ff 23-33-desafio-restringindo-acessos-aos-endpoints-de-cidades-e-estados
 git push
 
 sair da tela de merge
