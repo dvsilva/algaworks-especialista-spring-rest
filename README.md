@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-26-restringindo-acesso-a-endpoints-por-escopos-do-oauth2
+git checkout -b 23-27-desafio-restringindo-acesso-dos-endpoints-de-restaurantes
 git add .
-git commit -m "Restringindo acesso a endpoints por escopos do OAuth2"
-git push origin 23-26-restringindo-acesso-a-endpoints-por-escopos-do-oauth2
+git commit -m "Desafio: restringindo acesso dos endpoints de restaurantes"
+git push origin 23-27-desafio-restringindo-acesso-dos-endpoints-de-restaurantes
 
 git checkout master
-git merge --no-ff 23-26-restringindo-acesso-a-endpoints-por-escopos-do-oauth2
+git merge --no-ff 23-27-desafio-restringindo-acesso-dos-endpoints-de-restaurantes
 git push
 
 sair da tela de merge
