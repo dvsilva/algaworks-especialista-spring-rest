@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-30-desafio-restringindo-acessos-ao-endpoint-de-pesquisa-de-pedidos
+git checkout -b 23-31-desafio-restringindo-acessos-aos-endpoints-de-transicao-de-status-de-pedidos
 git add .
-git commit -m "Desafio: restringindo acessos ao endpoint de pesquisa de pedidos"
-git push origin 23-30-desafio-restringindo-acessos-ao-endpoint-de-pesquisa-de-pedidos
+git commit -m "Desafio: restringindo acessos aos endpoints de transição de status de pedidos"
+git push origin 23-31-desafio-restringindo-acessos-aos-endpoints-de-transicao-de-status-de-pedidos
 
 git checkout master
-git merge --no-ff 23-30-desafio-restringindo-acessos-ao-endpoint-de-pesquisa-de-pedidos
+git merge --no-ff 23-31-desafio-restringindo-acessos-aos-endpoints-de-transicao-de-status-de-pedidos
 git push
 
 sair da tela de merge
