@@ -46,7 +46,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 				.withClient("algafood-web") // client front end com interação com o usuário (password and refresh_token)
 				.secret(passwordEncoder.encode("web123"))
 				.authorizedGrantTypes("password", "refresh_token")
-				.scopes("write", "read")
+				.scopes("WRITE", "READ")
 				.accessTokenValiditySeconds(6 * 60 * 60)// 6 horas (padrão é 12 horas)
 				.refreshTokenValiditySeconds(60 * 24 * 60 * 60) // 60 dias (padrão é 30 dias)
 				
@@ -55,20 +55,20 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 //				.secret(passwordEncoder.encode("food123"))
 				.secret(passwordEncoder.encode(""))
 				.authorizedGrantTypes("authorization_code")
-				.scopes("write", "read")
+				.scopes("WRITE", "READ")
 				.redirectUris("http://www.foodanalytics.local:8082")
 				
 			.and() // novo client (implicit grant type)
 				.withClient("webadmin")
 				.authorizedGrantTypes("implicit")
-				.scopes("write", "read")
+				.scopes("WRITE", "READ")
 				.redirectUris("http://aplicacao-cliente")
 				
 			.and()
 				.withClient("faturamento") // aplicação backend (client credentials grant type)
 				.secret(passwordEncoder.encode("faturamento123"))
 				.authorizedGrantTypes("client_credentials")
-				.scopes("write", "read")
+				.scopes("WRITE", "READ")
 				
 			.and()
 				.withClient("checktoken") // resource server (introspecção - verificar token válido)
