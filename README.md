@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-25-carregando-granted-authorities-dos-escopos-do-oauth2-no-resource-server
+git checkout -b 23-26-restringindo-acesso-a-endpoints-por-escopos-do-oauth2
 git add .
-git commit -m "Carregando Granted Authorities dos escopos do OAuth2 no Resource Server"
-git push origin 23-25-carregando-granted-authorities-dos-escopos-do-oauth2-no-resource-server
+git commit -m "Restringindo acesso a endpoints por escopos do OAuth2"
+git push origin 23-26-restringindo-acesso-a-endpoints-por-escopos-do-oauth2
 
 git checkout master
-git merge --no-ff 23-25-carregando-granted-authorities-dos-escopos-do-oauth2-no-resource-server
+git merge --no-ff 23-26-restringindo-acesso-a-endpoints-por-escopos-do-oauth2
 git push
 
 sair da tela de merge
