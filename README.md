@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-28-restringindo-acessos-de-forma-contextual-sensivel-a-informacao
+git checkout -b 23-29-restringindo-acessos-com-postauthorize
 git add .
-git commit -m "Restringindo acessos de forma contextual (sensível à informação)"
-git push origin 23-28-restringindo-acessos-de-forma-contextual-sensivel-a-informacao
+git commit -m "Restringindo acessos com @PostAuthorize"
+git push origin 23-29-restringindo-acessos-com-postauthorize
 
 git checkout master
-git merge --no-ff 23-28-restringindo-acessos-de-forma-contextual-sensivel-a-informacao
+git merge --no-ff 23-29-restringindo-acessos-com-postauthorize
 git push
 
 sair da tela de merge
