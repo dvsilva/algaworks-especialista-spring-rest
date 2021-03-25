@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-27-desafio-restringindo-acesso-dos-endpoints-de-restaurantes
+git checkout -b 23-28-restringindo-acessos-de-forma-contextual-sensivel-a-informacao
 git add .
-git commit -m "Desafio: restringindo acesso dos endpoints de restaurantes"
-git push origin 23-27-desafio-restringindo-acesso-dos-endpoints-de-restaurantes
+git commit -m "Restringindo acessos de forma contextual (sensível à informação)"
+git push origin 23-28-restringindo-acessos-de-forma-contextual-sensivel-a-informacao
 
 git checkout master
-git merge --no-ff 23-27-desafio-restringindo-acesso-dos-endpoints-de-restaurantes
+git merge --no-ff 23-28-restringindo-acessos-de-forma-contextual-sensivel-a-informacao
 git push
 
 sair da tela de merge
