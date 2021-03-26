@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-41-juntando-resource-server-com-authorization-server-no-mesmo-projeto
+git checkout -b 23-42-ajustando-a-documentacao-da-api-para-suporte-a-oauth2
 git add .
-git commit -m "Juntando o Resource Server com o Authorization Server no mesmo projeto"
-git push origin 23-41-juntando-resource-server-com-authorization-server-no-mesmo-projeto
+git commit -m "Ajustando a documentação da API para suporte a OAuth2"
+git push origin 23-42-ajustando-a-documentacao-da-api-para-suporte-a-oauth2
 
 git checkout master
-git merge --no-ff 23-41-juntando-resource-server-com-authorization-server-no-mesmo-projeto
+git merge --no-ff 23-42-ajustando-a-documentacao-da-api-para-suporte-a-oauth2
 git push
 
 sair da tela de merge
