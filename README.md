@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-46-externalizando-o-keystore-criando-um-protocolresolver-para-base64
+git checkout -b 24-01-conhecendo-o-docker
 git add .
-git commit -m "Externalizando o KeyStore: criando um ProtocolResolver para Base64"
-git push origin 23-46-externalizando-o-keystore-criando-um-protocolresolver-para-base64
+git commit -m "Conhecendo o Docker"
+git push origin 24-01-conhecendo-o-docker
 
 git checkout master
-git merge --no-ff 23-46-externalizando-o-keystore-criando-um-protocolresolver-para-base64
+git merge --no-ff 24-01-conhecendo-o-docker
 git push
 
 sair da tela de merge

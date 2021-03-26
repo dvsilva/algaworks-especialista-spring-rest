@@ -1,0 +1,5910 @@
+{
+	"info": {
+		"_postman_id": "841ff08e-bcb1-4c66-be01-b69bb68fa1d9",
+		"name": "AlgaFood",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "V1",
+			"item": [
+				{
+					"name": "Cidades",
+					"item": [
+						{
+							"name": "Cidades - Listar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/cidades",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"cidades"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cidades - Buscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/cidades/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"cidades",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cidades - Adicionar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nome\": \"Ouro Preto\",\r\n    \"estado\": {\r\n        \"id\": 1\r\n    }\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/cidades",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"cidades"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cidades - Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nome\": \"Guarulhos\",\r\n    \"estado\": {\r\n        \"id\": 2\r\n    }\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/cidades/6",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"cidades",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cidades - Remover",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/cidades/6",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"cidades",
+										"6"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cozinhas",
+					"item": [
+						{
+							"name": "Cozinhas - Listar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Authorization",
+										"value": "Basic YWxnYWZvb2Q6MTIzNDU2",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 5d6038a0-3820-42b1-b663-1d106c2f42b7",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/cozinhas?size=2&page=0",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"cozinhas"
+									],
+									"query": [
+										{
+											"key": "size",
+											"value": "2"
+										},
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "sort",
+											"value": "nome,desc",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "id",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cozinhas - Buscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/cozinhas/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"cozinhas",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cozinhas - Remover",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/cozinhas/3",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"cozinhas",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cozinhas - Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Argentina\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/cozinhas/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"cozinhas",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cozinhas - Adicionar XML",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " <cozinha>\r\n    <nome>Japonesa</nome>\r\n</cozinha>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/cozinhas",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"cozinhas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cozinhas - Adicionar JSON",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Brasileira\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/cozinhas",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"cozinhas"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Restaurantes",
+					"item": [
+						{
+							"name": "Restaurantes - Listar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Listar Apenas Nome",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes?projecao=apenas-nome",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes"
+									],
+									"query": [
+										{
+											"key": "projecao",
+											"value": "apenas-nome"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Listar Com Filtros",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes?campos=nome,cozinha,aberto",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes"
+									],
+									"query": [
+										{
+											"key": "campos",
+											"value": "nome,cozinha,aberto"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Buscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Adicionar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nome\": \"Comida Mineira\",\r\n    \"taxaFrete\": 12,\r\n    \"cozinha\": {\r\n        \"id\": 1\r\n    },\r\n    \"endereco\": {\r\n        \"cep\": \"38400-999\",\r\n        \"logradouro\": \"Rua João Pinheiro\",\r\n        \"numero\": \"1000\",\r\n        \"complemento\": null,\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": {\r\n            \"id\": 1\r\n        }\r\n    }\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nome\": \"Bom Prato\",\r\n    \"taxaFrete\": 5,\r\n    \"cozinha\": {\r\n        \"id\": 2\r\n    },\r\n    \"endereco\": {\r\n        \"cep\": \"38400-999\",\r\n        \"logradouro\": \"Rua João Pinheiro\",\r\n        \"numero\": \"1000\",\r\n        \"complemento\": null,\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": {\r\n            \"id\": 1\r\n        }\r\n    }\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Atualizar Parcial",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nome\": \"Cozinha Goiana\",\r\n    \"taxaFrete\": 5,\r\n    \"cozinha\": {\r\n        \"id\": 2\r\n    }\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Remover",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/3",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Ativar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/ativo",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"ativo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Inativar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/ativo",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"ativo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Listar Formas de Pagamento",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/formas-pagamento",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"formas-pagamento"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Associar Forma de Pagamento",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/formas-pagamento/2",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"formas-pagamento",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Desassociar Forma de Pagamento",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/formas-pagamento/2",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"formas-pagamento",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Abrir",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/abertura",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"abertura"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Fechar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/fechamento",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"fechamento"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Listar Responsáveis",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/responsaveis",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"responsaveis"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Associar Responsáveis",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/responsaveis/3",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"responsaveis",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Desassociar Responsáveis",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/responsaveis/2",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"responsaveis",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Ativar Multiplos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[1,3,4]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/ativacoes",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"ativacoes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurantes - Inativar Multiplos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[1,3,4]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/ativacoes",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"ativacoes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Estados",
+					"item": [
+						{
+							"name": "Estados - Listar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/estados",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"estados"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Estados - Buscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/estados/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"estados",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Estados - Adicionar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Santa Catarina\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/estados",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"estados"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Estados - Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Rio Grande do Sul\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/estados/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"estados",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Estados - Remover",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/estados/4",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"estados",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Formas de Pagamento",
+					"item": [
+						{
+							"name": "Formas de Pagamento - Listar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/formas-pagamento",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"formas-pagamento"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Formas de Pagamento - Buscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/formas-pagamento/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"formas-pagamento",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Formas de Pagamento - Adicionar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"descricao\": \"Vale Refeição\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/formas-pagamento",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"formas-pagamento"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Formas de Pagamento - Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"descricao\": \"Vale Alimentação\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/formas-pagamento/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"formas-pagamento",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Formas de Pagamento - Remover",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/formas-pagamento/4",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"formas-pagamento",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Produtos",
+					"item": [
+						{
+							"name": "Produtos - Listar Todos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/produtos",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"produtos"
+									],
+									"query": [
+										{
+											"key": "incluirInativos",
+											"value": "false",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Produtos - Listar Com Inativos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/produtos?incluirInativos=true",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"produtos"
+									],
+									"query": [
+										{
+											"key": "incluirInativos",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Produtos - Buscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/produtos/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"produtos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Produtos - Adicionar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Frango agridoce apimentado\",\r\n    \"descricao\": \"Delicioso frango agridoce com especiarias\",\r\n    \"preco\": 68.9,\r\n    \"ativo\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/produtos",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"produtos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Produtos - Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Frango agridoce apimentado\",\r\n    \"descricao\": \"Delicioso frango agridoce com especiarias\",\r\n    \"preco\": 68.9,\r\n    \"ativo\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/produtos/10",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"produtos",
+										"10"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Grupos",
+					"item": [
+						{
+							"name": "Grupos - Listar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/grupos",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"grupos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Grupos - Buscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/grupos/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"grupos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Grupos - Adicionar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Cliente\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/grupos",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"grupos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Grupos - Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Administrador\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/grupos/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"grupos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Grupos - Remover",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/grupos/5",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"grupos",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Grupos - Listar Permissões",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/grupos/1/permissoes",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"grupos",
+										"1",
+										"permissoes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Grupos - Associar Permissões",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/grupos/1/permissoes/2",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"grupos",
+										"1",
+										"permissoes",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Grupos - Desassociar Permissões",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/grupos/1/permissoes/2",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"grupos",
+										"1",
+										"permissoes",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Usuarios",
+					"item": [
+						{
+							"name": "Usuarios - Listar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/usuarios",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"usuarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios - Buscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/usuarios/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"usuarios",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios - Adicionar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"João da Silva\",\r\n    \"email\": \"joao.silva@algafood.com\",\r\n    \"senha\": \"senhadojoao\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/usuarios",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"usuarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios - Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"João de Oliveira\",\r\n    \"email\": \"joao.oliveira@algafood.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/usuarios/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"usuarios",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios - Alterar Senha",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"senhaAtual\": \"senhadojoao\",\r\n    \"novaSenha\": \"senhadojoao123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/usuarios/1/senha",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"usuarios",
+										"1",
+										"senha"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios - Listar Grupos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/usuarios/1/grupos",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"usuarios",
+										"1",
+										"grupos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios - Associar Grupos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"João de Oliveira\",\r\n    \"email\": \"joao.oliveira@algafood.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/usuarios/1/grupos/3",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"usuarios",
+										"1",
+										"grupos",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios - Desssociar Grupos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"João de Oliveira\",\r\n    \"email\": \"joao.oliveira@algafood.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/usuarios/1/grupos/3",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"usuarios",
+										"1",
+										"grupos",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Pedidos",
+					"item": [
+						{
+							"name": "Pedidos - Listar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/pedidos",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"pedidos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Pedidos - Listar Com Filtros",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/pedidos?campos=codigo,valorTotal,cliente[nome,email]",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"pedidos"
+									],
+									"query": [
+										{
+											"key": "campos",
+											"value": "codigo,valorTotal,cliente[nome,email]"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Pedidos - Filtrar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/pedidos?dataCriacaoInicio=2019-10-30T00:00:00Z&size=2&sort=codigo,desc&sort=cliente.nome",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"pedidos"
+									],
+									"query": [
+										{
+											"key": "clienteId",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "restauranteId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "dataCriacaoInicio",
+											"value": "2019-10-30T00:00:00Z"
+										},
+										{
+											"key": "dataCriacaoFim",
+											"value": "2019-11-01T00:00:00Z",
+											"disabled": true
+										},
+										{
+											"key": "size",
+											"value": "2"
+										},
+										{
+											"key": "sort",
+											"value": "nomeCliente",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "codigo,desc"
+										},
+										{
+											"key": "sort",
+											"value": "cliente.nome"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Pedidos  - Buscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/pedidos/f9981ca4-5a5e-4da3-af04-933861df3e55",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"pedidos",
+										"f9981ca4-5a5e-4da3-af04-933861df3e55"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Pedidos  - Adicionar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"restaurante\": {\r\n        \"id\": 1\r\n    },\r\n    \"formaPagamento\": {\r\n        \"id\": 1\r\n    },\r\n    \"enderecoEntrega\": {\r\n        \"cep\": \"38400-000\",\r\n        \"logradouro\": \"Rua Floriano Peixoto\",\r\n        \"numero\": \"600\",\r\n        \"complemento\": \"Apto 704\",\r\n        \"bairro\": \"Brasil\",\r\n        \"cidade\": {\r\n            \"id\": 1\r\n        }\r\n    },\r\n    \"itens\": [\r\n        {\r\n            \"produtoId\": 1,\r\n            \"quantidade\": 3,\r\n            \"observacao\": \"Sem pimenta\"\r\n        },\r\n        {\r\n            \"produtoId\": 2,\r\n            \"quantidade\": 1\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/pedidos",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"pedidos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Pedidos  - Confirmar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/pedidos/f9981ca4-5a5e-4da3-af04-933861df3e55/confirmacao",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"pedidos",
+										"f9981ca4-5a5e-4da3-af04-933861df3e55",
+										"confirmacao"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Pedidos  - Cancelar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/pedidos/d178b637-a785-4768-a3cb-aa1ce5a8cdab/cancelamento",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"pedidos",
+										"d178b637-a785-4768-a3cb-aa1ce5a8cdab",
+										"cancelamento"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Pedidos  - Entregar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/pedidos/f9981ca4-5a5e-4da3-af04-933861df3e55/entrega",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"pedidos",
+										"f9981ca4-5a5e-4da3-af04-933861df3e55",
+										"entrega"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Estatisticas",
+					"item": [
+						{
+							"name": "Vendas Diarias",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/estatisticas/vendas-diarias?restauranteId=1&dataCriacaoInicio=2019-10-30T00:00:00Z&dataCriacaoFim=2019-11-04T23:59:59Z&timeOffset=-03:00",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"estatisticas",
+										"vendas-diarias"
+									],
+									"query": [
+										{
+											"key": "restauranteId",
+											"value": "1"
+										},
+										{
+											"key": "dataCriacaoInicio",
+											"value": "2019-10-30T00:00:00Z"
+										},
+										{
+											"key": "dataCriacaoFim",
+											"value": "2019-11-04T23:59:59Z"
+										},
+										{
+											"key": "timeOffset",
+											"value": "-03:00"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Vendas Diarias em PDF",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/pdf,application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/estatisticas/vendas-diarias?restauranteId=1&dataCriacaoInicio=2019-10-30T00:00:00Z&dataCriacaoFim=2019-11-04T23:59:59Z&timeOffset=-03:00",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"estatisticas",
+										"vendas-diarias"
+									],
+									"query": [
+										{
+											"key": "restauranteId",
+											"value": "1"
+										},
+										{
+											"key": "dataCriacaoInicio",
+											"value": "2019-10-30T00:00:00Z"
+										},
+										{
+											"key": "dataCriacaoFim",
+											"value": "2019-11-04T23:59:59Z"
+										},
+										{
+											"key": "timeOffset",
+											"value": "-03:00"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Links Estatísticas",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/estatisticas",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"estatisticas"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Fotos de Produtos",
+					"item": [
+						{
+							"name": "Fotos de Produtos - Buscar JSON",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/produtos/1/foto",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"produtos",
+										"1",
+										"foto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fotos de Produtos - Buscar Imagem",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "image/jpeg,image/jpg,image/png",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "image/*",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "image/png",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/produtos/1/foto",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"produtos",
+										"1",
+										"foto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fotos de Produtos - Remover",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "descricao",
+											"value": "blablabla",
+											"type": "text"
+										},
+										{
+											"key": "arquivo",
+											"type": "file",
+											"src": "/C:/Users/danyl/OneDrive/Imagens/perfil.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/produtos/1/foto",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"produtos",
+										"1",
+										"foto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fotos de Produtos - Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "descricao",
+											"value": "blablabla",
+											"type": "text"
+										},
+										{
+											"key": "arquivo",
+											"type": "file",
+											"src": "/C:/Users/danyl/OneDrive/Imagens/perfil.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/restaurantes/1/produtos/1/foto",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"restaurantes",
+										"1",
+										"produtos",
+										"1",
+										"foto"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Permissoes",
+					"item": [
+						{
+							"name": "Permissoes - Listar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiBaseUri}}/v1/permissoes",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v1",
+										"permissoes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Root Entry Point",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiBaseUri}}/v1",
+							"host": [
+								"{{apiBaseUri}}"
+							],
+							"path": [
+								"v1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "V2",
+			"item": [
+				{
+					"name": "Cidades",
+					"item": [
+						{
+							"name": "Cidades - Listar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiBaseUri}}/v2/cidades",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v2",
+										"cidades"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cidades - Buscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiBaseUri}}/v2/cidades/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v2",
+										"cidades",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cidades - Adicionar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nomeCidade\": \"Contagem\",\r\n    \"idEstado\": 1\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v2/cidades",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v2",
+										"cidades"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cidades - Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nomeCidade\": \"Guarulhos\",\r\n    \"idEstado\": 2\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v2/cidades/6",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v2",
+										"cidades",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cidades - Remover",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v2/cidades/6",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v2",
+										"cidades",
+										"6"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cozinhas",
+					"item": [
+						{
+							"name": "Cozinhas - Listar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v2/cozinhas?size=2&page=0",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v2",
+										"cozinhas"
+									],
+									"query": [
+										{
+											"key": "size",
+											"value": "2"
+										},
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "sort",
+											"value": "nome,desc",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "id",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cozinhas - Buscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v2/cozinhas/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v2",
+										"cozinhas",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cozinhas - Remover",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{apiBaseUri}}/v2/cozinhas/3",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v2",
+										"cozinhas",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cozinhas - Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/xml",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Argentina\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v2/cozinhas/1",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v2",
+										"cozinhas",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cozinhas - Adicionar XML",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " <cozinha>\r\n    <nome>Japonesa</nome>\r\n</cozinha>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v2/cozinhas",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v2",
+										"cozinhas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cozinhas - Adicionar JSON",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nomeCozinha\": \"Brasileira\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/v2/cozinhas",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"v2",
+										"cozinhas"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Root Entry Point V2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiBaseUri}}/v2",
+							"host": [
+								"{{apiBaseUri}}"
+							],
+							"path": [
+								"v2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Versionamento",
+			"item": [
+				{
+					"name": "Media Type",
+					"item": [
+						{
+							"name": "Cidades V2",
+							"item": [
+								{
+									"name": "Cidades - Listar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/vnd.algafood.v2+json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{apiBaseUri}}/cidades",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Buscar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/vnd.algafood.v2+json"
+											}
+										],
+										"url": {
+											"raw": "{{apiBaseUri}}/cidades/1",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"cidades",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Adicionar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/vnd.algafood.v2+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nomeCidade\": \"Contagem\",\r\n    \"idEstado\": 1\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{apiBaseUri}}/cidades",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Atualizar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/vnd.algafood.v2+json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nomeCidade\": \"Guarulhos\",\r\n    \"idEstado\": 2\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{apiBaseUri}}/cidades/6",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Remover",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/xml",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "{{apiBaseUri}}/cidades/6",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Cidades V1",
+							"item": [
+								{
+									"name": "Cidades - Listar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/vnd.algafood.v1+json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{apiBaseUri}}/cidades",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Buscar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/vnd.algafood.v1+json"
+											}
+										],
+										"url": {
+											"raw": "{{apiBaseUri}}/cidades/1",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"cidades",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Adicionar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/vnd.algafood.v1+json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nome\": \"Ouro Preto\",\r\n    \"estado\": {\r\n        \"id\": 1\r\n    }\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{apiBaseUri}}/cidades",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Atualizar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/vnd.algafood.v1+json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nome\": \"Guarulhos\",\r\n    \"estado\": {\r\n        \"id\": 2\r\n    }\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{apiBaseUri}}/cidades/6",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Remover",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/xml",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "{{apiBaseUri}}/cidades/6",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "URI",
+					"item": [
+						{
+							"name": "Cidades V1",
+							"item": [
+								{
+									"name": "Cidades - Listar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{apiBaseUri}}/v1/cidades",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"v1",
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Buscar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{apiBaseUri}}/v1/cidades/1",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"v1",
+												"cidades",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Adicionar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nome\": \"Ouro Preto\",\r\n    \"estado\": {\r\n        \"id\": 1\r\n    }\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{apiBaseUri}}/v1/cidades",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"v1",
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Atualizar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nome\": \"Guarulhos\",\r\n    \"estado\": {\r\n        \"id\": 2\r\n    }\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{apiBaseUri}}/v1/cidades/6",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"v1",
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Remover",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/xml",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "{{apiBaseUri}}/v1/cidades/6",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"v1",
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Cidades V2",
+							"item": [
+								{
+									"name": "Cidades - Listar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{apiBaseUri}}/v2/cidades",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"v2",
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Buscar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{apiBaseUri}}/v2/cidades/1",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"v2",
+												"cidades",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Adicionar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nomeCidade\": \"Contagem\",\r\n    \"idEstado\": 1\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{apiBaseUri}}/v2/cidades",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"v2",
+												"cidades"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Atualizar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": " {\r\n    \"nomeCidade\": \"Guarulhos\",\r\n    \"idEstado\": 2\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{apiBaseUri}}/v2/cidades/6",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"v2",
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cidades - Remover",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/xml",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "{{apiBaseUri}}/v2/cidades/6",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"v2",
+												"cidades",
+												"6"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "OAuth2",
+			"item": [
+				{
+					"name": "Projeto Auth",
+					"item": [
+						{
+							"name": "Other",
+							"item": [
+								{
+									"name": "Authorization Code Grant - Authenticate and Authorize",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&state=abc&redirect_uris=http://www.foodanalytics.local:8082",
+											"host": [
+												"auth",
+												"algafood",
+												"local"
+											],
+											"port": "8081",
+											"path": [
+												"oauth",
+												"authorize"
+											],
+											"query": [
+												{
+													"key": "response_type",
+													"value": "code"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics"
+												},
+												{
+													"key": "state",
+													"value": "abc"
+												},
+												{
+													"key": "redirect_uris",
+													"value": "http://www.foodanalytics.local:8082"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[PLAIN] PKCE Authorization Code Grant - Authenticate and Authorize",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=plain",
+											"protocol": "http",
+											"host": [
+												"auth",
+												"algafood",
+												"local"
+											],
+											"port": "8081",
+											"path": [
+												"oauth",
+												"authorize"
+											],
+											"query": [
+												{
+													"key": "response_type",
+													"value": "code"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics"
+												},
+												{
+													"key": "redirect_uris",
+													"value": "http://www.foodanalytics.local:8082"
+												},
+												{
+													"key": "code_challenge",
+													"value": "teste123"
+												},
+												{
+													"key": "code_challenge_method",
+													"value": "plain"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[SHA256] PKCE Authorization Code Grant - Authenticate and Authorize",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=KJFg2w2fOfmuF1TE7JwW-QtQ4y4JxftUga5kKz09GjY&code_challenge_method=s256",
+											"protocol": "http",
+											"host": [
+												"auth",
+												"algafood",
+												"local"
+											],
+											"port": "8081",
+											"path": [
+												"oauth",
+												"authorize"
+											],
+											"query": [
+												{
+													"key": "response_type",
+													"value": "code"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics"
+												},
+												{
+													"key": "redirect_uris",
+													"value": "http://www.foodanalytics.local:8082"
+												},
+												{
+													"key": "code_challenge",
+													"value": "KJFg2w2fOfmuF1TE7JwW-QtQ4y4JxftUga5kKz09GjY"
+												},
+												{
+													"key": "code_challenge_method",
+													"value": "s256"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Without Basic Authentication - PKCE Authorization Code - Solicitar Token",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "username",
+												"value": "thiago",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "password",
+												"value": "123",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "grant_type",
+												"value": "password",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "code",
+													"value": "A8KOD6",
+													"type": "text"
+												},
+												{
+													"key": "grant_type",
+													"value": "authorization_code",
+													"type": "text"
+												},
+												{
+													"key": "redirect_uri",
+													"value": "http://www.foodanalytics.local:8082",
+													"type": "text"
+												},
+												{
+													"key": "code_verifier",
+													"value": "teste123",
+													"type": "text"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{authBaseUri}}/oauth/token",
+											"host": [
+												"{{authBaseUri}}"
+											],
+											"path": [
+												"oauth",
+												"token"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Public Key - Token Key",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{authBaseUri}}/oauth/token_key",
+											"host": [
+												"{{authBaseUri}}"
+											],
+											"path": [
+												"oauth",
+												"token_key"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Password Flow - Solicitar Token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if (responseCode.code >= 200 && responseCode.code <= 299) {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    postman.setEnvironmentVariable('accessToken', jsonData.token);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{webUserPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{webUserLogin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "email.teste.aw+carlos@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{authBaseUri}}/oauth/token",
+									"host": [
+										"{{authBaseUri}}"
+									],
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Authorization Code - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{analyticsUserLogin}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{analyticsUserPassword}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "xweZVm",
+											"type": "text"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://aplicacao-cliente",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{authBaseUri}}/oauth/token",
+									"host": [
+										"{{authBaseUri}}"
+									],
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Authorization Code + PKCE - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{analyticsUserPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{analyticsUserLogin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "code",
+											"value": "wAABzb",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "text"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://www.foodanalytics.local:8082",
+											"type": "text"
+										},
+										{
+											"key": "code_verifier",
+											"value": "teste123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{authBaseUri}}/oauth/token",
+									"host": [
+										"{{authBaseUri}}"
+									],
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Refresh Token - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{webUserPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{webUserLogin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "refresh_token",
+											"value": "21f132be-5f02-44bb-a0de-8e0919b6015f",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "refresh_token",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{authBaseUri}}/oauth/token",
+									"host": [
+										"{{authBaseUri}}"
+									],
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Client Credentials - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{backendUserPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{backendUserLogin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{authBaseUri}}/oauth/token",
+									"host": [
+										"{{authBaseUri}}"
+									],
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Checar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{webUserLogin}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{webUserPassword}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "token",
+											"value": "1dd738f0-04a9-492f-bdb1-b0bea82b668f",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{authBaseUri}}/oauth/check_token",
+									"host": [
+										"{{authBaseUri}}"
+									],
+									"path": [
+										"oauth",
+										"check_token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Projeto Api",
+					"item": [
+						{
+							"name": "Other",
+							"item": [
+								{
+									"name": "Authorization Code Grant - Authenticate and Authorize",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "api.algafood.local:8080/oauth/authorize?response_type=code&client_id=foodanalytics&state=abc&redirect_uris=http://www.foodanalytics.local:8082",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"oauth",
+												"authorize"
+											],
+											"query": [
+												{
+													"key": "response_type",
+													"value": "code"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics"
+												},
+												{
+													"key": "state",
+													"value": "abc"
+												},
+												{
+													"key": "redirect_uris",
+													"value": "http://www.foodanalytics.local:8082"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[PLAIN] PKCE Authorization Code Grant - Authenticate and Authorize",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://api.algafood.local:8080/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=plain",
+											"protocol": "http",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"oauth",
+												"authorize"
+											],
+											"query": [
+												{
+													"key": "response_type",
+													"value": "code"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics"
+												},
+												{
+													"key": "redirect_uris",
+													"value": "http://www.foodanalytics.local:8082"
+												},
+												{
+													"key": "code_challenge",
+													"value": "teste123"
+												},
+												{
+													"key": "code_challenge_method",
+													"value": "plain"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[SHA256] PKCE Authorization Code Grant - Authenticate and Authorize",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://api.algafood.local:8080/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=KJFg2w2fOfmuF1TE7JwW-QtQ4y4JxftUga5kKz09GjY&code_challenge_method=s256",
+											"protocol": "http",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"oauth",
+												"authorize"
+											],
+											"query": [
+												{
+													"key": "response_type",
+													"value": "code"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics"
+												},
+												{
+													"key": "redirect_uris",
+													"value": "http://www.foodanalytics.local:8082"
+												},
+												{
+													"key": "code_challenge",
+													"value": "KJFg2w2fOfmuF1TE7JwW-QtQ4y4JxftUga5kKz09GjY"
+												},
+												{
+													"key": "code_challenge_method",
+													"value": "s256"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Public Key - Token Key",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{apiBaseUri}}/oauth/token_key",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"oauth",
+												"token_key"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Public Key - JWKS",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{apiBaseUri}}/.well-known/jwks.json",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												".well-known",
+												"jwks.json"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Without Basic Authentication - PKCE Authorization Code - Solicitar Token",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "username",
+												"value": "thiago",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "password",
+												"value": "123",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "grant_type",
+												"value": "password",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "code",
+													"value": "A8KOD6",
+													"type": "text"
+												},
+												{
+													"key": "grant_type",
+													"value": "authorization_code",
+													"type": "text"
+												},
+												{
+													"key": "redirect_uri",
+													"value": "http://www.foodanalytics.local:8082",
+													"type": "text"
+												},
+												{
+													"key": "code_verifier",
+													"value": "teste123",
+													"type": "text"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{apiBaseUri}}/oauth/token",
+											"host": [
+												"{{apiBaseUri}}"
+											],
+											"path": [
+												"oauth",
+												"token"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Password Flow - Solicitar Token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if (responseCode.code >= 200 && responseCode.code <= 299) {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    postman.setEnvironmentVariable('accessToken', jsonData.access_token);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{webUserPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{webUserLogin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "email.teste.aw+carlos@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/oauth/token",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Authorization Code - Solicitar Token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if (responseCode.code >= 200 && responseCode.code <= 299) {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    postman.setEnvironmentVariable('accessToken', jsonData.access_token);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{analyticsUserPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{analyticsUserLogin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "z49W2z",
+											"type": "text"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://www.foodanalytics.local:8082",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/oauth/token",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Authorization Code + PKCE - Solicitar Token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if (responseCode.code >= 200 && responseCode.code <= 299) {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    postman.setEnvironmentVariable('accessToken', jsonData.access_token);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{analyticsUserPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{analyticsUserLogin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "code",
+											"value": "wAABzb",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "text"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://www.foodanalytics.local:8082",
+											"type": "text"
+										},
+										{
+											"key": "code_verifier",
+											"value": "teste123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/oauth/token",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Client Credentials - Solicitar Token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if (responseCode.code >= 200 && responseCode.code <= 299) {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    postman.setEnvironmentVariable('accessToken', jsonData.access_token);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{backendUserPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{backendUserLogin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/oauth/token",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Refresh Token - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{webUserPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{webUserLogin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "refresh_token",
+											"value": "21f132be-5f02-44bb-a0de-8e0919b6015f",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "refresh_token",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/oauth/token",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Checar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{webUserPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{webUserLogin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "token",
+											"value": "{{accessToken}}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{apiBaseUri}}/oauth/check_token",
+									"host": [
+										"{{apiBaseUri}}"
+									],
+									"path": [
+										"oauth",
+										"check_token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Swagger",
+			"item": [
+				{
+					"name": "Spring Fox - API docs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiBaseUri}}/v2/api-docs?group=V1",
+							"host": [
+								"{{apiBaseUri}}"
+							],
+							"path": [
+								"v2",
+								"api-docs"
+							],
+							"query": [
+								{
+									"key": "group",
+									"value": "V1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Spring UI - HTML",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiBaseUri}}/swagger-ui.html",
+							"host": [
+								"{{apiBaseUri}}"
+							],
+							"path": [
+								"swagger-ui.html"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
