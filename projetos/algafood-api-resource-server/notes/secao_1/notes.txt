@@ -1,0 +1,16 @@
+o que é API (Application Programming Interface)
+- software que possui um conjunto de funções que intermediam o acesso às funcionalidades de um sistema operacional, aplicação ou serviço
+- consumidor e provedor da API
+
+Webservices vs APIs
+- todo webservice é uma web API
+- nem todas as APIs é um webservice
+
+o que é REST (Representional State Transfer)
+- estilo arquitetural para desenvolver web APIs/webservices
+- foi desenhado para usar protocolos já existem como o HTTP
+- as APIs devem seguir constraints
+- facilidade de integração
+
+porque desenvolver REST APIs
+- pequenas e grandes empresas desenvolvem e consomem APIs o tempo todo 

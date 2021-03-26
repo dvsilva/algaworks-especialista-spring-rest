@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.algaworks</groupId>
-	<artifactId>algafood-auth-1</artifactId>
+	<artifactId>algafood-auth-basico</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>algafood-auth-1</name>
+	<name>algafood-auth-basico</name>
 	<description>Authorization Server do AlgaFood</description>
 
 	<properties>

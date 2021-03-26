@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-40-desafio-gerando-links-do-hal-dinamicamente-de-acordo-com-permissoes
+git checkout -b 23-41-juntando-resource-server-com-authorization-server-no-mesmo-projeto
 git add .
-git commit -m "23.40. Desafio: gerando links do HAL dinamicamente de acordo com permissões"
-git push origin 23-40-desafio-gerando-links-do-hal-dinamicamente-de-acordo-com-permissoes
+git commit -m "Juntando o Resource Server com o Authorization Server no mesmo projeto"
+git push origin 23-41-juntando-resource-server-com-authorization-server-no-mesmo-projeto
 
 git checkout master
-git merge --no-ff 23-40-desafio-gerando-links-do-hal-dinamicamente-de-acordo-com-permissoes
+git merge --no-ff 23-41-juntando-resource-server-com-authorization-server-no-mesmo-projeto
 git push
 
 sair da tela de merge

@@ -19,6 +19,8 @@ public class WebConfig implements WebMvcConfigurer {
 	@Autowired
 	private ApiRetirementHandler apiRetirementHandler;
 	
+	// configuração removida pois está usando a configuração do Cors para oauth (CorsConfig)
+	/**
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
 		registry.addMapping("/**")
@@ -26,6 +28,7 @@ public class WebConfig implements WebMvcConfigurer {
 //			.allowedOrigins("*") // padrao aceita qualquer origin
 //			.maxAge(30); // padrao é 1800 segundos = 30 minutos
 	}
+	*/
 
 	// configurar a versão 2 como padrão quando o media type não for informado
 //	@Override
