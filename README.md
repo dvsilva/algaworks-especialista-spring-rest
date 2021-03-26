@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-36-configurando-os-clientes-oauth2-em-um-banco-de-dados-sql
+git checkout -b 23-37-cadastrando-clientes-oauth2-no-banco-de-dados-e-testando-emissoes-de-tokens
 git add .
-git commit -m "Configurando os clientes OAuth2 em um banco de dados SQL"
-git push origin 23-36-configurando-os-clientes-oauth2-em-um-banco-de-dados-sql
+git commit -m "Cadastrando clientes OAuth2 no banco de dados e testando a emissão de tokens"
+git push origin 23-37-cadastrando-clientes-oauth2-no-banco-de-dados-e-testando-emissoes-de-tokens
 
 git checkout master
-git merge --no-ff 23-36-configurando-os-clientes-oauth2-em-um-banco-de-dados-sql
+git merge --no-ff 23-37-cadastrando-clientes-oauth2-no-banco-de-dados-e-testando-emissoes-de-tokens
 git push
 
 sair da tela de merge
