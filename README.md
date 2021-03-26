@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-44-customizando-a-pagina-de-oauth2-approval
+git checkout -b 23-45-implementando-o-endpoint-do-json-web-key-set-jwks
 git add .
-git commit -m "Customizando a página de OAuth2 Approval"
-git push origin 23-44-customizando-a-pagina-de-oauth2-approval
+git commit -m "Implementando o endpoint do JSON Web Key Set (JWKS)"
+git push origin 23-45-implementando-o-endpoint-do-json-web-key-set-jwks
 
 git checkout master
-git merge --no-ff 23-44-customizando-a-pagina-de-oauth2-approval
+git merge --no-ff 23-45-implementando-o-endpoint-do-json-web-key-set-jwks
 git push
 
 sair da tela de merge
