@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-37-cadastrando-clientes-oauth2-no-banco-de-dados-e-testando-emissoes-de-tokens
+git checkout -b 23-38-corrigindo-logica-de-restricao-de-acessos-para-client-credentials-flow
 git add .
-git commit -m "Cadastrando clientes OAuth2 no banco de dados e testando a emissão de tokens"
-git push origin 23-37-cadastrando-clientes-oauth2-no-banco-de-dados-e-testando-emissoes-de-tokens
+git commit -m "Corrigindo lógica de restrição de acessos para Client Credentials Flow"
+git push origin 23-38-corrigindo-logica-de-restricao-de-acessos-para-client-credentials-flow
 
 git checkout master
-git merge --no-ff 23-37-cadastrando-clientes-oauth2-no-banco-de-dados-e-testando-emissoes-de-tokens
+git merge --no-ff 23-38-corrigindo-logica-de-restricao-de-acessos-para-client-credentials-flow
 git push
 
 sair da tela de merge
