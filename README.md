@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-42-ajustando-a-documentacao-da-api-para-suporte-a-oauth2
+git checkout -b 23-43-customizando-a-pagina-de-login
 git add .
-git commit -m "Ajustando a documentação da API para suporte a OAuth2"
-git push origin 23-42-ajustando-a-documentacao-da-api-para-suporte-a-oauth2
+git commit -m "Customizando a página de login"
+git push origin 23-43-customizando-a-pagina-de-login
 
 git checkout master
-git merge --no-ff 23-42-ajustando-a-documentacao-da-api-para-suporte-a-oauth2
+git merge --no-ff 23-43-customizando-a-pagina-de-login
 git push
 
 sair da tela de merge

@@ -226,6 +226,12 @@
 			<artifactId>spring-security-jwt</artifactId>
 			<version>${spring-security-jwt.version}</version>
 		</dependency>
+		
+		<!-- THYMELEAF - CUSTOMIZAR PAGINAS DE LOGIN -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

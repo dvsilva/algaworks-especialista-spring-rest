@@ -25,7 +25,7 @@ public class ResourceServerConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http
 			// habilitar a pagina de login para o fluxo authorization code
-			.formLogin()
+			.formLogin().loginPage("/login") // customização da pagina de login (SecurityController)
 			.and()
 			.authorizeRequests()
 				.antMatchers("/oauth/**").authenticated() 
