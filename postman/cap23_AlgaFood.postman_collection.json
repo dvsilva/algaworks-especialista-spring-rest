@@ -4657,6 +4657,27 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "Public Key - JWKS",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "api.algafood.local:8080/.well-known/jwks.json",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												".well-known",
+												"jwks.json"
+											]
+										}
+									},
+									"response": []
 								}
 							]
 						},
