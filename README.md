@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-35-desafio-restringindo-acessos-aos-endpoints-de-estatisticas
+git checkout -b 23-36-configurando-os-clientes-oauth2-em-um-banco-de-dados-sql
 git add .
-git commit -m "Desafio: restringindo acessos aos endpoints de estatísticas"
-git push origin 23-35-desafio-restringindo-acessos-aos-endpoints-de-estatisticas
+git commit -m "Configurando os clientes OAuth2 em um banco de dados SQL"
+git push origin 23-36-configurando-os-clientes-oauth2-em-um-banco-de-dados-sql
 
 git checkout master
-git merge --no-ff 23-35-desafio-restringindo-acessos-aos-endpoints-de-estatisticas
+git merge --no-ff 23-36-configurando-os-clientes-oauth2-em-um-banco-de-dados-sql
 git push
 
 sair da tela de merge

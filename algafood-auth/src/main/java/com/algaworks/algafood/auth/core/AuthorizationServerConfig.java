@@ -2,13 +2,14 @@ package com.algaworks.algafood.auth.core;
 
 import java.util.Arrays;
 
+import javax.sql.DataSource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
@@ -27,8 +28,8 @@ import org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFacto
 @EnableAuthorizationServer
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
-	@Autowired
-	private PasswordEncoder passwordEncoder;
+//	@Autowired
+//	private PasswordEncoder passwordEncoder;
 	
 	@Autowired
 	private AuthenticationManager authenticationManager;
@@ -38,41 +39,47 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	
 	@Autowired
 	private JwtKeyStoreProperties jwtKeyStoreProperties;
+
+	@Autowired
+	private DataSource dataSource;
 	
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-		clients
-			.inMemory() 
-				.withClient("algafood-web") // client front end com interação com o usuário (password and refresh_token)
-				.secret(passwordEncoder.encode("web123"))
-				.authorizedGrantTypes("password", "refresh_token")
-				.scopes("WRITE", "READ")
-				.accessTokenValiditySeconds(6 * 60 * 60)// 6 horas (padrão é 12 horas)
-				.refreshTokenValiditySeconds(60 * 24 * 60 * 60) // 60 dias (padrão é 30 dias)
-				
-			.and() // client de relatorios (authorization code grant type)
-				.withClient("foodanalytics")
-//				.secret(passwordEncoder.encode("food123"))
-				.secret(passwordEncoder.encode(""))
-				.authorizedGrantTypes("authorization_code")
-				.scopes("WRITE", "READ")
-				.redirectUris("http://www.foodanalytics.local:8082")
-				
-			.and() // novo client (implicit grant type)
-				.withClient("webadmin")
-				.authorizedGrantTypes("implicit")
-				.scopes("WRITE", "READ")
-				.redirectUris("http://aplicacao-cliente")
-				
-			.and()
-				.withClient("faturamento") // aplicação backend (client credentials grant type)
-				.secret(passwordEncoder.encode("faturamento123"))
-				.authorizedGrantTypes("client_credentials")
-				.scopes("WRITE", "READ")
-				
-			.and()
-				.withClient("checktoken") // resource server (introspecção - verificar token válido)
-					.secret(passwordEncoder.encode("check123"));
+		clients.jdbc(dataSource);
+		
+		// configuração hardcode
+//		clients
+//			.inMemory() 
+//				.withClient("algafood-web") // client front end com interação com o usuário (password and refresh_token)
+//				.secret(passwordEncoder.encode("web123"))
+//				.authorizedGrantTypes("password", "refresh_token")
+//				.scopes("WRITE", "READ")
+//				.accessTokenValiditySeconds(6 * 60 * 60)// 6 horas (padrão é 12 horas)
+//				.refreshTokenValiditySeconds(60 * 24 * 60 * 60) // 60 dias (padrão é 30 dias)
+//				
+//			.and() // client de relatorios (authorization code grant type)
+//				.withClient("foodanalytics")
+////				.secret(passwordEncoder.encode("food123"))
+//				.secret(passwordEncoder.encode(""))
+//				.authorizedGrantTypes("authorization_code")
+//				.scopes("WRITE", "READ")
+//				.redirectUris("http://www.foodanalytics.local:8082")
+//				
+//			.and() // novo client (implicit grant type)
+//				.withClient("webadmin")
+//				.authorizedGrantTypes("implicit")
+//				.scopes("WRITE", "READ")
+//				.redirectUris("http://aplicacao-cliente")
+//				
+//			.and()
+//				.withClient("faturamento") // aplicação backend (client credentials grant type)
+//				.secret(passwordEncoder.encode("faturamento123"))
+//				.authorizedGrantTypes("client_credentials")
+//				.scopes("WRITE", "READ")
+//				
+//			.and()
+//				.withClient("checktoken") // resource server (introspecção - verificar token válido)
+//					.secret(passwordEncoder.encode("check123"));
 	}
 	
 	@Override
