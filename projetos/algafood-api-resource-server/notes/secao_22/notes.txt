@@ -1,0 +1,195 @@
+Segurança de REST APIs
+- uma mesma API pode ser acessada de diversos tipos de clientes
+
+- autenticação - consumidor possa se identificar
+- autorização - garantir que somentes consumidores autorizados para fazer determinada coisa possam fazer requisições para os endpoints específicos
+
+HTTP Basic Autentication
+- sempre que o cliente for fazer requisição deve passar o header Authorization
+- Exemplo -> Authorization: Basic xxxx (codificação de acesso) 
+- codificação -> nome_usuario:senha (nome de usuario  + senha) codificado com base 64 (pode decodificar facilmente)
+- risco de segurança -> dados sensíveis trafegando em todas as requisições
+- adicionar https mas dependendo do cliente ainda pode oferecer risco pois armazena essas informações
+- pouco usado -> APIs corporativas usadas apenas internamente (firewall - origem não autorizada + https)
+
+OAuth2 (mais usada)
+- cliente solicita autorização informando usuario e senha
+- servidor de autorização fornece um token de acesso
+- sempre que o cliente for fazer requisição deve passar o token
+- Exemplo -> Authorization: Bearer xxxx (token) 
+- Token é expirado e perde a validade, então precisa gerar um novo token
+- mais segurança pois expira o token
+- diminui risco
+- um token pode dar acesso a determinadas coisas (restringir acesso a endpoints)
+
+Introdução ao OAuth2
+- tradicional
+	- a aplicação cliente deve repassar as credenciais do usuario final
+	- a aplicação terceira pode armazenar usuario e senha de um usuario de API terceira e teria o acesso desse usuário na API
+	- não tem como revogar o acesso, só mudando a senha, mas vai impactar acesso às outras aplicações terceiras (tudo ou nada)
+- OAuth2
+	- framework de autorização para permitir que aplicações terceiras obtenham acesso limitado a serviços (API) usando HTTP
+	- conjunto de regras / protocolo (RFC 6749) padrão / especificação
+	- define 4 papéis (roles)
+		- resource server -> servidor que hospeda os serviços protegidos (API)
+		- resource owner -> usuário final / dono dos recursos
+		- client -> aplicação (web, mobile e desktop) que tem interesse em acessar os recursos protegidos do resource server (resource owner precisa autoriza-lo)
+		- authorization server 
+			- autentica o resource owner e garante a autorização de acesso à um determinado client para acessar o resource server em nome do resource owner
+			- exemplo: porteiro (authorization server), sala (resource server), dono da sala (resource owner) e você (client)
+		- fluxo de execução (grant_type: authorization code grant/flow)
+			-> resource owner (acessa aplicação/client) 
+			-> client (solicita autorização redirect) 
+			-> resource owner (autentica e autoriza client)
+			-> authorization server (gera código de autorização para o client) 
+			-> client (solicita access token) 
+			-> authorization server (retorna access token) 
+			-> client (faz requisição em um recurso da API [resource server] usando o access token)
+			-> resource server (consulta o authorization server sobre o access token)
+			-> authorization server (retorna se o access token está válido) 
+			-> resource server (retorna o recurso solicitado)
+			-> client (usa o recurso e mostra alguma coisa) 
+
+- resource server e o authorization server 
+	- não precisam estar no mesmo projeto
+	- podem usar tecnologias diferentes
+	- o authorization server pode ser fornecido por terceiros
+	
+- Spring Security OAuth (suporte para resource server e o authorization server) - ideia é depreciar
+- Spring Security incorporaram OAuth (porem sem authorization server, talvez tenha no futuro)
+
+- fluxo de autorização (grant_type) 
+	- sequencia da comunicação que deve acontecer entre os componentes 
+	- possibilita um token de autorização de acesso seja emitido para o client acessar os recursos do resource server
+	- vai depender do tipo de client
+
+Resource Owner Password Credentials (password credencials, password flow, password grant ou password grant type)
+- obter um access token a partir de um usuário e senha
+- usar apenas aplicações que você desenvolveu pois o usuário da nossa API deve informar usuário e senha em um client terceiro
+
+- fluxo de execução 
+	-> resource owner (informa credenciais para aplicação/client) 
+	-> client (solicita access token)
+		- informa as credenciais do usuário no corpo, grant_type=password e passa a autenticação do client (header Authorization)
+		- não armazena usuario e senha, mas o access token (ganha mais segurança, se interceptar o token ele expira)
+	-> authorization server (retorna access token, token_type, expires_in e scope)
+	-> repete o fluxo básico
+		-> client (faz requisição em um recurso da API [resource server] usando o access token)
+		-> resource server (consulta o authorization server sobre o access token)
+		-> authorization server (retorna se o access token está válido) 
+		-> resource server (retorna o recurso solicitado)
+		-> client (usa o recurso e mostra alguma coisa) 
+
+opaque token -> não conseguimos exergar dentro dele / as informações sobre ele (contrario do transparente)
+
+- resource server deve verificar se o access token é valido atraves do authorizationserver
+- a especificação oauth2 não diz como deve acontecer
+- a RFC 7662 defini isso (o que deve retornar)
+- checagem de introspecção - verificar se está válido
+
+refresh tokens
+- token usado para gerar um novo access token quando o access token expirar
+- refresh token tempo maior de expiração que o access token
+- client deve implementar lógica para verificar expiração do access token e solicitar um novo com o refresh token
+- grant_type = refresh_token
+- pode retornar o mesmo refresh token ou um novo, depende de como está configurado
+- client substitui o access token
+- resolve o problema de pedir credenciais ao usuário
+- refresh token oferece problemas de segurança caso seja interceptado pois pode gerar novos access tokens
+- mais cuidado com o refresh token, como guardar para que outra pessoa sem permissão não tenha acesso a ele
+
+client credentials token
+- access token -> chave de acesso ao resource server pra fazer coisas em nome do resource owner
+- client credentials -> uma app fazer consultas em nome da própria aplicação (para fazer coisas no nome do próprio client)
+- client credentials grant -> gera um token apenas com as credenciais do client (apenas o client se autentica)
+- ex: app backend para backend
+- grant_type = client_credentials
+- não usa o refresh_token e não tem a participação do resource owner
+
+authorization code grant (fluxo inicial) - pode ter refresh_token
+	-> resource owner (acessa aplicação/client) 
+	-> client (solicita autorização redirect) (response_type=code)
+	-> resource owner (autentica [tela de login] e autoriza client [tela de autorizar ou negar])
+	-> authorization server (gera código de autorização para o client [fornecer state para o cliente verificar veracidade da resposta]) 
+	-> client (solicita access token [fornece o code e o grant_type=authorization_type) 
+	-> authorization server (invalida o code e retorna access token) 
+	-> repete o fluxo básico
+		-> client (faz requisição em um recurso da API [resource server] usando o access token)
+		-> resource server (consulta o authorization server sobre o access token)
+		-> authorization server (retorna se o access token está válido) 
+		-> resource server (retorna o recurso solicitado)
+		-> client (usa o recurso e mostra alguma coisa)
+
+URL para autorização (authorization code)
+auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&state=abc&redirect_uris=http://www.foodanalytics.local:8082
+
+implicit grant (parecido com o authorization code grant)
+- ao inves de retornar um code, o authorization server retorna diretamente um access token
+- o uso desse grant é desencorajado (considerado como um  token legado)
+- retornar access token na url sem a confirmação do cliente gera um risco de segurança 
+- response_type=token
+
+URL para autorização (implicit grant type)
+auth.algafood.local:8081/oauth/authorize?response_type=token&client_id=webadmin&state=abc&redirect_uris=http://aplicacao-cliente
+http://aplicacao-cliente/#access_token=e4fb3ac8-c6c5-4196-8f0c-30f04083f7e4&token_type=bearer&state=abc&expires_in=43199&scope=read%20write
+
+Authorization Code e PKCE
+- extensão da especificação oauth2
+- PKCE (pixi) RFC 7636
+- problema: fluxo sendo usado para um cliente publico 
+- esse cliente não consegue manter a confidencialidade das credencais do cliente (client_id e client_secret)
+- ex: a app js criada na aula anterior, conseguimos acessar o js da pagina e pegar o client_id e client_secret
+
+solução fluxo Authorization Code com PKCE (projeto oauth2 não tem suporte ao PKCE)
+- PKCE -> Proof Key for Code Exchange - chave de prova para troca de código
+- essa extensão é uma técnica para reduzir o risco de ataque de interceptação do código de autorização gerado pelo fluxo Authorization Code
+- a ideia é mesmo que o codigo seja intereceptado ele não possa ser usado para gerar novos access tokens
+- ao inves de depender das credenciais do cliente agora existe um desafio a ser resolvido
+- mais segurança, o code challenge subistitui a necessidade de autenticação do client
+- só tem uma tentativa de pegar o access token, o code é invalidado após a tentativa
+- o cliente define um código de desafio e só quem tem o código verificador consegue resolver esse desafio
+- solicita autorização
+	- code verifier -> code challenge em SHA-256 e Base64Url
+	- não usa o state pois o code challenge ja resolve esse problema
+	- passa o code_challenge e code_challenge_method (s256 - algoritmo de encriptação ou plain)
+		- s256 - SHA-256 + Base64Url (mais recomendado)
+		- plain -> code_verifier = code_challenge. o cliente decide o método que será utilizado
+- solicita o access_token 
+	- nao precisa da autenticação do cliente (enviar o client_id e code_verifier)
+	- valida o code_challenge com o code_verifier
+	- pode usar o refresh_token
+
+implementação do PKCE - https://gist.github.com/thiagofa/daca4f4790b5b18fed800b83747127ca
+
+URL para autorização (PKCE com authorization code)
+
+plain: code_challenge = code_verifier
+http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=plain
+
+sha256 + base64
+http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=s256
+Ferramenta online para gerar Code Verifier e Code Challenge (PKCE) - https://tonyxu-io.github.io/pkce-generator/
+
+qual fluxo usar do oauth2 (5 opções) ?
+
+- levar em condideração
+	- tipo do cliente
+		- publico 
+			- usuario pode visualizar ou modificar o codigo dela e acessar o client_secret que é utilizado para autenticar o cliente no authorization server
+			- ex: app javascript que roda no navegador (SPA) e app nativos (mobile e desktop)
+		- confidencial
+			- quando o código fonte não pode ser acessado pelo usuário
+			- entao pode garantir a confidencialidade do client_secret
+			- ex: app server side (feito no servidor)
+	- clientes confiáveis e não confiável
+		- confiáveis -> app proória que você ou sua empresa desenvolveu
+		- não confiável 
+			- app terceira que utiliza o authorization server mas não podemos confiar pois nao esta no seu poder ou empresa
+			- os reais objetivos são desconhecidos por voce, nao tem certeza sobre o que ela vai fazer (recebendo o usuario e senha se vai armazenar o que vai fazer ...)
+		
+cliente é publico -> authorization code com pkce
+cliente não é público 
+	- o cliente não tem usuários finais -> client credentials flow 
+	- o cliente tem usuários finais (pode usar o authorization code com pkce)
+		- cliente é confiável e outros fluxos não são viáveis -> password flow (app web server side) (usar em ultimo caso)
+		- cliente não é confiável -> authorization code flow

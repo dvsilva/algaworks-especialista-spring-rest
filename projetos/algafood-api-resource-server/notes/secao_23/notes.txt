@@ -1,0 +1,103 @@
+- token fica armazenado na memória do authorization server
+- se reeniciar perde a informação e ao validar o token retorna inválido
+- mais de uma instância da app ao validar em uma ou outra instancia pode retornar inválido
+- colocar token em um banco de dados que tenha a persistencia (não armazenar na memória)
+
+- redis
+acessar o redis-cli
+conectar com autenticação -> AUTH 123123
+visualizar o conteudo -> KEYS *
+limpar todos os dados -> flushall
+
+stateless e stateful authentication
+- com e sem estado
+- a comunicação deve ser stateless (sem estado) por natureza
+- de forma que cada requisição do cliente para o servidor deve conter todas as informações necessárias para entendê-la
+- e não pode usar informações contextuais armazenadas no servidor
+- o estado da sessão deve ser armazenado inteiramente no cliente
+- application state (sessão do usuário) vs resource state (entidades)
+- o estado da aplicação não deve ser armazenada no servidor
+- ex: stateful -> enviar os dados do pedido uma unica vez
+
+- stateful authentication (token armazenado no servidor)
+	- usando opaque tokens
+	- o codigo do token não significa nada (apenas uma string aleatoria) - não tem nenhuma informação, precisa do authorization server
+	- o client passa o token para o resource server que precisa validar  o token com o authorization server a cada requisição
+	- pode passar por cookie ou header (authorization)
+	- vantagens 
+		- revogar tokens (vazamento de token)
+		- dados do token podem ser alterados a qualquer momento
+	- desvantagens 
+		- precisa de mais infra do servidor como banco de dados e replicação do mesmo [redis ou mysql] (authorization server)
+		- cria dependencia de todos os resource server e authorization server (se o authorization server parar todos os serviços param)
+		- authorization server se torna um single point of failure (para todo o sistema pois depende dele) - criar várias instâncias
+
+- stateless authentication
+	- dados da sessão são armazenadas no cliente
+	- servidor emite tokens mas não sabe quais, ele só tem o poder de valida-los
+	- transparent token 
+		- não é aleatória, contem informações dentro do token
+		- tem informações autocontidas dentro dele, token maior que o opaco
+		- assinado com um hash criptográfico (assinatura)
+	- fluxo
+		- cliente solicita token para o authorization server (não armazena token)
+		- cliente acessa recursos protegidos no resource server 
+			- verifica a integridade do token atraves da assinatura e extrai as informações do token
+			- resource server não precisa do authorization server para validar tokens
+	- vantagens
+		- não precisa de infra do lado do servidor (authorization server)
+		- uma vez emitido não precisa o authorization server para usar os tokens
+		- se falhar não emite mais tokens mas os que foram emitidos funcionam
+		- mais facil escalar a aplicação
+	- desvantagens
+		- não pode revogar o token, tem que esperar a expiração
+		- mais dados trafegados nas requisições (tamanho do token e envia em todas as requisições)
+		- uma vez emitido não conseguimos alterar até que ele expire (inconsistencia de informações do usuário)
+
+qual solução escolher
+- precisar revogar tokens -> stateful
+- não pode ter unico ponto de falha -> stateless
+
+JSON Web Tokens (JWT) - RFC 7519
+- é uma string codificada em base64 e assinada com um hash criptogratico
+- dividido em header, payload e assinatura
+- não deve colocar informações sensíveis (como senha)
+
+assinatura com chave simétrica
+	- usa uma única chave secreta que é compartilhada por quem emite (authorization server) e quem recebe/consome a mensagem (resource server)
+	- quem tem a chave pode verificar mas também pode emitir
+	- o receptor (resource server) tem que ser altamente confiável pois pode criar novos tokens e assinar como se fosse legítimos
+	- se tem possibilidade de outros componentes terceiros que tem que validar token jwt não deve usar chave simétrica (entregar chave da casa a um estranho)
+	- algoritmo usado HmacSHA256 (HS256)
+
+assinatura com chave assimétrica
+ 	- algoritmo RSA Signature 256 (RS256) que usa um par de chaves (uma privada e uma publica)
+	- authorization server tem a chave privada que deve ser mantida em segredo
+	- o receptor usa uma chave publica para validar a assinatura do token
+	- dessa forma não tem o risco de criar novos tokens legitimos por parte de terceiros
+	- só se tiver acesso a chave privada
+	- authorization server usa a chave privada assinar o token
+	- resource server usa a chave pública para validar a assinatura
+	- usar chaves diferentes para desenv e prod para melhorar segurança (invasão, saída de colaboradores, etc)
+
+gerando um arquivo JKS (Java Key Store) com um par de chaves 
+repositorio para armazenar conjunto de chaves criptograficas ou certificados em formato binário
+keytool -genkeypair -alias algafood -keyalg RSA -keypass 123456 -keystore algafood.jks -storepass 123456 -validity 3650
+ "C:\Program Files\Java\jdk1.8.0_221\bin\keytool.exe" -genkeypair -alias algafood -keyalg RSA -keypass 123456 -keystore algafood.jks -storepass 123456 -validity 3650
+
+Listando as entradas de um arquivo JKS
+keytool -list -keystore algafood.jks
+ "C:\Program Files\Java\jdk1.8.0_221\bin\keytool.exe" -list -keystore algafood.jks
+
+Gerando o certificado
+keytool -export -rfc -alias algafood -keystore algafood.jks -file algafood-cert.pem
+"C:\Program Files\Java\jdk1.8.0_221\bin\keytool.exe" -export -rfc -alias algafood -keystore algafood.jks -file algafood-cert.pem
+
+Gerando a chave pública
+openssl x509 -pubkey -noout -in algafood-cert.pem > algafood-pkey.pem
+
+scopes (escopos) 
+- limita acesso de aplicações clientes apenas para determinado escopo
+- mesmo que o token do usuario tenha acesso é liberado apenas o escopo descrito para a aplicação
+- o usuário aprova apenas os escopos que ele deseja que determinada app faça em nome dele
+- também pode ser limitada pelo tipo de client na configuração do authorization server

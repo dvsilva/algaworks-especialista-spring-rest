@@ -23,12 +23,14 @@
 		<jasperreports.version>6.16.0</jasperreports.version>
 		<aws-java-sdk-s3.version>1.11.671</aws-java-sdk-s3.version>
 		<springfox.version>2.9.2</springfox.version>
-   		<logback-ext-loggly.version>0.1.5</logback-ext-loggly.version>
-    	<oauth2-oidc-sdk.version>6.21.2</oauth2-oidc-sdk.version>
+		<logback-ext-loggly.version>0.1.5</logback-ext-loggly.version>
+		<oauth2-oidc-sdk.version>6.21.2</oauth2-oidc-sdk.version>
+		<spring-security-oauth2.version>2.3.7.RELEASE</spring-security-oauth2.version>
+		<spring-security-jwt.version>1.0.11.RELEASE</spring-security-jwt.version>
 	</properties>
 
 	<dependencies>
-	
+
 		<!-- SPRING BOOT -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -176,14 +178,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-hateoas</artifactId>
 		</dependency>
-		
+
 		<!-- LOG -->
 		<dependency>
 			<groupId>org.logback-extensions</groupId>
 			<artifactId>logback-ext-loggly</artifactId>
 			<version>${logback-ext-loggly.version}</version>
 		</dependency>
-		
+
 		<!-- SPRING SECURITY -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -194,7 +196,7 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- OAUTH RESOURCE SERVER -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -202,7 +204,7 @@
 				spring-boot-starter-oauth2-resource-server
 			</artifactId>
 		</dependency>
-		
+
 		<!-- Erro java.lang.NoSuchMethodError -->
 		<!-- 
 		<dependency>
@@ -211,6 +213,19 @@
 			<version>${oauth2-oidc-sdk.version}</version>
 		</dependency>
 		-->
+
+		<!-- OAUTH AUTHORIZATION SERVER -->
+		<dependency>
+			<groupId>org.springframework.security.oauth</groupId>
+			<artifactId>spring-security-oauth2</artifactId>
+			<version>${spring-security-oauth2.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-jwt</artifactId>
+			<version>${spring-security-jwt.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
