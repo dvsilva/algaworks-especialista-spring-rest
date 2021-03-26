@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-38-corrigindo-logica-de-restricao-de-acessos-para-client-credentials-flow
+git checkout -b 23-39-gerando-links-do-hal-dinamicamente-de-acordo-com-permissoes-do-usuario
 git add .
-git commit -m "Corrigindo lógica de restrição de acessos para Client Credentials Flow"
-git push origin 23-38-corrigindo-logica-de-restricao-de-acessos-para-client-credentials-flow
+git commit -m "Gerando links do HAL dinamicamente de acordo com permissões do usuário"
+git push origin 23-39-gerando-links-do-hal-dinamicamente-de-acordo-com-permissoes-do-usuario
 
 git checkout master
-git merge --no-ff 23-38-corrigindo-logica-de-restricao-de-acessos-para-client-credentials-flow
+git merge --no-ff 23-39-gerando-links-do-hal-dinamicamente-de-acordo-com-permissoes-do-usuario
 git push
 
 sair da tela de merge
