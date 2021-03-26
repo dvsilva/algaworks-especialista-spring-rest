@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-39-gerando-links-do-hal-dinamicamente-de-acordo-com-permissoes-do-usuario
+git checkout -b 23-40-desafio-gerando-links-do-hal-dinamicamente-de-acordo-com-permissoes
 git add .
-git commit -m "Gerando links do HAL dinamicamente de acordo com permissões do usuário"
-git push origin 23-39-gerando-links-do-hal-dinamicamente-de-acordo-com-permissoes-do-usuario
+git commit -m "23.40. Desafio: gerando links do HAL dinamicamente de acordo com permissões"
+git push origin 23-40-desafio-gerando-links-do-hal-dinamicamente-de-acordo-com-permissoes
 
 git checkout master
-git merge --no-ff 23-39-gerando-links-do-hal-dinamicamente-de-acordo-com-permissoes-do-usuario
+git merge --no-ff 23-40-desafio-gerando-links-do-hal-dinamicamente-de-acordo-com-permissoes
 git push
 
 sair da tela de merge

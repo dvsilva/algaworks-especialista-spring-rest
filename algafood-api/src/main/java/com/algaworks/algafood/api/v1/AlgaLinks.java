@@ -87,13 +87,13 @@ public class AlgaLinks {
 		return linkToRestauranteFormasPagamento(restauranteId, IanaLinkRelations.SELF.value());
 	}
 	
-	public Link linkToRestauranteFormasPagamentoDesassociacao(
+	public Link linkToRestauranteFormaPagamentoDesassociacao(
 			Long restauranteId, Long formaPagamentoId, String rel) {
 		return linkTo(methodOn(RestauranteFormaPagamentoController.class)
 				.desassociar(restauranteId, formaPagamentoId)).withRel(rel);
 	}
 	
-	public Link linkToRestauranteFormasPagamentoAssociacao(Long restauranteId, String rel) {
+	public Link linkToRestauranteFormaPagamentoAssociacao(Long restauranteId, String rel) {
 		// adiciona template variable formaPagamentoId automaticamente por causa do null
 		return linkTo(methodOn(RestauranteFormaPagamentoController.class)
 				.associar(restauranteId, null)).withRel(rel);
