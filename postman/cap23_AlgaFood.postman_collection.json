@@ -157,7 +157,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTY2MDAxNDcsInVzZXJfbmFtZSI6InRoaWFnbyIsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iXSwianRpIjoiOGUyYTZlN2EtMzBjMS00MzY2LTliYmItZjVjZmI0ZmYwZjc4IiwiY2xpZW50X2lkIjoiYWxnYWZvb2Qtd2ViIiwic2NvcGUiOlsid3JpdGUiLCJyZWFkIl19.FGZ-jZLYi_QdVGfRFZ8-zIBZlpQzy5gF5DilRdMF_SQplCBa4ePc5WwyFMbY1Qx4rAoVBxC7V4K9LwqQZrsntO-kQXXCamEIrguSyrC-BR1OqYq6UIWCKaLSgso4C9vNJGs0fhUTeIflB4Cac5de7a45_cnaaw7AAM4kU76Dcdlfagd02I5i4SMxgwcMZ9U-02GsKpAXqAeeWRPtQJ0Y-OE_CmlgeBebX46690xPz3bOJcOn7nQCCNhMk4HkNEf7Siu6k7ROpd36L4IvxBAzo9rQi_agcl69ZOvlx4jN_q8QB2z2e1qR-jpMt5Uf--gJUczt1kPjkqhwj7DqqsjjEg",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoxLCJ1c2VyX25hbWUiOiJqb2FvLmdlckBhbGdhZm9vZC5jb20uYnIiLCJzY29wZSI6WyJSRUFEIiwiV1JJVEUiXSwiZXhwIjoxNjE2ODEwMjU5LCJhdXRob3JpdGllcyI6WyJHRVJBUl9SRUxBVE9SSU9TIiwiRURJVEFSX0NPWklOSEFTIiwiQ09OU1VMVEFSX1VTVUFSSU9TX0dSVVBPU19QRVJNSVNTT0VTIiwiRURJVEFSX0NJREFERVMiLCJFRElUQVJfRk9STUFTX1BBR0FNRU5UTyIsIkVESVRBUl9SRVNUQVVSQU5URVMiLCJHRVJFTkNJQVJfUEVESURPUyIsIkVESVRBUl9VU1VBUklPU19HUlVQT1NfUEVSTUlTU09FUyIsIkNPTlNVTFRBUl9QRURJRE9TIiwiRURJVEFSX0VTVEFET1MiXSwianRpIjoiZmYzYWZlYjItYTlhYi00NzE1LWE4MjgtYzc3YWJlZDA0NzdlIiwibm9tZV9jb21wbGV0byI6Ikpvw6NvIGRhIFNpbHZhIiwiY2xpZW50X2lkIjoiZm9vZGFuYWx5dGljcyJ9.T8XYItD4X7adTj-DKWRZNNbg1I4mwKz3s9dMzsF30uBpcIDh7ealksTgih652LXAI2FeZLivxFDn9pUw5Hfvdq3EHvczk2hH_GfhoJ3y3mi1eDvyW_bUGNB8Ddjke_KtFNPQi1XqO4M73lCupGx2EdiEmSajI06EkVcnvBDwnZh4FbEGMawtpDdYCIALPXslCKvdJcLGFTRiyD3D6FCe-THrQJWvKEWOnkDifakvdj7k7kKcMSzDLaaxIQZU2JHp3W3H-_KcDv9epXtr1CoRaKThGif6vPWlYcQ10F-8girjnLPwiY5zEcg5cCya0t7NErCSnHlwOe2DeuDAr6KE1g",
 											"type": "string"
 										}
 									]
@@ -359,6 +359,16 @@
 						{
 							"name": "Cozinhas - Adicionar JSON",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjo3LCJ1c2VyX25hbWUiOiJlbWFpbC50ZXN0ZS5hdytjYXJsb3NAZ21haWwuY29tIiwic2NvcGUiOlsid3JpdGUiLCJyZWFkIl0sImV4cCI6MTYxNjYwNjU1NCwianRpIjoiZGIwZDkxYTQtMWIyYS00ZTBmLWI2YWUtM2QzOTE1MTBlMTQwIiwibm9tZV9jb21wbGV0byI6IkNhcmxvcyBMaW1hIiwiY2xpZW50X2lkIjoiYWxnYWZvb2Qtd2ViIn0.QHvz3voQ-mWGPF1e1--V-yRDhpXrL3ZgS9Z0nLkXMpzXc5hAushU_E983y-PjLb338Rfo9PLYLmEy11Jaqd44GeQsNJuKhjs7wnokAebFAS3D6IeyaQMiRSloKxfZ-r_7LWdTjBu9AM5mlENwsME9SmDOWCTu6YuxWZaSF5pU7H7-wG7pmEoeYM55um0A4-4qgUDG4VYqFjCc_2tzacRchrfspeYm5gWhKngfn2YIXWqeTgb3iXJ2rFHcMBax7HSltXTXM5zVsu_ISxwRwb-UyzUGrjhjSoOepT-Lkn5VaX9irQinhPGgkyV5W5LaJEWR1W461Qfn1EfaezSs6GSBg",
+											"type": "string"
+										}
+									]
+								},
 								"method": "POST",
 								"header": [],
 								"body": {
@@ -3761,655 +3771,1326 @@
 			"name": "OAuth2",
 			"item": [
 				{
-					"name": "Password Flow - Solicitar Token",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
+					"name": "Projeto Auth",
+					"item": [
+						{
+							"name": "Other",
+							"item": [
 								{
-									"key": "password",
-									"value": "web123",
-									"type": "string"
+									"name": "Authorization Code Grant - Authenticate and Authorize",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&state=abc&redirect_uris=http://www.foodanalytics.local:8082",
+											"host": [
+												"auth",
+												"algafood",
+												"local"
+											],
+											"port": "8081",
+											"path": [
+												"oauth",
+												"authorize"
+											],
+											"query": [
+												{
+													"key": "response_type",
+													"value": "code"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics"
+												},
+												{
+													"key": "state",
+													"value": "abc"
+												},
+												{
+													"key": "redirect_uris",
+													"value": "http://www.foodanalytics.local:8082"
+												}
+											]
+										}
+									},
+									"response": []
 								},
 								{
-									"key": "username",
-									"value": "algafood-web",
-									"type": "string"
+									"name": "[PLAIN] PKCE Authorization Code Grant - Authenticate and Authorize",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=plain",
+											"protocol": "http",
+											"host": [
+												"auth",
+												"algafood",
+												"local"
+											],
+											"port": "8081",
+											"path": [
+												"oauth",
+												"authorize"
+											],
+											"query": [
+												{
+													"key": "response_type",
+													"value": "code"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics"
+												},
+												{
+													"key": "redirect_uris",
+													"value": "http://www.foodanalytics.local:8082"
+												},
+												{
+													"key": "code_challenge",
+													"value": "teste123"
+												},
+												{
+													"key": "code_challenge_method",
+													"value": "plain"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[SHA256] PKCE Authorization Code Grant - Authenticate and Authorize",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=KJFg2w2fOfmuF1TE7JwW-QtQ4y4JxftUga5kKz09GjY&code_challenge_method=s256",
+											"protocol": "http",
+											"host": [
+												"auth",
+												"algafood",
+												"local"
+											],
+											"port": "8081",
+											"path": [
+												"oauth",
+												"authorize"
+											],
+											"query": [
+												{
+													"key": "response_type",
+													"value": "code"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics"
+												},
+												{
+													"key": "redirect_uris",
+													"value": "http://www.foodanalytics.local:8082"
+												},
+												{
+													"key": "code_challenge",
+													"value": "KJFg2w2fOfmuF1TE7JwW-QtQ4y4JxftUga5kKz09GjY"
+												},
+												{
+													"key": "code_challenge_method",
+													"value": "s256"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Without Basic Authentication - PKCE Authorization Code - Solicitar Token",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "username",
+												"value": "thiago",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "password",
+												"value": "123",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "grant_type",
+												"value": "password",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "code",
+													"value": "A8KOD6",
+													"type": "text"
+												},
+												{
+													"key": "grant_type",
+													"value": "authorization_code",
+													"type": "text"
+												},
+												{
+													"key": "redirect_uri",
+													"value": "http://www.foodanalytics.local:8082",
+													"type": "text"
+												},
+												{
+													"key": "code_verifier",
+													"value": "teste123",
+													"type": "text"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "auth.algafood.local:8081/oauth/token",
+											"host": [
+												"auth",
+												"algafood",
+												"local"
+											],
+											"port": "8081",
+											"path": [
+												"oauth",
+												"token"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Public Key - Token Key",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "auth.algafood.local:8081/oauth/token_key",
+											"host": [
+												"auth",
+												"algafood",
+												"local"
+											],
+											"port": "8081",
+											"path": [
+												"oauth",
+												"token_key"
+											]
+										}
+									},
+									"response": []
 								}
 							]
 						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "username",
-								"value": "thiago",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "password",
-								"value": "123",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "grant_type",
-								"value": "password",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "username",
-									"value": "email.teste.aw+carlos@gmail.com",
-									"type": "text"
+						{
+							"name": "Password Flow - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "web123",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "algafood-web",
+											"type": "string"
+										}
+									]
 								},
-								{
-									"key": "password",
-									"value": "123",
-									"type": "text"
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "email.teste.aw+carlos@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "password",
+											"type": "text"
+										}
+									]
 								},
-								{
-									"key": "grant_type",
-									"value": "password",
-									"type": "text"
+								"url": {
+									"raw": "auth.algafood.local:8081/oauth/token",
+									"host": [
+										"auth",
+										"algafood",
+										"local"
+									],
+									"port": "8081",
+									"path": [
+										"oauth",
+										"token"
+									]
 								}
-							]
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "auth.algafood.local:8081/oauth/token",
-							"host": [
-								"auth",
-								"algafood",
-								"local"
-							],
-							"port": "8081",
-							"path": [
-								"oauth",
-								"token"
-							]
+						{
+							"name": "Authorization Code - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "foodanalytics",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "food123",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "xweZVm",
+											"type": "text"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://aplicacao-cliente",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "auth.algafood.local:8081/oauth/token",
+									"host": [
+										"auth",
+										"algafood",
+										"local"
+									],
+									"port": "8081",
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Authorization Code + PKCE - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "foodanalytics",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "food123",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "code",
+											"value": "wAABzb",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "text"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://www.foodanalytics.local:8082",
+											"type": "text"
+										},
+										{
+											"key": "code_verifier",
+											"value": "teste123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "auth.algafood.local:8081/oauth/token",
+									"host": [
+										"auth",
+										"algafood",
+										"local"
+									],
+									"port": "8081",
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Refresh Token - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "algafood-web",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "web123",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "refresh_token",
+											"value": "21f132be-5f02-44bb-a0de-8e0919b6015f",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "refresh_token",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "auth.algafood.local:8081/oauth/token",
+									"host": [
+										"auth",
+										"algafood",
+										"local"
+									],
+									"port": "8081",
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Client Credentials - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "faturamento123",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "faturamento",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "auth.algafood.local:8081/oauth/token",
+									"host": [
+										"auth",
+										"algafood",
+										"local"
+									],
+									"port": "8081",
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Checar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "algafood-web",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "web123",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "token",
+											"value": "1dd738f0-04a9-492f-bdb1-b0bea82b668f",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "auth.algafood.local:8081/oauth/check_token",
+									"host": [
+										"auth",
+										"algafood",
+										"local"
+									],
+									"port": "8081",
+									"path": [
+										"oauth",
+										"check_token"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "Password Flow - Verificar Token",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
+					"name": "Projeto Api",
+					"item": [
+						{
+							"name": "Other",
+							"item": [
 								{
-									"key": "username",
-									"value": "algafood-web",
-									"type": "string"
+									"name": "Authorization Code Grant - Authenticate and Authorize",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "api.algafood.local:8080/oauth/authorize?response_type=code&client_id=foodanalytics&state=abc&redirect_uris=http://www.foodanalytics.local:8082",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"oauth",
+												"authorize"
+											],
+											"query": [
+												{
+													"key": "response_type",
+													"value": "code"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics"
+												},
+												{
+													"key": "state",
+													"value": "abc"
+												},
+												{
+													"key": "redirect_uris",
+													"value": "http://www.foodanalytics.local:8082"
+												}
+											]
+										}
+									},
+									"response": []
 								},
 								{
-									"key": "password",
-									"value": "web123",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "username",
-								"value": "thiago",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "password",
-								"value": "123",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "grant_type",
-								"value": "password",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
+									"name": "[PLAIN] PKCE Authorization Code Grant - Authenticate and Authorize",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://api.algafood.local:8080/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=plain",
+											"protocol": "http",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"oauth",
+												"authorize"
+											],
+											"query": [
+												{
+													"key": "response_type",
+													"value": "code"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics"
+												},
+												{
+													"key": "redirect_uris",
+													"value": "http://www.foodanalytics.local:8082"
+												},
+												{
+													"key": "code_challenge",
+													"value": "teste123"
+												},
+												{
+													"key": "code_challenge_method",
+													"value": "plain"
+												}
+											]
+										}
+									},
+									"response": []
+								},
 								{
-									"key": "token",
-									"value": "1dd738f0-04a9-492f-bdb1-b0bea82b668f",
-									"type": "text"
+									"name": "[SHA256] PKCE Authorization Code Grant - Authenticate and Authorize",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://api.algafood.local:8080/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=KJFg2w2fOfmuF1TE7JwW-QtQ4y4JxftUga5kKz09GjY&code_challenge_method=s256",
+											"protocol": "http",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"oauth",
+												"authorize"
+											],
+											"query": [
+												{
+													"key": "response_type",
+													"value": "code"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics"
+												},
+												{
+													"key": "redirect_uris",
+													"value": "http://www.foodanalytics.local:8082"
+												},
+												{
+													"key": "code_challenge",
+													"value": "KJFg2w2fOfmuF1TE7JwW-QtQ4y4JxftUga5kKz09GjY"
+												},
+												{
+													"key": "code_challenge_method",
+													"value": "s256"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Without Basic Authentication - PKCE Authorization Code - Solicitar Token",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "username",
+												"value": "thiago",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "password",
+												"value": "123",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "grant_type",
+												"value": "password",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "code",
+													"value": "A8KOD6",
+													"type": "text"
+												},
+												{
+													"key": "grant_type",
+													"value": "authorization_code",
+													"type": "text"
+												},
+												{
+													"key": "redirect_uri",
+													"value": "http://www.foodanalytics.local:8082",
+													"type": "text"
+												},
+												{
+													"key": "code_verifier",
+													"value": "teste123",
+													"type": "text"
+												},
+												{
+													"key": "client_id",
+													"value": "foodanalytics",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "api.algafood.local:8080/oauth/token",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"oauth",
+												"token"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Public Key - Token Key",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "api.algafood.local:8080/oauth/token_key",
+											"host": [
+												"api",
+												"algafood",
+												"local"
+											],
+											"port": "8080",
+											"path": [
+												"oauth",
+												"token_key"
+											]
+										}
+									},
+									"response": []
 								}
 							]
 						},
-						"url": {
-							"raw": "auth.algafood.local:8081/oauth/check_token",
-							"host": [
-								"auth",
-								"algafood",
-								"local"
-							],
-							"port": "8081",
-							"path": [
-								"oauth",
-								"check_token"
-							]
+						{
+							"name": "Password Flow - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "web123",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "algafood-web",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "email.teste.aw+carlos@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "api.algafood.local:8080/oauth/token",
+									"host": [
+										"api",
+										"algafood",
+										"local"
+									],
+									"port": "8080",
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Authorization Code - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "food123",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "foodanalytics",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "v8E6mm",
+											"type": "text"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://www.foodanalytics.local:8082",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "api.algafood.local:8080/oauth/token",
+									"host": [
+										"api",
+										"algafood",
+										"local"
+									],
+									"port": "8080",
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Authorization Code + PKCE - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "foodanalytics",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "food123",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "code",
+											"value": "wAABzb",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "text"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://www.foodanalytics.local:8082",
+											"type": "text"
+										},
+										{
+											"key": "code_verifier",
+											"value": "teste123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "api.algafood.local:8080/oauth/token",
+									"host": [
+										"api",
+										"algafood",
+										"local"
+									],
+									"port": "8080",
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Client Credentials - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "faturamento123",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "faturamento",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "api.algafood.local:8080/oauth/token",
+									"host": [
+										"api",
+										"algafood",
+										"local"
+									],
+									"port": "8080",
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Refresh Token - Solicitar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "algafood-web",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "web123",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "refresh_token",
+											"value": "21f132be-5f02-44bb-a0de-8e0919b6015f",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "refresh_token",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "api.algafood.local:8080/oauth/token",
+									"host": [
+										"api",
+										"algafood",
+										"local"
+									],
+									"port": "8080",
+									"path": [
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Checar Token",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "algafood-web",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "web123",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "thiago",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"value": "123",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "grant_type",
+										"value": "password",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "token",
+											"value": "1dd738f0-04a9-492f-bdb1-b0bea82b668f",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "api.algafood.local:8080/oauth/check_token",
+									"host": [
+										"api",
+										"algafood",
+										"local"
+									],
+									"port": "8080",
+									"path": [
+										"oauth",
+										"check_token"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
-				},
-				{
-					"name": "Refresh Token - Solicitar Token",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "username",
-									"value": "algafood-web",
-									"type": "string"
-								},
-								{
-									"key": "password",
-									"value": "web123",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "username",
-								"value": "thiago",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "password",
-								"value": "123",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "grant_type",
-								"value": "password",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "refresh_token",
-									"value": "21f132be-5f02-44bb-a0de-8e0919b6015f",
-									"type": "text"
-								},
-								{
-									"key": "grant_type",
-									"value": "refresh_token",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "auth.algafood.local:8081/oauth/token",
-							"host": [
-								"auth",
-								"algafood",
-								"local"
-							],
-							"port": "8081",
-							"path": [
-								"oauth",
-								"token"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Client Credentials - Solicitar Token",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "faturamento123",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "faturamento",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "username",
-								"value": "thiago",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "password",
-								"value": "123",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "grant_type",
-								"value": "password",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "grant_type",
-									"value": "client_credentials",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "auth.algafood.local:8081/oauth/token",
-							"host": [
-								"auth",
-								"algafood",
-								"local"
-							],
-							"port": "8081",
-							"path": [
-								"oauth",
-								"token"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Authorization Code Grant - Authenticate and Authorize",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&state=abc&redirect_uris=http://www.foodanalytics.local:8082",
-							"host": [
-								"auth",
-								"algafood",
-								"local"
-							],
-							"port": "8081",
-							"path": [
-								"oauth",
-								"authorize"
-							],
-							"query": [
-								{
-									"key": "response_type",
-									"value": "code"
-								},
-								{
-									"key": "client_id",
-									"value": "foodanalytics"
-								},
-								{
-									"key": "state",
-									"value": "abc"
-								},
-								{
-									"key": "redirect_uris",
-									"value": "http://www.foodanalytics.local:8082"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Authorization Code - Solicitar Token",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "username",
-									"value": "foodanalytics",
-									"type": "string"
-								},
-								{
-									"key": "password",
-									"value": "food123",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "username",
-								"value": "thiago",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "password",
-								"value": "123",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "grant_type",
-								"value": "password",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "grant_type",
-									"value": "authorization_code",
-									"type": "text"
-								},
-								{
-									"key": "code",
-									"value": "xweZVm",
-									"type": "text"
-								},
-								{
-									"key": "redirect_uri",
-									"value": "http://aplicacao-cliente",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "auth.algafood.local:8081/oauth/token",
-							"host": [
-								"auth",
-								"algafood",
-								"local"
-							],
-							"port": "8081",
-							"path": [
-								"oauth",
-								"token"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "[PLAIN] PKCE Authorization Code Grant - Authenticate and Authorize",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=plain",
-							"protocol": "http",
-							"host": [
-								"auth",
-								"algafood",
-								"local"
-							],
-							"port": "8081",
-							"path": [
-								"oauth",
-								"authorize"
-							],
-							"query": [
-								{
-									"key": "response_type",
-									"value": "code"
-								},
-								{
-									"key": "client_id",
-									"value": "foodanalytics"
-								},
-								{
-									"key": "redirect_uris",
-									"value": "http://www.foodanalytics.local:8082"
-								},
-								{
-									"key": "code_challenge",
-									"value": "teste123"
-								},
-								{
-									"key": "code_challenge_method",
-									"value": "plain"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "[SHA256] PKCE Authorization Code Grant - Authenticate and Authorize",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&redirect_uris=http://www.foodanalytics.local:8082&code_challenge=KJFg2w2fOfmuF1TE7JwW-QtQ4y4JxftUga5kKz09GjY&code_challenge_method=s256",
-							"protocol": "http",
-							"host": [
-								"auth",
-								"algafood",
-								"local"
-							],
-							"port": "8081",
-							"path": [
-								"oauth",
-								"authorize"
-							],
-							"query": [
-								{
-									"key": "response_type",
-									"value": "code"
-								},
-								{
-									"key": "client_id",
-									"value": "foodanalytics"
-								},
-								{
-									"key": "redirect_uris",
-									"value": "http://www.foodanalytics.local:8082"
-								},
-								{
-									"key": "code_challenge",
-									"value": "KJFg2w2fOfmuF1TE7JwW-QtQ4y4JxftUga5kKz09GjY"
-								},
-								{
-									"key": "code_challenge_method",
-									"value": "s256"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "PKCE Authorization Code - Solicitar Token",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "username",
-									"value": "foodanalytics",
-									"type": "string"
-								},
-								{
-									"key": "password",
-									"value": "food123",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "username",
-								"value": "thiago",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "password",
-								"value": "123",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "grant_type",
-								"value": "password",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "code",
-									"value": "wAABzb",
-									"type": "text"
-								},
-								{
-									"key": "grant_type",
-									"value": "authorization_code",
-									"type": "text"
-								},
-								{
-									"key": "redirect_uri",
-									"value": "http://www.foodanalytics.local:8082",
-									"type": "text"
-								},
-								{
-									"key": "code_verifier",
-									"value": "teste123",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "auth.algafood.local:8081/oauth/token",
-							"host": [
-								"auth",
-								"algafood",
-								"local"
-							],
-							"port": "8081",
-							"path": [
-								"oauth",
-								"token"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Without Basic Authentication - PKCE Authorization Code - Solicitar Token",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "username",
-								"value": "thiago",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "password",
-								"value": "123",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "grant_type",
-								"value": "password",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "code",
-									"value": "A8KOD6",
-									"type": "text"
-								},
-								{
-									"key": "grant_type",
-									"value": "authorization_code",
-									"type": "text"
-								},
-								{
-									"key": "redirect_uri",
-									"value": "http://www.foodanalytics.local:8082",
-									"type": "text"
-								},
-								{
-									"key": "code_verifier",
-									"value": "teste123",
-									"type": "text"
-								},
-								{
-									"key": "client_id",
-									"value": "foodanalytics",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "auth.algafood.local:8081/oauth/token",
-							"host": [
-								"auth",
-								"algafood",
-								"local"
-							],
-							"port": "8081",
-							"path": [
-								"oauth",
-								"token"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Public Key - Token Key",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "auth.algafood.local:8081/oauth/token_key",
-							"host": [
-								"auth",
-								"algafood",
-								"local"
-							],
-							"port": "8081",
-							"path": [
-								"oauth",
-								"token_key"
-							]
-						}
-					},
-					"response": []
+					]
 				}
 			]
 		},
