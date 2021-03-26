@@ -27,16 +27,22 @@ public class AlgaSecurity {
 		
 		return jwt.getClaim("usuario_id");
 	}
-
+	
 	public boolean gerenciaRestaurante(Long restauranteId) {
-	    if (restauranteId == null) {
-	        return false;
-	    }
-	    
-	    return restauranteRepository.existsResponsavel(restauranteId, getUsuarioId());
+		if (restauranteId == null) {
+			return false;
+		}
+		
+		return restauranteRepository.existsResponsavel(restauranteId, getUsuarioId());
 	}
 	
 	public boolean gerenciaRestauranteDoPedido(String codigoPedido) {
-	    return pedidoRepository.isPedidoGerenciadoPor(codigoPedido, getUsuarioId());
-	}  
+		return pedidoRepository.isPedidoGerenciadoPor(codigoPedido, getUsuarioId());
+	}
+	
+	public boolean usuarioAutenticadoIgual(Long usuarioId) {
+		return getUsuarioId() != null && usuarioId != null
+				&& getUsuarioId().equals(usuarioId);
+	}
+	
 }
