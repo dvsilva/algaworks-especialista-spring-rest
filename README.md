@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 23-45-implementando-o-endpoint-do-json-web-key-set-jwks
+git checkout -b 23-46-externalizando-o-keystore-criando-um-protocolresolver-para-base64
 git add .
-git commit -m "Implementando o endpoint do JSON Web Key Set (JWKS)"
-git push origin 23-45-implementando-o-endpoint-do-json-web-key-set-jwks
+git commit -m "Externalizando o KeyStore: criando um ProtocolResolver para Base64"
+git push origin 23-46-externalizando-o-keystore-criando-um-protocolresolver-para-base64
 
 git checkout master
-git merge --no-ff 23-45-implementando-o-endpoint-do-json-web-key-set-jwks
+git merge --no-ff 23-46-externalizando-o-keystore-criando-um-protocolresolver-para-base64
 git push
 
 sair da tela de merge

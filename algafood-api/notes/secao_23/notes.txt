@@ -107,3 +107,12 @@ jwkSet
 - rotacionar/alterar chave
 - diversos resource server acessando a chave no authorization teria que avisar quando tiver alterações na chave
 - com jwt set ela fica exposta no endpoint facilitando essa manutenção
+
+base64
+- protocolo para carregar o resource (chave privada)
+- método de codificação de dados que pode transformar arquivos binários em textos
+- usado para transmissão de dados pela internet em meios de comunicação onde precisa trafegar texto ao inves de arquivos binários
+- transformar arquivo em base64 - cat filename | base64
+
+SPI (service provider interface)
+- tipo de API que tem como objetivo definir extensões ou customizações em uma biblioteca, framework ou tecnologia
