@@ -101,3 +101,9 @@ scopes (escopos)
 - mesmo que o token do usuario tenha acesso é liberado apenas o escopo descrito para a aplicação
 - o usuário aprova apenas os escopos que ele deseja que determinada app faça em nome dele
 - também pode ser limitada pelo tipo de client na configuração do authorization server
+
+jwkSet
+- tirar arquivo da public key do projeto
+- rotacionar/alterar chave
+- diversos resource server acessando a chave no authorization teria que avisar quando tiver alterações na chave
+- com jwt set ela fica exposta no endpoint facilitando essa manutenção
