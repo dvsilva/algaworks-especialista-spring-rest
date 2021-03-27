@@ -33,7 +33,7 @@ quando usar
 	- não quer depender de provedor
 	- aproveitar melhor os recursos computacionais do servidor
 
-
+instalação do docker (https://docs.docker.com/engine/install)
 
 
 
