@@ -53,6 +53,7 @@ gerenciar containers (https://docs.docker.com/engine/reference/commandline/docke
 	- rodar e nomear container -> docker container run -p 80:80 -d --name blogalgafood wordpress
 	- rodar e remover ao ser parado -> docker container run -p 80:80 -d --rm --name blogalgafood wordpress
 	- subir última versão [tags] ubuntu e abrir bash -> docker container run --rm --it ubuntu:latest bash
+	- subir jre e abrir bash -> docker container run --rm --it openjdk:8-jre-slim bash
 
 arquitetura do docker
 	- cliente (comandos docker e paramentros) -> gerenciar containers
@@ -66,6 +67,9 @@ docker hub (https://hub.docker.com)
 	- compartilhar imagens de containers de forma pública e/ou privada
 	- serviço na nuvem do tipo docker registry
 
-
+gerenciando imagens
+	- listar imagens -> docker image ls --all
+	- baixar imagem sem rodar o container -> docker image pull [nome_imagem ex: openjdk:8-jre-slim]
+	- remover imagem -> docker image rm [nome_imagem ex: openjdk:8-jre-slim]
 
  
