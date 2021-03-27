@@ -52,6 +52,7 @@ gerenciar containers (https://docs.docker.com/engine/reference/commandline/docke
 	- remover todos os containers que estão parados -> docker container prune
 	- rodar e nomear container -> docker container run -p 80:80 -d --name blogalgafood wordpress
 	- rodar e remover ao ser parado -> docker container run -p 80:80 -d --rm --name blogalgafood wordpress
+	- subir última versão [tags] ubuntu e abrir bash -> docker container run --rm --it ubuntu:latest bash
 
 arquitetura do docker
 	- cliente (comandos docker e paramentros) -> gerenciar containers
@@ -60,6 +61,10 @@ arquitetura do docker
 		- containers -> instancia executavel de uma imagem
 		- images -> template para rodar o container
 	- registry -> armazena imagens do docker que os desenvolvedores podem usar para iniciar containers (padrão docker hub)
+
+docker hub (https://hub.docker.com)
+	- compartilhar imagens de containers de forma pública e/ou privada
+	- serviço na nuvem do tipo docker registry
 
 
 
