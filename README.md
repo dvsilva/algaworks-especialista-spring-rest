@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-08-executando-um-container-do-mysql
+git checkout -b 24-09-construindo-a-imagem-da-aplicação-com-dockerfile
 git add .
-git commit -m "Executando um container do MySQL"
-git push origin 24-08-executando-um-container-do-mysql
+git commit -m "Construindo a imagem da aplicação com Dockerfile"
+git push origin 24-09-construindo-a-imagem-da-aplicação-com-dockerfile
 
 git checkout master
-git merge --no-ff 24-08-executando-um-container-do-mysql
+git merge --no-ff 24-09-construindo-a-imagem-da-aplicação-com-dockerfile
 git push
 
 sair da tela de merge

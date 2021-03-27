@@ -76,5 +76,12 @@ executando um container do MySQL (parar versão que esta rodando)
 	- subir container [sem senha] -> docker container run -d -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --name algafood-mysql mysql:8.0 
 	- subir container [com senha / nao funcionou] -> docker container run -d -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=no -e MYSQL_ROOT_PASSWORD=123456 --name algafood-mysql mysql:8.0 
 
-
+criar imagem da aplicação
+	- criar arquivo Dockerfile
+	- construir app com maven -> ./mvnw clean package
+	- rodar comando
+		- docker image build -t algafood . 
+		- docker image build -t [nome:tag -> ex: algafood] [local ex: .]
+	- rodar container
+		- docker container run --rm -p 8080:8080 algafood
 
