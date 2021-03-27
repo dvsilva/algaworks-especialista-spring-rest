@@ -35,6 +35,8 @@ quando usar
 
 instalação do docker (https://docs.docker.com/engine/install)
 
+executando um container
+	- rodar nginx -> docker container run -p 8080:80 nginx
 
 
 

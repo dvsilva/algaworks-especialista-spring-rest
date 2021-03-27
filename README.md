@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-02-instalando-o-docker
+git checkout -b 24-03-executando-um-container
 git add .
-git commit -m "Instalando o Docker"
-git push origin 24-02-instalando-o-docker
+git commit -m "Executando um container"
+git push origin 24-03-executando-um-container
 
 git checkout master
-git merge --no-ff 24-02-instalando-o-docker
+git merge --no-ff 24-03-executando-um-container
 git push
 
 sair da tela de merge
