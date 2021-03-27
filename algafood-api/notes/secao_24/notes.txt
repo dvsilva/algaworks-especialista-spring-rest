@@ -1,0 +1,44 @@
+conhecendo docker
+	- configuração das ferramentas nas máquinas
+	- conflitos entre versões
+	- cada desenvolvedor tinha um ambiente diferente
+
+container
+	- pacote que roda dentro dele todos os softwares, bibliotecas e dependencias necessárias
+	- com alto nivel de portabilidade de forma repetível e confiável
+	- desacoplam a aplicação do hardware e sistema operacional
+	- empacota todos os artefatos e dependencias detro de containers incluido o SO
+	- ambientes isolados mas compartilha o mesmo kernel do SO
+	- não distribui o arquivo jar mas a imagem de um container (binário com tudo o que precisa)
+	- não tem conflito com apps em outros containers
+
+docker
+	- plataforma popular para rodar apps usando containers em varios tipos de ambientes
+	- entrega rapida separando a app da infraestrutura
+	- cada app roda em um container diferente (ambiente isolado)
+	- docker é diferente de marquina virtual (o docker não levanta um sistema operacional separado como as MV, usa o kernel)
+
+vantagens
+	- alto nivel de portabilidade
+	- compatibilidade de sistemas operacionais
+	- uso amigável
+	- evita problemas em diversos ambientes (padronização de ambientes)
+	- velocidade no desenvolvimento (produtividade)
+
+quando usar 
+	- sempre que possível
+	- utiliza para testar novas ferramentas
+	- rodar aplicações terceiras que ja fornecem imagens docker para uso
+	- precisa escalar de forma fácil
+	- não quer depender de provedor
+	- aproveitar melhor os recursos computacionais do servidor
+
+
+
+
+
+
+
+
+
+ 
