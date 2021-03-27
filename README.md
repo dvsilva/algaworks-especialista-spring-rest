@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-03-executando-um-container
+git checkout -b 24-04-gerenciando-melhor-os-containers
 git add .
-git commit -m "Executando um container"
-git push origin 24-03-executando-um-container
+git commit -m "Gerenciando melhor os containers"
+git push origin 24-04-gerenciando-melhor-os-containers
 
 git checkout master
-git merge --no-ff 24-03-executando-um-container
+git merge --no-ff 24-04-gerenciando-melhor-os-containers
 git push
 
 sair da tela de merge

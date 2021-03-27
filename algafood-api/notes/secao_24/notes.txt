@@ -36,8 +36,22 @@ quando usar
 instalação do docker (https://docs.docker.com/engine/install)
 
 executando um container
-	- rodar nginx -> docker container run -p 8080:80 nginx
+	- rodar nginx -> docker container run -p 80:80 nginx
+	- argumento -> -p entrada:saida
 
+gerenciar containers (https://docs.docker.com/engine/reference/commandline/docker)
+	- rodar wordpress -> docker container run -p 80:80 wordpress
+	- rodar detached (sem travar terminal) -> docker container run -p 80:80 -d wordpress
+	- listar containers -> docker container ls
+	- listar containers independente se estão rodando -> docker container ls --all
+	- ver logs -> docker container logs -f [id ou name]
+	- parar execução -> docker container stop [id ou name]
+	- iniciar execução -> docker container start [id ou name]
+	- remover container -> docker container rm [id ou name]
+	- remover container mesmo se estiver sendo executado -> docker container rm [id ou name] --force
+	- remover todos os containers que estão parados -> docker container prune
+	- rodar e nomear container -> docker container run -p 80:80 -d --name blogalgafood wordpress
+	- rodar e remover ao ser parado -> docker container run -p 80:80 -d --rm --name blogalgafood wordpress
 
 
 
