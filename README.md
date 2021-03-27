@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-06-entendendo-o-que-sao-as-imagens-e-o-docker-hub
+git checkout -b 24-07-gerenciando-imagens
 git add .
-git commit -m "Entendendo o que são as imagens e o Docker Hub"
-git push origin 24-06-entendendo-o-que-sao-as-imagens-e-o-docker-hub
+git commit -m "Gerenciando imagens"
+git push origin 24-07-gerenciando-imagens
 
 git checkout master
-git merge --no-ff 24-06-entendendo-o-que-sao-as-imagens-e-o-docker-hub
+git merge --no-ff 24-07-gerenciando-imagens
 git push
 
 sair da tela de merge
