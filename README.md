@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-09-construindo-a-imagem-da-aplicação-com-dockerfile
+git checkout -b 24-10-criando-uma-network-e-conectando-dois-containers
 git add .
-git commit -m "Construindo a imagem da aplicação com Dockerfile"
-git push origin 24-09-construindo-a-imagem-da-aplicação-com-dockerfile
+git commit -m "Criando uma network e conectando dois containers"
+git push origin 24-10-criando-uma-network-e-conectando-dois-containers
 
 git checkout master
-git merge --no-ff 24-09-construindo-a-imagem-da-aplicação-com-dockerfile
+git merge --no-ff 24-10-criando-uma-network-e-conectando-dois-containers
 git push
 
 sair da tela de merge

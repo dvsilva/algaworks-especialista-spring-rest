@@ -79,9 +79,31 @@ executando um container do MySQL (parar versão que esta rodando)
 criar imagem da aplicação
 	- criar arquivo Dockerfile
 	- construir app com maven -> ./mvnw clean package
-	- rodar comando
+	- rodar comando para criar imagem
 		- docker image build -t algafood . 
 		- docker image build -t [nome:tag -> ex: algafood] [local ex: .]
 	- rodar container
 		- docker container run --rm -p 8080:8080 algafood
 
+renomear imagem
+	- docker image ls
+	- docker image tag algafood algafood-api
+	- docker image rm algafood
+
+criar uma network
+	- listar -> docker network ls
+	- criar -> docker network create --driver bridge algafood-network
+	- disco/armazenamento [mysql cria] -> docker volume ls
+	- exluir tudo -> docker container rm algafood-mysql --force --volumes
+
+vincular containers nas redes
+	- subir mysql na rede
+		- docker container run -d -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --network algafood-network --name algafood-mysql mysql:8.0
+	- gerar versão da app
+		- construir app com maven -> ./mvnw clean package
+		- docker image build -t algafood-api . 
+		- limpar imagens penduradas -> docker image prune
+	- rodar o container da api
+		- docker container run --rm -p 8080:8080 -e DB_HOST=algafood-mysql --network algafood-network algafood-api
+
+	
