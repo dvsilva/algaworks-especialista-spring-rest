@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-07-gerenciando-imagens
+git checkout -b 24-08-executando-um-container-do-mysql
 git add .
-git commit -m "Gerenciando imagens"
-git push origin 24-07-gerenciando-imagens
+git commit -m "Executando um container do MySQL"
+git push origin 24-08-executando-um-container-do-mysql
 
 git checkout master
-git merge --no-ff 24-07-gerenciando-imagens
+git merge --no-ff 24-08-executando-um-container-do-mysql
 git push
 
 sair da tela de merge
