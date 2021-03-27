@@ -53,7 +53,13 @@ gerenciar containers (https://docs.docker.com/engine/reference/commandline/docke
 	- rodar e nomear container -> docker container run -p 80:80 -d --name blogalgafood wordpress
 	- rodar e remover ao ser parado -> docker container run -p 80:80 -d --rm --name blogalgafood wordpress
 
-
+arquitetura do docker
+	- cliente (comandos docker e paramentros) -> gerenciar containers
+	- docker host -> maquina onde esta instalado o docker e onde estão os containers
+		- docker daemon -> software em background que gerencia os objetos do docker
+		- containers -> instancia executavel de uma imagem
+		- images -> template para rodar o container
+	- registry -> armazena imagens do docker que os desenvolvedores podem usar para iniciar containers (padrão docker hub)
 
 
 
