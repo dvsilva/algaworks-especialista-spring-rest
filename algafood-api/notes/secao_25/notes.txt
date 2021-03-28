@@ -10,3 +10,8 @@ serviços de deploy (PASS)
 Quadrante Mágico de 2020 do Gartner 
 https://pages.awscloud.com/GLOBAL-multi-DL-gartner-mq-cips-2020-learn.html
 
+conhecendo AWS
+	- Amazon Web Services (AWS) (https://aws.amazon.com/pt)
+	- Infraestrutura global da AWS (https://aws.amazon.com/pt/about-aws/global-infrastructure)
+	- Nível gratuito da AWS (https://aws.amazon.com/pt/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)
+	
