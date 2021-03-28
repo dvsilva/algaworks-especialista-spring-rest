@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-02-mais-organizacao-das-propriedades-do-projeto-com-spring-profiles
+git checkout -b 25-03-dependencia-de-javamailsender-nao-satisfeita-melhorando-uso-da-heranca
 git add .
-git commit -m "Mais organização das propriedades do projeto com Spring Profiles"
-git push origin 25-02-mais-organizacao-das-propriedades-do-projeto-com-spring-profiles
+git commit -m "Dependência de JavaMailSender não satisfeita: melhorando o uso da herança"
+git push origin 25-03-dependencia-de-javamailsender-nao-satisfeita-melhorando-uso-da-heranca
 
 git checkout master
-git merge --no-ff 25-02-mais-organizacao-das-propriedades-do-projeto-com-spring-profiles
+git merge --no-ff 25-03-dependencia-de-javamailsender-nao-satisfeita-melhorando-uso-da-heranca
 git push
 
 sair da tela de merge
