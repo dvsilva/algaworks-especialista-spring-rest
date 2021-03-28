@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-15-escalando-um-servico-com-docker-compose
+git checkout -b 24-16-entendendo-o-poor-mans-load-balancer-dns-round-robin
 git add .
-git commit -m "Escalando um serviço com Docker Compose"
-git push origin 24-15-escalando-um-servico-com-docker-compose
+git commit -m "Entendendo o Poor Man's Load Balancer (DNS Round Robin)"
+git push origin 24-16-entendendo-o-poor-mans-load-balancer-dns-round-robin
 
 git checkout master
-git merge --no-ff 24-15-escalando-um-servico-com-docker-compose
+git merge --no-ff 24-16-entendendo-o-poor-mans-load-balancer-dns-round-robin
 git push
 
 sair da tela de merge
