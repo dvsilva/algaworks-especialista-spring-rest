@@ -115,5 +115,11 @@ enviar imagem para o docker hub
 	- remover imagens locais -> docker image -rm [ids]
 	- baixar e subir do docker hub -> docker container run --rm -p 8080:8080 -e DB_HOST=algafood-mysql --network algafood-network dvsilva/algafood-api
 	
-	
+inicializar containers com docker compose 
+	- subir apps -> docker-compose up
+	- subir detached -> docker-compose up -d
+	- ver logs -> docker-compose -f
+	- parar apps -> docker-compose down --volumes
+
+
 	
