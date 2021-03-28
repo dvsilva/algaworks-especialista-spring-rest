@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-13-conhecendo-e-usando-docker-compose
+git checkout -b 24-14-controlando-a-ordem-de-inicializacao-com-wait-for-it
 git add .
-git commit -m "Conhecendo e usando Docker Compose"
-git push origin 24-13-conhecendo-e-usando-docker-compose
+git commit -m "Controlando a ordem de inicialização com wait-for-it.sh"
+git push origin 24-14-controlando-a-ordem-de-inicializacao-com-wait-for-it
 
 git checkout master
-git merge --no-ff 24-13-conhecendo-e-usando-docker-compose
+git merge --no-ff 24-14-controlando-a-ordem-de-inicializacao-com-wait-for-it
 git push
 
 sair da tela de merge
