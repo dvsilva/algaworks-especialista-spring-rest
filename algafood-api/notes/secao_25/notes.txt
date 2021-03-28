@@ -15,3 +15,24 @@ conhecendo AWS
 	- Infraestrutura global da AWS (https://aws.amazon.com/pt/about-aws/global-infrastructure)
 	- Nível gratuito da AWS (https://aws.amazon.com/pt/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)
 	
+conceitos fundamentais da nuvem da AWS
+	- região -> localização geográfica totalmente separada (locais onde estão os serviços)
+		- diminuir latência dos usuários
+		- prevenção de desastres
+	- zonas de disponibilidade -> datacenter separado dentro da região
+		- alta conectividade (max 100km de raio)
+		- proteção (incêndios ..)
+		
+- nuvem da aws
+	- região
+		- zonas de disponibilidade
+		- vpc  
+			- rede virtual isolada logicamente dentro da nuvem da amazon
+			- abrange todas as zonas de disponibilidade que estão dentro da região
+			- subnet
+				- esta ligada a uma unica zona de disponibilidade
+				 - multi AZ -> multi zona de disponibilidade (distribui)
+
+
+	
+

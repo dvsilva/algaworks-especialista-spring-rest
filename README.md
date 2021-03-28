@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-04-conhecendo-a-amazon-web-services-aws
+git checkout -b 25-05-entendendo-alguns-conceitos-fundamentais-da-nuvem-da-aws
 git add .
-git commit -m "Conhecendo a Amazon Web Services (AWS)"
-git push origin 25-04-conhecendo-a-amazon-web-services-aws
+git commit -m "Entendendo alguns conceitos fundamentais da nuvem da AWS"
+git push origin 25-05-entendendo-alguns-conceitos-fundamentais-da-nuvem-da-aws
 
 git checkout master
-git merge --no-ff 25-04-conhecendo-a-amazon-web-services-aws
+git merge --no-ff 25-05-entendendo-alguns-conceitos-fundamentais-da-nuvem-da-aws
 git push
 
 sair da tela de merge
