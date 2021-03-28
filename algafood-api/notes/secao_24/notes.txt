@@ -108,3 +108,12 @@ vincular containers nas redes
 
 criar imagem pelo maven -> ./mvnw package -Pdocker
 
+enviar imagem para o docker hub
+	- fazer tag para o docker hub -> docker image tag algafood-api:latest dvsilva/algafood-api:latest
+	- fazer login -> docker login
+	- enviar imagem -> docker push dvsilva/algafood-api:latest
+	- remover imagens locais -> docker image -rm [ids]
+	- baixar e subir do docker hub -> docker container run --rm -p 8080:8080 -e DB_HOST=algafood-mysql --network algafood-network dvsilva/algafood-api
+	
+	
+	
