@@ -33,6 +33,11 @@ conceitos fundamentais da nuvem da AWS
 				- esta ligada a uma unica zona de disponibilidade
 				 - multi AZ -> multi zona de disponibilidade (distribui)
 
+monitorando e criando um alerta de orçamento da AWS
+	- menu principal > nome do usuário > My Billing Dashboard
+		- ativar avisos -> preferencias > preferencias de faturamento (ativar caixas de notificações)
+		- criar um orçamento -> budgets > criar um orçamento > orçamento de custos > configurar limites > confirmar orçamento > criar
 
+ 
 	
 
