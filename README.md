@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-12-disponibilizando-imagem-da-aplicacao-no-docker-hub
+git checkout -b 24-13-conhecendo-e-usando-docker-compose
 git add .
-git commit -m "Disponibilizando a imagem da aplicação no Docker Hub"
-git push origin 24-12-disponibilizando-imagem-da-aplicacao-no-docker-hub
+git commit -m "Conhecendo e usando Docker Compose"
+git push origin 24-13-conhecendo-e-usando-docker-compose
 
 git checkout master
-git merge --no-ff 24-12-disponibilizando-imagem-da-aplicacao-no-docker-hub
+git merge --no-ff 24-13-conhecendo-e-usando-docker-compose
 git push
 
 sair da tela de merge
