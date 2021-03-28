@@ -106,4 +106,5 @@ vincular containers nas redes
 	- rodar o container da api
 		- docker container run --rm -p 8080:8080 -e DB_HOST=algafood-mysql --network algafood-network algafood-api
 
-	
+criar imagem pelo maven -> ./mvnw package -Pdocker
+
