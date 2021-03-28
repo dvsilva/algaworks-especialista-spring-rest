@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-03-dependencia-de-javamailsender-nao-satisfeita-melhorando-uso-da-heranca
+git checkout -b 25-04-conhecendo-a-amazon-web-services-aws
 git add .
-git commit -m "Dependência de JavaMailSender não satisfeita: melhorando o uso da herança"
-git push origin 25-03-dependencia-de-javamailsender-nao-satisfeita-melhorando-uso-da-heranca
+git commit -m "Conhecendo a Amazon Web Services (AWS)"
+git push origin 25-04-conhecendo-a-amazon-web-services-aws
 
 git checkout master
-git merge --no-ff 25-03-dependencia-de-javamailsender-nao-satisfeita-melhorando-uso-da-heranca
+git merge --no-ff 25-04-conhecendo-a-amazon-web-services-aws
 git push
 
 sair da tela de merge
