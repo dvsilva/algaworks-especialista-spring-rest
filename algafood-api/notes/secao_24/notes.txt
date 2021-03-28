@@ -130,3 +130,8 @@ Poor Man's Load Balancer (DNS Round Robin)
 	- instalar curl -> apk add curl
 	- fazer requisição para api -> curl http://algafood-api:8080/hostcheck
 	
+configurando um proxy reverso com Nginx
+	- proxy reverso -> servidor http respondendo a uma porta e encaminha para a api
+
+
+	

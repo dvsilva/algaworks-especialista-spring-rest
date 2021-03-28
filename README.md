@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-16-entendendo-o-poor-mans-load-balancer-dns-round-robin
+git checkout -b 24-17-configurando-um-proxy-reverso-com-nginx
 git add .
-git commit -m "Entendendo o Poor Man's Load Balancer (DNS Round Robin)"
-git push origin 24-16-entendendo-o-poor-mans-load-balancer-dns-round-robin
+git commit -m "Configurando um proxy reverso com Nginx"
+git push origin 24-17-configurando-um-proxy-reverso-com-nginx
 
 git checkout master
-git merge --no-ff 24-16-entendendo-o-poor-mans-load-balancer-dns-round-robin
+git merge --no-ff 24-17-configurando-um-proxy-reverso-com-nginx
 git push
 
 sair da tela de merge
