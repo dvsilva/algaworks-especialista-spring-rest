@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-20-configurando-o-spring-session-data-redis
+git checkout -b 24-21-resolvendo-problemas-com-storage-de-authorization-codes
 git add .
-git commit -m "Configurando o Spring Session Data Redis"
-git push origin 24-20-configurando-o-spring-session-data-redis
+git commit -m "Resolvendo problemas com storage de Authorization Codes"
+git push origin 24-21-resolvendo-problemas-com-storage-de-authorization-codes
 
 git checkout master
-git merge --no-ff 24-20-configurando-o-spring-session-data-redis
+git merge --no-ff 24-21-resolvendo-problemas-com-storage-de-authorization-codes
 git push
 
 sair da tela de merge
