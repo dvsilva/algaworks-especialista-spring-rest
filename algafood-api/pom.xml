@@ -27,6 +27,7 @@
 		<oauth2-oidc-sdk.version>6.21.2</oauth2-oidc-sdk.version>
 		<spring-security-oauth2.version>2.3.7.RELEASE</spring-security-oauth2.version>
 		<spring-security-jwt.version>1.0.11.RELEASE</spring-security-jwt.version>
+		<dockerfile-maven-version>1.4.13</dockerfile-maven-version>
 	</properties>
 
 	<dependencies>
@@ -206,13 +207,8 @@
 		</dependency>
 
 		<!-- Erro java.lang.NoSuchMethodError -->
-		<!-- 
-		<dependency>
-			<groupId>com.nimbusds</groupId>
-			<artifactId>oauth2-oidc-sdk</artifactId>
-			<version>${oauth2-oidc-sdk.version}</version>
-		</dependency>
-		-->
+		<!-- <dependency> <groupId>com.nimbusds</groupId> <artifactId>oauth2-oidc-sdk</artifactId> 
+			<version>${oauth2-oidc-sdk.version}</version> </dependency> -->
 
 		<!-- OAUTH AUTHORIZATION SERVER -->
 		<dependency>
@@ -226,7 +222,7 @@
 			<artifactId>spring-security-jwt</artifactId>
 			<version>${spring-security-jwt.version}</version>
 		</dependency>
-		
+
 		<!-- THYMELEAF - CUSTOMIZAR PAGINAS DE LOGIN -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -244,13 +240,43 @@
 				<artifactId>maven-failsafe-plugin</artifactId>
 			</plugin>
 			<plugin>
-		        <groupId>org.apache.maven.plugins</groupId>
-		        <artifactId>maven-surefire-plugin</artifactId>
-		        <configuration>
-		          <skipTests>true</skipTests>
-		        </configuration>
-		      </plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
+	<profiles>
+		<profile>
+			<id>docker</id>
+
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.spotify</groupId>
+						<artifactId>dockerfile-maven-plugin</artifactId>
+						<version>${dockerfile-maven-version}</version>
+						<executions>
+							<execution>
+								<id>default</id>
+								<goals>
+									<goal>build</goal>
+									<goal>push</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<repository>algafood-api</repository>
+							<buildArgs>
+								<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
+							</buildArgs>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>

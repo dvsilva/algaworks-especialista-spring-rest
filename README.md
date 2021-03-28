@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-10-criando-uma-network-e-conectando-dois-containers
+git checkout -b 24-11-construindo-a-imagem-docker-pelo-maven
 git add .
-git commit -m "Criando uma network e conectando dois containers"
-git push origin 24-10-criando-uma-network-e-conectando-dois-containers
+git commit -m "Construindo a imagem Docker pelo Maven"
+git push origin 24-11-construindo-a-imagem-docker-pelo-maven
 
 git checkout master
-git merge --no-ff 24-10-criando-uma-network-e-conectando-dois-containers
+git merge --no-ff 24-11-construindo-a-imagem-docker-pelo-maven
 git push
 
 sair da tela de merge
