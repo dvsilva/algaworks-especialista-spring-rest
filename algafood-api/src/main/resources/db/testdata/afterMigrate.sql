@@ -1,5 +1,11 @@
 set foreign_key_checks = 0;
 
+lock tables cidade write, cozinha write, estado write, forma_pagamento write,
+	grupo write, grupo_permissao write, permissao write,
+	produto write, restaurante write, restaurante_forma_pagamento write,
+	restaurante_usuario_responsavel write, usuario write, usuario_grupo write,
+	pedido write, item_pedido write, foto_produto write, oauth_client_details write; 
+
 delete from cidade;
 delete from cozinha;
 delete from estado;
@@ -194,7 +200,7 @@ insert into oauth_client_details (
   access_token_validity, refresh_token_validity, autoapprove
 )
 values (
-  'foodanalytics', null, '$2y$12$6ao5jNSV4hdFhMvwzOQ9aeikdu5Z9.T.hFmO0xE5nKGJJ7FVtAQ0q',
+  'foodanalytics', null, '$2y$12$fahbH37S2pyk1RPuIHKP.earzFmgAJJGo26rE.59vf4wwiiTKHnzO',
   'READ,WRITE', 'authorization_code', 'http://www.foodanalytics.local:8082', null,
   null, null, null
 );
@@ -205,7 +211,9 @@ insert into oauth_client_details (
   access_token_validity, refresh_token_validity, autoapprove
 )
 values (
-  'faturamento', null, '$2y$12$N7vugHrUS7RqO9tMUFQxX.gI5WWPsxxhKmE8eI14jBYKPmiiwenLe',
+  'faturamento', null, '$2y$12$fHixriC7yXX/i1/CmpnGH.RFyK/l5YapLCFOEbIktONjE8ZDykSnu',
   'READ,WRITE', 'client_credentials', null, 'CONSULTAR_PEDIDOS,GERAR_RELATORIOS',
   null, null, null
 );
+
+unlock tables;

@@ -121,5 +121,7 @@ inicializar containers com docker compose
 	- ver logs -> docker-compose -f
 	- parar apps -> docker-compose down --volumes
 
+balanceamento de carga (escalando um serviço com Docker Compose) 
+	- docker-compose up --scale algafood-api=2
 
-	
+
