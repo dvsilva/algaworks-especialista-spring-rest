@@ -1,0 +1,12 @@
+serviços de deploy (PASS)
+	- Cloud Foundry (https://www.cloudfoundry.org)
+	- Heroku (https://www.heroku.com)
+	- Digital Ocean (https://www.digitalocean.com)
+	- Microsoft Azure (https://azure.microsoft.com/pt-br)
+	- Google Cloud (https://cloud.google.com)
+	- Alibaba Cloud (https://www.alibabacloud.com)
+	- Amazon Web Services (https://aws.amazon.com/pt)
+
+Quadrante Mágico de 2020 do Gartner 
+https://pages.awscloud.com/GLOBAL-multi-DL-gartner-mq-cips-2020-learn.html
+
