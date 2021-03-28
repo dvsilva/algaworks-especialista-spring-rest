@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-01-introducao-ao-deployment-em-producao
+git checkout -b 25-02-mais-organizacao-das-propriedades-do-projeto-com-spring-profiles
 git add .
-git commit -m "Introdução ao deployment em produção"
-git push origin 25-01-introducao-ao-deployment-em-producao
+git commit -m "Mais organização das propriedades do projeto com Spring Profiles"
+git push origin 25-02-mais-organizacao-das-propriedades-do-projeto-com-spring-profiles
 
 git checkout master
-git merge --no-ff 25-01-introducao-ao-deployment-em-producao
+git merge --no-ff 25-02-mais-organizacao-das-propriedades-do-projeto-com-spring-profiles
 git push
 
 sair da tela de merge
