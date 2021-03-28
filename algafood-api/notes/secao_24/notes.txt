@@ -138,3 +138,7 @@ problema da HTTP Session no Authorization Server
 	- o oauth2 utiliza sessão para fazer esse fluxo
 	- solução: colocar session em uma memória que possa ser compartilhada entre todos os containers  
 
+acessando redis no docker
+	- subir client para acessar o redis -> docker container run --rm -it --network algafood-api_algafood-network redis:6.2.1-alpine sh
+	- acessar outro container pelo cli -> redis-cli -h algafood-redis -p 6379 
+

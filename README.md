@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-18-entendendo-o-problema-da-http-session-no-authorization-server
+git checkout -b 24-19-adicionando-um-container-do-redis-no-arquivo-do-docker-compose
 git add .
-git commit -m "Entendendo o problema da HTTP Session no Authorization Server"
-git push origin 24-18-entendendo-o-problema-da-http-session-no-authorization-server
+git commit -m "Adicionando um container do Redis no arquivo do Docker Compose"
+git push origin 24-19-adicionando-um-container-do-redis-no-arquivo-do-docker-compose
 
 git checkout master
-git merge --no-ff 24-18-entendendo-o-problema-da-http-session-no-authorization-server
+git merge --no-ff 24-19-adicionando-um-container-do-redis-no-arquivo-do-docker-compose
 git push
 
 sair da tela de merge
