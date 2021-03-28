@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-17-configurando-um-proxy-reverso-com-nginx
+git checkout -b 24-18-entendendo-o-problema-da-http-session-no-authorization-server
 git add .
-git commit -m "Configurando um proxy reverso com Nginx"
-git push origin 24-17-configurando-um-proxy-reverso-com-nginx
+git commit -m "Entendendo o problema da HTTP Session no Authorization Server"
+git push origin 24-18-entendendo-o-problema-da-http-session-no-authorization-server
 
 git checkout master
-git merge --no-ff 24-17-configurando-um-proxy-reverso-com-nginx
+git merge --no-ff 24-18-entendendo-o-problema-da-http-session-no-authorization-server
 git push
 
 sair da tela de merge

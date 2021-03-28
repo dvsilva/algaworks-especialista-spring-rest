@@ -133,5 +133,8 @@ Poor Man's Load Balancer (DNS Round Robin)
 configurando um proxy reverso com Nginx
 	- proxy reverso -> servidor http respondendo a uma porta e encaminha para a api
 
+problema da HTTP Session no Authorization Server
+	- fluxo authorization code com mais de uma instância se perde
+	- o oauth2 utiliza sessão para fazer esse fluxo
+	- solução: colocar session em uma memória que possa ser compartilhada entre todos os containers  
 
-	
