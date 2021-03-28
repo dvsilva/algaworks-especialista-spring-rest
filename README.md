@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-21-resolvendo-problemas-com-storage-de-authorization-codes
+git checkout -b 25-01-introducao-ao-deployment-em-producao
 git add .
-git commit -m "Resolvendo problemas com storage de Authorization Codes"
-git push origin 24-21-resolvendo-problemas-com-storage-de-authorization-codes
+git commit -m "Introdução ao deployment em produção"
+git push origin 25-01-introducao-ao-deployment-em-producao
 
 git checkout master
-git merge --no-ff 24-21-resolvendo-problemas-com-storage-de-authorization-codes
+git merge --no-ff 25-01-introducao-ao-deployment-em-producao
 git push
 
 sair da tela de merge

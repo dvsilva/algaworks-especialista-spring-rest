@@ -1,0 +1,144 @@
+conhecendo docker
+	- configuração das ferramentas nas máquinas
+	- conflitos entre versões
+	- cada desenvolvedor tinha um ambiente diferente
+
+container
+	- pacote que roda dentro dele todos os softwares, bibliotecas e dependencias necessárias
+	- com alto nivel de portabilidade de forma repetível e confiável
+	- desacoplam a aplicação do hardware e sistema operacional
+	- empacota todos os artefatos e dependencias detro de containers incluido o SO
+	- ambientes isolados mas compartilha o mesmo kernel do SO
+	- não distribui o arquivo jar mas a imagem de um container (binário com tudo o que precisa)
+	- não tem conflito com apps em outros containers
+
+docker
+	- plataforma popular para rodar apps usando containers em varios tipos de ambientes
+	- entrega rapida separando a app da infraestrutura
+	- cada app roda em um container diferente (ambiente isolado)
+	- docker é diferente de marquina virtual (o docker não levanta um sistema operacional separado como as MV, usa o kernel)
+
+vantagens
+	- alto nivel de portabilidade
+	- compatibilidade de sistemas operacionais
+	- uso amigável
+	- evita problemas em diversos ambientes (padronização de ambientes)
+	- velocidade no desenvolvimento (produtividade)
+
+quando usar 
+	- sempre que possível
+	- utiliza para testar novas ferramentas
+	- rodar aplicações terceiras que ja fornecem imagens docker para uso
+	- precisa escalar de forma fácil
+	- não quer depender de provedor
+	- aproveitar melhor os recursos computacionais do servidor
+
+instalação do docker (https://docs.docker.com/engine/install)
+
+executando um container
+	- rodar nginx -> docker container run -p 80:80 nginx
+	- argumento -> -p entrada:saida
+
+gerenciar containers (https://docs.docker.com/engine/reference/commandline/docker)
+	- rodar wordpress -> docker container run -p 80:80 wordpress
+	- rodar detached (sem travar terminal) -> docker container run -p 80:80 -d wordpress
+	- listar containers -> docker container ls
+	- listar containers independente se estão rodando -> docker container ls --all
+	- ver logs -> docker container logs -f [id ou name]
+	- parar execução -> docker container stop [id ou name]
+	- iniciar execução -> docker container start [id ou name]
+	- remover container -> docker container rm [id ou name]
+	- remover container mesmo se estiver sendo executado -> docker container rm [id ou name] --force
+	- remover todos os containers que estão parados -> docker container prune
+	- rodar e nomear container -> docker container run -p 80:80 -d --name blogalgafood wordpress
+	- rodar e remover ao ser parado -> docker container run -p 80:80 -d --rm --name blogalgafood wordpress
+	- subir última versão [tags] ubuntu e abrir bash -> docker container run --rm --it ubuntu:latest bash
+	- subir jre e abrir bash -> docker container run --rm --it openjdk:8-jre-slim bash
+
+arquitetura do docker
+	- cliente (comandos docker e paramentros) -> gerenciar containers
+	- docker host -> maquina onde esta instalado o docker e onde estão os containers
+		- docker daemon -> software em background que gerencia os objetos do docker
+		- containers -> instancia executavel de uma imagem
+		- images -> template para rodar o container
+	- registry -> armazena imagens do docker que os desenvolvedores podem usar para iniciar containers (padrão docker hub)
+
+docker hub (https://hub.docker.com)
+	- compartilhar imagens de containers de forma pública e/ou privada
+	- serviço na nuvem do tipo docker registry
+
+gerenciando imagens
+	- listar imagens -> docker image ls --all
+	- baixar imagem sem rodar o container -> docker image pull [nome_imagem ex: openjdk:8-jre-slim]
+	- remover imagem -> docker image rm [nome_imagem ex: openjdk:8-jre-slim]
+
+executando um container do MySQL (parar versão que esta rodando)
+	- subir container [sem senha] -> docker container run -d -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --name algafood-mysql mysql:8.0 
+	- subir container [com senha / nao funcionou] -> docker container run -d -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=no -e MYSQL_ROOT_PASSWORD=123456 --name algafood-mysql mysql:8.0 
+
+criar imagem da aplicação
+	- criar arquivo Dockerfile
+	- construir app com maven -> ./mvnw clean package
+	- rodar comando para criar imagem
+		- docker image build -t algafood . 
+		- docker image build -t [nome:tag -> ex: algafood] [local ex: .]
+	- rodar container
+		- docker container run --rm -p 8080:8080 algafood
+
+renomear imagem
+	- docker image ls
+	- docker image tag algafood algafood-api
+	- docker image rm algafood
+
+criar uma network
+	- listar -> docker network ls
+	- criar -> docker network create --driver bridge algafood-network
+	- disco/armazenamento [mysql cria] -> docker volume ls
+	- exluir tudo -> docker container rm algafood-mysql --force --volumes
+
+vincular containers nas redes
+	- subir mysql na rede
+		- docker container run -d -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --network algafood-network --name algafood-mysql mysql:8.0
+	- gerar versão da app
+		- construir app com maven -> ./mvnw clean package
+		- docker image build -t algafood-api . 
+		- limpar imagens penduradas -> docker image prune
+	- rodar o container da api
+		- docker container run --rm -p 8080:8080 -e DB_HOST=algafood-mysql --network algafood-network algafood-api
+
+criar imagem pelo maven -> ./mvnw package -Pdocker
+
+enviar imagem para o docker hub
+	- fazer tag para o docker hub -> docker image tag algafood-api:latest dvsilva/algafood-api:latest
+	- fazer login -> docker login
+	- enviar imagem -> docker push dvsilva/algafood-api:latest
+	- remover imagens locais -> docker image -rm [ids]
+	- baixar e subir do docker hub -> docker container run --rm -p 8080:8080 -e DB_HOST=algafood-mysql --network algafood-network dvsilva/algafood-api
+	
+inicializar containers com docker compose 
+	- subir apps -> docker-compose up
+	- subir detached -> docker-compose up -d
+	- ver logs -> docker-compose -f
+	- parar apps -> docker-compose down --volumes
+
+balanceamento de carga (escalando um serviço com Docker Compose) 
+	- docker-compose up --scale algafood-api=2
+
+Poor Man's Load Balancer (DNS Round Robin)
+	- subir serviço para acessar api -> docker container run --rm -it --network algafood-api_algafood-network alpine sh
+	- verificar link para acesso -> nslookup algafood-api
+	- instalar curl -> apk add curl
+	- fazer requisição para api -> curl http://algafood-api:8080/hostcheck
+	
+configurando um proxy reverso com Nginx
+	- proxy reverso -> servidor http respondendo a uma porta e encaminha para a api
+
+problema da HTTP Session no Authorization Server
+	- fluxo authorization code com mais de uma instância se perde
+	- o oauth2 utiliza sessão para fazer esse fluxo
+	- solução: colocar session em uma memória que possa ser compartilhada entre todos os containers  
+
+acessando redis no docker
+	- subir client para acessar o redis -> docker container run --rm -it --network algafood-api_algafood-network redis:6.2.1-alpine sh
+	- acessar outro container pelo cli -> redis-cli -h algafood-redis -p 6379 
+
