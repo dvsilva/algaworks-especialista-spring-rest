@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-05-entendendo-alguns-conceitos-fundamentais-da-nuvem-da-aws
+git checkout -b 25-06-monitorando-e-criando-um-alerta-de-orcamento-da-aws
 git add .
-git commit -m "Entendendo alguns conceitos fundamentais da nuvem da AWS"
-git push origin 25-05-entendendo-alguns-conceitos-fundamentais-da-nuvem-da-aws
+git commit -m "Monitorando e criando um alerta de orçamento da AWS"
+git push origin 25-06-monitorando-e-criando-um-alerta-de-orcamento-da-aws
 
 git checkout master
-git merge --no-ff 25-05-entendendo-alguns-conceitos-fundamentais-da-nuvem-da-aws
+git merge --no-ff 25-06-monitorando-e-criando-um-alerta-de-orcamento-da-aws
 git push
 
 sair da tela de merge
