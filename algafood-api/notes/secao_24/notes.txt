@@ -124,4 +124,9 @@ inicializar containers com docker compose
 balanceamento de carga (escalando um serviço com Docker Compose) 
 	- docker-compose up --scale algafood-api=2
 
-
+Poor Man's Load Balancer (DNS Round Robin)
+	- subir serviço para acessar api -> docker container run --rm -it --network algafood-api_algafood-network alpine sh
+	- verificar link para acesso -> nslookup algafood-api
+	- instalar curl -> apk add curl
+	- fazer requisição para api -> curl http://algafood-api:8080/hostcheck
+	
