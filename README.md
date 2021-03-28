@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 24-19-adicionando-um-container-do-redis-no-arquivo-do-docker-compose
+git checkout -b 24-20-configurando-o-spring-session-data-redis
 git add .
-git commit -m "Adicionando um container do Redis no arquivo do Docker Compose"
-git push origin 24-19-adicionando-um-container-do-redis-no-arquivo-do-docker-compose
+git commit -m "Configurando o Spring Session Data Redis"
+git push origin 24-20-configurando-o-spring-session-data-redis
 
 git checkout master
-git merge --no-ff 24-19-adicionando-um-container-do-redis-no-arquivo-do-docker-compose
+git merge --no-ff 24-20-configurando-o-spring-session-data-redis
 git push
 
 sair da tela de merge
