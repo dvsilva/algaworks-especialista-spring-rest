@@ -73,6 +73,15 @@ criando uma instância do MySQL no Amazon RDS
 	- VPC security group > create new > New VPC security group name: algafood-mysql-sg (firewall virtual)
 	- as demais manter > create database
 
+editar VPC 
+	- Your VPCs > botao editar na tabela > nome: algafood-vpc
+	- SECURITY > Security Groups > algafood-mysql-sg > Edit inbound rules > editar para myip quando necessário
+
+- criar banco de dados algafood e usuario algafood-api na aws 
+- conceder acesso total ao usuario algafood-api no banco algafood
+
+	
+	
 
 	
 	
