@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-15-organizando-as-variaveis-de-ambiente-do-container-da-aplicacao
+git checkout -b 25-16-gerenciando-as-configuracoes-com-aws-systems-manager-parameter-store
 git add .
-git commit -m "Organizando as variáveis de ambiente do container da aplicação"
-git push origin 25-15-organizando-as-variaveis-de-ambiente-do-container-da-aplicacao
+git commit -m "Gerenciando as configurações com AWS Systems Manager Parameter Store"
+git push origin 25-16-gerenciando-as-configuracoes-com-aws-systems-manager-parameter-store
 
 git checkout master
-git merge --no-ff 25-15-organizando-as-variaveis-de-ambiente-do-container-da-aplicacao
+git merge --no-ff 25-16-gerenciando-as-configuracoes-com-aws-systems-manager-parameter-store
 git push
 
 sair da tela de merge

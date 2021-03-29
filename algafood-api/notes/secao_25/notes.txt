@@ -154,4 +154,7 @@ Codificando o conteúdo do arquivo JKS em Base64
 Alternativa para codificar conteúdo de arquivo em Base64
 	- https://www.base64encode.org/
 
+AWS Systems Manager Parameter Store (gerenciar propriedades em prod)
+	- AWS Systems Manager > Gerenciamento de aplicativos > Armazém de parâmetros > criar todos os parametros da app
 	
+
