@@ -22,3 +22,6 @@
 /prod/algafood-api-service/SPRING_MAIL_PORT = 
 /prod/algafood-api-service/SPRING_MAIL_USERNAME =
 /prod/algafood-api-service/SPRING_MAIL_PASSWORD =
+
+# apenas no container
+SPRING_PROFILES_ACTIVES = production

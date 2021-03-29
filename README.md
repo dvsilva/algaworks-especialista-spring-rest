@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-16-gerenciando-as-configuracoes-com-aws-systems-manager-parameter-store
+git checkout -b 25-17-configurando-amazon-ecs-para-rodar-nossa-aplicacao
 git add .
-git commit -m "Gerenciando as configurações com AWS Systems Manager Parameter Store"
-git push origin 25-16-gerenciando-as-configuracoes-com-aws-systems-manager-parameter-store
+git commit -m "Configurando Amazon ECS para rodar nossa aplicação"
+git push origin 25-17-configurando-amazon-ecs-para-rodar-nossa-aplicacao
 
 git checkout master
-git merge --no-ff 25-16-gerenciando-as-configuracoes-com-aws-systems-manager-parameter-store
+git merge --no-ff 25-17-configurando-amazon-ecs-para-rodar-nossa-aplicacao
 git push
 
 sair da tela de merge
