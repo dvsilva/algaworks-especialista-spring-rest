@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-11-criando-uma-instancia-do-redis-na-nuvem
+git checkout -b 25-12-conhecendo-o-amazon-elastic-container-service-ecs-e-aws-fargate
 git add .
-git commit -m "Criando uma instância do Redis na nuvem"
-git push origin 25-11-criando-uma-instancia-do-redis-na-nuvem
+git commit -m "Conhecendo o Amazon Elastic Container Service (ECS) e AWS Fargate"
+git push origin 25-12-conhecendo-o-amazon-elastic-container-service-ecs-e-aws-fargate
 
 git checkout master
-git merge --no-ff 25-11-criando-uma-instancia-do-redis-na-nuvem
+git merge --no-ff 25-12-conhecendo-o-amazon-elastic-container-service-ecs-e-aws-fargate
 git push
 
 sair da tela de merge

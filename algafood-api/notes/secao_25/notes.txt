@@ -96,5 +96,13 @@ redislabs
 		- auth [senha] 
 		- keys * / set nome Thiago / get nome / del nome 
 
-	
+deploy em containers docker
+	 - Amazon Elastic Compute Cloud (EC2) (https://aws.amazon.com/pt/ec2)
+	 - Amazon Elastic Kubernetes Service (EKS) (https://aws.amazon.com/pt/eks)
+	 - Amazon Elastic Container Service (ECS) (https://aws.amazon.com/pt/ecs)
+	 - AWS Fargate (https://aws.amazon.com/pt/fargate)
+
+
+
+
 	
