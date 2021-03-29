@@ -88,8 +88,13 @@ redislabs
 	- criar e ativar conta
 	- criar subscription > aws > us-east-1 (mesma região dos demais serviços)
 	- selecionar "replication (optional)" > selecionar plano free 30MB > nome: AlgaFood
-	- 
-	
+	- Create Database > Database Name: algafood-redis > copiar senha
+	- Data Eviction Policy > volatile-lru (remover as menos recentemente usadas)
+	- as demais manter > activate
+	- testar acesso 
+		- docker container run --rm -it redis:6.0.10-alpine redis-cli -h [host] -p [port]
+		- auth [senha] 
+		- keys * / set nome Thiago / get nome / del nome 
 
 	
 	
