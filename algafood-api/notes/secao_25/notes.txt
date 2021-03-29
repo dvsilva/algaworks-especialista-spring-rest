@@ -178,5 +178,8 @@ permitindo a leitura de parâmetros
 	- em recursos > Específico > Adicionar ARN > região: "qualquer" e Fully qualified parameter name: "prod/*" > revisar politica
 	- Nome: ParameterStoreReadOnly > criar política
 
-
+permitindo o acesso ao MySQL
+	- vpc > SECURITY > security groups > algafood-mysql-sg > Edit inbound rules > add rule > type: "Mysql/Aurora" e source "algafood-api-service" > save rules
+	
+ 
 

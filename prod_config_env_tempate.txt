@@ -8,9 +8,9 @@
 
 /prod/algafood-api-service/LOGGING_LOGGLY_TOKEN =
 
-/prod/algafood-api-service/ALGAFOOD_JWT_TOKENSTORE_JKS_LOCATION = 
-/prod/algafood-api-service/ALGAFOOD_JWT_TOKENSTORE_PASSWORD = 
-/prod/algafood-api-service/ALGAFOOD_JWT_TOKENSTORE_KEYPAIR_ALIAS = 
+/prod/algafood-api-service/ALGAFOOD_JWT_KEYSTORE_JKS_LOCATION = 
+/prod/algafood-api-service/ALGAFOOD_JWT_KEYSTORE_PASSWORD = 
+/prod/algafood-api-service/ALGAFOOD_JWT_KEYSTORE_KEYPAIR_ALIAS = 
 
 /prod/algafood-api-service/ALGAFOOD_STORAGE_S3_ID_CHAVE_ACESSO =
 /prod/algafood-api-service/ALGAFOOD_STORAGE_S3_CHAVE_SECRETA =
