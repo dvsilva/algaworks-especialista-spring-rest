@@ -80,7 +80,15 @@ editar VPC
 - criar banco de dados algafood e usuario algafood-api na aws 
 - conceder acesso total ao usuario algafood-api no banco algafood
 
-	
+opções para redis na nuvem
+https://aws.amazon.com/pt/elasticache
+https://redislabs.com/
+
+redislabs
+	- criar e ativar conta
+	- criar subscription > aws > us-east-1 (mesma região dos demais serviços)
+	- selecionar "replication (optional)" > selecionar plano free 30MB > nome: AlgaFood
+	- 
 	
 
 	

@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-09-criando-schema-e-usuario-da-aplicacao
+git checkout -b 25-10-conhecendo-e-criando-uma-conta-no-redislabs
 git add .
-git commit -m "Criando schema e usuário da aplicação"
-git push origin 25-09-criando-schema-e-usuario-da-aplicacao
+git commit -m "Conhecendo e criando uma conta no Redislabs"
+git push origin 25-10-conhecendo-e-criando-uma-conta-no-redislabs
 
 git checkout master
-git merge --no-ff 25-09-criando-schema-e-usuario-da-aplicacao
+git merge --no-ff 25-10-conhecendo-e-criando-uma-conta-no-redislabs
 git push
 
 sair da tela de merge
