@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-23-configurando-o-balanceamento-de-carga-no-servico-amazon-ecs
+git checkout -b 25-24-registrando-um-dominio-na-internet-no-registro-br
 git add .
-git commit -m "Configurando o balanceamento de carga no serviço do Amazon ECS"
-git push origin 25-23-configurando-o-balanceamento-de-carga-no-servico-amazon-ecs
+git commit -m "Registrando um domínio de internet no Registro.br"
+git push origin 25-24-registrando-um-dominio-na-internet-no-registro-br
 
 git checkout master
-git merge --no-ff 25-23-configurando-o-balanceamento-de-carga-no-servico-amazon-ecs
+git merge --no-ff 25-24-registrando-um-dominio-na-internet-no-registro-br
 git push
 
 sair da tela de merge
