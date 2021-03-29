@@ -181,5 +181,11 @@ permitindo a leitura de parâmetros
 permitindo o acesso ao MySQL
 	- vpc > SECURITY > security groups > algafood-mysql-sg > Edit inbound rules > add rule > type: "Mysql/Aurora" e source "algafood-api-service" > save rules
 	
- 
+balanceamento de carga
+	- Amazon Elastic Load Balancing (https://aws.amazon.com/pt/elasticloadbalancing)
+	- distribuir o processamento das requisições para diversos containers
+	- em zonas de disponibilidade diferentes
+	- listener (rules), target group (health check) e container (target)
+	
+
 

@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-20-inserindo-dados-no-banco-de-dados-de-producao
+git checkout -b 25-21-conhecendo-o-elastic-load-balancing-da-amazon
 git add .
-git commit -m "Inserindo dados no banco de dados de produção"
-git push origin 25-20-inserindo-dados-no-banco-de-dados-de-producao
+git commit -m "Conhecendo o Elastic Load Balancing da Amazon"
+git push origin 25-21-conhecendo-o-elastic-load-balancing-da-amazon
 
 git checkout master
-git merge --no-ff 25-20-inserindo-dados-no-banco-de-dados-de-producao
+git merge --no-ff 25-21-conhecendo-o-elastic-load-balancing-da-amazon
 git push
 
 sair da tela de merge
