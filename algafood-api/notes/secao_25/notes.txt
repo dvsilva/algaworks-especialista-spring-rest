@@ -102,6 +102,26 @@ deploy em containers docker
 	 - Amazon Elastic Container Service (ECS) (https://aws.amazon.com/pt/ecs)
 	 - AWS Fargate (https://aws.amazon.com/pt/fargate)
 
+publicando um container no Amazon ECS
+	- ECS > Task Definition > Create new Task Definition
+	- Fargate > Next step > Task Definition Name: nginx-taskdef
+	- Task size > Task memory (GB): 0.5GB > Task CPU (vCPU): 0.25
+	- Add container > Container name: nginx-container > Image: nginx:1.19.8-alpine > Port mappings: 80 > create
+
+criar cluster
+	- ECS > cluster > Create Cluster > Networking only > Cluster name: algafood-cluster
+	
+rodar a task
+	- dentro do cluster > Tasks > Run New Task (melhor não rodar, mas usar um service)
+
+rodar service
+	- dentro do cluster > Services > 
+	- Launch type: FARGATE > Service name: nginx-sevice > Number of tasks: 1 > Next step
+	- selecionar vpc e subnet > Security groups: nginx-sg > next step > next step > create service > view service
+	
+	
+
+
 
 
 
