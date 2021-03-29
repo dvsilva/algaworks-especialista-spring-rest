@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-10-conhecendo-e-criando-uma-conta-no-redislabs
+git checkout -b 25-11-criando-uma-instancia-do-redis-na-nuvem
 git add .
-git commit -m "Conhecendo e criando uma conta no Redislabs"
-git push origin 25-10-conhecendo-e-criando-uma-conta-no-redislabs
+git commit -m "Criando uma instância do Redis na nuvem"
+git push origin 25-11-criando-uma-instancia-do-redis-na-nuvem
 
 git checkout master
-git merge --no-ff 25-10-conhecendo-e-criando-uma-conta-no-redislabs
+git merge --no-ff 25-11-criando-uma-instancia-do-redis-na-nuvem
 git push
 
 sair da tela de merge
