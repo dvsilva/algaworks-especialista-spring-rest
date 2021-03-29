@@ -194,8 +194,23 @@ configurando e provisionando um Load Balancer
 	- Zonas de disponibilidade: "us-east-1a" e "us-east-1b" > next > next
 	- criar um novo grupo de segurança > nome: algafood-lb-sg > next
 	- configurar roteamento > nome: algafood-api-service-tg, tipo destino: "IP"
-	- verificações de integridade > healthcheck: "/v1, Limite íntegro e Limite não íntegro: 2, Tempo limite: 10 > next
-	- 
+	- verificações de integridade > healthcheck: "/v1, Limite íntegro e Limite não íntegro: 2, Tempo limite: 10
+	- next > next > create
 	
+configurando o balanceamento de carga
+	- ECS > dentro do cluster > Services > 
+	- Launch type: FARGATE > Service name: algafood-api-sevice > Number of tasks: 2 > Next step
+	- selecionar vpc e duas subnets ("us-east-1a" e "us-east-1b") > Security groups selecionar algafood-api-service-sg 
+		- se for criar um novo: Inbound rules: type "custom tcp" e port range "8080"
+	- selecionar load balancing: Application Load Balancer
+	- health check grace period (periodo para restart): 150
+	- selecionar load balancer (algafood-lb)
+	- Container to load balance > add to load balancer
+		- Production listener port: 80
+		- Target group name: algafood-api-service-tg
+	- next step > next step > create service > view service
 
+desabilitando acesso direto para as apis
+	- VPC > Security > Security Groups > algafood-api-service-sg > Edit inbound rules
+	- Source > tirar o 0.0.0.0 e colocar algafood-lb
 
