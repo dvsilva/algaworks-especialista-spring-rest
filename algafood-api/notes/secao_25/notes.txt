@@ -144,6 +144,14 @@ realizar envio para repositório na amazon
 		- fazer tag da imagem -> docker tag algafood-api:latest [url registry]/algafood-api:latest
 		- fazer push -> docker push [url registry]/algafood-api:latest
 	
+preparar variáveis de ambiente
 
+Gerando um arquivo JKS com um par de chaves
+	- "C:\Program Files\Java\jdk1.8.0_221\bin\keytool.exe" -genkeypair -alias algafood -keyalg RSA -keypass 123@algafoodprod -keystore algafood-prod.jks -storepass 123@algafoodprod -validity 3650
+	- keytool -genkeypair -alias algafood -keyalg RSA -keypass 123@algafoodprod -keystore algafood-prod.jks -storepass 123@algafoodprod -validity 3650
+Codificando o conteúdo do arquivo JKS em Base64
+	- cat algafood-prod.jks | base64
+Alternativa para codificar conteúdo de arquivo em Base64
+	- https://www.base64encode.org/
 
 	
