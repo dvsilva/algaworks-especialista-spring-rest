@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-17-configurando-amazon-ecs-para-rodar-nossa-aplicacao
+git checkout -b 25-18-permitindo-a-leitura-de-parametros-do-parameter-store-pelo-servico-do-amazon-ecs
 git add .
-git commit -m "Configurando Amazon ECS para rodar nossa aplicação"
-git push origin 25-17-configurando-amazon-ecs-para-rodar-nossa-aplicacao
+git commit -m "Permitindo a leitura de parâmetros do Parameter Store pelo serviço do Amazon ECS"
+git push origin 25-18-permitindo-a-leitura-de-parametros-do-parameter-store-pelo-servico-do-amazon-ecs
 
 git checkout master
-git merge --no-ff 25-17-configurando-amazon-ecs-para-rodar-nossa-aplicacao
+git merge --no-ff 25-18-permitindo-a-leitura-de-parametros-do-parameter-store-pelo-servico-do-amazon-ecs
 git push
 
 sair da tela de merge
