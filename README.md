@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-19-permitindo-acesso-ao-mysql-pelo-security-group-do-servico-do-amazon-ecs
+git checkout -b 25-20-inserindo-dados-no-banco-de-dados-de-producao
 git add .
-git commit -m "Permitindo o acesso ao MySQL pelo Security Group do serviço do Amazon ECS"
-git push origin 25-19-permitindo-acesso-ao-mysql-pelo-security-group-do-servico-do-amazon-ecs
+git commit -m "Inserindo dados no banco de dados de produção"
+git push origin 25-20-inserindo-dados-no-banco-de-dados-de-producao
 
 git checkout master
-git merge --no-ff 25-19-permitindo-acesso-ao-mysql-pelo-security-group-do-servico-do-amazon-ecs
+git merge --no-ff 25-20-inserindo-dados-no-banco-de-dados-de-producao
 git push
 
 sair da tela de merge
