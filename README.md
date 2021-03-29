@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-18-permitindo-a-leitura-de-parametros-do-parameter-store-pelo-servico-do-amazon-ecs
+git checkout -b 25-19-permitindo-acesso-ao-mysql-pelo-security-group-do-servico-do-amazon-ecs
 git add .
-git commit -m "Permitindo a leitura de parâmetros do Parameter Store pelo serviço do Amazon ECS"
-git push origin 25-18-permitindo-a-leitura-de-parametros-do-parameter-store-pelo-servico-do-amazon-ecs
+git commit -m "Permitindo o acesso ao MySQL pelo Security Group do serviço do Amazon ECS"
+git push origin 25-19-permitindo-acesso-ao-mysql-pelo-security-group-do-servico-do-amazon-ecs
 
 git checkout master
-git merge --no-ff 25-18-permitindo-a-leitura-de-parametros-do-parameter-store-pelo-servico-do-amazon-ecs
+git merge --no-ff 25-19-permitindo-acesso-ao-mysql-pelo-security-group-do-servico-do-amazon-ecs
 git push
 
 sair da tela de merge
