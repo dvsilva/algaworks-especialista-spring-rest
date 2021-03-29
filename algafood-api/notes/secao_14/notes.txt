@@ -25,7 +25,7 @@ criar acesso via IAM
 	- adicionar serviço s3
 	- nivel de acesso: gravação (Put Object e Delete Object) gerenciamento de permissões (PutObjectAcl e PutObjectVersionAcl)
 	- recursos, adicionar ARM: colocar nome do bucket e em object name deixar como qualquer (*)
-	- nomear política como: AlgaFootTest_GravacaoFotosS3
+	- nomear política como: AlgaFoodTest_GravacaoFotosS3
 	- criar política
 - vincular política AlgaFootTest_GravacaoFotosS3 ao usuário
 - cliar em próximo, próximo, criar

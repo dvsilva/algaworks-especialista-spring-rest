@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-06-monitorando-e-criando-um-alerta-de-orcamento-da-aws
+git checkout -b 25-07-criando-bucket-no-amazon-s3
 git add .
-git commit -m "Monitorando e criando um alerta de orçamento da AWS"
-git push origin 25-06-monitorando-e-criando-um-alerta-de-orcamento-da-aws
+git commit -m "Criando o bucket no Amazon S3"
+git push origin 25-07-criando-bucket-no-amazon-s3
 
 git checkout master
-git merge --no-ff 25-06-monitorando-e-criando-um-alerta-de-orcamento-da-aws
+git merge --no-ff 25-07-criando-bucket-no-amazon-s3
 git push
 
 sair da tela de merge
