@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-12-conhecendo-o-amazon-elastic-container-service-ecs-e-aws-fargate
+git checkout -b 25-13-publicando-um-container-no-amazon-ecs
 git add .
-git commit -m "Conhecendo o Amazon Elastic Container Service (ECS) e AWS Fargate"
-git push origin 25-12-conhecendo-o-amazon-elastic-container-service-ecs-e-aws-fargate
+git commit -m "Publicando um container no Amazon ECS"
+git push origin 25-13-publicando-um-container-no-amazon-ecs
 
 git checkout master
-git merge --no-ff 25-12-conhecendo-o-amazon-elastic-container-service-ecs-e-aws-fargate
+git merge --no-ff 25-13-publicando-um-container-no-amazon-ecs
 git push
 
 sair da tela de merge
