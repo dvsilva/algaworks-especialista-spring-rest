@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-07-criando-bucket-no-amazon-s3
+git checkout -b 25-09-criando-schema-e-usuario-da-aplicacao
 git add .
-git commit -m "Criando o bucket no Amazon S3"
-git push origin 25-07-criando-bucket-no-amazon-s3
+git commit -m "Criando schema e usuário da aplicação"
+git push origin 25-09-criando-schema-e-usuario-da-aplicacao
 
 git checkout master
-git merge --no-ff 25-07-criando-bucket-no-amazon-s3
+git merge --no-ff 25-09-criando-schema-e-usuario-da-aplicacao
 git push
 
 sair da tela de merge
