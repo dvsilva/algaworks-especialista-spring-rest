@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-22-configurando-e-provisionando-um-load-balancer-na-amazon
+git checkout -b 25-23-configurando-o-balanceamento-de-carga-no-servico-amazon-ecs
 git add .
-git commit -m "Configurando e provisionando um Load Balancer na Amazon"
-git push origin 25-22-configurando-e-provisionando-um-load-balancer-na-amazon
+git commit -m "Configurando o balanceamento de carga no serviço do Amazon ECS"
+git push origin 25-23-configurando-o-balanceamento-de-carga-no-servico-amazon-ecs
 
 git checkout master
-git merge --no-ff 25-22-configurando-e-provisionando-um-load-balancer-na-amazon
+git merge --no-ff 25-23-configurando-o-balanceamento-de-carga-no-servico-amazon-ecs
 git push
 
 sair da tela de merge
