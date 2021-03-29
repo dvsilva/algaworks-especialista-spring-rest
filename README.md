@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-21-conhecendo-o-elastic-load-balancing-da-amazon
+git checkout -b 25-22-configurando-e-provisionando-um-load-balancer-na-amazon
 git add .
-git commit -m "Conhecendo o Elastic Load Balancing da Amazon"
-git push origin 25-21-conhecendo-o-elastic-load-balancing-da-amazon
+git commit -m "Configurando e provisionando um Load Balancer na Amazon"
+git push origin 25-22-configurando-e-provisionando-um-load-balancer-na-amazon
 
 git checkout master
-git merge --no-ff 25-21-conhecendo-o-elastic-load-balancing-da-amazon
+git merge --no-ff 25-22-configurando-e-provisionando-um-load-balancer-na-amazon
 git push
 
 sair da tela de merge

@@ -187,5 +187,15 @@ balanceamento de carga
 	- em zonas de disponibilidade diferentes
 	- listener (rules), target group (health check) e container (target)
 	
+configurando e provisionando um Load Balancer
+	- EC2 > Balanceamento de carga > Load balancers
+	- create load balancer > selecionar "Application Load Balancer"
+	- nome: "algafood-lb", esquema: "voltado para Internet", listeners: "80"
+	- Zonas de disponibilidade: "us-east-1a" e "us-east-1b" > next > next
+	- criar um novo grupo de segurança > nome: algafood-lb-sg > next
+	- configurar roteamento > nome: algafood-api-service-tg, tipo destino: "IP"
+	- verificações de integridade > healthcheck: "/v1, Limite íntegro e Limite não íntegro: 2, Tempo limite: 10 > next
+	- 
+	
 
 
