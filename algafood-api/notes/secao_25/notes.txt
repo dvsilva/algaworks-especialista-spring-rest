@@ -157,4 +157,20 @@ Alternativa para codificar conteúdo de arquivo em Base64
 AWS Systems Manager Parameter Store (gerenciar propriedades em prod)
 	- AWS Systems Manager > Gerenciamento de aplicativos > Armazém de parâmetros > criar todos os parametros da app
 	
+publicando a app
+	- ECS > Task Definition > Create new Task Definition
+	- Fargate > Next step > Task Definition Name: algafood-api-taskdef
+	- Task size > Task memory (GB): 1GB > Task CPU (vCPU): 0.5
+	- Add container > Container name: algafood-api-container > Image: [url registry]/algafood-api  > Port mappings: 8080 > adicionar variáveis de ambiente > add > create
+
+criar cluster (se nao tiver sido criado)
+	- ECS > cluster > Create Cluster > Networking only > Cluster name: algafood-cluster
+	
+rodar service
+	- dentro do cluster > Services > 
+	- Launch type: FARGATE > Service name: algafood-api-sevice > Number of tasks: 1 > Next step
+	- selecionar vpc e subnet > Security groups: algafood-api-service-sg > Inbound rules: type "custom tcp" e port range "8080" > next step > next step > create service > view service
+	- para evitar cobranças -> selecionar o service > update > Number of tasks: 0 > next step > next step > Update 
+
+
 
