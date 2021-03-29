@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-13-publicando-um-container-no-amazon-ecs
+git checkout -b 25-14-subindo-a-imagem-docker-para-o-amazon-elastic-container-registry-ecr
 git add .
-git commit -m "Publicando um container no Amazon ECS"
-git push origin 25-13-publicando-um-container-no-amazon-ecs
+git commit -m "Subindo a imagem Docker para o Amazon Elastic Container Registry (ECR)"
+git push origin 25-14-subindo-a-imagem-docker-para-o-amazon-elastic-container-registry-ecr
 
 git checkout master
-git merge --no-ff 25-13-publicando-um-container-no-amazon-ecs
+git merge --no-ff 25-14-subindo-a-imagem-docker-para-o-amazon-elastic-container-registry-ecr
 git push
 
 sair da tela de merge
