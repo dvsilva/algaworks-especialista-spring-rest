@@ -38,6 +38,29 @@ monitorando e criando um alerta de orçamento da AWS
 		- ativar avisos -> preferencias > preferencias de faturamento (ativar caixas de notificações)
 		- criar um orçamento -> budgets > criar um orçamento > orçamento de custos > configurar limites > confirmar orçamento > criar
 
- 
+ criando o bucket no Amazon S3
+	- criar um bucket dvsilva-algafood-production
+	- leste EUA (us-east1)
+	- desmarcar bloquear todo o acesso público
+	- habilitar acesso publico 
+		- permissões > Lista de controle de acesso (ACL) > Todos (acesso público) > Listar (marcar Compreendo os efeitos dessas alterações em meus objetos e buckets)
+	- criar pasta catalogo
+
+criar acesso via IAM (IAM policy)
+- Anexar políticas existentes de forma direta
+	- criar uma política
+	- adicionar serviço s3
+	- nivel de acesso: gravação (Put Object e Delete Object) gerenciamento de permissões (PutObjectAcl e PutObjectVersionAcl)
+	- recursos, adicionar ARM: colocar nome do bucket e em object name deixar como qualquer (*)
+	- nomear política como: AlgaFoodProduction_GravacaoFotosS3
+	- criar política
 	
+- adicionar um novo usuário
+	- marcar Acesso programático
+	- Anexar políticas existentes de forma direta "AlgaFoodProduction_GravacaoFotosS3" ao usuário
+	- cliar em próximo, próximo, criar (copiar id chave de acesso e chave de acesso secreta)
+
+criar chave de acesso (no usuario clicar em Credenciais de segurança)
+- no usuario, ver Credenciais de segurança
+- Criar chave de acesso, copiar dados para outro lugar pois não é possível obter os dados depois que fechar
 
