@@ -42,6 +42,8 @@ cli do cloud foundry
 	- cf login
 	- cf create-space production
 	- cf target -s production
-
+	- cf cups algafood-log-service -p "token"
+	- cf services
+	- cf cups algafood-s3-service -p "access-key-id,secret-access-key"
 
 
