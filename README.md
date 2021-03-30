@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-14-fazendo-binding-dos-servicos
+git checkout -b 26-15-subindo-a-aplicacao-e-fazendo-downgrade-do-flyway
 git add .
-git commit -m "Fazendo binding dos serviços"
-git push origin 26-14-fazendo-binding-dos-servicos
+git commit -m "Subindo a aplicação e fazendo downgrade do Flyway"
+git push origin 26-15-subindo-a-aplicacao-e-fazendo-downgrade-do-flyway
 
 git checkout master
-git merge --no-ff 26-14-fazendo-binding-dos-servicos
+git merge --no-ff 26-15-subindo-a-aplicacao-e-fazendo-downgrade-do-flyway
 git push
 
 sair da tela de merge
