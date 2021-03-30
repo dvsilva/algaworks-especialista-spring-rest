@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-24-registrando-um-dominio-na-internet-no-registro-br
+git checkout -b 25-25-configurando-dominio-para-o-application-load-balancer
 git add .
-git commit -m "Registrando um domínio de internet no Registro.br"
-git push origin 25-24-registrando-um-dominio-na-internet-no-registro-br
+git commit -m "Configurando o domínio para o Application Load Balancer"
+git push origin 25-25-configurando-dominio-para-o-application-load-balancer
 
 git checkout master
-git merge --no-ff 25-24-registrando-um-dominio-na-internet-no-registro-br
+git merge --no-ff 25-25-configurando-dominio-para-o-application-load-balancer
 git push
 
 sair da tela de merge
