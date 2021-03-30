@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-25-configurando-dominio-para-o-application-load-balancer
+git checkout -b 25-26-configurando-certificado-tls-https-com-aws-certificate-manager
 git add .
-git commit -m "Configurando o domínio para o Application Load Balancer"
-git push origin 25-25-configurando-dominio-para-o-application-load-balancer
+git commit -m "Configurando certificado TLS (HTTPS) com AWS Certificate Manager"
+git push origin 25-26-configurando-certificado-tls-https-com-aws-certificate-manager
 
 git checkout master
-git merge --no-ff 25-25-configurando-dominio-para-o-application-load-balancer
+git merge --no-ff 25-26-configurando-certificado-tls-https-com-aws-certificate-manager
 git push
 
 sair da tela de merge
