@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-28-testando-api-em-producao
+git checkout -b 26-01-conhecendo-o-twelve-factor-app
 git add .
-git commit -m "Testando a API em produção"
-git push origin 25-28-testando-api-em-producao
+git commit -m "Conhecendo o Twelve-Factor App"
+git push origin 26-01-conhecendo-o-twelve-factor-app
 
 git checkout master
-git merge --no-ff 25-28-testando-api-em-producao
+git merge --no-ff 26-01-conhecendo-o-twelve-factor-app
 git push
 
 sair da tela de merge
