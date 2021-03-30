@@ -214,3 +214,15 @@ desabilitando acesso direto para as apis
 	- VPC > Security > Security Groups > algafood-api-service-sg > Edit inbound rules
 	- Source > tirar o 0.0.0.0 e colocar algafood-lb
 
+registrando um domínio de internet -> Registro.br (https://registro.br)
+
+configurando o domínio para o Application Load Balancer
+	- usar servidores do registro.br
+	- editar zona > api.algafood.com.br > cname > nome do servidor (colocar link do load balancer da amazon)
+	- desabilitar acesso direto pelo link do loadbalancer
+		- EC2 > Balanceamento de carga > Load balancers
+		- editar load balancer > listeners > Visualizar/editar regras > adicionar regra
+			- cabeçalho do host: api.algafood.com.br e avançar para "algafood-api-service-tg"
+		- edita a existente para retornar uma reposta fixa (503)
+
+
