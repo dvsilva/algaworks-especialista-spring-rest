@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-07-conhecendo-cli-do-cloud-foundry
+git checkout -b 26-08-instanciando-servicos-com-o-marketplace-da-pws
 git add .
-git commit -m "Conhecendo o CLI do Cloud Foundry"
-git push origin 26-07-conhecendo-cli-do-cloud-foundry
+git commit -m "Instanciando serviços com o marketplace da PWS"
+git push origin 26-08-instanciando-servicos-com-o-marketplace-da-pws
 
 git checkout master
-git merge --no-ff 26-07-conhecendo-cli-do-cloud-foundry
+git merge --no-ff 26-08-instanciando-servicos-com-o-marketplace-da-pws
 git push
 
 sair da tela de merge
