@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-12-gerando-fat-jar
+git checkout -b 26-13-implantando-a-aplicacao-na-pws
 git add .
-git commit -m "Gerando o Fat JAR"
-git push origin 26-12-gerando-fat-jar
+git commit -m "Implantando a aplicação na PWS"
+git push origin 26-13-implantando-a-aplicacao-na-pws
 
 git checkout master
-git merge --no-ff 26-12-gerando-fat-jar
+git merge --no-ff 26-13-implantando-a-aplicacao-na-pws
 git push
 
 sair da tela de merge
