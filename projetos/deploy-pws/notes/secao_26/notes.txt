@@ -37,4 +37,11 @@ serviços - digital ocean, AWS, Heroku e Pivotal Web Services
 
 ao criar um bucket da amazon s3 pode selecionar copiar de outro bucket
 
+cli do cloud foundry
+	- cf help
+	- cf login
+	- cf create-space production
+	- cf target -s production
+
+
 

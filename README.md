@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-06-criando-uma-conta-na-pws
+git checkout -b 26-07-conhecendo-cli-do-cloud-foundry
 git add .
-git commit -m "Criando uma conta na PWS"
-git push origin 26-06-criando-uma-conta-na-pws
+git commit -m "Conhecendo o CLI do Cloud Foundry"
+git push origin 26-07-conhecendo-cli-do-cloud-foundry
 
 git checkout master
-git merge --no-ff 26-06-criando-uma-conta-na-pws
+git merge --no-ff 26-07-conhecendo-cli-do-cloud-foundry
 git push
 
 sair da tela de merge
