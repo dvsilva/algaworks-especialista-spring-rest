@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-09-configurando-servicos-externos-com-cups
+git checkout -b 26-10-separando-as-configuracoes-dos-ambientes-de-producao-e-desenvolvimento-com-spring-profiles
 git add .
-git commit -m "Configurando serviços externos com CUPS"
-git push origin 26-09-configurando-servicos-externos-com-cups
+git commit -m "Separando as configurações dos ambientes de produção e desenvolvimento com Spring Profiles"
+git push origin 26-10-separando-as-configuracoes-dos-ambientes-de-producao-e-desenvolvimento-com-spring-profiles
 
 git checkout master
-git merge --no-ff 26-09-configurando-servicos-externos-com-cups
+git merge --no-ff 26-10-separando-as-configuracoes-dos-ambientes-de-producao-e-desenvolvimento-com-spring-profiles
 git push
 
 sair da tela de merge
