@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-27-configurando-protocolo-https-nos-links-da-api-com-hateoas
+git checkout -b 25-28-testando-api-em-producao
 git add .
-git commit -m "Configurando o protocolo HTTPS nos links da API com HATEOAS"
-git push origin 25-27-configurando-protocolo-https-nos-links-da-api-com-hateoas
+git commit -m "Testando a API em produção"
+git push origin 25-28-testando-api-em-producao
 
 git checkout master
-git merge --no-ff 25-27-configurando-protocolo-https-nos-links-da-api-com-hateoas
+git merge --no-ff 25-28-testando-api-em-producao
 git push
 
 sair da tela de merge
