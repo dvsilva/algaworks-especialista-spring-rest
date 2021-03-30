@@ -58,7 +58,7 @@ enviar arquivo para deploy
 
 fazer bind dos services -> cf bind-service algafood-prod algafood-s3-service (ou cf bs)
 
-
+visualizar logs -> cf logs algafood-prod --recent
 
 
 
