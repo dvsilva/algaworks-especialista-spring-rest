@@ -30,3 +30,9 @@ Twelve-Factor App (https://12factor.net/pt_br)
 		- Executar tarefas de administração/gerenciamento como processos pontuais
 		- migração de dados (flyway)
 		
+on premisse - nós somos responsáveis pela infraestrutura (CPDs) 
+cloud - nuvem (toda a infraestrutura é de responsabilidade de uma empresa especializada)
+
+serviços - digital ocean, AWS, Heroku e Pivotal Web Services
+
+

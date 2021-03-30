@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-01-conhecendo-o-twelve-factor-app
+git checkout -b 26-02-onde-fazer-o-deploy
 git add .
-git commit -m "Conhecendo o Twelve-Factor App"
-git push origin 26-01-conhecendo-o-twelve-factor-app
+git commit -m "Onde fazer deploy?"
+git push origin 26-02-onde-fazer-o-deploy
 
 git checkout master
-git merge --no-ff 26-01-conhecendo-o-twelve-factor-app
+git merge --no-ff 26-02-onde-fazer-o-deploy
 git push
 
 sair da tela de merge
