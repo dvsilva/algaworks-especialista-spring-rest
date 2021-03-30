@@ -1,0 +1,32 @@
+Twelve-Factor App (https://12factor.net/pt_br)
+	- Base de Código
+		- repositório com controle de versão
+		- Uma base de código com rastreamento utilizando controle de revisão, muitos deploys
+	- Dependências
+		- Declare e isole as dependências (maven)
+	- Configurações
+		- Armazene as configurações no ambiente (variaveis de ambiente)
+	- Serviços de Apoio
+		- Trate os serviços de apoio, como recursos ligados 
+		- serviços externos: banco de dados, filas ..
+		- serviços acessíveis por URL sem distinção
+	- Construa, lance, execute
+		- Separe estritamente os builds e execute em estágios
+	- Processos
+		- Execute a aplicação como um ou mais processos que não armazenam estado
+		- estados independente do ambiente que a aplicação esta rodando
+	- Vínculo de porta
+		- Exporte serviços por ligação de porta
+		- cada aplicação tem uma porta
+	- Concorrência
+		- Dimensione por um modelo de processo
+	- Descartabilidade
+		- Maximizar a robustez com inicialização e desligamento rápido
+	- Dev/prod semelhantes
+		- Mantenha o desenvolvimento, teste, produção o mais semelhante possível
+	- Logs
+		- Trate logs como fluxo de eventos
+	- Processos de Admin
+		- Executar tarefas de administração/gerenciamento como processos pontuais
+		- migração de dados (flyway)
+		
