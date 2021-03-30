@@ -35,4 +35,6 @@ cloud - nuvem (toda a infraestrutura é de responsabilidade de uma empresa espec
 
 serviços - digital ocean, AWS, Heroku e Pivotal Web Services
 
+ao criar um bucket da amazon s3 pode selecionar copiar de outro bucket
+
 

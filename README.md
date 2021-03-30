@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-04-instalando-o-cli-do-cloud-foundry
+git checkout -b 26-05-criando-o-bucket-de-producao-na-amazon-s3
 git add .
-git commit -m "Instalando o CLI do Cloud Foundry"
-git push origin 26-04-instalando-o-cli-do-cloud-foundry
+git commit -m "Criando o bucket de produção na Amazon S3"
+git push origin 26-05-criando-o-bucket-de-producao-na-amazon-s3
 
 git checkout master
-git merge --no-ff 26-04-instalando-o-cli-do-cloud-foundry
+git merge --no-ff 26-05-criando-o-bucket-de-producao-na-amazon-s3
 git push
 
 sair da tela de merge
