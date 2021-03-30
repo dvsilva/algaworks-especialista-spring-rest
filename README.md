@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-16-inserindo-dados-no-banco-de-producao
+git checkout -b 26-17-testando-upload-de-fotos
 git add .
-git commit -m "Inserindo dados no banco de produção"
-git push origin 26-16-inserindo-dados-no-banco-de-producao
+git commit -m "Testando o upload de fotos"
+git push origin 26-17-testando-upload-de-fotos
 
 git checkout master
-git merge --no-ff 26-16-inserindo-dados-no-banco-de-producao
+git merge --no-ff 26-17-testando-upload-de-fotos
 git push
 
 sair da tela de merge

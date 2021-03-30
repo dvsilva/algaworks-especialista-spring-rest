@@ -57,8 +57,7 @@ enviar arquivo para deploy
 	- fazer deploy -> cf push algafood-prod -p target/algafood-api-0.0.1-SNAPSHOT.jar -f manifest-production.yml --no-start
 
 fazer bind dos services -> cf bind-service algafood-prod algafood-s3-service (ou cf bs)
-
 visualizar logs -> cf logs algafood-prod --recent
-
+visualizar variaveis de ambiente -> cf env algafood-prod 
 
 
