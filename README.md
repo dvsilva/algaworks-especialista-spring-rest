@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-11-adicionando-propriedades-adicionais-com-cups
+git checkout -b 26-12-gerando-fat-jar
 git add .
-git commit -m "Adicionando propriedades adicionais com CUPS"
-git push origin 26-11-adicionando-propriedades-adicionais-com-cups
+git commit -m "Gerando o Fat JAR"
+git push origin 26-12-gerando-fat-jar
 
 git checkout master
-git merge --no-ff 26-11-adicionando-propriedades-adicionais-com-cups
+git merge --no-ff 26-12-gerando-fat-jar
 git push
 
 sair da tela de merge

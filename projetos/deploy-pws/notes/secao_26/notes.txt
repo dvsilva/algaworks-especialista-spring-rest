@@ -46,4 +46,11 @@ cli do cloud foundry
 	- cf services
 	- cf cups algafood-s3-service -p "access-key-id,secret-access-key,bucket,directory,region"
 
+jar - arquivo gerado ao final a ser executado pela JVM
+war - é um jar com estrutura diferente para ser conhecido pelos servelet containers
+fat jar - é um jar que nao depende de mais nada para ser executado (contem o tomcat)
+
+gerar fat jar -> ./mvnw clean package
+
+
 
