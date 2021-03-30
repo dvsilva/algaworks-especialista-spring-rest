@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-08-instanciando-servicos-com-o-marketplace-da-pws
+git checkout -b 26-09-configurando-servicos-externos-com-cups
 git add .
-git commit -m "Instanciando serviços com o marketplace da PWS"
-git push origin 26-08-instanciando-servicos-com-o-marketplace-da-pws
+git commit -m "Configurando serviços externos com CUPS"
+git push origin 26-09-configurando-servicos-externos-com-cups
 
 git checkout master
-git merge --no-ff 26-08-instanciando-servicos-com-o-marketplace-da-pws
+git merge --no-ff 26-09-configurando-servicos-externos-com-cups
 git push
 
 sair da tela de merge
