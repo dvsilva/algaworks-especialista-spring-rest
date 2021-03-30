@@ -1,0 +1,45 @@
+dto - possibilita mudar estrutura (adicionar atributos)
+jackson view - mais poluido o código com anotações mas simplifica para não ter muitos dtos
+
+modelagem de pesquisas complexas (mais de um parametro)
+1 - receber parametros de URL no recurso de coleção 
+	- GET com parametros
+2 - considerar a própria pesquisa como um recurso 
+	- POST passando no payload da requisição o objeto de pesquisa - EVITAR
+3 - considerar a própria pesquisa como um recurso (de verdade) 
+	- POST passando no payload da requisição o objeto de pesquisa porém a resposta retorna 201 - created
+	- melhor que a opção 2
+	- tem que persistir os filtros em algum lugar
+	- retorna 201 created com id do filtro
+	- ao fazer um GET no filtro retorna no corpo da resposta o filtro com o resultado
+3.1 - usa o ID do filtro criado como parâmetro no recurso de coleção
+	- não retorna o resultado da pesquisa
+	- passa o filtro como parametro da requisição não no path
+	- só retorna o resultado da pesquisa na resposta
+3.2 - quando os critérios de pesquisa são realmente complexos
+	- parecido com o 2 (POST e retorna 201 created)
+	- para obter deve passar o id como parametro na URL
+	- criar operadores de igualdade dentro do objeto de criterio e operadores lógicos (e / ou)
+	
+Modelando endpoints de consultas com projeções e agregação
+- GET em um recurso (estatisticas/vendas-diarias) com query params de consulta
+- algumas opções
+	- /estatisticas/vendas-diarias
+	- /restaurantes/1/estatisticas/vendas-diarias
+	- /pedidos/estatisticas/vendas-diarias
+	- /relatorios/vendas-diarias
+	- /insights/vendas-diarias
+
+discussão da consulta
+- recurso /estatisticas/vendas-diarias
+- passar query params
+- retornar objetos com data, totalVendas, totalFaturado
+- implementar consulta no repositorio criar duas classes (VendaDiaria e VendaDiariaFilter)
+- implementar classe VendaDiaria
+
+jasper reports (https://community.jaspersoft.com/)
+- biblioteca para relatórios em java em diferentes formatos
+- permite diferentes fontes de dados (banco de dados, jdbc, hibernate, xml ...)
+- jasper soft studio - interface para escrever os arquivos xml do jasper
+- fazer download em https://community.jaspersoft.com/project/jaspersoft-studio/releases
+
