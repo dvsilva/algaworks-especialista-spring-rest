@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-05-criando-o-bucket-de-producao-na-amazon-s3
+git checkout -b 26-06-criando-uma-conta-na-pws
 git add .
-git commit -m "Criando o bucket de produção na Amazon S3"
-git push origin 26-05-criando-o-bucket-de-producao-na-amazon-s3
+git commit -m "Criando uma conta na PWS"
+git push origin 26-06-criando-uma-conta-na-pws
 
 git checkout master
-git merge --no-ff 26-05-criando-o-bucket-de-producao-na-amazon-s3
+git merge --no-ff 26-06-criando-uma-conta-na-pws
 git push
 
 sair da tela de merge
