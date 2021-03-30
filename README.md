@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-03-conhecendo-a-pivotal-web-services-e-cloud-foundry
+git checkout -b 26-04-instalando-o-cli-do-cloud-foundry
 git add .
-git commit -m "Conhecendo a Pivotal Web Services (PWS) e Cloud Foundry"
-git push origin 26-03-conhecendo-a-pivotal-web-services-e-cloud-foundry
+git commit -m "Instalando o CLI do Cloud Foundry"
+git push origin 26-04-instalando-o-cli-do-cloud-foundry
 
 git checkout master
-git merge --no-ff 26-03-conhecendo-a-pivotal-web-services-e-cloud-foundry
+git merge --no-ff 26-04-instalando-o-cli-do-cloud-foundry
 git push
 
 sair da tela de merge
