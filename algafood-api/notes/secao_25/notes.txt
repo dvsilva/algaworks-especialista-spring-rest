@@ -225,4 +225,16 @@ configurando o domínio para o Application Load Balancer
 			- cabeçalho do host: api.algafood.com.br e avançar para "algafood-api-service-tg"
 		- edita a existente para retornar uma reposta fixa (503)
 
+configurando certificado TLS
+	- certificate manager > solicitar um novo certificado > colocar o dominio (*.algafood.com.br)
+	- email validation > next > confirm request
+	- clicar no link enviado para o e-mail
+	- EC2 > Balanceamento de carga > Load balancers
+	- editar load balancer > listeners > Visualizar/editar regras > adicionar regra
+	- selecionar https > retornar uma reposta fixa (503) > default ssl certificate (selecionar o que foi criado) > add listener
+	- 
+
+	
+
+
 
