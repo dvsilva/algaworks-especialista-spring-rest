@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-13-implantando-a-aplicacao-na-pws
+git checkout -b 26-14-fazendo-binding-dos-servicos
 git add .
-git commit -m "Implantando a aplicação na PWS"
-git push origin 26-13-implantando-a-aplicacao-na-pws
+git commit -m "Fazendo binding dos serviços"
+git push origin 26-14-fazendo-binding-dos-servicos
 
 git checkout master
-git merge --no-ff 26-13-implantando-a-aplicacao-na-pws
+git merge --no-ff 26-14-fazendo-binding-dos-servicos
 git push
 
 sair da tela de merge
