@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-15-subindo-a-aplicacao-e-fazendo-downgrade-do-flyway
+git checkout -b 26-16-inserindo-dados-no-banco-de-producao
 git add .
-git commit -m "Subindo a aplicação e fazendo downgrade do Flyway"
-git push origin 26-15-subindo-a-aplicacao-e-fazendo-downgrade-do-flyway
+git commit -m "Inserindo dados no banco de produção"
+git push origin 26-16-inserindo-dados-no-banco-de-producao
 
 git checkout master
-git merge --no-ff 26-15-subindo-a-aplicacao-e-fazendo-downgrade-do-flyway
+git merge --no-ff 26-16-inserindo-dados-no-banco-de-producao
 git push
 
 sair da tela de merge
