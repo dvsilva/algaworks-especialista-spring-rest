@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 25-26-configurando-certificado-tls-https-com-aws-certificate-manager
+git checkout -b 25-27-configurando-protocolo-https-nos-links-da-api-com-hateoas
 git add .
-git commit -m "Configurando certificado TLS (HTTPS) com AWS Certificate Manager"
-git push origin 25-26-configurando-certificado-tls-https-com-aws-certificate-manager
+git commit -m "Configurando o protocolo HTTPS nos links da API com HATEOAS"
+git push origin 25-27-configurando-protocolo-https-nos-links-da-api-com-hateoas
 
 git checkout master
-git merge --no-ff 25-26-configurando-certificado-tls-https-com-aws-certificate-manager
+git merge --no-ff 25-27-configurando-protocolo-https-nos-links-da-api-com-hateoas
 git push
 
 sair da tela de merge
