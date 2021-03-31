@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-17-testando-upload-de-fotos
+git checkout -b 26-18-testando-envio-de-email
 git add .
-git commit -m "Testando o upload de fotos"
-git push origin 26-17-testando-upload-de-fotos
+git commit -m "Testando o envio de e-mail"
+git push origin 26-18-testando-envio-de-email
 
 git checkout master
-git merge --no-ff 26-17-testando-upload-de-fotos
+git merge --no-ff 26-18-testando-envio-de-email
 git push
 
 sair da tela de merge
