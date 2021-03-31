@@ -87,3 +87,4 @@ fazer configurações
 	- remover mapeamento do blue
 	- no próximo deploy inverte a ordem (de green para blue)
 
+criar e fazer bind do serviço redis cloud no pws

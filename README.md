@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-24-blue-green-deployment-implantando-novas-versoes-com-zero-downtime
+git checkout -b 26-25-resolvendo-problema-de-sessao-com-spring-session-e-redis
 git add .
-git commit -m "Blue-Green Deployment: implantando novas versões com zero downtime"
-git push origin 26-24-blue-green-deployment-implantando-novas-versoes-com-zero-downtime
+git commit -m "Resolvendo problema de sessão com Spring Session e Redis"
+git push origin 26-25-resolvendo-problema-de-sessao-com-spring-session-e-redis
 
 git checkout master
-git merge --no-ff 26-24-blue-green-deployment-implantando-novas-versoes-com-zero-downtime
+git merge --no-ff 26-25-resolvendo-problema-de-sessao-com-spring-session-e-redis
 git push
 
 sair da tela de merge
