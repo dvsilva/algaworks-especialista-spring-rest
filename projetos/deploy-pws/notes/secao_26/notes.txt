@@ -71,3 +71,19 @@ cloudflare -> DNS + camanda de proteção (HTTPS)
 
 fazer link do dns para a api -> cf map-route algafood-production algafood.com.br
 
+Blue-Green Deployment
+	- versão da aplicação rodando estável (blue)
+	- subir nova versão [downtime] (green)
+	- sobe nova versão em uma nova url temporaria
+	- faz um load balance entre essas versões
+	- depois muda a url para a nova versão e desliga o antigo blue
+
+fazer configurações
+	- criar o blue -> cf push algafood-blue -p target/algafood-api-0.0.1-SNAPSHOT.jar -f manifest-production.yml --no-start
+	- criar o green -> cf push algafood-green -p target/algafood-api-0.0.1-SNAPSHOT.jar -f manifest-production.yml --no-start
+	- configurar dependencias do dashboard do pws
+	- fazer link do blue -> cf map-route algafood-blue algafood.com.br
+	- fazer link do green -> cf map-route algafood-green algafood.com.br
+	- remover mapeamento do blue
+	- no próximo deploy inverte a ordem (de green para blue)
+
