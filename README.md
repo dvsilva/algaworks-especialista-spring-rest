@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-22-configurando-a-conta-no-cloudflare
+git checkout -b 26-23-escalando-a-aplicacao
 git add .
-git commit -m "Configurando a conta no Cloudflare"
-git push origin 26-22-configurando-a-conta-no-cloudflare
+git commit -m "Escalando a aplicação"
+git push origin 26-23-escalando-a-aplicacao
 
 git checkout master
-git merge --no-ff 26-22-configurando-a-conta-no-cloudflare
+git merge --no-ff 26-23-escalando-a-aplicacao
 git push
 
 sair da tela de merge
