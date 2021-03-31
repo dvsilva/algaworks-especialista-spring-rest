@@ -69,3 +69,5 @@ incluir pasta keys no jar -> jar -uf target/algafood-api-0.0.1-SNAPSHOT.jar -C [
 
 cloudflare -> DNS + camanda de proteção (HTTPS)
 
+fazer link do dns para a api -> cf map-route algafood-production algafood.com.br
+
