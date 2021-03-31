@@ -67,5 +67,5 @@ republicar aplicação -> cf restage algafood-prod
 
 incluir pasta keys no jar -> jar -uf target/algafood-api-0.0.1-SNAPSHOT.jar -C [diretorio_arquivo] keys 
 
-
+cloudflare -> DNS + camanda de proteção (HTTPS)
 
