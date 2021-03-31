@@ -60,4 +60,12 @@ fazer bind dos services -> cf bind-service algafood-prod algafood-s3-service (ou
 visualizar logs -> cf logs algafood-prod --recent
 visualizar variaveis de ambiente -> cf env algafood-prod 
 
+realizar unbind do serviço -> cf unbind-service algafood-prod algafood-sendgrid
+criar serviço para sendgrid -> cf cups algafood-mail-service -p "hostname,port,username,password"
+fazer bind dos services -> cf bs algafood-prod algafood-mail-service
+republicar aplicação -> cf restage algafood-prod
+
+
+
+
 
