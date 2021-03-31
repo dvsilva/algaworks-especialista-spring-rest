@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-20-conhecendo-o-registro-br-e-cloudflare
+git checkout -b 26-21-registrando-um-dominio-no-registro-br
 git add .
-git commit -m "Conhecendo o Registro.br e Cloudflare"
-git push origin 26-20-conhecendo-o-registro-br-e-cloudflare
+git commit -m "Registrando um domínio no Registro.br"
+git push origin 26-21-registrando-um-dominio-no-registro-br
 
 git checkout master
-git merge --no-ff 26-20-conhecendo-o-registro-br-e-cloudflare
+git merge --no-ff 26-21-registrando-um-dominio-no-registro-br
 git push
 
 sair da tela de merge
