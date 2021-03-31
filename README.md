@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-18-testando-envio-de-email
+git checkout -b 26-19-retirando-as-chaves-de-seguranca-do-projeto
 git add .
-git commit -m "Testando o envio de e-mail"
-git push origin 26-18-testando-envio-de-email
+git commit -m "Retirando as chaves de segurança do projeto"
+git push origin 26-19-retirando-as-chaves-de-seguranca-do-projeto
 
 git checkout master
-git merge --no-ff 26-18-testando-envio-de-email
+git merge --no-ff 26-19-retirando-as-chaves-de-seguranca-do-projeto
 git push
 
 sair da tela de merge
