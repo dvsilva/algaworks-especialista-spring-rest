@@ -3,13 +3,13 @@
 github commands
 
 ```bash
-git checkout -b 26-23-escalando-a-aplicacao
+git checkout -b 26-24-blue-green-deployment-implantando-novas-versoes-com-zero-downtime
 git add .
-git commit -m "Escalando a aplicação"
-git push origin 26-23-escalando-a-aplicacao
+git commit -m "Blue-Green Deployment: implantando novas versões com zero downtime"
+git push origin 26-24-blue-green-deployment-implantando-novas-versoes-com-zero-downtime
 
 git checkout master
-git merge --no-ff 26-23-escalando-a-aplicacao
+git merge --no-ff 26-24-blue-green-deployment-implantando-novas-versoes-com-zero-downtime
 git push
 
 sair da tela de merge
