@@ -1,0 +1,28 @@
+sub-recursos - recursos aninhados em outros recursos do sistema
+
+chatty (tagarela) 
+	- granularidade fina 
+	- precisa fazer diversas chamadas na api para executar uma operação (restaurante e endereço)
+	- cuidado com o estado do recurso inconsistente (não cadastrar o endereço do restaurante)
+chunky 
+	- granularidade grossa 
+	- operações são feitas em uma unica chamada na api
+
+quando o crud nao é suficiente
+- ativação e inativação (também se aplica na alteração de status - criado, cancelado, confirmado e entregue)
+	- com put envia mais dados mais burocratico, pois passar todos os dados
+	- patch enviando apenas o ativo
+	- criar endpoint para ativar e inativar (ativacao e inativacao)
+	- modelar como subrecurso ativo e enviar true e false
+	- put em ativo (ativar) delete em ativo (desativar) e get em ativo para obter (true e false) se esta ativo ou não
+	- post em alteracoes-status enviando ativo e valor e get para obter historico sobre esses eventos
+- modelar processos de negocio como recursos (notificacoes-restaurantes)
+
+problema com atualização de objetos
+- objetos gerenciados pelo jpa ficam no contexto de persistencia
+- qualquer alteração feita é sincronizada com o banco de dados
+- se altera um objeto e depois faz uma transação mesmo que vazia sem o objeto passado ele salva
+- é feita uma transação mesmo sem salvar no repositorio ele salva no banco
+- para não salvar e a transação falhar, basta lançar uma runtimeexception por exemplo
+- mesmo se mandar descarregar (entityManager.flush()) se lança a exceção faz um rollback
+- no caso de criar a entidade será preciso chamar o repositorio.save(obj) para ser gerenciado pelo jpa

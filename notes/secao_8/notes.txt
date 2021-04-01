@@ -1,0 +1,17 @@
+introdução ao tratamento e modelagem de erros
+- pensar sempre no consumidor da API
+- retornar código de status e mensagem adequada
+
+conhecendo a RFC 7807 (Problem Details for HTTP APIs) - https://tools.ietf.org/html/rfc7807
+- retornar status de erro e mensagem com descrição do erro para ajudar os clientes
+- exemplo de corpo de resposta: status, type, title, detail, instance
+- extendendo com: timestamp e cozinha
+- podemos expor detalhes internos como a stacktrace mas não é recomendado
+- evite adicionar informações internas a representação do problema como forma de debugar um erro interno da aplicação
+- todas as respostas não precisam ter um corpo descrevendo o problema
+
+beneficios
+- formato unico para descrever os erros na api 
+	- cliente consiga entender o que aconteceu lendo a resposta com o erro
+	- tomar alguma decisão corrigindo a chamada a api ou mostrando mensagem de erro para o usuário
+- facilita a construção e manutenção da api
