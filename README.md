@@ -6,7 +6,7 @@ Link: 🔗[Curso Especialista Spring REST by Algaworks](https://www.algaworks.co
 
 ## 💻 Projeto do curso
 
-Projeto - AlgaFood- Projeto para cadastro e gerenciamento de restaurantes incluindo cozinhas, pedidos, produtos, fotos de produtos, formas de pagamento, usuários, grupos, permissões, cidades e estados. Envolve autenticação de usuários com restrição de enpoints com base nas permissões do usuário.
+AlgaFood - Projeto para cadastro e gerenciamento de restaurantes incluindo cozinhas, pedidos, produtos, fotos de produtos, formas de pagamento, usuários, grupos, permissões, cidades e estados. Envolve autenticação de usuários com restrição de enpoints com base nas permissões do usuário.
 
 ## :camera: Demonstração
 
@@ -52,21 +52,85 @@ Projeto - AlgaFood- Projeto para cadastro e gerenciamento de restaurantes inclui
 
 ✔️ Docker, DockerHub e Docker compose
 
-✔️ Deploy em produção na nuvem (Amazon [EC2, EKS, ECS, Fargate, ELB, ECR, RDS, S3], RedisLabs, PWS)
+✔️ Deploy em produção na nuvem (Amazon AWS [EC2, EKS, ECS, Fargate, ELB, ECR, RDS, S3, Systems Manager Parameter Store, Certificate manager], RedisLabs e PWS)
 
-✔️ Configuração e gerenciamento de logs (Loggy)
+✔️ Configuração e gerenciamento de logs (Loggly)
 
 ✔️ Versionamento de APIs (Media Types e URIs)
 
-## ⚙️ Comandos
+## ⚙️ Configurações
 
-- Criar projeto do curso: `npx create-react-app alga-stock --template typescript`
-
-- Comandos para deploy no Heroku
+- Ferramentas necessárias
 
 ```bash
-
+MySQL, Redis, Amazon S3 (opcional), SendGrid (opcional) e Postman
 ```
+
+- Gerando um arquivo JKS com um par de chaves
+
+```bash
+$ keytool -genkeypair -alias algafood -keyalg RSA -keypass 123@algafoodprod -keystore algafood-prod.jks -storepass 123@algafoodprod -validity 3650
+
+$ cat algafood-prod.jks | base64
+```
+
+- Para rodar a API configurar no arquivo `aplication.properties` os seguintes parâmetros
+
+```bash
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=
+
+algafood.storage.tipo="s3 ou local"
+algafood.storage.s3.id-chave-acesso=
+algafood.storage.s3.chave-acesso-secreta=
+algafood.storage.s3.bucket=
+algafood.storage.s3.regiao=
+
+algafood.email.impl="fake, sandbox ou smtp"
+algafood.email.remetente=
+algafood.email.sandbox.destinatario=
+spring.mail.password=
+
+logging.loggly.token=
+
+algafood.jwt.keystore.jks-location=
+algafood.jwt.keystore.password=
+algafood.jwt.keystore.keypair-alias=
+```
+
+- Para na AWS configurar os seguintes parâmetros no serviço Parameter Store
+
+```bash
+/prod/algafood-api-service/DB_HOST =
+/prod/algafood-api-service/SPRING_DATASOURCE_USERNAME =
+/prod/algafood-api-service/SPRING_DATASOURCE_PASSWORD =
+
+/prod/algafood-api-service/SPRING_REDIS_HOST =
+/prod/algafood-api-service/SPRING_REDIS_PORT =
+/prod/algafood-api-service/SPRING_REDIS_PASSWORD =
+
+/prod/algafood-api-service/LOGGING_LOGGLY_TOKEN =
+
+/prod/algafood-api-service/ALGAFOOD_JWT_KEYSTORE_JKS_LOCATION =
+/prod/algafood-api-service/ALGAFOOD_JWT_KEYSTORE_PASSWORD =
+/prod/algafood-api-service/ALGAFOOD_JWT_KEYSTORE_KEYPAIR_ALIAS =
+
+/prod/algafood-api-service/ALGAFOOD_STORAGE_S3_ID_CHAVE_ACESSO =
+/prod/algafood-api-service/ALGAFOOD_STORAGE_S3_CHAVE_SECRETA =
+/prod/algafood-api-service/ALGAFOOD_STORAGE_S3_BUCKET =
+/prod/algafood-api-service/ALGAFOOD_STORAGE_S3_REGIAO =
+
+/prod/algafood-api-service/ALGAFOOD_EMAIL_REMETENTE =
+/prod/algafood-api-service/SPRING_MAIL_HOST =
+/prod/algafood-api-service/SPRING_MAIL_PORT =
+/prod/algafood-api-service/SPRING_MAIL_USERNAME =
+/prod/algafood-api-service/SPRING_MAIL_PASSWORD =
+```
+
+# apenas no container
+
+SPRING_PROFILES_ACTIVES = production
 
 ## :phone: Contato
 
