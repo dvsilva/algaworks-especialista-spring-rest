@@ -6,11 +6,13 @@ Link: 🔗[Curso Especialista Spring REST by Algaworks](https://www.algaworks.co
 
 ## 💻 Projeto do curso
 
-AlgaFood - Projeto para cadastro e gerenciamento de restaurantes incluindo cozinhas, pedidos, produtos, fotos de produtos, formas de pagamento, usuários, grupos, permissões, cidades e estados. Envolve autenticação de usuários com restrição de enpoints com base nas permissões do usuário.
+AlgaFood - Projeto para gerenciamento de restaurantes incluindo cadastros de cozinhas, pedidos, produtos, fotos de produtos, formas de pagamento, usuários, grupos, permissões, cidades e estados. Envolve autenticação de usuários com restrição de enpoints com base nas permissões do usuário.
 
 ## :camera: Demonstração
 
-![Projeto - AlfaFood - Demonstração em Gif Animado](demo/demo.gif)
+![Projeto - AlfaFood - Demonstração Swagger em Gif Animado](demo/demo1.gif)
+
+![Projeto - AlfaFood - Demonstração Postman em Gif Animado](demo/demo2.gif)
 
 ## :rocket: Conceitos e tecnologias
 
@@ -52,7 +54,9 @@ AlgaFood - Projeto para cadastro e gerenciamento de restaurantes incluindo cozin
 
 ✔️ Docker, DockerHub e Docker compose
 
-✔️ Deploy em produção na nuvem (Amazon AWS [EC2, EKS, ECS, Fargate, ELB, ECR, RDS, S3, Systems Manager Parameter Store, Certificate manager], RedisLabs e PWS)
+✔️ Deploy em produção na nuvem
+
+✔️ Amazon AWS (EC2, EKS, ECS, Fargate, ELB, ECR, RDS, S3, Systems Manager Parameter Store, Certificate manager), RedisLabs e PWS
 
 ✔️ Configuração e gerenciamento de logs (Loggly)
 
@@ -63,7 +67,7 @@ AlgaFood - Projeto para cadastro e gerenciamento de restaurantes incluindo cozin
 - Ferramentas necessárias
 
 ```bash
-MySQL, Redis, Amazon S3 (opcional), SendGrid (opcional) e Postman
+MySQL, Redis, Amazon S3 (opcional), SendGrid / Mailtrap (opcional) e Postman
 ```
 
 - Gerando um arquivo JKS com um par de chaves
@@ -88,8 +92,11 @@ algafood.storage.s3.bucket=
 algafood.storage.s3.regiao=
 
 algafood.email.impl="fake, sandbox ou smtp"
+algafood.email.sandbox.destinatario="destinatario para tipo de envio sandbox"
 algafood.email.remetente=
-algafood.email.sandbox.destinatario=
+spring.mail.host=
+spring.mail.port=
+spring.mail.username=
 spring.mail.password=
 
 logging.loggly.token=
@@ -127,10 +134,6 @@ algafood.jwt.keystore.keypair-alias=
 /prod/algafood-api-service/SPRING_MAIL_USERNAME =
 /prod/algafood-api-service/SPRING_MAIL_PASSWORD =
 ```
-
-# apenas no container
-
-SPRING_PROFILES_ACTIVES = production
 
 ## :phone: Contato
 
