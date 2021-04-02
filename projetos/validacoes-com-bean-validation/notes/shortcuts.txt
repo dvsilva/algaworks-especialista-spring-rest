@@ -1,2 +1,0 @@
-ctrl + o -> mostra os métodos disponíveis nas classes
-ctrl + t -> mostra a hierarquia das classes (mostra as implementações das interfaces)
