@@ -106,7 +106,7 @@ algafood.jwt.keystore.password=
 algafood.jwt.keystore.keypair-alias=
 ```
 
-- Para na AWS configurar os seguintes parâmetros no serviço Parameter Store
+- Para rodar a API na AWS configurar os seguintes parâmetros no serviço Parameter Store
 
 ```bash
 /prod/algafood-api-service/DB_HOST =
